@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: f63ad5f6a9711ac4cbd4f5a04358aabf
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Circle-Square
+    100002: Circle-Triangle
+    100004: Decagram-Square
+    100006: Decagram-Triangle
+    100008: Diamond-Square
+    100010: Diamond-Triangle
+    100012: Hexagon-Square
+    100014: Hexagon-Triangle
+    100016: Hexagram-Square
+    100018: Hexagram-Triangle
+    100020: Octagram-Square
+    100022: Octagram-Triangle
+    100024: Pentagon-Square
+    100026: Pentagon-Triangle
+    100028: Pentagram-Square
+    100030: Pentagram-Triangle
+    100032: //RootNode
+    100034: Square
+    100036: Square-Triangle
+    100038: Triangle
+    100040: Triangle-Square
+    400000: Circle-Square
+    400002: Circle-Triangle
+    400004: Decagram-Square
+    400006: Decagram-Triangle
+    400008: Diamond-Square
+    400010: Diamond-Triangle
+    400012: Hexagon-Square
+    400014: Hexagon-Triangle
+    400016: Hexagram-Square
+    400018: Hexagram-Triangle
+    400020: Octagram-Square
+    400022: Octagram-Triangle
+    400024: Pentagon-Square
+    400026: Pentagon-Triangle
+    400028: Pentagram-Square
+    400030: Pentagram-Triangle
+    400032: //RootNode
+    400034: Square
+    400036: Square-Triangle
+    400038: Triangle
+    400040: Triangle-Square
+    2100000: Color.1
+    2100002: Color.2
+    2100004: Color.3
+    2100006: Color.4
+    2100008: Color.5
+    2100010: Color.6
+    2100012: Color.006
+    2100014: Color.005
+    2100016: Color.007
+    2300000: Circle-Square
+    2300002: Circle-Triangle
+    2300004: Decagram-Square
+    2300006: Decagram-Triangle
+    2300008: Diamond-Square
+    2300010: Diamond-Triangle
+    2300012: Hexagon-Square
+    2300014: Hexagon-Triangle
+    2300016: Hexagram-Square
+    2300018: Hexagram-Triangle
+    2300020: Octagram-Square
+    2300022: Octagram-Triangle
+    2300024: Pentagon-Square
+    2300026: Pentagon-Triangle
+    2300028: Pentagram-Square
+    2300030: Pentagram-Triangle
+    2300032: Square
+    2300034: Square-Triangle
+    2300036: Triangle
+    2300038: Triangle-Square
+    3300000: Circle-Square
+    3300002: Circle-Triangle
+    3300004: Decagram-Square
+    3300006: Decagram-Triangle
+    3300008: Diamond-Square
+    3300010: Diamond-Triangle
+    3300012: Hexagon-Square
+    3300014: Hexagon-Triangle
+    3300016: Hexagram-Square
+    3300018: Hexagram-Triangle
+    3300020: Octagram-Square
+    3300022: Octagram-Triangle
+    3300024: Pentagon-Square
+    3300026: Pentagon-Triangle
+    3300028: Pentagram-Square
+    3300030: Pentagram-Triangle
+    3300032: Square
+    3300034: Square-Triangle
+    3300036: Triangle
+    3300038: Triangle-Square
+    4300000: Hexagon-Triangle
+    4300002: Hexagon-Square
+    4300004: Pentagon-Triangle
+    4300006: Pentagon-Square
+    4300008: Diamond-Square
+    4300010: Diamond-Triangle
+    4300012: Triangle
+    4300014: Triangle-Square
+    4300016: Circle-Triangle
+    4300018: Circle-Square
+    4300020: Square-Triangle
+    4300022: Square
+    4300024: Pentagram-Triangle
+    4300026: Hexagram-Triangle
+    4300028: Decagram-Square
+    4300030: Decagram-Triangle
+    4300032: Octagram-Square
+    4300034: Octagram-Triangle
+    4300036: Hexagram-Square
+    4300038: Pentagram-Square
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

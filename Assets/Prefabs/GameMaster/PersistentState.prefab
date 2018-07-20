@@ -1,0 +1,268 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1733697605604416}
+  m_IsPrefabParent: 1
+--- !u!1 &1733697605604416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4770934477396112}
+  - component: {fileID: 114006437600865688}
+  m_Layer: 0
+  m_Name: PersistentState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4770934477396112
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1733697605604416}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114006437600865688
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1733697605604416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59fd668debc9e145ba43952ff3e6463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    lastLevelIndex: 0
+    levelsUnlocked: 1
+    customModeUnlocked: 0
+    endlessModeUnlocked: 0
+    adsDisabled: 0
+    adsDisplayed: 0
+    timesPlayed: 0
+    endlessScoreRecord: 0
+    endlessTimeRecord: 0
+    rating:
+      version: 
+      rating: 0
+      timesPlayed: 0
+    configurableModeData:
+      target:
+        endless: 0
+        scoreBased: 1
+        score: 100
+        time: 100
+      slowdown:
+        inTime: 0
+        stayTime: 0
+        outTime: 0
+        speedScale: 0
+        type: 0
+      bonusCatchSlowdown:
+        inTime: 0
+        stayTime: 0
+        outTime: 0
+        speedScale: 0
+        type: 0
+      modeChange:
+        maxAtOnce: 1
+        reactionTime: 0.75
+        scoreCooldown: 10
+        startScore: 10
+        timeCooldown: 10
+      randomRotation:
+        rotationReactionTime: 0.5
+        reactionTime: 1.1
+        probability: 0.5
+        timeInterval: 1
+      basketMode:
+        scoreBased: 1
+        probability: 0.5
+        timeInterval: 10
+        scoreInterval: 10
+      basketShapes:
+        scoreBased: 1
+        probability: 0.5
+        timeInterval: 10
+        scoreInterval: 10
+      basketColors:
+        scoreBased: 1
+        probability: 0.5
+        timeInterval: 10
+        scoreInterval: 10
+      heart:
+        max: 0
+        number: 0
+        scoreInterval: 0
+        probability: 0
+        startScore: 0
+        slowdown:
+          inTime: 0
+          stayTime: 0
+          outTime: 0
+          speedScale: 0
+          type: 0
+        useSlowdown: 0
+      freeze:
+        max: 0
+        number: 0
+        scoreInterval: 0
+        probability: 0
+        startScore: 0
+        slowdown:
+          inTime: 0
+          stayTime: 0
+          outTime: 0
+          speedScale: 0
+          type: 0
+        useSlowdown: 0
+      explosion:
+        max: 0
+        number: 0
+        scoreInterval: 0
+        probability: 0
+        startScore: 0
+        slowdown:
+          inTime: 0
+          stayTime: 0
+          outTime: 0
+          speedScale: 0
+          type: 0
+        useSlowdown: 0
+      shapesOnScreen:
+        upToMinScoreInterval: 1
+        min: 1
+        max: 9
+        increaseScoreInterval: 5
+      playerReactionTime:
+        min: 1
+        max: 5
+        changePerScore: -0.2
+      rotation:
+        min: 60
+        max: 180
+      initialGameMode: 2
+      additionalShapes: 
+  refs:
+    configurableMode: {fileID: 0}
+  temp:
+    configurableModeOriginalData:
+      target:
+        endless: 0
+        scoreBased: 1
+        score: 100
+        time: 100
+      slowdown:
+        inTime: 0
+        stayTime: 0
+        outTime: 0
+        speedScale: 0
+        type: 0
+      bonusCatchSlowdown:
+        inTime: 0
+        stayTime: 0
+        outTime: 0
+        speedScale: 0
+        type: 0
+      modeChange:
+        maxAtOnce: 1
+        reactionTime: 0.75
+        scoreCooldown: 10
+        startScore: 10
+        timeCooldown: 10
+      randomRotation:
+        rotationReactionTime: 0.5
+        reactionTime: 1.1
+        probability: 0.5
+        timeInterval: 1
+      basketMode:
+        scoreBased: 1
+        probability: 0.5
+        timeInterval: 10
+        scoreInterval: 10
+      basketShapes:
+        scoreBased: 1
+        probability: 0.5
+        timeInterval: 10
+        scoreInterval: 10
+      basketColors:
+        scoreBased: 1
+        probability: 0.5
+        timeInterval: 10
+        scoreInterval: 10
+      heart:
+        max: 0
+        number: 0
+        scoreInterval: 0
+        probability: 0
+        startScore: 0
+        slowdown:
+          inTime: 0
+          stayTime: 0
+          outTime: 0
+          speedScale: 0
+          type: 0
+        useSlowdown: 0
+      freeze:
+        max: 0
+        number: 0
+        scoreInterval: 0
+        probability: 0
+        startScore: 0
+        slowdown:
+          inTime: 0
+          stayTime: 0
+          outTime: 0
+          speedScale: 0
+          type: 0
+        useSlowdown: 0
+      explosion:
+        max: 0
+        number: 0
+        scoreInterval: 0
+        probability: 0
+        startScore: 0
+        slowdown:
+          inTime: 0
+          stayTime: 0
+          outTime: 0
+          speedScale: 0
+          type: 0
+        useSlowdown: 0
+      shapesOnScreen:
+        upToMinScoreInterval: 1
+        min: 1
+        max: 9
+        increaseScoreInterval: 5
+      playerReactionTime:
+        min: 1
+        max: 5
+        changePerScore: -0.2
+      rotation:
+        min: 60
+        max: 180
+      initialGameMode: 2
+      additionalShapes: 
+  config:
+    devMode: 0
+    askRatingTimesPlayedInterval: 15
+    goodRatingMin: 4

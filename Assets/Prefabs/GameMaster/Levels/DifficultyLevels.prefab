@@ -1,0 +1,7679 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1962390516082054}
+  m_IsPrefabParent: 1
+--- !u!1 &1003597830323348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4724682228698394}
+  - component: {fileID: 114433350123648584}
+  m_Layer: 0
+  m_Name: T:4 L:4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1011072088265592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4449891550357390}
+  - component: {fileID: 114438437513549788}
+  m_Layer: 0
+  m_Name: T:9 L:2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1031178380492626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4875299196503490}
+  - component: {fileID: 114455781684812520}
+  m_Layer: 0
+  m_Name: T:9 L:3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1037709685859376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4118615422546116}
+  - component: {fileID: 114099156608692256}
+  m_Layer: 0
+  m_Name: T:8 L:3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1047217671958846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4797679895498284}
+  - component: {fileID: 114470963315502916}
+  m_Layer: 0
+  m_Name: T:7 L:5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1049576217590230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4908462148411338}
+  - component: {fileID: 114757735411132382}
+  m_Layer: 0
+  m_Name: T:2 L:3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1053364327470788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4930973998187710}
+  - component: {fileID: 114233109207076608}
+  m_Layer: 0
+  m_Name: T:1 L:1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1170700576382272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4865661885030702}
+  - component: {fileID: 114831793312282610}
+  m_Layer: 0
+  m_Name: T:1 L:2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1174049335872820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4953053428649194}
+  - component: {fileID: 114573960843714264}
+  m_Layer: 0
+  m_Name: T:3 L:2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1191014333227736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4922483208495902}
+  - component: {fileID: 114842828768678946}
+  m_Layer: 0
+  m_Name: T:8 L:5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1198541101242566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4679817519631102}
+  - component: {fileID: 114411815937528630}
+  m_Layer: 0
+  m_Name: T:8 L:1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1219744729748848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4846333181404960}
+  - component: {fileID: 114110934379745010}
+  m_Layer: 0
+  m_Name: T:9 L:4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1232967132562706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4691665576208098}
+  - component: {fileID: 114880300409248510}
+  m_Layer: 0
+  m_Name: T:9 L:1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1314484439032998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4945534354900088}
+  - component: {fileID: 114381369862751948}
+  m_Layer: 0
+  m_Name: T:2 L:5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1324495865220860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4299892084849294}
+  - component: {fileID: 114090267504188654}
+  m_Layer: 0
+  m_Name: T:7 L:2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1351326440910982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4445596234179044}
+  - component: {fileID: 114547392615933094}
+  m_Layer: 0
+  m_Name: Endless
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1352635614832102
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4942639929813382}
+  - component: {fileID: 114286126487577030}
+  m_Layer: 0
+  m_Name: T:9 L:5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1373236507928754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4164320891216020}
+  - component: {fileID: 114157036551585634}
+  m_Layer: 0
+  m_Name: T:3 L:4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1415959250591378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4778528565390902}
+  - component: {fileID: 114553094865815370}
+  m_Layer: 0
+  m_Name: T:2 L:1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1434216047176442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4012988125780116}
+  - component: {fileID: 114830995202355354}
+  m_Layer: 0
+  m_Name: T:3 L:5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1473827366123732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4897951002073724}
+  - component: {fileID: 114787165879235842}
+  m_Layer: 0
+  m_Name: T:8 L:4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1475795776122484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4714282409086958}
+  - component: {fileID: 114163969921330948}
+  m_Layer: 0
+  m_Name: T:3 L:3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1485869998232528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4332988421237944}
+  - component: {fileID: 114308389404481946}
+  m_Layer: 0
+  m_Name: T:5 L:5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1501907158119882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4522880142690786}
+  - component: {fileID: 114513402782146456}
+  m_Layer: 0
+  m_Name: T:6 L:5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1509672069474534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4781973409850254}
+  - component: {fileID: 114843582011385174}
+  m_Layer: 0
+  m_Name: T:5 L:2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1541059263779934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4266804232288438}
+  - component: {fileID: 114816077484991670}
+  m_Layer: 0
+  m_Name: T:5 L:4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1594563328400572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4236805997438452}
+  - component: {fileID: 114908132776617758}
+  m_Layer: 0
+  m_Name: T:3 L:1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1625593411971012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4641472707012250}
+  - component: {fileID: 114548760270205112}
+  m_Layer: 0
+  m_Name: T:5 L:1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1637904978476284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4199885868441866}
+  - component: {fileID: 114380201260723132}
+  m_Layer: 0
+  m_Name: T:2 L:4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1648599111516038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4441451177075218}
+  - component: {fileID: 114819591932991376}
+  m_Layer: 0
+  m_Name: T:7 L:4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1653672910260622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4177870992590690}
+  - component: {fileID: 114498526230855344}
+  m_Layer: 0
+  m_Name: T:8 L:2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1657775936530614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4999394490285548}
+  - component: {fileID: 114493760275808328}
+  m_Layer: 0
+  m_Name: T:6 L:2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1683334090367138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4605784390429046}
+  - component: {fileID: 114129414598449336}
+  m_Layer: 0
+  m_Name: T:6 L:3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1720517249585120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4716563727442988}
+  - component: {fileID: 114384333367266906}
+  m_Layer: 0
+  m_Name: T:2 L:2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1743099630903120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4067971170405016}
+  - component: {fileID: 114279878137761512}
+  m_Layer: 0
+  m_Name: T:6 L:1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1748816308438704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4342043370379168}
+  - component: {fileID: 114031134185701562}
+  m_Layer: 0
+  m_Name: T:5 L:3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1762876291593016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4237338485886634}
+  - component: {fileID: 114834135164523744}
+  m_Layer: 0
+  m_Name: T:1 L:3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1785043318827000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4589896220823586}
+  - component: {fileID: 114932905720614368}
+  m_Layer: 0
+  m_Name: T:6 L:4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1855281288915186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4057891395334746}
+  - component: {fileID: 114490038218018004}
+  m_Layer: 0
+  m_Name: T:4 L:3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1871452911173784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4834789140216800}
+  - component: {fileID: 114667457168810338}
+  m_Layer: 0
+  m_Name: T:1 L:4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1888429202527858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4823168610631410}
+  - component: {fileID: 114441591259618386}
+  m_Layer: 0
+  m_Name: T:4 L:5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1895396976164144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4590269922557864}
+  - component: {fileID: 114632551089571710}
+  m_Layer: 0
+  m_Name: T:7 L:3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1906261753167970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4145673381641870}
+  - component: {fileID: 114418522341908890}
+  m_Layer: 0
+  m_Name: T:4 L:1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1962390516082054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4081906390683266}
+  - component: {fileID: 114999600959574572}
+  - component: {fileID: 114951979775200738}
+  m_Layer: 0
+  m_Name: DifficultyLevels
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1974524485259244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4261278523898742}
+  - component: {fileID: 114534907949154936}
+  m_Layer: 0
+  m_Name: Configurable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1995405515720260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4259715027009440}
+  - component: {fileID: 114979841531050124}
+  m_Layer: 0
+  m_Name: T:4 L:2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1995626129223186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4662656831856284}
+  - component: {fileID: 114081815189405894}
+  m_Layer: 0
+  m_Name: T:7 L:1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1996961969828576
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4911011715533252}
+  - component: {fileID: 114145059514184836}
+  m_Layer: 0
+  m_Name: T:1 L:5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4012988125780116
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1434216047176442}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4057891395334746
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1855281288915186}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4067971170405016
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1743099630903120}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4081906390683266
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962390516082054}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4930973998187710}
+  - {fileID: 4865661885030702}
+  - {fileID: 4237338485886634}
+  - {fileID: 4834789140216800}
+  - {fileID: 4911011715533252}
+  - {fileID: 4778528565390902}
+  - {fileID: 4716563727442988}
+  - {fileID: 4908462148411338}
+  - {fileID: 4199885868441866}
+  - {fileID: 4945534354900088}
+  - {fileID: 4236805997438452}
+  - {fileID: 4953053428649194}
+  - {fileID: 4714282409086958}
+  - {fileID: 4164320891216020}
+  - {fileID: 4012988125780116}
+  - {fileID: 4145673381641870}
+  - {fileID: 4259715027009440}
+  - {fileID: 4057891395334746}
+  - {fileID: 4724682228698394}
+  - {fileID: 4823168610631410}
+  - {fileID: 4641472707012250}
+  - {fileID: 4781973409850254}
+  - {fileID: 4342043370379168}
+  - {fileID: 4266804232288438}
+  - {fileID: 4332988421237944}
+  - {fileID: 4067971170405016}
+  - {fileID: 4999394490285548}
+  - {fileID: 4605784390429046}
+  - {fileID: 4589896220823586}
+  - {fileID: 4522880142690786}
+  - {fileID: 4662656831856284}
+  - {fileID: 4299892084849294}
+  - {fileID: 4590269922557864}
+  - {fileID: 4441451177075218}
+  - {fileID: 4797679895498284}
+  - {fileID: 4679817519631102}
+  - {fileID: 4177870992590690}
+  - {fileID: 4118615422546116}
+  - {fileID: 4897951002073724}
+  - {fileID: 4922483208495902}
+  - {fileID: 4691665576208098}
+  - {fileID: 4449891550357390}
+  - {fileID: 4875299196503490}
+  - {fileID: 4846333181404960}
+  - {fileID: 4942639929813382}
+  - {fileID: 4445596234179044}
+  - {fileID: 4261278523898742}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4118615422546116
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1037709685859376}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4145673381641870
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906261753167970}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4164320891216020
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1373236507928754}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4177870992590690
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1653672910260622}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4199885868441866
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1637904978476284}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4236805997438452
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1594563328400572}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4237338485886634
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1762876291593016}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4259715027009440
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995405515720260}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4261278523898742
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1974524485259244}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 46
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4266804232288438
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1541059263779934}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4299892084849294
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1324495865220860}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4332988421237944
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485869998232528}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4342043370379168
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1748816308438704}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4441451177075218
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648599111516038}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4445596234179044
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1351326440910982}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 45
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4449891550357390
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1011072088265592}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 41
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4522880142690786
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1501907158119882}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4589896220823586
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1785043318827000}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4590269922557864
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1895396976164144}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4605784390429046
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1683334090367138}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4641472707012250
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1625593411971012}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4662656831856284
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995626129223186}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4679817519631102
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1198541101242566}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4691665576208098
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1232967132562706}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 40
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4714282409086958
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1475795776122484}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4716563727442988
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1720517249585120}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4724682228698394
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1003597830323348}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4778528565390902
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1415959250591378}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4781973409850254
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1509672069474534}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4797679895498284
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1047217671958846}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4823168610631410
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1888429202527858}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4834789140216800
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1871452911173784}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4846333181404960
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1219744729748848}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 43
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4865661885030702
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1170700576382272}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4875299196503490
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1031178380492626}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 42
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4897951002073724
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1473827366123732}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4908462148411338
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1049576217590230}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4911011715533252
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1996961969828576}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4922483208495902
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1191014333227736}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 39
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4930973998187710
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1053364327470788}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4942639929813382
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1352635614832102}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 44
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4945534354900088
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1314484439032998}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4953053428649194
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1174049335872820}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4999394490285548
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1657775936530614}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081906390683266}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114031134185701562
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1748816308438704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 50
+    time: 70
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.3
+  rotation:
+    min: 51
+    max: 96
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 0
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.6
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0.6
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0.6
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 10
+    probability: 0.5
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 10
+    probability: 0.35
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 25
+    probability: 0.35
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 3
+    max: 5
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.6999999
+    max: 3.1
+    changePerScore: -0.20000002
+  additionalShapes: 0100000004000000080000000a000000
+--- !u!114 &114081815189405894
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995626129223186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 40
+    time: 60
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.5
+  rotation:
+    min: 45
+    max: 90
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 10
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 1
+    scoreInterval: 10
+    probability: 0.5
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 2
+    scoreInterval: 10
+    probability: 0.3
+    startScore: 5
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 1
+    scoreInterval: 15
+    probability: 0.3
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 4
+    max: 5
+    increaseScoreInterval: 5
+  playerReactionTime:
+    min: 1.8
+    max: 3.5
+    changePerScore: -0.3
+  additionalShapes: 0100000004000000080000000a000000090000000b000000
+--- !u!114 &114090267504188654
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1324495865220860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 50
+    time: 75
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.4
+  rotation:
+    min: 48
+    max: 93
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 8
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.55
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.55
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.55
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 1
+    scoreInterval: 10
+    probability: 0.55
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 2
+    scoreInterval: 10
+    probability: 0.35000002
+    startScore: 5
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 1
+    scoreInterval: 15
+    probability: 0.3
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 4
+    max: 6
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.6999999
+    max: 3.3
+    changePerScore: -0.25
+  additionalShapes: 0100000004000000080000000a000000090000000b000000
+--- !u!114 &114099156608692256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1037709685859376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 65
+    time: 95
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.3
+  rotation:
+    min: 51
+    max: 96
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 3
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 6
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.6
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.6
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.6
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 3
+    scoreInterval: 10
+    probability: 0.6
+    startScore: 10
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 2
+    scoreInterval: 10
+    probability: 0.5
+    startScore: 5
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 2
+    scoreInterval: 15
+    probability: 0.35
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 3
+    max: 8
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.5
+    max: 3.1
+    changePerScore: -0.20000002
+  additionalShapes: 0100000004000000080000000a000000090000000b0000000c000000
+--- !u!114 &114110934379745010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1219744729748848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 80
+    time: 115
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.2
+  rotation:
+    min: 54
+    max: 99
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 3
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 4
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.65
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.65
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.65
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 1
+    scoreInterval: 15
+    probability: 0.65
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 3
+    scoreInterval: 15
+    probability: 0.55
+    startScore: 5
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 3
+    scoreInterval: 20
+    probability: 0.55
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 2
+    max: 9
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.3000001
+    max: 2.9
+    changePerScore: -0.15
+  additionalShapes: 0100000004000000080000000a000000090000000b0000000c0000000d000000
+--- !u!114 &114129414598449336
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1683334090367138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 55
+    time: 80
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.3
+  rotation:
+    min: 51
+    max: 96
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 3
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 6
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.6
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.6
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.6
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 1
+    scoreInterval: 10
+    probability: 0.6
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 1
+    scoreInterval: 10
+    probability: 0.35
+    startScore: 0
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 1
+    scoreInterval: 15
+    probability: 0.35
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 4
+    max: 6
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.6999999
+    max: 3.1
+    changePerScore: -0.20000002
+  additionalShapes: 0100000004000000080000000a00000009000000
+--- !u!114 &114145059514184836
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1996961969828576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 50
+    time: 80
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.1
+  rotation:
+    min: 57
+    max: 102
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 1
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 0
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 1
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 10
+    scoreInterval: 10
+  basketColors:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 10
+    scoreInterval: 10
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 3
+    max: 6
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.6
+    max: 3.2
+    changePerScore: -0.10000001
+  additionalShapes: 
+--- !u!114 &114157036551585634
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1373236507928754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 50
+    time: 75
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.2
+  rotation:
+    min: 54
+    max: 99
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 4
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0.165
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 2
+    max: 5
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.6
+    max: 2.9
+    changePerScore: -0.15
+  additionalShapes: 0100000004000000
+--- !u!114 &114163969921330948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1475795776122484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 40
+    time: 60
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.3
+  rotation:
+    min: 51
+    max: 96
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 5
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 2
+    max: 4
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.6999999
+    max: 3.1
+    changePerScore: -0.20000002
+  additionalShapes: 0100000004000000
+--- !u!114 &114233109207076608
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1053364327470788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 10
+    time: 20
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.5
+  rotation:
+    min: 45
+    max: 90
+  initialGameMode: 0
+  modeChange:
+    maxAtOnce: 1
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 50
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 1
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 10
+    scoreInterval: 10
+  basketColors:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 10
+    scoreInterval: 10
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 1
+    max: 2
+    increaseScoreInterval: 5
+  playerReactionTime:
+    min: 2
+    max: 4
+    changePerScore: -0.3
+  additionalShapes: 
+--- !u!114 &114279878137761512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1743099630903120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 35
+    time: 50
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.5
+  rotation:
+    min: 45
+    max: 90
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 10
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 1
+    scoreInterval: 10
+    probability: 0.5
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 1
+    scoreInterval: 10
+    probability: 0.25
+    startScore: 0
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 1
+    scoreInterval: 15
+    probability: 0.25
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 3
+    max: 4
+    increaseScoreInterval: 5
+  playerReactionTime:
+    min: 1.9
+    max: 3.5
+    changePerScore: -0.3
+  additionalShapes: 0100000004000000080000000a00000009000000
+--- !u!114 &114286126487577030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1352635614832102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 90
+    time: 130
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.1
+  rotation:
+    min: 57
+    max: 102
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 3
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 2
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.7
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.7
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.7
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 2
+    scoreInterval: 15
+    probability: 0.7
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 4
+    scoreInterval: 15
+    probability: 0.6
+    startScore: 5
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 4
+    scoreInterval: 20
+    probability: 0.6
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 3
+    max: 9
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.2
+    max: 2.7
+    changePerScore: -0.10000001
+  additionalShapes: 0100000004000000080000000a000000090000000b0000000c0000000d000000
+--- !u!114 &114308389404481946
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485869998232528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 70
+    time: 100
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.1
+  rotation:
+    min: 57
+    max: 102
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 0
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.7
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0.7
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0.7
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 1
+    scoreInterval: 10
+    probability: 0.5
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 1
+    scoreInterval: 10
+    probability: 0.45
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 1
+    scoreInterval: 25
+    probability: 0.45
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 4
+    max: 7
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.5
+    max: 2.7
+    changePerScore: -0.10000001
+  additionalShapes: 0100000004000000080000000a000000
+--- !u!114 &114380201260723132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1637904978476284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 45
+    time: 70
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.2
+  rotation:
+    min: 54
+    max: 99
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 1
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 4
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0.165
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 10
+    scoreInterval: 10
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 2
+    max: 5
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.7
+    max: 3.4
+    changePerScore: -0.15
+  additionalShapes: 01000000
+--- !u!114 &114381369862751948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1314484439032998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 55
+    time: 85
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.1
+  rotation:
+    min: 57
+    max: 102
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 1
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 3
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0.33
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 10
+    scoreInterval: 10
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 3
+    max: 6
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.6
+    max: 3.2
+    changePerScore: -0.10000001
+  additionalShapes: 01000000
+--- !u!114 &114384333367266906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1720517249585120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 25
+    time: 40
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.4
+  rotation:
+    min: 48
+    max: 93
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 1
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 5
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 10
+    scoreInterval: 10
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 1
+    max: 3
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.9
+    max: 3.8
+    changePerScore: -0.25
+  additionalShapes: 01000000
+--- !u!114 &114411815937528630
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1198541101242566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 45
+    time: 65
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.5
+  rotation:
+    min: 45
+    max: 90
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 10
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 2
+    scoreInterval: 10
+    probability: 0.5
+    startScore: 10
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 2
+    scoreInterval: 10
+    probability: 0.4
+    startScore: 5
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 2
+    scoreInterval: 15
+    probability: 0.35
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 2
+    max: 6
+    increaseScoreInterval: 5
+  playerReactionTime:
+    min: 1.7
+    max: 3.5
+    changePerScore: -0.3
+  additionalShapes: 0100000004000000080000000a000000090000000b0000000c000000
+--- !u!114 &114418522341908890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906261753167970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 25
+    time: 35
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.5
+  rotation:
+    min: 45
+    max: 90
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 5
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 1
+    scoreInterval: 5
+    probability: 0.75
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 2
+    max: 3
+    increaseScoreInterval: 5
+  playerReactionTime:
+    min: 1.9
+    max: 3.5
+    changePerScore: -0.3
+  additionalShapes: 010000000400000008000000
+--- !u!114 &114433350123648584
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1003597830323348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 55
+    time: 80
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.2
+  rotation:
+    min: 54
+    max: 99
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 4
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0.165
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 1
+    scoreInterval: 5
+    probability: 0.75
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 3
+    max: 6
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.6
+    max: 2.9
+    changePerScore: -0.15
+  additionalShapes: 010000000400000008000000
+--- !u!114 &114438437513549788
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1011072088265592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 60
+    time: 85
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.4
+  rotation:
+    min: 48
+    max: 93
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 8
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.55
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.55
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.55
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 1
+    scoreInterval: 15
+    probability: 0.55
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 3
+    scoreInterval: 15
+    probability: 0.45000002
+    startScore: 5
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 3
+    scoreInterval: 20
+    probability: 0.45000002
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 1
+    max: 7
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.5
+    max: 3.3
+    changePerScore: -0.25
+  additionalShapes: 0100000004000000080000000a000000090000000b0000000c0000000d000000
+--- !u!114 &114441591259618386
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1888429202527858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 65
+    time: 95
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.1
+  rotation:
+    min: 57
+    max: 102
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 3
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0.33
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 2
+    scoreInterval: 5
+    probability: 0.75
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 4
+    max: 7
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.5
+    max: 2.7
+    changePerScore: -0.10000001
+  additionalShapes: 010000000400000008000000
+--- !u!114 &114455781684812520
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1031178380492626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 70
+    time: 100
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.3
+  rotation:
+    min: 51
+    max: 96
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 3
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 6
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.6
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.6
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.6
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 1
+    scoreInterval: 15
+    probability: 0.6
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 3
+    scoreInterval: 15
+    probability: 0.5
+    startScore: 5
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 3
+    scoreInterval: 20
+    probability: 0.5
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 2
+    max: 8
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.4
+    max: 3.1
+    changePerScore: -0.20000002
+  additionalShapes: 0100000004000000080000000a000000090000000b0000000c0000000d000000
+--- !u!114 &114470963315502916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1047217671958846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 80
+    time: 120
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.1
+  rotation:
+    min: 57
+    max: 102
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 3
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 2
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.7
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.7
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.7
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 3
+    scoreInterval: 10
+    probability: 0.7
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 3
+    scoreInterval: 10
+    probability: 0.5
+    startScore: 5
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 1
+    scoreInterval: 15
+    probability: 0.3
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 6
+    max: 9
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.4
+    max: 2.7
+    changePerScore: -0.10000001
+  additionalShapes: 0100000004000000080000000a000000090000000b000000
+--- !u!114 &114490038218018004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1855281288915186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 45
+    time: 65
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.3
+  rotation:
+    min: 51
+    max: 96
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 5
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 1
+    scoreInterval: 5
+    probability: 0.75
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 3
+    max: 5
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.6999999
+    max: 3.1
+    changePerScore: -0.20000002
+  additionalShapes: 010000000400000008000000
+--- !u!114 &114493760275808328
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1657775936530614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 45
+    time: 65
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.4
+  rotation:
+    min: 48
+    max: 93
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 8
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.55
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.55
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.55
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 1
+    scoreInterval: 10
+    probability: 0.55
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 1
+    scoreInterval: 10
+    probability: 0.3
+    startScore: 0
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 1
+    scoreInterval: 15
+    probability: 0.3
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 3
+    max: 5
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.8
+    max: 3.3
+    changePerScore: -0.25
+  additionalShapes: 0100000004000000080000000a00000009000000
+--- !u!114 &114498526230855344
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1653672910260622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 55
+    time: 80
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.4
+  rotation:
+    min: 48
+    max: 93
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 8
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.55
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.55
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.55
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 2
+    scoreInterval: 10
+    probability: 0.55
+    startScore: 10
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 2
+    scoreInterval: 10
+    probability: 0.45000002
+    startScore: 5
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 2
+    scoreInterval: 15
+    probability: 0.35
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 2
+    max: 7
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.6
+    max: 3.3
+    changePerScore: -0.25
+  additionalShapes: 0100000004000000080000000a000000090000000b0000000c000000
+--- !u!114 &114513402782146456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1501907158119882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 75
+    time: 110
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.1
+  rotation:
+    min: 57
+    max: 102
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 3
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 2
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.7
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.7
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.7
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 2
+    scoreInterval: 10
+    probability: 0.7
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 2
+    scoreInterval: 10
+    probability: 0.45
+    startScore: 0
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 2
+    scoreInterval: 15
+    probability: 0.45
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 5
+    max: 8
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.5
+    max: 2.7
+    changePerScore: -0.10000001
+  additionalShapes: 0100000004000000080000000a00000009000000
+--- !u!114 &114534907949154936
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1974524485259244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 100
+    time: 100
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 1
+    probability: 0.5
+    timeInterval: 1
+  rotation:
+    min: 45
+    max: 120
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 3
+    reactionTime: 0.75
+    scoreCooldown: 5
+    startScore: 1
+    timeCooldown: 5
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 10
+    scoreInterval: 10
+  basketShapes:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 10
+    scoreInterval: 10
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 10
+    scoreInterval: 10
+  heart:
+    max: 9
+    number: 100
+    scoreInterval: 25
+    probability: 0.5
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 100
+    scoreInterval: 15
+    probability: 0.5
+    startScore: 0
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 100
+    scoreInterval: 20
+    probability: 0.5
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 1
+    max: 9
+    increaseScoreInterval: 5
+  playerReactionTime:
+    min: 1.25
+    max: 4
+    changePerScore: -0.1
+  additionalShapes: 01000000040000000a00000008000000090000000b0000000d0000000c000000
+--- !u!114 &114547392615933094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1351326440910982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 1
+    scoreBased: 1
+    score: 10
+    time: 70
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 1
+    probability: 0.5
+    timeInterval: 1
+  rotation:
+    min: 45
+    max: 120
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 3
+    reactionTime: 0.75
+    scoreCooldown: 5
+    startScore: 1
+    timeCooldown: 5
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 10
+    scoreInterval: 10
+  basketShapes:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 10
+    scoreInterval: 10
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 10
+    scoreInterval: 10
+  heart:
+    max: 9
+    number: 100
+    scoreInterval: 25
+    probability: 0.5
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 100
+    scoreInterval: 15
+    probability: 0.5
+    startScore: 0
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 100
+    scoreInterval: 20
+    probability: 0.5
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 1
+    max: 9
+    increaseScoreInterval: 5
+  playerReactionTime:
+    min: 1.25
+    max: 4
+    changePerScore: -0.1
+  additionalShapes: 01000000040000000a00000008000000090000000b0000000d0000000c000000
+--- !u!114 &114548760270205112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1625593411971012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 30
+    time: 40
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.5
+  rotation:
+    min: 45
+    max: 90
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 0
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 10
+    probability: 0.5
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 10
+    probability: 0.25
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 25
+    probability: 0.25
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 2
+    max: 3
+    increaseScoreInterval: 5
+  playerReactionTime:
+    min: 1.9
+    max: 3.5
+    changePerScore: -0.3
+  additionalShapes: 0100000004000000080000000a000000
+--- !u!114 &114553094865815370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1415959250591378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 15
+    time: 25
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.5
+  rotation:
+    min: 45
+    max: 90
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 1
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 5
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 10
+    scoreInterval: 10
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 1
+    max: 2
+    increaseScoreInterval: 5
+  playerReactionTime:
+    min: 2
+    max: 4
+    changePerScore: -0.3
+  additionalShapes: 01000000
+--- !u!114 &114573960843714264
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1174049335872820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 30
+    time: 45
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.4
+  rotation:
+    min: 48
+    max: 93
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 5
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 1
+    max: 3
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.8
+    max: 3.3
+    changePerScore: -0.25
+  additionalShapes: 0100000004000000
+--- !u!114 &114632551089571710
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1895396976164144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 60
+    time: 90
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.3
+  rotation:
+    min: 51
+    max: 96
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 3
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 6
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.6
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.6
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.6
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 2
+    scoreInterval: 10
+    probability: 0.6
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 2
+    scoreInterval: 10
+    probability: 0.4
+    startScore: 5
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 1
+    scoreInterval: 15
+    probability: 0.3
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 5
+    max: 7
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.5999999
+    max: 3.1
+    changePerScore: -0.20000002
+  additionalShapes: 0100000004000000080000000a000000090000000b000000
+--- !u!114 &114667457168810338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1871452911173784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 40
+    time: 65
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.2
+  rotation:
+    min: 54
+    max: 99
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 1
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 0
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 1
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 10
+    scoreInterval: 10
+  basketColors:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 10
+    scoreInterval: 10
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 2
+    max: 5
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.7
+    max: 3.4
+    changePerScore: -0.15
+  additionalShapes: 
+--- !u!114 &114757735411132382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1049576217590230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 35
+    time: 55
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.3
+  rotation:
+    min: 51
+    max: 96
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 1
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 5
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 10
+    scoreInterval: 10
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 2
+    max: 4
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.8
+    max: 3.6
+    changePerScore: -0.20000002
+  additionalShapes: 01000000
+--- !u!114 &114787165879235842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1473827366123732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 75
+    time: 110
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.2
+  rotation:
+    min: 54
+    max: 99
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 3
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 4
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.65
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.65
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.65
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 3
+    scoreInterval: 10
+    probability: 0.65
+    startScore: 10
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 2
+    scoreInterval: 10
+    probability: 0.55
+    startScore: 5
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 2
+    scoreInterval: 15
+    probability: 0.35
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 3
+    max: 9
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.4000001
+    max: 2.9
+    changePerScore: -0.15
+  additionalShapes: 0100000004000000080000000a000000090000000b0000000c000000
+--- !u!114 &114816077484991670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1541059263779934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 60
+    time: 85
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.2
+  rotation:
+    min: 54
+    max: 99
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 0
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.65
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0.65
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0.65
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 1
+    scoreInterval: 10
+    probability: 0.5
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 10
+    probability: 0.4
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 25
+    probability: 0.4
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 3
+    max: 6
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.6
+    max: 2.9
+    changePerScore: -0.15
+  additionalShapes: 0100000004000000080000000a000000
+--- !u!114 &114819591932991376
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648599111516038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 70
+    time: 105
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.2
+  rotation:
+    min: 54
+    max: 99
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 3
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 4
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.65
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.65
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.65
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 2
+    scoreInterval: 10
+    probability: 0.65
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 2
+    scoreInterval: 10
+    probability: 0.45000002
+    startScore: 5
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 1
+    scoreInterval: 15
+    probability: 0.3
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 5
+    max: 8
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.5
+    max: 2.9
+    changePerScore: -0.15
+  additionalShapes: 0100000004000000080000000a000000090000000b000000
+--- !u!114 &114830995202355354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1434216047176442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 60
+    time: 90
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.1
+  rotation:
+    min: 57
+    max: 102
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 3
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0.33
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 3
+    max: 6
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.5
+    max: 2.7
+    changePerScore: -0.10000001
+  additionalShapes: 0100000004000000
+--- !u!114 &114831793312282610
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1170700576382272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 20
+    time: 35
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.4
+  rotation:
+    min: 48
+    max: 93
+  initialGameMode: 1
+  modeChange:
+    maxAtOnce: 1
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 50
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 1
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 10
+    scoreInterval: 10
+  basketColors:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 10
+    scoreInterval: 10
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 1
+    max: 3
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.9
+    max: 3.8
+    changePerScore: -0.25
+  additionalShapes: 
+--- !u!114 &114834135164523744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1762876291593016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 30
+    time: 50
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.3
+  rotation:
+    min: 51
+    max: 96
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 1
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 50
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 1
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 10
+    scoreInterval: 10
+  basketColors:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 10
+    scoreInterval: 10
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 2
+    max: 4
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.8
+    max: 3.6
+    changePerScore: -0.20000002
+  additionalShapes: 
+--- !u!114 &114842828768678946
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1191014333227736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 85
+    time: 125
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.1
+  rotation:
+    min: 57
+    max: 102
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 3
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 2
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.7
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.7
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.7
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 4
+    scoreInterval: 10
+    probability: 0.7
+    startScore: 10
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 3
+    scoreInterval: 10
+    probability: 0.6
+    startScore: 5
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 2
+    scoreInterval: 15
+    probability: 0.35
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 4
+    max: 9
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.3000001
+    max: 2.7
+    changePerScore: -0.10000001
+  additionalShapes: 0100000004000000080000000a000000090000000b0000000c000000
+--- !u!114 &114843582011385174
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1509672069474534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 40
+    time: 55
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.4
+  rotation:
+    min: 48
+    max: 93
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 0
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.55
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0.55
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0.55
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 10
+    probability: 0.5
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 10
+    probability: 0.3
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 25
+    probability: 0.3
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 2
+    max: 4
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.8
+    max: 3.3
+    changePerScore: -0.25
+  additionalShapes: 0100000004000000080000000a000000
+--- !u!114 &114880300409248510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1232967132562706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 50
+    time: 70
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.5
+  rotation:
+    min: 45
+    max: 90
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 10
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 1
+    scoreInterval: 15
+    probability: 0.5
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 3
+    scoreInterval: 15
+    probability: 0.4
+    startScore: 5
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 3
+    scoreInterval: 20
+    probability: 0.4
+    startScore: 5
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 1
+    max: 6
+    increaseScoreInterval: 5
+  playerReactionTime:
+    min: 1.6
+    max: 3.5
+    changePerScore: -0.3
+  additionalShapes: 0100000004000000080000000a000000090000000b0000000c0000000d000000
+--- !u!114 &114908132776617758
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1594563328400572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 20
+    time: 30
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.5
+  rotation:
+    min: 45
+    max: 90
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 5
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 1
+    max: 2
+    increaseScoreInterval: 5
+  playerReactionTime:
+    min: 1.9
+    max: 3.5
+    changePerScore: -0.3
+  additionalShapes: 0100000004000000
+--- !u!114 &114932905720614368
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1785043318827000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 65
+    time: 95
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.2
+  rotation:
+    min: 54
+    max: 99
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 3
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 4
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.65
+    timeInterval: 7
+    scoreInterval: 7
+  basketShapes:
+    scoreBased: 1
+    probability: 0.65
+    timeInterval: 7
+    scoreInterval: 7
+  basketColors:
+    scoreBased: 1
+    probability: 0.65
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 2
+    scoreInterval: 10
+    probability: 0.65
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 1
+    scoreInterval: 10
+    probability: 0.4
+    startScore: 0
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 1
+    scoreInterval: 15
+    probability: 0.4
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 4
+    max: 7
+    increaseScoreInterval: 3
+  playerReactionTime:
+    min: 1.6
+    max: 2.9
+    changePerScore: -0.15
+  additionalShapes: 0100000004000000080000000a00000009000000
+--- !u!114 &114951979775200738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962390516082054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d37c34ed795896419d959f15a4e28d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseLevel: {fileID: 1672745960785936, guid: f6ffb54f93e74764fabb0c15d9781444, type: 2}
+  tiers:
+  - levels: 5
+    target:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      score: 10
+      perLevelScoreIncrease: 10
+      time: 20
+      perLevelTimeIncrease: 15
+      scoreBasedDivider: 2
+    reactionTime:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 2
+      minChangePerLevel: -0.1
+      max: 4
+      maxChangePerLevel: -0.2
+      changePerScore: -0.3
+      changePerScoreChangePerLevel: 0.05
+    shapesOnScreen:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 1
+      minChangePerLevel: 0.5
+      max: 2
+      maxChangePerLevel: 1
+      interval: 5
+      intervalChangePerLevel: -0.4
+    randomRotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      probability: 0.5
+      probabilityChangePerLevel: 0
+      reactionTime: 0.9
+      reactionTimeChangePerLevel: 0
+      rotationReactionTime: 0.25
+      rotationReactionTimeChangePerLevel: 0
+      timeInterval: 1.5
+      timeIntervalChangePerLevel: -0.1
+    rotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 30
+      minChangePerLevel: 3
+      max: 60
+      maxChangePerLevel: 3
+    initialBaskeMode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 2
+      shapeModeDivider: 2
+    mode:
+      startChangeLevelIndex: 2
+      endChangeLevelIndex: 9
+      maxAtOnce: 1
+      maxAtOnceChangePerLevel: 0
+      scoreCooldown: 1
+      scoreCooldownChangePerLevel: 0
+      timeCooldown: 1
+      timeCooldownChangePerLevel: 0
+      startScore: 50
+      startScoreChangePerLevel: -100
+      reactionTime: 0.75
+      reactionTimeChangePerLevel: 0
+    basketMode:
+      startChangeLevelIndex: 5
+      endChangeLevelIndex: 9
+      scoreInterval: 5
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 1
+      probabilityChangePerLevel: -0.1
+      scoreBasedDivider: 1
+    basketColors:
+      startChangeLevelIndex: 5
+      endChangeLevelIndex: 9
+      scoreInterval: 10
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0
+      probabilityChangePerLevel: 0
+      scoreBasedDivider: 1
+    basketShapes:
+      startChangeLevelIndex: 5
+      endChangeLevelIndex: 9
+      scoreInterval: 10
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0
+      probabilityChangePerLevel: 0
+      scoreBasedDivider: 1
+    freezeBonus:
+      startChangeLevelIndex: 5
+      endChangeLevelIndex: 9
+      number: 0
+      numberChangePerLevel: 0
+      probability: 0
+      probabilityChangePerLevel: 0
+      scoreInterval: 1
+      scoreIntervalChangePerLevel: 0
+      startScore: 1
+      startScoreChangePerLevel: 0
+    explosionBonus:
+      startChangeLevelIndex: 5
+      endChangeLevelIndex: 9
+      number: 0
+      numberChangePerLevel: 0
+      probability: 0
+      probabilityChangePerLevel: 0
+      scoreInterval: 1
+      scoreIntervalChangePerLevel: 0
+      startScore: 1
+      startScoreChangePerLevel: 0
+    heartBonus:
+      startChangeLevelIndex: 5
+      endChangeLevelIndex: 9
+      number: 0
+      numberChangePerLevel: 0
+      probability: 0
+      probabilityChangePerLevel: 0
+      scoreInterval: 1
+      scoreIntervalChangePerLevel: 0
+      startScore: 1
+      startScoreChangePerLevel: 0
+  - levels: 5
+    target:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      score: 15
+      perLevelScoreIncrease: 10
+      time: 25
+      perLevelTimeIncrease: 15
+      scoreBasedDivider: 2
+    reactionTime:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 2
+      minChangePerLevel: -0.1
+      max: 4
+      maxChangePerLevel: -0.2
+      changePerScore: -0.3
+      changePerScoreChangePerLevel: 0.05
+    shapesOnScreen:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 1
+      minChangePerLevel: 0.5
+      max: 2
+      maxChangePerLevel: 1
+      interval: 5
+      intervalChangePerLevel: -0.4
+    randomRotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      probability: 0.5
+      probabilityChangePerLevel: 0
+      reactionTime: 0.9
+      reactionTimeChangePerLevel: 0
+      rotationReactionTime: 0.25
+      rotationReactionTimeChangePerLevel: 0
+      timeInterval: 1.5
+      timeIntervalChangePerLevel: -0.1
+    rotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 30
+      minChangePerLevel: 3
+      max: 60
+      maxChangePerLevel: 3
+    initialBaskeMode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 0
+      shapeModeDivider: 2
+    mode:
+      startChangeLevelIndex: 2
+      endChangeLevelIndex: 9
+      maxAtOnce: 1
+      maxAtOnceChangePerLevel: 0
+      scoreCooldown: 1
+      scoreCooldownChangePerLevel: 0
+      timeCooldown: 1
+      timeCooldownChangePerLevel: 0
+      startScore: 5
+      startScoreChangePerLevel: -1
+      reactionTime: 0.75
+      reactionTimeChangePerLevel: 0
+    basketMode:
+      startChangeLevelIndex: 1
+      endChangeLevelIndex: 9
+      scoreInterval: 5
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0
+      scoreBasedDivider: 1
+    basketColors:
+      startChangeLevelIndex: 5
+      endChangeLevelIndex: 9
+      scoreInterval: 10
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0
+      probabilityChangePerLevel: 0
+      scoreBasedDivider: 1
+    basketShapes:
+      startChangeLevelIndex: 2
+      endChangeLevelIndex: 5
+      scoreInterval: 5
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0
+      probabilityChangePerLevel: 0.165
+      scoreBasedDivider: 1
+    freezeBonus:
+      startChangeLevelIndex: 5
+      endChangeLevelIndex: 9
+      number: 0
+      numberChangePerLevel: 0
+      probability: 0
+      probabilityChangePerLevel: 0
+      scoreInterval: 1
+      scoreIntervalChangePerLevel: 0
+      startScore: 1
+      startScoreChangePerLevel: 0
+    explosionBonus:
+      startChangeLevelIndex: 5
+      endChangeLevelIndex: 9
+      number: 0
+      numberChangePerLevel: 0
+      probability: 0
+      probabilityChangePerLevel: 0
+      scoreInterval: 1
+      scoreIntervalChangePerLevel: 0
+      startScore: 1
+      startScoreChangePerLevel: 0
+    heartBonus:
+      startChangeLevelIndex: 5
+      endChangeLevelIndex: 9
+      number: 0
+      numberChangePerLevel: 0
+      probability: 0
+      probabilityChangePerLevel: 0
+      scoreInterval: 1
+      scoreIntervalChangePerLevel: 0
+      startScore: 1
+      startScoreChangePerLevel: 0
+  - levels: 5
+    target:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      score: 20
+      perLevelScoreIncrease: 10
+      time: 30
+      perLevelTimeIncrease: 15
+      scoreBasedDivider: 2
+    reactionTime:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 1.9
+      minChangePerLevel: -0.1
+      max: 3.5
+      maxChangePerLevel: -0.2
+      changePerScore: -0.3
+      changePerScoreChangePerLevel: 0.05
+    shapesOnScreen:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 1
+      minChangePerLevel: 0.5
+      max: 2
+      maxChangePerLevel: 1
+      interval: 5
+      intervalChangePerLevel: -0.4
+    randomRotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      probability: 0.5
+      probabilityChangePerLevel: 0
+      reactionTime: 0.9
+      reactionTimeChangePerLevel: 0
+      rotationReactionTime: 0.25
+      rotationReactionTimeChangePerLevel: 0
+      timeInterval: 1.5
+      timeIntervalChangePerLevel: -0.1
+    rotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 30
+      minChangePerLevel: 3
+      max: 60
+      maxChangePerLevel: 3
+    initialBaskeMode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 0
+      shapeModeDivider: 2
+    mode:
+      startChangeLevelIndex: 2
+      endChangeLevelIndex: 9
+      maxAtOnce: 2
+      maxAtOnceChangePerLevel: 0
+      scoreCooldown: 1
+      scoreCooldownChangePerLevel: 0
+      timeCooldown: 1
+      timeCooldownChangePerLevel: 0
+      startScore: 5
+      startScoreChangePerLevel: -1
+      reactionTime: 0.75
+      reactionTimeChangePerLevel: 0
+    basketMode:
+      startChangeLevelIndex: 1
+      endChangeLevelIndex: 9
+      scoreInterval: 5
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0
+      scoreBasedDivider: 1
+    basketColors:
+      startChangeLevelIndex: 2
+      endChangeLevelIndex: 9
+      scoreInterval: 5
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0
+      scoreBasedDivider: 1
+    basketShapes:
+      startChangeLevelIndex: 2
+      endChangeLevelIndex: 5
+      scoreInterval: 5
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0
+      probabilityChangePerLevel: 0.165
+      scoreBasedDivider: 1
+    freezeBonus:
+      startChangeLevelIndex: 5
+      endChangeLevelIndex: 9
+      number: 0
+      numberChangePerLevel: 0
+      probability: 0
+      probabilityChangePerLevel: 0
+      scoreInterval: 1
+      scoreIntervalChangePerLevel: 0
+      startScore: 1
+      startScoreChangePerLevel: 0
+    explosionBonus:
+      startChangeLevelIndex: 5
+      endChangeLevelIndex: 9
+      number: 0
+      numberChangePerLevel: 0
+      probability: 0
+      probabilityChangePerLevel: 0
+      scoreInterval: 1
+      scoreIntervalChangePerLevel: 0
+      startScore: 1
+      startScoreChangePerLevel: 0
+    heartBonus:
+      startChangeLevelIndex: 5
+      endChangeLevelIndex: 9
+      number: 0
+      numberChangePerLevel: 0
+      probability: 0
+      probabilityChangePerLevel: 0
+      scoreInterval: 1
+      scoreIntervalChangePerLevel: 0
+      startScore: 1
+      startScoreChangePerLevel: 0
+  - levels: 5
+    target:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      score: 25
+      perLevelScoreIncrease: 10
+      time: 35
+      perLevelTimeIncrease: 15
+      scoreBasedDivider: 2
+    reactionTime:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 1.9
+      minChangePerLevel: -0.1
+      max: 3.5
+      maxChangePerLevel: -0.2
+      changePerScore: -0.3
+      changePerScoreChangePerLevel: 0.05
+    shapesOnScreen:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 2
+      minChangePerLevel: 0.5
+      max: 3
+      maxChangePerLevel: 1
+      interval: 5
+      intervalChangePerLevel: -0.4
+    randomRotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      probability: 0.5
+      probabilityChangePerLevel: 0
+      reactionTime: 0.9
+      reactionTimeChangePerLevel: 0
+      rotationReactionTime: 0.25
+      rotationReactionTimeChangePerLevel: 0
+      timeInterval: 1.5
+      timeIntervalChangePerLevel: -0.1
+    rotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 30
+      minChangePerLevel: 3
+      max: 90
+      maxChangePerLevel: 3
+    initialBaskeMode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 0
+      shapeModeDivider: 2
+    mode:
+      startChangeLevelIndex: 2
+      endChangeLevelIndex: 9
+      maxAtOnce: 2
+      maxAtOnceChangePerLevel: 0
+      scoreCooldown: 1
+      scoreCooldownChangePerLevel: 0
+      timeCooldown: 1
+      timeCooldownChangePerLevel: 0
+      startScore: 5
+      startScoreChangePerLevel: -1
+      reactionTime: 0.75
+      reactionTimeChangePerLevel: 0
+    basketMode:
+      startChangeLevelIndex: 1
+      endChangeLevelIndex: 9
+      scoreInterval: 5
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0
+      scoreBasedDivider: 1
+    basketColors:
+      startChangeLevelIndex: 2
+      endChangeLevelIndex: 9
+      scoreInterval: 5
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0
+      scoreBasedDivider: 1
+    basketShapes:
+      startChangeLevelIndex: 2
+      endChangeLevelIndex: 5
+      scoreInterval: 5
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0
+      probabilityChangePerLevel: 0.165
+      scoreBasedDivider: 1
+    freezeBonus:
+      startChangeLevelIndex: 5
+      endChangeLevelIndex: 9
+      number: 0
+      numberChangePerLevel: 0
+      probability: 0
+      probabilityChangePerLevel: 0
+      scoreInterval: 1
+      scoreIntervalChangePerLevel: 0
+      startScore: 1
+      startScoreChangePerLevel: 0
+    explosionBonus:
+      startChangeLevelIndex: 5
+      endChangeLevelIndex: 9
+      number: 0
+      numberChangePerLevel: 0
+      probability: 0
+      probabilityChangePerLevel: 0
+      scoreInterval: 1
+      scoreIntervalChangePerLevel: 0
+      startScore: 1
+      startScoreChangePerLevel: 0
+    heartBonus:
+      startChangeLevelIndex: 2
+      endChangeLevelIndex: 9
+      number: 1
+      numberChangePerLevel: 0.5
+      probability: 0.75
+      probabilityChangePerLevel: 0
+      scoreInterval: 5
+      scoreIntervalChangePerLevel: 0
+      startScore: 1
+      startScoreChangePerLevel: 0
+  - levels: 5
+    target:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      score: 30
+      perLevelScoreIncrease: 10
+      time: 40
+      perLevelTimeIncrease: 15
+      scoreBasedDivider: 2
+    reactionTime:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 1.9
+      minChangePerLevel: -0.1
+      max: 3.5
+      maxChangePerLevel: -0.2
+      changePerScore: -0.3
+      changePerScoreChangePerLevel: 0.05
+    shapesOnScreen:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 2
+      minChangePerLevel: 0.5
+      max: 3
+      maxChangePerLevel: 1
+      interval: 5
+      intervalChangePerLevel: -0.4
+    randomRotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      probability: 0.5
+      probabilityChangePerLevel: 0
+      reactionTime: 0.9
+      reactionTimeChangePerLevel: 0
+      rotationReactionTime: 0.25
+      rotationReactionTimeChangePerLevel: 0
+      timeInterval: 1.5
+      timeIntervalChangePerLevel: -0.1
+    rotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 45
+      minChangePerLevel: 3
+      max: 100
+      maxChangePerLevel: 3
+    initialBaskeMode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 0
+      shapeModeDivider: 2
+    mode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      maxAtOnce: 2
+      maxAtOnceChangePerLevel: 0
+      scoreCooldown: 0
+      scoreCooldownChangePerLevel: 0
+      timeCooldown: 1
+      timeCooldownChangePerLevel: 0
+      startScore: 0
+      startScoreChangePerLevel: 0
+      reactionTime: 0.75
+      reactionTimeChangePerLevel: 0
+    basketMode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      scoreInterval: 5
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreBasedDivider: 1
+    basketColors:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      scoreInterval: 5
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreBasedDivider: 1
+    basketShapes:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 5
+      scoreInterval: 5
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreBasedDivider: 1
+    freezeBonus:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      number: 0
+      numberChangePerLevel: 0.25
+      probability: 0.25
+      probabilityChangePerLevel: 0.05
+      scoreInterval: 10
+      scoreIntervalChangePerLevel: 0
+      startScore: 1
+      startScoreChangePerLevel: 0
+    explosionBonus:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      number: 0
+      numberChangePerLevel: 0.25
+      probability: 0.25
+      probabilityChangePerLevel: 0.05
+      scoreInterval: 25
+      scoreIntervalChangePerLevel: 0
+      startScore: 0
+      startScoreChangePerLevel: 0
+    heartBonus:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      number: 0
+      numberChangePerLevel: 0.4
+      probability: 0.5
+      probabilityChangePerLevel: 0
+      scoreInterval: 10
+      scoreIntervalChangePerLevel: 0
+      startScore: 0
+      startScoreChangePerLevel: -0.5
+  - levels: 5
+    target:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      score: 35
+      perLevelScoreIncrease: 10
+      time: 50
+      perLevelTimeIncrease: 15
+      scoreBasedDivider: 2
+    reactionTime:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 1.9
+      minChangePerLevel: -0.1
+      max: 3.5
+      maxChangePerLevel: -0.2
+      changePerScore: -0.3
+      changePerScoreChangePerLevel: 0.05
+    shapesOnScreen:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 3
+      minChangePerLevel: 0.5
+      max: 4
+      maxChangePerLevel: 1
+      interval: 5
+      intervalChangePerLevel: -0.4
+    randomRotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      probability: 0.5
+      probabilityChangePerLevel: 0
+      reactionTime: 0.9
+      reactionTimeChangePerLevel: 0
+      rotationReactionTime: 0.25
+      rotationReactionTimeChangePerLevel: 0
+      timeInterval: 1.5
+      timeIntervalChangePerLevel: -0.1
+    rotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 45
+      minChangePerLevel: 3
+      max: 100
+      maxChangePerLevel: 3
+    initialBaskeMode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 0
+      shapeModeDivider: 2
+    mode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      maxAtOnce: 2
+      maxAtOnceChangePerLevel: 0.5
+      scoreCooldown: 0
+      scoreCooldownChangePerLevel: 0
+      timeCooldown: 1
+      timeCooldownChangePerLevel: 0
+      startScore: 10
+      startScoreChangePerLevel: -2
+      reactionTime: 0.75
+      reactionTimeChangePerLevel: 0
+    basketMode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      scoreInterval: 7
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreBasedDivider: 1
+    basketColors:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      scoreInterval: 5
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreBasedDivider: 1
+    basketShapes:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 5
+      scoreInterval: 7
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreBasedDivider: 1
+    freezeBonus:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      number: 1
+      numberChangePerLevel: 0.25
+      probability: 0.25
+      probabilityChangePerLevel: 0.05
+      scoreInterval: 10
+      scoreIntervalChangePerLevel: 0
+      startScore: 0
+      startScoreChangePerLevel: 0
+    explosionBonus:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      number: 1
+      numberChangePerLevel: 0.25
+      probability: 0.25
+      probabilityChangePerLevel: 0.05
+      scoreInterval: 15
+      scoreIntervalChangePerLevel: 0
+      startScore: 0
+      startScoreChangePerLevel: 0
+    heartBonus:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      number: 1
+      numberChangePerLevel: 0.4
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreInterval: 10
+      scoreIntervalChangePerLevel: 0
+      startScore: 0
+      startScoreChangePerLevel: 0
+  - levels: 5
+    target:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      score: 40
+      perLevelScoreIncrease: 10
+      time: 60
+      perLevelTimeIncrease: 15
+      scoreBasedDivider: 2
+    reactionTime:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 1.8
+      minChangePerLevel: -0.1
+      max: 3.5
+      maxChangePerLevel: -0.2
+      changePerScore: -0.3
+      changePerScoreChangePerLevel: 0.05
+    shapesOnScreen:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 4
+      minChangePerLevel: 0.5
+      max: 5
+      maxChangePerLevel: 1
+      interval: 5
+      intervalChangePerLevel: -0.4
+    randomRotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      probability: 0.5
+      probabilityChangePerLevel: 0
+      reactionTime: 0.9
+      reactionTimeChangePerLevel: 0
+      rotationReactionTime: 0.25
+      rotationReactionTimeChangePerLevel: 0
+      timeInterval: 1.5
+      timeIntervalChangePerLevel: -0.1
+    rotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 45
+      minChangePerLevel: 3
+      max: 100
+      maxChangePerLevel: 3
+    initialBaskeMode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 0
+      shapeModeDivider: 2
+    mode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      maxAtOnce: 2
+      maxAtOnceChangePerLevel: 0.5
+      scoreCooldown: 0
+      scoreCooldownChangePerLevel: 0
+      timeCooldown: 1
+      timeCooldownChangePerLevel: 0
+      startScore: 10
+      startScoreChangePerLevel: -2
+      reactionTime: 0.75
+      reactionTimeChangePerLevel: 0
+    basketMode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      scoreInterval: 7
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreBasedDivider: 1
+    basketColors:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      scoreInterval: 5
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreBasedDivider: 1
+    basketShapes:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 5
+      scoreInterval: 7
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreBasedDivider: 1
+    freezeBonus:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      number: 2
+      numberChangePerLevel: 0.25
+      probability: 0.3
+      probabilityChangePerLevel: 0.05
+      scoreInterval: 10
+      scoreIntervalChangePerLevel: 0
+      startScore: 5
+      startScoreChangePerLevel: 0
+    explosionBonus:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 0
+      number: 1
+      numberChangePerLevel: 0.25
+      probability: 0.3
+      probabilityChangePerLevel: 0.05
+      scoreInterval: 15
+      scoreIntervalChangePerLevel: 0
+      startScore: 5
+      startScoreChangePerLevel: 0
+    heartBonus:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      number: 1
+      numberChangePerLevel: 0.5
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreInterval: 10
+      scoreIntervalChangePerLevel: 0
+      startScore: 5
+      startScoreChangePerLevel: 0
+  - levels: 5
+    target:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      score: 45
+      perLevelScoreIncrease: 10
+      time: 65
+      perLevelTimeIncrease: 15
+      scoreBasedDivider: 2
+    reactionTime:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 1.7
+      minChangePerLevel: -0.1
+      max: 3.5
+      maxChangePerLevel: -0.2
+      changePerScore: -0.3
+      changePerScoreChangePerLevel: 0.05
+    shapesOnScreen:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 2
+      minChangePerLevel: 0.5
+      max: 6
+      maxChangePerLevel: 1
+      interval: 5
+      intervalChangePerLevel: -0.4
+    randomRotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      probability: 0.5
+      probabilityChangePerLevel: 0
+      reactionTime: 0.9
+      reactionTimeChangePerLevel: 0
+      rotationReactionTime: 0.25
+      rotationReactionTimeChangePerLevel: 0
+      timeInterval: 1.5
+      timeIntervalChangePerLevel: -0.1
+    rotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 45
+      minChangePerLevel: 3
+      max: 100
+      maxChangePerLevel: 3
+    initialBaskeMode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 0
+      shapeModeDivider: 2
+    mode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      maxAtOnce: 2
+      maxAtOnceChangePerLevel: 0.5
+      scoreCooldown: 0
+      scoreCooldownChangePerLevel: 0
+      timeCooldown: 1
+      timeCooldownChangePerLevel: 0
+      startScore: 10
+      startScoreChangePerLevel: -2
+      reactionTime: 0.75
+      reactionTimeChangePerLevel: 0
+    basketMode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      scoreInterval: 7
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreBasedDivider: 1
+    basketColors:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      scoreInterval: 5
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreBasedDivider: 1
+    basketShapes:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 5
+      scoreInterval: 7
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreBasedDivider: 1
+    freezeBonus:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      number: 2
+      numberChangePerLevel: 0.25
+      probability: 0.4
+      probabilityChangePerLevel: 0.05
+      scoreInterval: 10
+      scoreIntervalChangePerLevel: 0
+      startScore: 5
+      startScoreChangePerLevel: 0
+    explosionBonus:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 0
+      number: 2
+      numberChangePerLevel: 0.25
+      probability: 0.35
+      probabilityChangePerLevel: 0.05
+      scoreInterval: 15
+      scoreIntervalChangePerLevel: 0
+      startScore: 5
+      startScoreChangePerLevel: 0
+    heartBonus:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      number: 2
+      numberChangePerLevel: 0.5
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreInterval: 10
+      scoreIntervalChangePerLevel: 0
+      startScore: 10
+      startScoreChangePerLevel: 0
+  - levels: 5
+    target:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      score: 50
+      perLevelScoreIncrease: 10
+      time: 70
+      perLevelTimeIncrease: 15
+      scoreBasedDivider: 2
+    reactionTime:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 1.6
+      minChangePerLevel: -0.1
+      max: 3.5
+      maxChangePerLevel: -0.2
+      changePerScore: -0.3
+      changePerScoreChangePerLevel: 0.05
+    shapesOnScreen:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 1
+      minChangePerLevel: 0.5
+      max: 6
+      maxChangePerLevel: 1
+      interval: 5
+      intervalChangePerLevel: -0.4
+    randomRotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      probability: 0.5
+      probabilityChangePerLevel: 0
+      reactionTime: 0.9
+      reactionTimeChangePerLevel: 0
+      rotationReactionTime: 0.25
+      rotationReactionTimeChangePerLevel: 0
+      timeInterval: 1.5
+      timeIntervalChangePerLevel: -0.1
+    rotation:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      min: 45
+      minChangePerLevel: 3
+      max: 100
+      maxChangePerLevel: 3
+    initialBaskeMode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 0
+      shapeModeDivider: 2
+    mode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      maxAtOnce: 2
+      maxAtOnceChangePerLevel: 0.5
+      scoreCooldown: 0
+      scoreCooldownChangePerLevel: 0
+      timeCooldown: 1
+      timeCooldownChangePerLevel: 0
+      startScore: 10
+      startScoreChangePerLevel: -2
+      reactionTime: 0.75
+      reactionTimeChangePerLevel: 0
+    basketMode:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      scoreInterval: 7
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreBasedDivider: 1
+    basketColors:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      scoreInterval: 5
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreBasedDivider: 1
+    basketShapes:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 5
+      scoreInterval: 7
+      scoreIntervalChangePerLevel: 0
+      timeInterval: 10
+      timeIntervalChangePerLevel: 0
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreBasedDivider: 1
+    freezeBonus:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      number: 3
+      numberChangePerLevel: 0.25
+      probability: 0.4
+      probabilityChangePerLevel: 0.05
+      scoreInterval: 15
+      scoreIntervalChangePerLevel: 0
+      startScore: 5
+      startScoreChangePerLevel: 0
+    explosionBonus:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      number: 3
+      numberChangePerLevel: 0.25
+      probability: 0.4
+      probabilityChangePerLevel: 0.05
+      scoreInterval: 20
+      scoreIntervalChangePerLevel: 0
+      startScore: 5
+      startScoreChangePerLevel: 0
+    heartBonus:
+      startChangeLevelIndex: 0
+      endChangeLevelIndex: 9
+      number: 1
+      numberChangePerLevel: 0.25
+      probability: 0.5
+      probabilityChangePerLevel: 0.05
+      scoreInterval: 15
+      scoreIntervalChangePerLevel: 0
+      startScore: 0
+      startScoreChangePerLevel: 0
+  levels:
+  - {fileID: 1053364327470788}
+  - {fileID: 1170700576382272}
+  - {fileID: 1762876291593016}
+  - {fileID: 1871452911173784}
+  - {fileID: 1996961969828576}
+  - {fileID: 1415959250591378}
+  - {fileID: 1720517249585120}
+  - {fileID: 1049576217590230}
+  - {fileID: 1637904978476284}
+  - {fileID: 1314484439032998}
+  - {fileID: 1594563328400572}
+  - {fileID: 1174049335872820}
+  - {fileID: 1475795776122484}
+  - {fileID: 1373236507928754}
+  - {fileID: 1434216047176442}
+  - {fileID: 1906261753167970}
+  - {fileID: 1995405515720260}
+  - {fileID: 1855281288915186}
+  - {fileID: 1003597830323348}
+  - {fileID: 1888429202527858}
+  - {fileID: 1625593411971012}
+  - {fileID: 1509672069474534}
+  - {fileID: 1748816308438704}
+  - {fileID: 1541059263779934}
+  - {fileID: 1485869998232528}
+  - {fileID: 1743099630903120}
+  - {fileID: 1657775936530614}
+  - {fileID: 1683334090367138}
+  - {fileID: 1785043318827000}
+  - {fileID: 1501907158119882}
+  - {fileID: 1995626129223186}
+  - {fileID: 1324495865220860}
+  - {fileID: 1895396976164144}
+  - {fileID: 1648599111516038}
+  - {fileID: 1047217671958846}
+  - {fileID: 1198541101242566}
+  - {fileID: 1653672910260622}
+  - {fileID: 1037709685859376}
+  - {fileID: 1473827366123732}
+  - {fileID: 1191014333227736}
+  - {fileID: 1232967132562706}
+  - {fileID: 1011072088265592}
+  - {fileID: 1031178380492626}
+  - {fileID: 1219744729748848}
+  - {fileID: 1352635614832102}
+--- !u!114 &114979841531050124
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995405515720260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 0
+    score: 35
+    time: 50
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 0.9
+    probability: 0.5
+    timeInterval: 1.4
+  rotation:
+    min: 48
+    max: 93
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 2
+    reactionTime: 0.75
+    scoreCooldown: 1
+    startScore: 5
+    timeCooldown: 10
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  basketShapes:
+    scoreBased: 1
+    probability: 0
+    timeInterval: 5
+    scoreInterval: 5
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 5
+    scoreInterval: 5
+  heart:
+    max: 9
+    number: 1
+    scoreInterval: 5
+    probability: 0.75
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 2
+    max: 4
+    increaseScoreInterval: 4
+  playerReactionTime:
+    min: 1.8
+    max: 3.3
+    changePerScore: -0.25
+  additionalShapes: 010000000400000008000000
+--- !u!114 &114999600959574572
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962390516082054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6bdea228b2036e4f81ddc5451090406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: T:1 L:1
+  hiddenLevelsEndOffset: 2

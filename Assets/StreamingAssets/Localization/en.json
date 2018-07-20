@@ -1,0 +1,108 @@
+{
+	"items":
+	[
+		{"key":"shape", "value":"SHAPE"},
+		{"key":"color", "value":"COLOR"},
+
+		{"key":"seconds", "value":"Seconds"},
+		{"key":"tryToSurvive", "value":"Try to survive"},
+		{"key":"tryToScore", "value":"Try to score"},
+		{"key":"tryToBeat", "value":"Try to beat"},
+		{"key":"points", "value":"Points"},
+
+		{"key":"levels", "value":"Levels"},
+		{"key":"endless", "value":"Endless"},
+		{"key":"configurableMode", "value":"Configurable Mode"},
+		{"key":"donateRemoveAds", "value":"Donate & Remove Ads"},
+		{"key":"themes", "value":"Themes"},
+
+		{"key":"back", "value":"Back"},
+		{"key":"skip", "value":"Skip"},
+		{"key":"replay", "value":"Replay"},
+		{"key":"mainMenu", "value":"Main Menu"},
+
+
+		{"key":"oops", "value":"Oops!"},
+		{"key":"wrongShape", "value":"Wrong shape"},
+		{"key":"wrongColor", "value":"Wrong color"},
+		{"key":"goalSurvive", "value":"You survived"},
+		{"key":"goalScore", "value":"You scored"},
+		
+		{"key":"winText", "value":"You've made it!"},
+		{"key":"congrats", "value":"Congradulations!"},
+		{"key":"levelsUnlocked", "value":"All levels unlocked"},
+		{"key":"next", "value":"Next level"},
+		{"key":"playEndless", "value":"Play Endless"},
+		{"key":"rate", "value":"Rate"},
+		{"key":"share", "value":"Share"},
+
+		{"key":"donate", "value":"Donate"},
+		{"key":"donateMessange", "value":"By bying anything in the game you are supporting dev team and inform us that you want  us to continue development of the games like this."},
+		{"key":"continueButton", "value":"Tap to continue"},
+
+		{"key":"pause", "value":"Pause"},
+		{"key":"resume", "value":"Resume"},
+
+		{"key":"configurableMode", "value":"Configurable Mode"},
+		{"key":"play", "value":"Play"},
+		{"key":"configure", "value":"Configure"},
+		{"key":"startingMode", "value":"Starting Mode"},
+		{"key":"shapeToggle", "value":"Shape"},
+		{"key":"colorToggle", "value":"Color"},
+		{"key":"shapesOnScreen", "value":"Shapes on Screen"},
+		{"key":"min", "value":"Min"},
+		{"key":"max", "value":"Max"},
+		{"key":"sec", "value":"sec"},
+		{"key":"%", "value":"%"},
+		{"key":"interval", "value":"Interval"},
+		{"key":"rotationSpeed", "value":"Rotation Speed"},
+		{"key":"randomRotation", "value":"Random Rotation"},
+		{"key":"probability", "value":"Probability"},
+		{"key":"reactionTime", "value":"Reaction Time"},
+		{"key":"change", "value":"Change"},
+		{"key":"gameModeChange", "value":"Game Mode Change"},
+		{"key":"scores", "value":"scores"},
+		{"key":"gameColorsChange", "value":"Game Colors Change"},
+		{"key":"basketShapesChange", "value":"Basket Shapes Change"},
+		{"key":"modesChange", "value":"Modes Change"},
+		{"key":"maxAtOnce", "value":"Max at once"},
+		{"key":"scoreCooldown", "value":"Score Cooldown"},
+		{"key":"timeCooldown", "value":"Time Cooldown"},
+		{"key":"reactionTime", "value":"Reaction Time"},
+		{"key":"startScore", "value":"Start Score"},
+		{"key":"lifeBonus", "value":"Life Bonus"},
+		{"key":"number", "value":"Number"},
+		{"key":"scoreInterval", "value":"Score Interval"},
+		{"key":"freezeBonus", "value":"Freeze Bonus"},
+		{"key":"explosionBonus", "value":"Explosion Bonus"},
+		{"key":"target", "value":"Target"},
+		{"key":"endlessTarget", "value":"Endless mode hasn't target"},
+		{"key":"save", "value":"Save"},
+		{"key":"revert", "value":"Revert"},
+
+
+
+
+
+
+
+
+		{"key":"free", "value":"Free"},
+		{"key":"buy", "value":"Buy"},
+
+		{"key":"chooseRecord", "value":"Choose Record"},
+		{"key":"score", "value":"Score"},
+		{"key":"time", "value":"Time"},
+		{"key":"bestScore", "value":"Best Score"},
+		{"key":"bestTime", "value":"Best Time"},
+
+		{"key":"pauseTutorial", "value":"To pause the game you need to swipe up or down"},
+		{"key":"bonusTutorial", "value":"Tap on bonus to catch it."},
+		{"key":"lifeBonusTutorial", "value":"\"Life\" bonus gives you a second chance if you didn't catch figure rightly. It will be used automatically."},
+		{"key":"freezeBonusTutorial", "value":"\"Freeze\" bonus slows down shapes on screen for a limited time. Swipe right to use."},
+		{"key":"explosionBonusTutorial", "value":"\"Explosion\" bonus explodes shapes on screen. Swipe left to use bonus."},
+		{"key":"life", "value":"life"},
+		{"key":"explosion", "value":"explosion"},
+		{"key":"freeze", "value":"freeze"}
+	]
+}

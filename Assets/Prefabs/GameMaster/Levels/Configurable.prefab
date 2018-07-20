@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1276010682000062}
+  m_IsPrefabParent: 1
+--- !u!1 &1276010682000062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4270634067617106}
+  - component: {fileID: 114228003633109992}
+  m_Layer: 0
+  m_Name: Configurable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4270634067617106
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1276010682000062}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114228003633109992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1276010682000062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    endless: 0
+    scoreBased: 1
+    score: 100
+    time: 100
+  slowdown:
+    inTime: 0.25
+    stayTime: 1
+    outTime: 3
+    speedScale: 0.1
+    type: 3
+  bonusCatchSlowdown:
+    inTime: 0.1
+    stayTime: 1
+    outTime: 2
+    speedScale: 0.5
+    type: 2
+  randomRotation:
+    rotationReactionTime: 0.25
+    reactionTime: 1
+    probability: 0.5
+    timeInterval: 1
+  rotation:
+    min: 45
+    max: 120
+  initialGameMode: 2
+  modeChange:
+    maxAtOnce: 3
+    reactionTime: 0.75
+    scoreCooldown: 5
+    startScore: 1
+    timeCooldown: 5
+  basketMode:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 10
+    scoreInterval: 10
+  basketShapes:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 10
+    scoreInterval: 10
+  basketColors:
+    scoreBased: 1
+    probability: 0.5
+    timeInterval: 10
+    scoreInterval: 10
+  heart:
+    max: 9
+    number: 100
+    scoreInterval: 25
+    probability: 0.5
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 2
+      outTime: 5
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  freeze:
+    max: 99
+    number: 100
+    scoreInterval: 15
+    probability: 0.5
+    startScore: 0
+    slowdown:
+      inTime: 1
+      stayTime: 5
+      outTime: 15
+      speedScale: 0.25
+      type: 1
+    useSlowdown: 1
+  explosion:
+    max: 99
+    number: 100
+    scoreInterval: 20
+    probability: 0.5
+    startScore: 0
+    slowdown:
+      inTime: 0.1
+      stayTime: 0.5
+      outTime: 20
+      speedScale: 0.1
+      type: 1
+    useSlowdown: 1
+  shapesOnScreen:
+    upToMinScoreInterval: 1
+    min: 1
+    max: 9
+    increaseScoreInterval: 5
+  playerReactionTime:
+    min: 1.25
+    max: 4
+    changePerScore: -0.1
+  additionalShapes: 01000000040000000a00000008000000090000000b0000000d0000000c000000
