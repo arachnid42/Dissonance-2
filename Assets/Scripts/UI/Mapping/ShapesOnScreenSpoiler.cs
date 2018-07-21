@@ -9,7 +9,8 @@ namespace Assets.Scripts.UI.Mapping
     {
         [SerializeField]
         private Slider minSlider, maxSlider, intervalSlider;
-
+        [SerializeField]
+        private Slider.Data minSliderData = new Slider.Data(), maxSliderData = new Slider.Data(), intervalSliderData = new Slider.Data();
         public override Difficulty.ShapesOnScreen GetData()
         {
             Difficulty.ShapesOnScreen data = new Difficulty.ShapesOnScreen();
@@ -21,20 +22,16 @@ namespace Assets.Scripts.UI.Mapping
 
         public override void SetData(Difficulty.ShapesOnScreen data)
         {
-            minSlider.Min = 1;
-            minSlider.Max = data.max;
-            minSlider.Step = 1;
-            minSlider.Value = data.min;
+            minSliderData.value = data.min;
+            minSliderData.max = data.max;
+            minSlider.SetData(minSliderData);
 
-            maxSlider.Min = data.min;
-            maxSlider.Max = 9;
-            maxSlider.Step = 1;
-            maxSlider.Value = data.max;
+            maxSliderData.value = data.max;
+            maxSliderData.min = data.min;
+            maxSlider.SetData(maxSliderData);
 
-            intervalSlider.Min = 1;
-            intervalSlider.Max = 100;
-            intervalSlider.Step = 1;
-            intervalSlider.Value = data.increaseScoreInterval;
+            intervalSliderData.value = data.increaseScoreInterval;
+            intervalSlider.SetData(intervalSliderData);
         }
     }
 }

@@ -8,6 +8,11 @@ namespace Assets.Scripts.UI.Elements
 {
     public class Slider : MonoBehaviour
     {
+        [System.Serializable]
+        public class Data
+        {
+            public float min, max, value, step;
+        }
         [SerializeField]
         private string name = null, measure = null;
 
@@ -66,6 +71,15 @@ namespace Assets.Scripts.UI.Elements
         {
             get { return step; }
             set { step = value; }
+        }
+
+        public void SetData(Data data)
+        {
+            Min = data.min;
+            Max = data.max;
+            Value = data.value;
+            Step = data.step;
+
         }
 
         private void UpdateValue()

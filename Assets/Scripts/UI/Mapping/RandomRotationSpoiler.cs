@@ -9,7 +9,8 @@ namespace Assets.Scripts.UI.Mapping
     {
         [SerializeField]
         private Slider intervalSlider, probabilitySlider;
-
+        [SerializeField]
+        private Slider.Data intervalSliderData = new Slider.Data(), probabilitySliderData = new Slider.Data();
         public override Difficulty.RandomRotation GetData()
         {
             Difficulty.RandomRotation data = new Difficulty.RandomRotation();
@@ -20,15 +21,11 @@ namespace Assets.Scripts.UI.Mapping
 
         public override void SetData(Difficulty.RandomRotation data)
         {
-            intervalSlider.Min = 0.1f;
-            intervalSlider.Max = 10;
-            intervalSlider.Step = 0.1f;
-            intervalSlider.Value = data.timeInterval;
+            intervalSliderData.value = data.timeInterval;
+            intervalSlider.SetData(intervalSliderData);
 
-            probabilitySlider.Min = 0;
-            probabilitySlider.Max = 1f;
-            probabilitySlider.Step = 0.1f;
-            probabilitySlider.Value = data.probability;
+            probabilitySliderData.value = data.probability;
+            probabilitySlider.SetData(probabilitySliderData);
         }
     }
 }

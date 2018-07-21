@@ -5832,6 +5832,451 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114680255302136794, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114680255302136794, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114680255302136794, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114680255302136794, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: timeIntervalSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114680255302136794, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: timeIntervalSliderData.value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114680255302136794, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: timeIntervalSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114680255302136794, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: probabilitySliderData.max
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114680255302136794, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: probabilitySliderData.step
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114253960435390112, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: numberSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114253960435390112, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: numberSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114253960435390112, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: startScoreSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114253960435390112, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: startScoreSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114253960435390112, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114253960435390112, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114253960435390112, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114253960435390112, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: probabilitySliderData.max
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114253960435390112, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: probabilitySliderData.step
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114111057566706806, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: numberSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114111057566706806, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: numberSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114111057566706806, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: startScoreSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114111057566706806, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: startScoreSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114111057566706806, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114111057566706806, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114111057566706806, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114111057566706806, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: probabilitySliderData.max
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114111057566706806, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: probabilitySliderData.step
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114182856678215250, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: numberSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114182856678215250, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: numberSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114182856678215250, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: startScoreSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114182856678215250, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114182856678215250, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114182856678215250, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114182856678215250, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: probabilitySliderData.max
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114182856678215250, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: probabilitySliderData.step
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114607582664664408, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114607582664664408, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: timeIntervalSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114607582664664408, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: probabilitySliderData.max
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114607582664664408, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: probabilitySliderData.step
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114210677948646568, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114210677948646568, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114210677948646568, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: timeIntervalSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114210677948646568, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: timeIntervalSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114210677948646568, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: probabilitySliderData.step
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114210677948646568, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: probabilitySliderData.max
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: maxAtOnceSliderData.min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: maxAtOnceSliderData.max
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: maxAtOnceSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreCooldownSliderData.min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreCooldownSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreCooldownSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: timeCooldownSliderData.min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: timeCooldownSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: timeCooldownSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: startScoreSliderData.min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: startScoreSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: startScoreSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: reactionTimeSliderData.min
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: reactionTimeSliderData.max
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: reactionTimeSliderData.step
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114246595362258726, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: probabilitySliderData.max
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114246595362258726, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: probabilitySliderData.step
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114246595362258726, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: intervalSliderData.min
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114246595362258726, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: intervalSliderData.max
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114246595362258726, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: intervalSliderData.step
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370430968409436, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: minSliderData.min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370430968409436, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: minSliderData.max
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370430968409436, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: minSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370430968409436, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: maxSliderData.max
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370430968409436, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: maxSliderData.min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370430968409436, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: maxSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370430968409436, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: changeSliderData.min
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370430968409436, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: changeSliderData.step
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114613933587880398, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: minSliderData.max
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 114613933587880398, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: minSliderData.step
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114613933587880398, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: maxSliderData.max
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 114613933587880398, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: maxSliderData.step
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114625915184901898, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: minSliderData.min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114625915184901898, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: minSliderData.max
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114625915184901898, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: minSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114625915184901898, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: maxSliderData.min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114625915184901898, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: maxSliderData.max
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114625915184901898, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: maxSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114625915184901898, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: intervalSliderData.min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114625915184901898, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: intervalSliderData.max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114625915184901898, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: intervalSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114109932361051636, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreTargetSliderData.max
+      value: 9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 114109932361051636, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: timeTargetSliderData.max
+      value: 9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 114109932361051636, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreTargetSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114109932361051636, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: timeTargetSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6de892b3b253d2243952e39506c7b768, type: 2}
   m_IsPrefabParent: 0

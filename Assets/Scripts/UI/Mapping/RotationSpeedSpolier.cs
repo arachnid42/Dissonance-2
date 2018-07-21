@@ -9,7 +9,8 @@ namespace Assets.Scripts.UI.Mapping
     {
         [SerializeField]
         private Slider minSlider, maxSlider;
-
+        [SerializeField]
+        private Slider.Data minSliderData = new Slider.Data(), maxSliderData = new Slider.Data();
         public override Difficulty.Rotation GetData()
         {
             Difficulty.Rotation data = new Difficulty.Rotation();
@@ -20,15 +21,13 @@ namespace Assets.Scripts.UI.Mapping
 
         public override void SetData(Difficulty.Rotation data)
         {
-            minSlider.Min = 0;
-            minSlider.Max = data.max;
-            minSlider.Step = 5;
-            minSlider.Value = data.min;
+            minSliderData.value = data.min;
+            minSliderData.max = data.max;
+            minSlider.SetData(minSliderData);
 
-            maxSlider.Min = data.min;
-            maxSlider.Max = 360;
-            maxSlider.Step = 5;
-            maxSlider.Value = data.max;
+            maxSliderData.value = data.max;
+            maxSliderData.min = data.min;
+            maxSlider.SetData(maxSliderData);
         }
     }
 }

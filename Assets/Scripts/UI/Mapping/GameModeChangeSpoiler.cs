@@ -11,7 +11,8 @@ namespace Assets.Scripts.UI.Mapping
         private Slider scoreIntervalSlider, timeIntervalSlider, probabilitySlider;
         [SerializeField]
         private ToggleGroup toggleGroup;
-
+        [SerializeField]
+        private Slider.Data scoreIntervalSliderData = new Slider.Data(), timeIntervalSliderData = new Slider.Data(), probabilitySliderData = new Slider.Data();
         public override Difficulty.Mode GetData()
         {
             Difficulty.Mode data = new Difficulty.Mode();
@@ -24,20 +25,14 @@ namespace Assets.Scripts.UI.Mapping
 
         public override void SetData(Difficulty.Mode data)
         {
-            scoreIntervalSlider.Min = 0;
-            scoreIntervalSlider.Max = 100;
-            scoreIntervalSlider.Step = 10f;
-            scoreIntervalSlider.Value = data.scoreInterval;
+            scoreIntervalSliderData.value = data.scoreInterval;
+            scoreIntervalSlider.SetData(scoreIntervalSliderData);
 
-            timeIntervalSlider.Min = 0;
-            timeIntervalSlider.Max = 100;
-            timeIntervalSlider.Step = 10;
-            timeIntervalSlider.Value = data.timeInterval;
+            timeIntervalSliderData.value = data.timeInterval;
+            timeIntervalSlider.SetData(timeIntervalSliderData);
 
-            probabilitySlider.Min = 0;
-            probabilitySlider.Max = 1f;
-            probabilitySlider.Step = 0.1f;
-            probabilitySlider.Value = data.probability;
+            probabilitySliderData.value = data.probability;
+            probabilitySlider.SetData(probabilitySliderData);
 
             if (data.scoreBased)
             {

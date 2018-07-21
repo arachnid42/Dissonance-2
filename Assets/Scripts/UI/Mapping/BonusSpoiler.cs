@@ -12,7 +12,9 @@ namespace Assets.Scripts.UI.Mapping
             scoreIntervalSlider, probabilitySlider;
         [SerializeField]
         private int max;
-
+        [SerializeField]
+        private Slider.Data numberSliderData = new Slider.Data(), startScoreSliderData = new Slider.Data(),
+            scoreIntervalSliderData = new Slider.Data(), probabilitySliderData = new Slider.Data();
         public override Difficulty.Bonus GetData()
         {
             Difficulty.Bonus data = new Difficulty.Bonus(max);
@@ -25,25 +27,17 @@ namespace Assets.Scripts.UI.Mapping
 
         public override void SetData(Difficulty.Bonus data)
         {
-            numberSlider.Min = 0;
-            numberSlider.Max = 100;
-            numberSlider.Step = 1;
-            numberSlider.Value = data.number;
+            numberSliderData.value = data.number;
+            numberSlider.SetData(numberSliderData);
 
-            startScoreSlider.Min = 0;
-            startScoreSlider.Max = 100;
-            startScoreSlider.Step = 1;
-            startScoreSlider.Value = data.startScore;
+            startScoreSliderData.value = data.startScore;
+            startScoreSlider.SetData(startScoreSliderData);
 
-            scoreIntervalSlider.Min = 1;
-            scoreIntervalSlider.Max = 100;
-            scoreIntervalSlider.Step = 1;
-            scoreIntervalSlider.Value = data.scoreInterval;
+            scoreIntervalSliderData.value = data.scoreInterval;
+            scoreIntervalSlider.SetData(scoreIntervalSliderData);
 
-            probabilitySlider.Min = 0;
-            probabilitySlider.Max = 1f;
-            probabilitySlider.Step = 0.1f;
-            probabilitySlider.Value = data.probability;
+            probabilitySliderData.value = data.probability;
+            probabilitySlider.SetData(probabilitySliderData);
         }
     }
 }

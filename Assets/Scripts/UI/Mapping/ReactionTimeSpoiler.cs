@@ -9,7 +9,8 @@ namespace Assets.Scripts.UI.Mapping
     {
         [SerializeField]
         private Slider minSlider, maxSlider, changeSlider;
-
+        [SerializeField]
+        private Slider.Data minSliderData = new Slider.Data(), maxSliderData = new Slider.Data(), changeSliderData = new Slider.Data();
         public override Difficulty.ReactionTime GetData()
         {
             Difficulty.ReactionTime data = new Difficulty.ReactionTime();
@@ -21,20 +22,16 @@ namespace Assets.Scripts.UI.Mapping
 
         public override void SetData(Difficulty.ReactionTime data)
         {
-            minSlider.Min = 1;
-            minSlider.Max = data.max;
-            minSlider.Step = 1;
-            minSlider.Value = data.min;
+            minSliderData.value = data.min;
+            minSliderData.max = data.max;
+            minSlider.SetData(minSliderData);
 
-            maxSlider.Min = data.min;
-            maxSlider.Max = 5;
-            maxSlider.Step = 1;
-            maxSlider.Value = data.max;
+            maxSliderData.value = data.max;
+            maxSliderData.min = data.min;
+            maxSlider.SetData(maxSliderData);
 
-            changeSlider.Min = -1;
-            changeSlider.Max = 0;
-            changeSlider.Step = 0.1f;
-            changeSlider.Value = data.changePerScore;
+            changeSliderData.value = data.changePerScore;
+            changeSlider.SetData(changeSliderData);
         }
     }
 }
