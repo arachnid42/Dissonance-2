@@ -128,7 +128,6 @@ namespace Assets.Scripts.Game
         {
             refs.configurableMode.UpdateData(data.configurableModeData);
             data.configurableModeData = refs.configurableMode.GetData();
-
         }
 
         public void ResetConfigurableModeData()
@@ -140,8 +139,8 @@ namespace Assets.Scripts.Game
 
         private IEnumerator FixDataCoroutine()
         {
-            while (DifficultyLevels.Instance == null)
-                yield return null;
+            yield return WaitForDifficultyLevelsInitialization();
+
             temp.configurableModeOriginalData = refs.configurableMode.GetData();
             data.levelsUnlocked = config.devMode ? DifficultyLevels.Instance.LevelCount : Mathf.Clamp(data.levelsUnlocked, 1, DifficultyLevels.Instance.LevelCount);
             if (data.configurableModeData != null)
@@ -149,13 +148,13 @@ namespace Assets.Scripts.Game
             else
                 data.configurableModeData = refs.configurableMode.GetData();
 
-            while (!ColorsPresets.Ready || !ColorsPresetsManager.Ready)
-                yield return null;
+            yield return WaitForColorsPresetsAndManagerInitialization();
 
             if(data.colorPresetName == null)
             {
-                data.colorPresetName = ColorsPresets.Instance.CurrentPreset.name;
+                data.colorPresetName = ColorsPresets.Instance.PresetName;
             }
+
             if(ColorsPresets.Instance.CurrentPreset.name != data.colorPresetName)
             {
                 ColorsPresets.Instance.PresetName = data.colorPresetName;
@@ -163,6 +162,34 @@ namespace Assets.Scripts.Game
             ColorsPresetsManager.Instance.ApplyCurrentColorPreset();
 
             isReady = true;
+        }
+
+        private IEnumerator WaitForDifficultyLevelsInitialization()
+        {
+            while (DifficultyLevels.Instance == null)
+                yield return null;
+        }
+
+        private IEnumerator WaitForColorsPresetsAndManagerInitialization()
+        {
+            while (!ColorsPresets.Ready || !ColorsPresetsManager.Ready)
+                yield return null;
+        }
+
+        private IEnumerator SetColorsPresetsCoroutine(string name)
+        {
+            yield return WaitForColorsPresetsAndManagerInitialization();
+            if (ColorsPresets.Instance.PresetName != name)
+            {
+                data.colorPresetName = name;
+                ColorsPresets.Instance.PresetName = name;
+                ColorsPresetsManager.Instance.ApplyCurrentColorPreset();
+            }
+        }
+
+        public void SetColorsPreset(string name)
+        {
+            StartCoroutine(SetColorsPresetsCoroutine(name));
         }
 
         private void FixData()

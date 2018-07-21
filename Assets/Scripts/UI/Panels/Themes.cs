@@ -39,9 +39,8 @@ namespace Assets.Scripts.UI.Panels
         {
             return () =>
             {
-                ColorsPresets.Instance.CurrentPreset = ColorsPresets.Instance[index];
-                ColorsPresetsManager.Instance.ApplyCurrentColorPreset();
-                StartCoroutine(UpdateThemesSelected());
+                PersistentState.Instance.SetColorsPreset(ColorsPresets.Instance[index].name);
+                UpdateThemesSelected(index);
             };
         }
 
@@ -64,13 +63,10 @@ namespace Assets.Scripts.UI.Panels
             }
         }
 
-        private IEnumerator UpdateThemesSelected()
+        private void UpdateThemesSelected(int index)
         {
-            while (ColorsPresets.Instance == null)
-                yield return null;
             for(int i=0; i<themesButtons.Count; i++)
-                themesButtons[i].GetComponent<ThemeButton>().SetSelected(ColorsPresets.Instance.CurrentPreset.name == ColorsPresets.Instance[i].name);
-
+                themesButtons[i].GetComponent<ThemeButton>().SetSelected(i==index);
         }
 
 
