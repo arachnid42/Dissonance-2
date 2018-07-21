@@ -77,12 +77,12 @@ namespace Assets.Scripts.Game
 
 
         public Data data = new Data();
+        public Config config = new Config();
         [SerializeField]
         private Refs refs = new Refs();
         [SerializeField]
         private Temp temp = new Temp();
-        [SerializeField]
-        private Config config = new Config();
+
 
         private bool isReady = false;
 
@@ -228,7 +228,7 @@ namespace Assets.Scripts.Game
             values["rating"] = rating;
             values["comment"] = comment;
 
-            string name = rating < 4 ? "BAD_RATING" : "GOOD_RATING";
+            string name = rating < config.goodRatingMin ? "BAD_RATING" : "GOOD_RATING";
             Mixpanel.Track(name, values);
             data.rating = new Data.Rating()
             {
