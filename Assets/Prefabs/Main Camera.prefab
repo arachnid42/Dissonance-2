@@ -93,7 +93,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 100.5
+  orthographic size: 100
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -164,7 +164,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultAspectRatio: 0.5625
-  cameraBackgroundQuad: {fileID: 0}
 --- !u!124 &124749893472317600
 Behaviour:
   m_ObjectHideFlags: 1
