@@ -11,10 +11,19 @@ namespace Assets.Scripts.Game
             get { return instance; }
         }
 
+        public static bool Ready
+        {
+            get
+            {
+                return Instance != null && Instance.IsReady;
+            }
+        }
+
         [SerializeField]
         private string presetName = "Default";
         private ColorsPreset currentPreset = null;
         private bool isReady = false;
+
         public bool IsReady
         {
             get { return isReady; }
@@ -24,6 +33,12 @@ namespace Assets.Scripts.Game
         {
             get { return currentPreset; }
             set { currentPreset = value; }
+        }
+
+        public string PresetName
+        {
+            get { return currentPreset.name; }
+            set { currentPreset = GetPresetByName(value); }
         }
 
         public ColorsPreset this[int index]

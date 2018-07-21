@@ -39,7 +39,7 @@ namespace Assets.Scripts.Game
                 public float rating = 0;
                 public long timesPlayed = 0;
             }
-
+            public string colorPresetName = null;
             public int lastLevelIndex = 0;
             public int levelsUnlocked = 1;
 
@@ -148,6 +148,20 @@ namespace Assets.Scripts.Game
                 refs.configurableMode.UpdateData(data.configurableModeData);
             else
                 data.configurableModeData = refs.configurableMode.GetData();
+
+            while (!ColorsPresets.Ready || !ColorsPresetsManager.Ready)
+                yield return null;
+
+            if(data.colorPresetName == null)
+            {
+                data.colorPresetName = ColorsPresets.Instance.CurrentPreset.name;
+            }
+            if(ColorsPresets.Instance.CurrentPreset.name != data.colorPresetName)
+            {
+                ColorsPresets.Instance.PresetName = data.colorPresetName;
+            }
+            ColorsPresetsManager.Instance.ApplyCurrentColorPreset();
+
             isReady = true;
         }
 
