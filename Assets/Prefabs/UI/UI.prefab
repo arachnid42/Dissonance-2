@@ -1407,7 +1407,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1156092938224618
 GameObject:
   m_ObjectHideFlags: 1
@@ -5800,7 +5800,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1666006858751152
 GameObject:
   m_ObjectHideFlags: 1
@@ -12053,6 +12053,16 @@ MonoBehaviour:
   scoreTargetSlider: {fileID: 114714621615534726}
   timeTargetSlider: {fileID: 114050393575594194}
   toggleGroup: {fileID: 114323455932136570}
+  scoreTargetSliderData:
+    min: 10
+    max: 1000
+    value: 0
+    step: 5
+  timeTargetSliderData:
+    min: 10
+    max: 1000
+    value: 0
+    step: 5
 --- !u!114 &114111057566706806
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12064,7 +12074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a68558bed56b6c408fd71926c118104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: explosionBonus
+  name: freezeBonus
   isExpanded: 0
   headerText: {fileID: 114438962157199100}
   toggleButton: {fileID: 114437461994022720}
@@ -12078,7 +12088,27 @@ MonoBehaviour:
   startScoreSlider: {fileID: 114896500579871232}
   scoreIntervalSlider: {fileID: 114706650411247300}
   probabilitySlider: {fileID: 114854273516790570}
-  max: 100
+  max: 99
+  numberSliderData:
+    min: 0
+    max: 100
+    value: 0
+    step: 1
+  startScoreSliderData:
+    min: 0
+    max: 100
+    value: 0
+    step: 1
+  scoreIntervalSliderData:
+    min: 1
+    max: 100
+    value: 0
+    step: 1
+  probabilitySliderData:
+    min: 0
+    max: 1
+    value: 0
+    step: 0.1
 --- !u!114 &114111140229005804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13831,7 +13861,27 @@ MonoBehaviour:
   startScoreSlider: {fileID: 114861202205169290}
   scoreIntervalSlider: {fileID: 114220637417256794}
   probabilitySlider: {fileID: 114465060800631296}
-  max: 100
+  max: 99
+  numberSliderData:
+    min: 0
+    max: 100
+    value: 0
+    step: 1
+  startScoreSliderData:
+    min: 0
+    max: 100
+    value: 0
+    step: 0
+  scoreIntervalSliderData:
+    min: 1
+    max: 100
+    value: 0
+    step: 1
+  probabilitySliderData:
+    min: 0
+    max: 1
+    value: 0
+    step: 0.1
 --- !u!114 &114182908939690694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14662,6 +14712,21 @@ MonoBehaviour:
   timeIntervalSlider: {fileID: 114407204899930004}
   probabilitySlider: {fileID: 114431754111665664}
   toggleGroup: {fileID: 114337408908470860}
+  scoreIntervalSliderData:
+    min: 1
+    max: 100
+    value: 0
+    step: 1
+  timeIntervalSliderData:
+    min: 2.5
+    max: 100
+    value: 0
+    step: 2.5
+  probabilitySliderData:
+    min: 0
+    max: 1
+    value: 0
+    step: 0.1
 --- !u!114 &114211028558994746
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15785,6 +15850,16 @@ MonoBehaviour:
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
   intervalSlider: {fileID: 114201929769505970}
   probabilitySlider: {fileID: 114333741125055420}
+  intervalSliderData:
+    min: 0.1
+    max: 10
+    value: 0
+    step: 0.1
+  probabilitySliderData:
+    min: 0
+    max: 1
+    value: 0
+    step: 0.05
 --- !u!114 &114247096491514804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16120,7 +16195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a68558bed56b6c408fd71926c118104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: explosionBonus
+  name: lifeBonus
   isExpanded: 0
   headerText: {fileID: 114057225694411360}
   toggleButton: {fileID: 114372777786581200}
@@ -16134,7 +16209,27 @@ MonoBehaviour:
   startScoreSlider: {fileID: 114901560912793992}
   scoreIntervalSlider: {fileID: 114809489942312054}
   probabilitySlider: {fileID: 114458428288173804}
-  max: 4
+  max: 9
+  numberSliderData:
+    min: 0
+    max: 100
+    value: 0
+    step: 1
+  startScoreSliderData:
+    min: 0
+    max: 100
+    value: 0
+    step: 1
+  scoreIntervalSliderData:
+    min: 1
+    max: 100
+    value: 0
+    step: 1
+  probabilitySliderData:
+    min: 0
+    max: 1
+    value: 0
+    step: 0.1
 --- !u!114 &114254412094336628
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19504,6 +19599,21 @@ MonoBehaviour:
   minSlider: {fileID: 114914457613254686}
   maxSlider: {fileID: 114664509492616074}
   changeSlider: {fileID: 114098844410319114}
+  minSliderData:
+    min: 0.75
+    max: 5
+    value: 0
+    step: 0.05
+  maxSliderData:
+    min: 0.75
+    max: 5
+    value: 0
+    step: 0.05
+  changeSliderData:
+    min: -1
+    max: 0
+    value: 0
+    step: 0.01
 --- !u!114 &114370573075792356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25731,6 +25841,21 @@ MonoBehaviour:
   timeIntervalSlider: {fileID: 114325968247779252}
   probabilitySlider: {fileID: 114512109153487196}
   toggleGroup: {fileID: 114010125936891620}
+  scoreIntervalSliderData:
+    min: 1
+    max: 100
+    value: 0
+    step: 1
+  timeIntervalSliderData:
+    min: 2.5
+    max: 100
+    value: 0
+    step: 2.5
+  probabilitySliderData:
+    min: 0
+    max: 1
+    value: 0
+    step: 0.1
 --- !u!114 &114607791352828466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25885,6 +26010,16 @@ MonoBehaviour:
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
   minSlider: {fileID: 114018452528697258}
   maxSlider: {fileID: 114804948917974276}
+  minSliderData:
+    min: 30
+    max: 360
+    value: 0
+    step: 5
+  maxSliderData:
+    min: 30
+    max: 360
+    value: 0
+    step: 5
 --- !u!114 &114616467579999772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -26182,6 +26317,21 @@ MonoBehaviour:
   minSlider: {fileID: 114313949391035646}
   maxSlider: {fileID: 114338606042709470}
   intervalSlider: {fileID: 114664584654568770}
+  minSliderData:
+    min: 1
+    max: 9
+    value: 1
+    step: 1
+  maxSliderData:
+    min: 1
+    max: 9
+    value: 1
+    step: 1
+  intervalSliderData:
+    min: 1
+    max: 100
+    value: 1
+    step: 1
 --- !u!114 &114626034649770030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27289,6 +27439,21 @@ MonoBehaviour:
   timeIntervalSlider: {fileID: 114626034649770030}
   probabilitySlider: {fileID: 114288435132777798}
   toggleGroup: {fileID: 114121550254168152}
+  scoreIntervalSliderData:
+    min: 1
+    max: 100
+    value: 0
+    step: 1
+  timeIntervalSliderData:
+    min: 2.5
+    max: 100
+    value: 0
+    step: 2.5
+  probabilitySliderData:
+    min: 0
+    max: 1
+    value: 0
+    step: 0.1
 --- !u!114 &114680777353631830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29234,6 +29399,31 @@ MonoBehaviour:
   timeCooldownSlider: {fileID: 114820571164741438}
   reactionTimeSlider: {fileID: 114265196606415114}
   startScoreSlider: {fileID: 114039275614767262}
+  maxAtOnceSliderData:
+    min: 1
+    max: 3
+    value: 0
+    step: 1
+  scoreCooldownSliderData:
+    min: 1
+    max: 100
+    value: 0
+    step: 1
+  timeCooldownSliderData:
+    min: 2.5
+    max: 100
+    value: 0
+    step: 2.5
+  reactionTimeSliderData:
+    min: 0.5
+    max: 1
+    value: 0
+    step: 0.05
+  startScoreSliderData:
+    min: 0
+    max: 100
+    value: 0
+    step: 1
 --- !u!114 &114761727626973118
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -39678,8 +39868,8 @@ RectTransform:
   m_Father: {fileID: 224428570948569196}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.6935337}
-  m_AnchorMax: {x: 1, y: 0.9999099}
+  m_AnchorMin: {x: 0, y: 0.69362354}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -44704,8 +44894,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 173.48334, y: -105.35}
-  m_SizeDelta: {x: 330, y: 170}
+  m_AnchoredPosition: {x: 257.725, y: -105.35}
+  m_SizeDelta: {x: 485, y: 170}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224695798768500448
 RectTransform:
@@ -46242,8 +46432,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 510.45, y: -105.35}
-  m_SizeDelta: {x: 330, y: 170}
+  m_AnchoredPosition: {x: 763.17505, y: -105.35}
+  m_SizeDelta: {x: 485, y: 170}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224839364129811954
 RectTransform:
@@ -47190,7 +47380,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -510.04993, y: 726.6743}
+  m_AnchoredPosition: {x: -510.26953, y: 726.25}
   m_SizeDelta: {x: 1020.5, y: 4740.9}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224976638955576234

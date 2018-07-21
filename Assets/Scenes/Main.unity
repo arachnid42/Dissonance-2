@@ -5807,7 +5807,7 @@ Prefab:
     - target: {fileID: 224975864040762324, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -510.27
+      value: -510.26953
       objectReference: {fileID: 0}
     - target: {fileID: 224975864040762324, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
@@ -5860,7 +5860,7 @@ Prefab:
     - target: {fileID: 114680255302136794, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
       propertyPath: timeIntervalSliderData.step
-      value: 1
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 114680255302136794, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
@@ -6040,7 +6040,7 @@ Prefab:
     - target: {fileID: 114210677948646568, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
       propertyPath: timeIntervalSliderData.step
-      value: 1
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 114210677948646568, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
@@ -6085,7 +6085,7 @@ Prefab:
     - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
       propertyPath: timeCooldownSliderData.min
-      value: 1
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
@@ -6095,12 +6095,12 @@ Prefab:
     - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
       propertyPath: timeCooldownSliderData.step
-      value: 1
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
       propertyPath: startScoreSliderData.min
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
@@ -6125,7 +6125,7 @@ Prefab:
     - target: {fileID: 114761095426068002, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
       propertyPath: reactionTimeSliderData.step
-      value: 0.1
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 114246595362258726, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
@@ -6135,7 +6135,7 @@ Prefab:
     - target: {fileID: 114246595362258726, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
       propertyPath: probabilitySliderData.step
-      value: 0.1
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 114246595362258726, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
@@ -6155,7 +6155,7 @@ Prefab:
     - target: {fileID: 114370430968409436, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
       propertyPath: minSliderData.min
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 114370430968409436, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
@@ -6165,7 +6165,7 @@ Prefab:
     - target: {fileID: 114370430968409436, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
       propertyPath: minSliderData.step
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 114370430968409436, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
@@ -6175,12 +6175,12 @@ Prefab:
     - target: {fileID: 114370430968409436, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
       propertyPath: maxSliderData.min
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 114370430968409436, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
       propertyPath: maxSliderData.step
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 114370430968409436, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
@@ -6190,7 +6190,7 @@ Prefab:
     - target: {fileID: 114370430968409436, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
       propertyPath: changeSliderData.step
-      value: 0.1
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 114613933587880398, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
@@ -6260,22 +6260,122 @@ Prefab:
     - target: {fileID: 114109932361051636, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
       propertyPath: scoreTargetSliderData.max
-      value: 9999
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 114109932361051636, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
       propertyPath: timeTargetSliderData.max
-      value: 9999
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 114109932361051636, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
       propertyPath: scoreTargetSliderData.step
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114109932361051636, guid: 6de892b3b253d2243952e39506c7b768,
         type: 2}
       propertyPath: timeTargetSliderData.step
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114625915184901898, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: intervalSliderData.value
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114625915184901898, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: maxSliderData.value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114625915184901898, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: minSliderData.value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114613933587880398, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: minSliderData.min
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114613933587880398, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: maxSliderData.min
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114680255302136794, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114680255302136794, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: timeIntervalSliderData.min
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114210677948646568, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114210677948646568, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: timeIntervalSliderData.min
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114607582664664408, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114607582664664408, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: timeIntervalSliderData.min
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114607582664664408, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: timeIntervalSliderData.step
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114607582664664408, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreIntervalSliderData.step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114253960435390112, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: max
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114182856678215250, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: max
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 114111057566706806, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: max
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 114109932361051636, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: timeTargetSliderData.min
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114109932361051636, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: scoreTargetSliderData.min
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114253960435390112, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: name
+      value: lifeBonus
+      objectReference: {fileID: 0}
+    - target: {fileID: 114111057566706806, guid: 6de892b3b253d2243952e39506c7b768,
+        type: 2}
+      propertyPath: name
+      value: freezeBonus
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6de892b3b253d2243952e39506c7b768, type: 2}

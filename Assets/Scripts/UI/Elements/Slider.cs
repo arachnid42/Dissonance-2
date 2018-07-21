@@ -8,6 +8,8 @@ namespace Assets.Scripts.UI.Elements
 {
     public class Slider : MonoBehaviour
     {
+        private const float ROUND_TO_INT_DELTA = 0.001f;
+
         [System.Serializable]
         public class Data
         {
@@ -92,12 +94,17 @@ namespace Assets.Scripts.UI.Elements
             {
                 _value = max;
             }
-            valueText.text = _value.ToString();
+            string newText = null;
             if(measure !=null && measure != "")
             {
                 string measureFinal = LocalizationManager.Instance[measure].ToLower();
-                valueText.text = string.Format("{0} {1}", measureFinal=="%"?(_value*100).ToString():valueText.text, measureFinal);
+                newText = string.Format("{0:0.##} {1}", measureFinal == "%" ? (_value * 100) : _value, measureFinal);
             }
+            else
+            {
+                newText = string.Format("{0:0.##}", _value);
+            }
+            valueText.text = newText;
         }
 
         private bool UpdateBindValues(float val)
