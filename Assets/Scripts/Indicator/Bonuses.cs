@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 namespace Assets.Scripts.Indicator
 {
@@ -8,18 +9,17 @@ namespace Assets.Scripts.Indicator
         private static readonly int EXPLOSION_BONUSES_MAX_COUNT = 10;
         private static readonly int HEART_BONUSES_MAX_COUNT = 9;
 
-
+        [SerializeField]
+        private float hideTime = 0.2f;
+        [SerializeField]
+        private AnimationCurve curve = null;
         [SerializeField]
         private Vector3 hiddenPosition;
         [SerializeField]
         private Vector3 visiblePosition;
         [SerializeField]
         private bool hidden = false;
-        private float hideStage = 0;
-        private float hideTime = 0.2f;
-        private bool hideStarted = false;
-        private Vector3 startPosition;
-        private Vector3 endPosition;
+        
 
         [SerializeField]
         private int freezeBonusesCount = 0;
@@ -51,8 +51,6 @@ namespace Assets.Scripts.Indicator
             Vector3 pos = Vector3.Lerp(heartBonusStartPosition.localPosition, heartBonusesEndPosition.localPosition, lerp);
             return pos;
         }
-
-
 
         public int Freezes
         {
@@ -118,8 +116,6 @@ namespace Assets.Scripts.Indicator
                     }
                 }
 
-                
-                //Debug.Log("SI:" + startIndex + ", EI:" + endIndex + ", xOffset:"+ xOffset);
                 for (int i = 0; i < heartBonusesArray.Length; i++)
                 {
                     var bonus = heartBonusesArray[i];
@@ -136,8 +132,6 @@ namespace Assets.Scripts.Indicator
                             bonus.transform.localPosition = pos;
                             bonus.Enabled = true;
                         }
-                        
-                        
                     }
                     else
                     {
@@ -155,20 +149,14 @@ namespace Assets.Scripts.Indicator
             bool newHidden = heartBonusesCount <= 0 && freezeBonusesCount <= 0 && explosionBonusesCount <= 0;
             if (hidden == newHidden)
                 return;
-            hideStarted = false;
             if (newHidden)
             {
-                startPosition = visiblePosition;
-                endPosition = hiddenPosition;
-                
+                StartCoroutine(UpdatePositionCoroutine(visiblePosition, hiddenPosition));   
             }
             else
             {
-                startPosition = hiddenPosition;
-                endPosition = visiblePosition;
+                StartCoroutine(UpdatePositionCoroutine(hiddenPosition, visiblePosition));
             }
-            hideStage = 0;
-            hideStarted = true;
             hidden = newHidden;
         }
 
@@ -180,7 +168,7 @@ namespace Assets.Scripts.Indicator
             }
         }
 
-        void Start()
+        private void Start()
         {
             heartBonusesArray = new Bonus[HEART_BONUSES_MAX_COUNT];
             var original = heartBonus;
@@ -197,17 +185,16 @@ namespace Assets.Scripts.Indicator
             transform.localPosition = hidden ? hiddenPosition : visiblePosition;
         }
 
-        public void Update()
+        private IEnumerator UpdatePositionCoroutine(Vector3 start, Vector3 end)
         {
-            if (hideStarted)
+            float stage = 0;
+            do
             {
-                hideStage += Time.unscaledDeltaTime / hideTime;
-                transform.localPosition = Vector3.Lerp(startPosition, endPosition, hideStage);
-                hideStarted = hideStage < 1;
-            }
+                stage += Time.unscaledDeltaTime / hideTime;
+                transform.localPosition = Vector3.Lerp(start, end, curve.Evaluate(stage));
+                yield return null;
+            } while (stage < 1);
         }
-
-
 
     }
 }

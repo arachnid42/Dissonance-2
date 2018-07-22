@@ -98,7 +98,7 @@ namespace Assets.Scripts.Localization
             if (Instance == null)
             {
                 yield return StartCoroutine(LoadLocalizationFileCoroutine(GetPath(localization)));
-                DontDestroyOnLoad(gameObject);
+                //DontDestroyOnLoad(gameObject);
                 Instance = this;
             } else if (Instance != this)
             {

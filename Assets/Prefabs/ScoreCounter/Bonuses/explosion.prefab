@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4047798052045870}
   - component: {fileID: 114714825368522550}
   m_Layer: 0
-  m_Name: explosion
+  m_Name: Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -215,6 +215,13 @@ MonoBehaviour:
   isEnabled: 0
   enabledScale: {x: 0.8, y: 0.8, z: 1}
   disabledScale: {x: 0, y: 0, z: 1}
-  time: 0.25
+  hideTime: 0.25
+  moveTime: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   counter: {fileID: 102876603575309044}
   bonusMr: {fileID: 23333481403776390}

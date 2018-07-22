@@ -256,12 +256,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c36f6ce1f0a8534f99961249f81ccb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {fileID: 114849924870794294}
-  destruction: {fileID: 114829672839226214}
-  randomRotation: {fileID: 114742488878189990}
-  falling: {fileID: 114826971366772520}
-  scale: {fileID: 114003312298447976}
-  bonus: {fileID: 114688855274771972}
 --- !u!114 &114688855274771972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -284,11 +278,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4afff4e1c3c526c42a74a6872d69013c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  randomRotationTime: 1
   randomRotations:
   - rotation: {x: 0, y: 0, z: 0}
-    scale: {x: 1, y: 1, z: 1}
     type: 5
+  slowdown:
+    startedTime: 0
+    timeInterval: 1
+    speedScale: 1
 --- !u!114 &114764418185694436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -315,6 +311,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+  slowdown:
+    startedTime: 0
+    timeInterval: 1
+    speedScale: 1
 --- !u!114 &114829672839226214
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -328,6 +328,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleEffect: {fileID: 1436726992590858, guid: 868ada9dd1ae7e8419f0f08339a1eda2,
     type: 2}
+  time: 0.75
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.31249794
+      value: 1.5557213
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.4833374
+      value: 0.9937744
+      inSlope: -2.129755
+      outSlope: -2.129755
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.4374915
+    - serializedVersion: 3
+      time: 0.7875061
+      value: 0.7286835
+      inSlope: -0.6577722
+      outSlope: -0.6577722
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &114849924870794294
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -340,6 +392,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 60
+  slowdown:
+    startedTime: 0
+    timeInterval: 1
+    speedScale: 1
 --- !u!114 &114966684478786540
 MonoBehaviour:
   m_ObjectHideFlags: 1

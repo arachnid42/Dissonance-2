@@ -95,8 +95,6 @@ namespace Assets.Scripts.Game
             if (instance == null)
             {
                 instance = this;
-                if(Application.isPlaying)
-                    DontDestroyOnLoad(gameObject);
                 ApplyCurrentColorPreset();
             }else if (instance != this)
             {

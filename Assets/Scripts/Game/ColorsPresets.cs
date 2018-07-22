@@ -61,7 +61,7 @@ namespace Assets.Scripts.Game
             if (instance == null)
             {
                 instance = this;
-                DontDestroyOnLoad(gameObject);
+                //DontDestroyOnLoad(gameObject);
                 currentPreset = GetPresetByName(presetName);
                 isReady = true;
             }else if(instance != this)

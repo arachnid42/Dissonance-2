@@ -18,7 +18,8 @@ namespace Assets.Scripts.Indicator
         private Vector3 disabledScale = new Vector3(0, 0, 1);
         [SerializeField]
         private float hideTime = 0.25f, moveTime = 0.25f;
-
+        [SerializeField]
+        private AnimationCurve curve = null;
 
         private int number = 0;
         [SerializeField]
@@ -109,7 +110,7 @@ namespace Assets.Scripts.Indicator
             while (stage <= 1)
             {
                 stage += Time.unscaledDeltaTime / hideTime;
-                transform.localScale = Vector3.Slerp(start, end, stage);
+                transform.localScale = Vector3.Lerp(start, end, curve.Evaluate(stage));
                 yield return null;
             }
             hideCoroutine = null;
