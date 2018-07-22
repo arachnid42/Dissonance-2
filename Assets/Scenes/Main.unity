@@ -10786,7 +10786,7 @@ MonoBehaviour:
   - {fileID: 95675849}
   - {fileID: 429073747}
   - {fileID: 870758132}
-  scale: {x: 0.6, y: 0.6, z: 0.6}
+  scale: {x: 0.8, y: 0.8, z: 0.8}
 --- !u!1 &397091764
 GameObject:
   m_ObjectHideFlags: 0
@@ -17298,7 +17298,7 @@ MonoBehaviour:
   - {fileID: 2127694188}
   - {fileID: 1823899795}
   - {fileID: 614746383}
-  scale: {x: 0.7, y: 0.7, z: 0.7}
+  scale: {x: 0.8, y: 0.8, z: 0.8}
 --- !u!1 &668362137
 GameObject:
   m_ObjectHideFlags: 0
@@ -19739,7 +19739,7 @@ MonoBehaviour:
       endChangeLevelIndex: 9
       min: 1
       minChangePerLevel: 0.5
-      max: 6
+      max: 5
       maxChangePerLevel: 1
       interval: 5
       intervalChangePerLevel: -0.4
