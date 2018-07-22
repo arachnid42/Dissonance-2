@@ -8,6 +8,7 @@ using UnityEditor;
 #endif
 namespace Assets.Scripts.Game
 {
+#if UNITY_EDITOR
     [CustomEditor(typeof(ThemesScreenshots))]
     public class ThemesScreenshotsEditor: Editor
     {
@@ -67,7 +68,7 @@ namespace Assets.Scripts.Game
             }
         }
     }
-
+#endif
     public class ThemesScreenshots : MonoBehaviour
     {
         [System.Serializable]
