@@ -20393,7 +20393,7 @@ MonoBehaviour:
       initialGameMode: 2
       additionalShapes: 
   config:
-    devMode: 0
+    devMode: 1
     askRatingTimesPlayedInterval: 15
     goodRatingMin: 4
   temp:
@@ -20495,7 +20495,7 @@ MonoBehaviour:
       initialGameMode: 2
       additionalShapes: 
   refs:
-    configurableMode: {fileID: 0}
+    configurableMode: {fileID: 1305763018}
 --- !u!4 &705339927
 Transform:
   m_ObjectHideFlags: 0
@@ -44876,6 +44876,12 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1297330315}
+--- !u!114 &1305763018 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114228003633109992, guid: fad1ba9be264356448d14df03e00639d,
+    type: 2}
+  m_PrefabInternal: {fileID: 487650490}
+  m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
 --- !u!1 &1314348708
 GameObject:
   m_ObjectHideFlags: 0
