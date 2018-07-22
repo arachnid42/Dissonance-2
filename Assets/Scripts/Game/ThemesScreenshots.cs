@@ -86,6 +86,7 @@ namespace Assets.Scripts.Game
         {
             DifficultyLevels.Instance.LevelName = "Endless";
             config.master.State.Reset();
+            Time.timeScale = 0;
             config.master.State.Mapping.ShapeBasketHidden = false;
             config.master.State.Mapping.IndicatorHidden = false;
             config.master.State.Mapping.ScoreHidden = false;
@@ -95,7 +96,7 @@ namespace Assets.Scripts.Game
             config.master.State.ExplosionBonuses = 13;
             config.master.State.FreezeBonuses = 9;
             config.master.State.HeartBonuses = 3;
-            //config.shapesOnScreen.SetActive(true);
+            config.shapesOnScreen.SetActive(true);
             config.UI.SetActive(false);
         }
     }

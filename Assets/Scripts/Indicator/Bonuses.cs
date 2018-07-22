@@ -201,7 +201,7 @@ namespace Assets.Scripts.Indicator
         {
             if (hideStarted)
             {
-                hideStage += Time.deltaTime / hideTime;
+                hideStage += Time.unscaledDeltaTime / hideTime;
                 transform.localPosition = Vector3.Lerp(startPosition, endPosition, hideStage);
                 hideStarted = hideStage < 1;
             }

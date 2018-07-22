@@ -70,7 +70,7 @@ namespace Assets.Scripts.Shape
     [UnityEditor.CustomEditor(typeof(RandomRotation))]
     public class RandomRotationEditor: UnityEditor.Editor
     {
-        private int index = 0;
+        private int index = -1;
         public override void OnInspectorGUI()
         {
             DrawDefaultInspector();
