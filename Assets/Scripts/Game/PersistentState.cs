@@ -78,11 +78,9 @@ namespace Assets.Scripts.Game
 
         public Data data = new Data();
         public Config config = new Config();
+        public Temp temp = new Temp();
         [SerializeField]
         private Refs refs = new Refs();
-        [SerializeField]
-        private Temp temp = new Temp();
-
 
         private bool isReady = false;
 
