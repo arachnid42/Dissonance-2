@@ -234,6 +234,11 @@ namespace Assets.Scripts.Game
             }
         }
 
+        public float ScaledPlayerReactionTime
+        {
+            get { return slowdown.speedScale == 0 ? float.PositiveInfinity : PlayerReactionTime / slowdown.speedScale; }
+        }
+
         public Difficulty Difficulty
         {
             get { return DifficultyLevels.Instance.CurrentDifficulty; }

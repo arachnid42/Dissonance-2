@@ -57,13 +57,27 @@ namespace Assets.Scripts.Game
             switch (type)
             {
                 case ShapeType.Explosion:
-                    master.State.ExplosionBonuses++;
+                    if (master.State.ScaledPlayerReactionTime <= Difficulty.BONUS_AUTO_USE_REACTION_TIME)
+                    {
+                        master.Actions.UseExplosionBonus(immediately:true);
+                    }
+                    else
+                    {
+                        master.State.ExplosionBonuses++;
+                    }
                     break;
                 case ShapeType.Heart:
                     master.State.HeartBonuses++;
                     break;
                 case ShapeType.Snowflake:
-                    master.State.FreezeBonuses++;
+                    if (master.State.ScaledPlayerReactionTime <= Difficulty.BONUS_AUTO_USE_REACTION_TIME)
+                    {
+                        master.Actions.UseFreezeBonus(immediately: true);
+                    }
+                    else
+                    {
+                        master.State.FreezeBonuses++;
+                    }
                     break;
             }
             master.Actions.BonusCatchSlowdown();

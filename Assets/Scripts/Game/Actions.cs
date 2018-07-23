@@ -376,8 +376,7 @@ namespace Assets.Scripts.Game
 
         public void BonusSlowdownShapesOnScreen(Difficulty.Bonus bonus)
         {
-            if (master.State.slowdownType == Difficulty.Slowdown.Type.None || master.State.slowdownType == Difficulty.Slowdown.Type.BonusCatch)
-                SlowDownShapesOnScreen(bonus.slowdown);
+            SlowDownShapesOnScreen(bonus.slowdown);
         }
 
         public void BonusCatchSlowdown()
@@ -569,26 +568,28 @@ namespace Assets.Scripts.Game
             SlowDownShapesOnScreen(master.State.Difficulty.explosion.slowdown, ExplodeShapesOnScreenImmidiately);
         }
 
-        public void UseExplosionBonus()
+        public void UseExplosionBonus(bool immediately = false)
         {
-            if (master.State.ExplosionBonuses > 0)
+            if (master.State.ExplosionBonuses > 0 || immediately)
             {
-                master.State.ExplosionBonuses--;
                 Object.Instantiate(master.State.Mapping.particleEffect.explosion, master.transform).SetActive(true);
                 BonusSlowdownShapesOnScreen(master.State.Difficulty.explosion);
                 master.State.Score += master.State.shapesOnScreen.Count;
                 ExplodeShapesOnScreen();
+                if (!immediately)
+                    master.State.ExplosionBonuses--;
             }
 
         }
 
-        public void UseFreezeBonus()
+        public void UseFreezeBonus(bool immediately = false)
         {
-            if (master.State.FreezeBonuses > 0)
+            if (master.State.FreezeBonuses > 0 || immediately)
             {
                 Object.Instantiate(master.State.Mapping.particleEffect.freeze, master.transform).SetActive(true);
                 BonusSlowdownShapesOnScreen(master.State.Difficulty.freeze);
-                master.State.FreezeBonuses--;
+                if(!immediately)
+                    master.State.FreezeBonuses--;
             }
         }
 

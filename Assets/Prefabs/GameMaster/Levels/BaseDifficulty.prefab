@@ -121,7 +121,7 @@ MonoBehaviour:
       inTime: 0.1
       stayTime: 5
       outTime: 15
-      speedScale: 0.2
+      speedScale: 0.1
       type: 1
     useSlowdown: 1
   explosion:

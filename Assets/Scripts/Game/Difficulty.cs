@@ -125,6 +125,8 @@ namespace Assets.Scripts.Game
     {
         public const float
 
+            BONUS_AUTO_USE_REACTION_TIME = 1.3f,
+
             MIN_REACTION_TIME = 0.75f,
             MAX_REACTION_TIME = 5,
 
@@ -230,7 +232,7 @@ namespace Assets.Scripts.Game
             public float stayTime = 1f;
             [Range(0.1f, 20f)]
             public float outTime = 5f;
-            [Range(0.1f, 1f)]
+            [Range(0.0f, 1f)]
             public float speedScale = 0.1f;
             public Type type = Type.None;
             public Slowdown(Type type)
