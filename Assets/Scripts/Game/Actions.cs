@@ -539,15 +539,6 @@ namespace Assets.Scripts.Game
             master.State.PlayerReactionTime += master.State.Difficulty.playerReactionTime.changePerScore;
         }
 
-
-        public void DestroyShapesOnScreenImmidiately()
-        {
-            foreach(var shape in master.State.shapesOnScreen)
-            {
-                GameObject.Destroy(shape);
-            }
-        }
-
         public void ExplodeShapesOnScreenDelayed(float delay, float time = -1, bool particles = true)
         {
             foreach (var shape in master.State.shapesOnScreen)

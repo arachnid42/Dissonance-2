@@ -47,13 +47,30 @@ namespace Assets.Scripts.Game
             State.Reset();
         }
 
+        private System.Action RemoveShapeFromScreen(GameObject shape)
+        {
+            return () =>
+            {
+                shape.GetComponent<Shape.Controller>().Destruction.DestroyCompletely();
+            };
+        }
+
+        private void ClearScreenShapesOnScreen()
+        {
+            System.Action clearScreenAction = null;
+            foreach(var shape in State.shapesOnScreen)
+            {
+                clearScreenAction += RemoveShapeFromScreen(shape);
+            }
+            clearScreenAction();
+        }
+
+
         private IEnumerator UpdateCoroutine()
         {
 
 
             Time.timeScale = 1;
-            Actions.DestroyShapesOnScreenImmidiately();
-            //yield return new WaitForSecondsRealtime(0.5f);
             State.Reset();
             State.Started = true;
             yield return new WaitForSecondsRealtime(1.5f);
@@ -73,7 +90,7 @@ namespace Assets.Scripts.Game
                     state.SetGameOverData(true);
                     Listeners.OnGameOver(true);
                     state.Started = false;
-                    yield break;
+                    break;
                 }
 
                 Actions.UpdateTimer();
@@ -93,8 +110,7 @@ namespace Assets.Scripts.Game
 
             }
             Time.timeScale = 1;
-            Actions.ExplodeShapesOnScreenDelayed(delay: 0, time: 0, particles: false);
-
+            ClearScreenShapesOnScreen();
         }
 
         private void OnApplicationPause(bool pause)

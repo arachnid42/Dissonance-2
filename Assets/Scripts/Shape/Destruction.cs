@@ -53,7 +53,20 @@ namespace Assets.Scripts.Shape
 
         public void DestroyCompletely()
         {
-            StartCoroutine(DestroyCompletelyCoroutine());
+            if (!Started)
+            {
+                StartDestruction(completely:true);
+            }
+            else
+            {
+                StartCoroutine(DestroyCompletelyCoroutine());
+            }
+        }
+
+        private void OnDrawGizmos()
+        {
+            if (partiallyDestroyed)
+                Gizmos.DrawSphere(transform.position, 10f);
         }
 
         private IEnumerator DestroyCompletelyCoroutine()
