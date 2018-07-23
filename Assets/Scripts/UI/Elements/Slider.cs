@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Assets.Scripts.Localization;
+using UnityEngine.EventSystems;
 
 namespace Assets.Scripts.UI.Elements
 {
@@ -22,12 +23,52 @@ namespace Assets.Scripts.UI.Elements
         private float min, max, _value, step;
 
         [SerializeField]
+        private GameObject leftButton, rightButton;
+
+        [SerializeField]
         private Text headerText = null, valueText = null;
 
         [SerializeField]
         private Slider lowerBind = null, upperBind = null;
 
-        private const float VALUE_CHANGE_DELAY = 0.1f;
+        private const float VALUE_CHANGE_DELAY = 0.4f;
+        private const float VALUE_CHANGE_DURATION = 1f;
+
+        private void Start()
+        {
+            leftButton = transform.Find("LeftButton").gameObject;
+            rightButton = transform.Find("RightButton").gameObject;
+            if (leftButton != null && rightButton != null)
+            {
+                EventTrigger ltrigger = leftButton.AddComponent<EventTrigger>();
+                EventTrigger rtrigger = rightButton.AddComponent<EventTrigger>();
+
+                var leftDown = new EventTrigger.Entry();
+                leftDown.eventID = EventTriggerType.PointerDown;
+                leftDown.callback.AddListener(OnLeftPointerDown);
+
+                var rightDown = new EventTrigger.Entry();
+                rightDown.eventID = EventTriggerType.PointerDown;
+                rightDown.callback.AddListener(OnRightPointerDown);
+
+                var pointerUp = new EventTrigger.Entry();
+                pointerUp.eventID = EventTriggerType.PointerUp;
+                pointerUp.callback.AddListener(StopValueChangeCourotine);
+
+                var pointerExit = new EventTrigger.Entry();
+                pointerExit.eventID = EventTriggerType.PointerExit;
+                pointerExit.callback.AddListener(StopValueChangeCourotine);
+
+                ltrigger.triggers.Add(leftDown);
+                ltrigger.triggers.Add(pointerUp);
+                ltrigger.triggers.Add(pointerExit);
+
+                rtrigger.triggers.Add(rightDown);
+                rtrigger.triggers.Add(pointerUp);
+                rtrigger.triggers.Add(pointerExit);
+
+            }
+        }
 
         private void OnEnable()
         {
@@ -39,14 +80,14 @@ namespace Assets.Scripts.UI.Elements
             UpdateValue();
         }
 
-        public void OnLeftButtonClik()
+        private void OnLeftButtonClik()
         {
             float val = _value - step;
             UpdateBindValues(val);
             Value = val;
         }
 
-        public void OnRightButtonClik()
+        private void OnRightButtonClik()
         {
             float val = _value + step;
             UpdateBindValues(val);
@@ -140,43 +181,37 @@ namespace Assets.Scripts.UI.Elements
             return bindValueUpdated;
         }
 
-        public void OnLeftPointerDown()
+        public void OnLeftPointerDown(BaseEventData args)
         {
-            StartCoroutine(DecreaseValueCourotine(VALUE_CHANGE_DELAY));
+            StartCoroutine(ChangeValueCourotine(CalculateDelay(), OnLeftButtonClik));
         }
 
-        public void OnLeftPointerUp()
+        public void OnRightPointerDown(BaseEventData args)
+        {
+            StartCoroutine(ChangeValueCourotine(CalculateDelay(), OnRightButtonClik));
+        }
+
+        private void StopValueChangeCourotine(BaseEventData args)
         {
             StopAllCoroutines();
         }
-        public void OnRightPointerDown()
+
+        private IEnumerator ChangeValueCourotine(float seconds, System.Action action)
         {
-            StartCoroutine(IncreaseValueCourotine(VALUE_CHANGE_DELAY));
-
-        }
-
-        public void OnRightPointerUp()
-        {
-            StopAllCoroutines();
-
-        }
-
-        private IEnumerator DecreaseValueCourotine(float seconds)
-        {
+            action();
+            yield return new WaitForSeconds(VALUE_CHANGE_DELAY);
             while (true)
             {
-                OnLeftButtonClik();
+                action();
                 yield return new WaitForSeconds(seconds);
             }
         }
 
-        private IEnumerator IncreaseValueCourotine(float seconds)
+        private float CalculateDelay()
         {
-            while (true)
-            {
-                OnRightButtonClik();
-                yield return new WaitForSeconds(seconds);
-            }
+            float delay = VALUE_CHANGE_DURATION / ((max - min) / step);
+            Debug.LogFormat("Delay: {0}", delay);
+            return delay;
         }
     }
 }
