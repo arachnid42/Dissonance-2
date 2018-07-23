@@ -286,10 +286,12 @@ MonoBehaviour:
   measure: 
   min: 0
   max: 10
-  value: 0
+  _value: 0
   step: 1
   headerText: {fileID: 114701101409399962}
   valueText: {fileID: 114342589605895210}
+  lowerBind: {fileID: 0}
+  upperBind: {fileID: 0}
 --- !u!114 &114798724090913446
 MonoBehaviour:
   m_ObjectHideFlags: 1

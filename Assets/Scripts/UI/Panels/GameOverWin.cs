@@ -16,13 +16,14 @@ namespace Assets.Scripts.UI.Panels
         [SerializeField]
         private GameObject winText, congratsText, levelsUnlockedText;
 
-        private bool hasNextLevel;
+        private bool hasNextLevel, isConfigurable;
 
         private void OnEnable()
         {
+            UIController.Instance.data.activePanel = this;
+            isConfigurable = DifficultyLevels.Instance.CurrentDifficulty.name == "Configurable";
             hasNextLevel = NextLevel();
             SetLabels(UpdateLabels);
-            UIController.Instance.data.activePanel = this;
         }
 
         private bool NextLevel()
@@ -43,25 +44,34 @@ namespace Assets.Scripts.UI.Panels
 
         private void UpdateLabels()
         {
-            if (hasNextLevel)
+            winText.SetActive(true);
+            congratsText.SetActive(false);
+            levelsUnlockedText.SetActive(false);
+            win.text = Text("winText");
+
+            if (isConfigurable)
             {
-                winText.SetActive(true);
-                congratsText.SetActive(false);
-                levelsUnlockedText.SetActive(false);
-                win.text = Text("winText");
-                next.text = string.Format("{0} {1}", Text("next"), PersistentState.Instance.data.lastLevelIndex+1);
+                next.text = Text("replay");
             }
             else
             {
-                winText.SetActive(false);
-                congratsText.SetActive(true);
-                levelsUnlockedText.SetActive(true);
-                congrats.text = Text("congrats");
-                levelsUnlocked.text = Text("levelsUnlocked");
-                next.text = Text("playEndless");
-                PersistentState.Instance.data.endlessModeUnlocked = true;
-                PersistentState.Instance.data.lastLevelIndex--;
+                if (hasNextLevel)
+                {
+                    next.text = string.Format("{0} {1}", Text("next"), PersistentState.Instance.data.lastLevelIndex + 1);
+                }
+                else
+                {
+                    winText.SetActive(false);
+                    congratsText.SetActive(true);
+                    levelsUnlockedText.SetActive(true);
+                    congrats.text = Text("congrats");
+                    levelsUnlocked.text = Text("levelsUnlocked");
+                    next.text = Text("playEndless");
+                    PersistentState.Instance.data.endlessModeUnlocked = true;
+                    PersistentState.Instance.data.lastLevelIndex--;
+                }
             }
+            
             rate.text = Text("rate");
             share.text = Text("share");
             donate.text = Text("donateRemoveAds");
@@ -71,6 +81,11 @@ namespace Assets.Scripts.UI.Panels
 
         public void OnNextPlayButtonClick()
         {
+            if (isConfigurable)
+            {
+                UIController.Instance.PanelController.configurablePanel.GetComponent<Configurable>().OnCofigurablePlayClick();
+                return;
+            }
             if (hasNextLevel)
                 UIController.Instance.PanelController.mainMenuPanel.GetComponent<MainMenu>().OnPlayButtonClick();
             else

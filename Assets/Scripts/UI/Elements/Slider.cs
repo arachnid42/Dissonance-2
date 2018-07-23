@@ -27,6 +27,8 @@ namespace Assets.Scripts.UI.Elements
         [SerializeField]
         private Slider lowerBind = null, upperBind = null;
 
+        private const float VALUE_CHANGE_DELAY = 0.1f;
+
         private void OnEnable()
         {
             headerText.text = name !=null && name != ""? LocalizationManager.Instance[name]: "Property";
@@ -136,6 +138,45 @@ namespace Assets.Scripts.UI.Elements
                 
             }
             return bindValueUpdated;
+        }
+
+        public void OnLeftPointerDown()
+        {
+            StartCoroutine(DecreaseValueCourotine(VALUE_CHANGE_DELAY));
+        }
+
+        public void OnLeftPointerUp()
+        {
+            StopAllCoroutines();
+        }
+        public void OnRightPointerDown()
+        {
+            StartCoroutine(IncreaseValueCourotine(VALUE_CHANGE_DELAY));
+
+        }
+
+        public void OnRightPointerUp()
+        {
+            StopAllCoroutines();
+
+        }
+
+        private IEnumerator DecreaseValueCourotine(float seconds)
+        {
+            while (true)
+            {
+                OnLeftButtonClik();
+                yield return new WaitForSeconds(seconds);
+            }
+        }
+
+        private IEnumerator IncreaseValueCourotine(float seconds)
+        {
+            while (true)
+            {
+                OnRightButtonClik();
+                yield return new WaitForSeconds(seconds);
+            }
         }
     }
 }
