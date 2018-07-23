@@ -52,6 +52,8 @@ namespace Assets.Scripts.Shape
 
         private IEnumerator DestructionCoroutine(float delay, bool particles, float time)
         {
+            if (delay > 0)
+                yield return new WaitForSeconds(delay);
 
             GameObject particleEffect = null;
             if (particles)
@@ -60,9 +62,7 @@ namespace Assets.Scripts.Shape
                 particleEffect.GetComponent<ShapeParticles>().SetShapeAndColor(GetComponent<RandomRotation>().CurrentRotation.type, GetComponent<ColorPicker>().GetColor());
                 particleEffect.name = string.Format("{0} Particles", name);
             }
-            if (delay > 0)
-                yield return new WaitForSeconds(delay);
-                
+
             Vector3 startScale = transform.localScale;
             float stage = 0;
 
