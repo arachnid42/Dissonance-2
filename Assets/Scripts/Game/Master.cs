@@ -62,7 +62,8 @@ namespace Assets.Scripts.Game
             {
                 clearScreenAction += RemoveShapeFromScreen(shape);
             }
-            clearScreenAction();
+            if(clearScreenAction!=null)
+                clearScreenAction();
         }
 
 

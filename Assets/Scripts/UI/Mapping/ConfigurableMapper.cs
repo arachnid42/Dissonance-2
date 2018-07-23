@@ -71,12 +71,15 @@ namespace Assets.Scripts.UI.Mapping
 
             data.heart = lifeBonusSpoiler.GetData();
             data.heart.slowdown = odata.slowdown.Copy();
+            data.heart.useSlowdown = odata.heart.useSlowdown;
 
             data.freeze = freezeBonusSpoiler.GetData();
             data.freeze.slowdown = odata.freeze.slowdown.Copy();
+            data.freeze.useSlowdown = odata.freeze.useSlowdown;
 
             data.explosion = explosionBonusSpoiler.GetData();
             data.explosion.slowdown = odata.explosion.slowdown.Copy();
+            data.explosion.useSlowdown = odata.explosion.useSlowdown;
 
             data.target = targetMapper.GetData();
             PersistentState.Instance.data.configurableModeData = data;

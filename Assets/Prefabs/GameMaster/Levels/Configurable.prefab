@@ -136,7 +136,7 @@ MonoBehaviour:
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    useSlowdown: 0
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 1
