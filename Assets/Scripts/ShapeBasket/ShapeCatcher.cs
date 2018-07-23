@@ -29,26 +29,30 @@ namespace Assets.Scripts.ShapeBasket
             if (shape.tag != "Shape" && shape.tag != "Bonus")
                 return;
 
+            var destruction = shape.GetComponentInParent<Destruction>();
+
+            if (destruction.Started)
+            {
+                destruction.DestroyCompletely();
+                return;
+            }
+
             GameObject tile = GetComponent<TileSwitcher>().Tile;
             Collider shapeBasket = GetComponent<Collider>();
 
-            //Debug.Log("TILE:" + tile.name +" ID:"+tile.GetInstanceID());
             ShapeType tileShapeType = GetComponentInChildren<ShapeMixer>().tileToShape[tile].GetComponent<ShapeToTile>().shapeType;
             ShapeType shapeShapeType = shape.gameObject.GetComponentInParent<RandomRotation>().CurrentRotation.type;
 
             Color shapeColor = shape.GetComponentInParent<ColorPicker>().GetColor();
             Color tileColor = tile.GetComponent<MeshRenderer>().sharedMaterial.color;
 
-            //Debug.Log("shape color:" + shapeColor + " tile color:" + tileColor);
-
             bool match = mode == GameMode.Color && tileColor == shapeColor || mode == GameMode.Shape && tileShapeType == shapeShapeType;
 
-            if(shape.tag == "Shape")
+            if (shape.tag == "Shape")
             {
                 OnCatch(match);
             }
-
-            shape.GetComponentInParent<Destruction>().StartDestruction();
+            destruction.StartDestruction(completely:true);
             CatcherParticleEffect catcherParticleEffect = particleEffect.GetComponent<CatcherParticleEffect>();
             catcherParticleEffect.shapeShapeType = shapeShapeType;
             catcherParticleEffect.tileShapeType = tileShapeType;

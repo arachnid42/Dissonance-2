@@ -553,7 +553,7 @@ namespace Assets.Scripts.Game
             foreach (var shape in master.State.shapesOnScreen)
             {
                 var controller = shape.GetComponent<Shape.Controller>();
-                if (!controller.Destruction.IsDestructionStarted)
+                if (!controller.Destruction.Started)
                     controller.Destruction.StartDestruction(delay:delay, time:time, particles:particles);
             }
         }

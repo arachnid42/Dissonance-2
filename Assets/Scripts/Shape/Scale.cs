@@ -7,6 +7,7 @@ namespace Assets.Scripts.Shape
     public class Scale : MonoBehaviour
     {
         private Coroutine scaleCoroutine = null;
+        private Destruction destruction = null;
 
         public void SetScale(Vector3 scale)
         {
@@ -20,10 +21,15 @@ namespace Assets.Scripts.Shape
             scaleCoroutine = StartCoroutine(ScaleCoroutine(scale, time));
         }
 
+        private void Awake()
+        {
+            destruction = GetComponent<Destruction>();
+        }
+
         private IEnumerator ScaleCoroutine(Vector3 end, float time = 1)
         {
             Vector3 start = transform.localScale;
-            for(float stage = 0; stage <=1; stage += Time.deltaTime / time)
+            for(float stage = 0; stage <=1 &&!destruction.Started; stage += Time.deltaTime / time)
             {
                 transform.localScale = Vector3.Slerp(start, end, stage);
                 yield return null;

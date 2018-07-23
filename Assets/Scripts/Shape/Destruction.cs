@@ -15,7 +15,7 @@ namespace Assets.Scripts.Shape
         [SerializeField]
         private AnimationCurve curve = null;
 
-
+        private bool partiallyDestroyed = false;
         private Coroutine destructionCorotine;
         
 
@@ -25,32 +25,47 @@ namespace Assets.Scripts.Shape
         }
 
         //if time < 0 use this.time instead if time = 0 destroy without starting coroutine
-        public void StartDestruction(float delay = 0,bool particles = false, float time = -1)
+        public void StartDestruction(float delay = 0,bool particles = false, float time = -1, bool completely = false)
         {
-            if (IsDestructionStarted)
+            if (Started)
             {
                 return;
             }
             if (time == 0)
             {
-                Destroy(gameObject);
+                DestroyCompletely();
             }
             else
             {
-                destructionCorotine = StartCoroutine(DestructionCoroutine(delay: delay, particles: particles, time: time < 0 ? this.time : time));
+                destructionCorotine = StartCoroutine(DestructionCoroutine(delay: delay, particles: particles, time: time < 0 ? this.time : time, completely: completely));
             }
         }
 
-        public bool IsDestructionStarted
+        public bool Started
         {
-            get
-            {
-                return destructionCorotine != null;
-            }
+            get { return destructionCorotine != null; }
         }
 
+        public bool IsPartiallyDestroyed
+        {
+            get { return partiallyDestroyed; }
+        }
 
-        private IEnumerator DestructionCoroutine(float delay, bool particles, float time)
+        public void DestroyCompletely()
+        {
+            StartCoroutine(DestroyCompletelyCoroutine());
+        }
+
+        private IEnumerator DestroyCompletelyCoroutine()
+        {
+            while (!partiallyDestroyed)
+                yield return null;
+            OnDestroy(gameObject);
+            yield return null;
+            Destroy(gameObject);
+        }
+
+        private IEnumerator DestructionCoroutine(float delay, bool particles, float time, bool completely)
         {
             if (delay > 0)
                 yield return new WaitForSeconds(delay);
@@ -78,11 +93,11 @@ namespace Assets.Scripts.Shape
                 particleEffect.transform.position = transform.position;
                 particleEffect.SetActive(true);
             }
-                
-            OnDestroy(gameObject);
-            yield return new WaitForEndOfFrame();
-            Destroy(gameObject);
-
+            partiallyDestroyed = true;
+            if (completely)
+            {
+                yield return DestroyCompletelyCoroutine();
+            }
         }
     }
 
