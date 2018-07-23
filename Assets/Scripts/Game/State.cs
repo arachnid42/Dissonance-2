@@ -250,7 +250,7 @@ namespace Assets.Scripts.Game
 
         public void SetGameOverData(bool win)
         {
-            float time = Time.time - firstScoreTime;
+            float time = firstScoreTime < 0 ? 0 : Time.time - firstScoreTime;
             if (Difficulty.target.endless)
             {
                 time = Mathf.Max(time,0);

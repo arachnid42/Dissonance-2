@@ -34,6 +34,7 @@ namespace Assets.Scripts.Game
             public MeshRenderer background = null;
             public MeshRenderer bonusesBackground = null;
             public TextMesh[] texts;
+            public TextMesh[] hoverTexts;
             public ParticleSystem explosionParticles;
             public ParticleSystem freeezeParticles;
         }
@@ -61,8 +62,9 @@ namespace Assets.Scripts.Game
 
         private static readonly int GEOMETRY_RENDER_QUEUE = 2002;
         private static readonly int FONT_RENDER_QUEUE = 2001;
+        private static readonly int HOVER_FONT_RENDER_QUEUE = 2011;
         private static readonly int TEXTURE_RENDER_QUEUE = 2000;
-        private static readonly int TRANSPARENT_RENDER_QUEUE = 2003;
+        private static readonly int TRANSPARENT_RENDER_QUEUE = 2010;
 
         public static bool Ready
         {
@@ -95,8 +97,6 @@ namespace Assets.Scripts.Game
             if (instance == null)
             {
                 instance = this;
-                if(Application.isPlaying)
-                    DontDestroyOnLoad(gameObject);
                 ApplyCurrentColorPreset();
             }else if (instance != this)
             {
@@ -149,6 +149,12 @@ namespace Assets.Scripts.Game
             {
                 text.color = CurrentPreset.font;
                 text.font.material.renderQueue = FONT_RENDER_QUEUE;
+            }
+
+            foreach(var text in colorsRecipients.hoverTexts)
+            {
+                text.color = CurrentPreset.font;
+                text.font.material.renderQueue = HOVER_FONT_RENDER_QUEUE;
             }
                 
 

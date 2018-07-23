@@ -207,7 +207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleEffect: {fileID: 1436726992590858, guid: 868ada9dd1ae7e8419f0f08339a1eda2,
     type: 2}
-  time: 0.75
+  time: 0.5
   curve:
     serializedVersion: 2
     m_Curve:
@@ -221,28 +221,10 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.31249794
-      value: 1.5557213
+      time: 0.3083323
+      value: 1.5032082
       inSlope: 0
       outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.4833374
-      value: 0.9937744
-      inSlope: -2.129755
-      outSlope: -2.129755
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.4374915
-    - serializedVersion: 3
-      time: 0.7875061
-      value: 0.7286835
-      inSlope: -0.6577722
-      outSlope: -0.6577722
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334

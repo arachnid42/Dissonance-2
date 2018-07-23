@@ -24,7 +24,7 @@ namespace Assets.Scripts.Game
         {
             if (Instance == null)
             {
-                DontDestroyOnLoad(gameObject);
+                //DontDestroyOnLoad(gameObject);
                 Instance = this;
             }else if(Instance != this)
             {

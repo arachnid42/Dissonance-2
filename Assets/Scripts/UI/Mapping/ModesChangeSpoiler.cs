@@ -10,6 +10,9 @@ namespace Assets.Scripts.UI.Mapping
         [SerializeField]
         private Slider maxAtOnceSlider, scoreCooldownSlider, 
             timeCooldownSlider, reactionTimeSlider, startScoreSlider;
+        [SerializeField]
+        private Slider.Data maxAtOnceSliderData = new Slider.Data(), scoreCooldownSliderData = new Slider.Data(), timeCooldownSliderData = new Slider.Data(),
+            reactionTimeSliderData = new Slider.Data(), startScoreSliderData = new Slider.Data();
 
         public override Difficulty.ModeChange GetData()
         {
@@ -24,30 +27,20 @@ namespace Assets.Scripts.UI.Mapping
 
         public override void SetData(Difficulty.ModeChange data)
         {
-            maxAtOnceSlider.Min = 1;
-            maxAtOnceSlider.Max = 3;
-            maxAtOnceSlider.Step = 1;
-            maxAtOnceSlider.Value = data.maxAtOnce;
+            maxAtOnceSliderData.value = data.maxAtOnce;
+            maxAtOnceSlider.SetData(maxAtOnceSliderData);
 
-            scoreCooldownSlider.Min = 1;
-            scoreCooldownSlider.Max = 100;
-            scoreCooldownSlider.Step = 10;
-            scoreCooldownSlider.Value = data.scoreCooldown;
+            scoreCooldownSliderData.value = data.scoreCooldown;
+            scoreCooldownSlider.SetData(scoreCooldownSliderData);
 
-            timeCooldownSlider.Min = 1;
-            timeCooldownSlider.Max = 100;
-            timeCooldownSlider.Step = 10;
-            timeCooldownSlider.Value = data.timeCooldown;
+            timeCooldownSliderData.value = data.timeCooldown;
+            timeCooldownSlider.SetData(timeCooldownSliderData);
 
-            reactionTimeSlider.Min = 0.5f;
-            reactionTimeSlider.Max = 1f;
-            reactionTimeSlider.Step = 0.1f;
-            reactionTimeSlider.Value = data.reactionTime;
+            reactionTimeSliderData.value = data.reactionTime;
+            reactionTimeSlider.SetData(reactionTimeSliderData);
 
-            startScoreSlider.Min = 1;
-            startScoreSlider.Max = 100;
-            startScoreSlider.Step = 10;
-            startScoreSlider.Value = data.startScore;
+            startScoreSliderData.value = data.startScore;
+            startScoreSlider.SetData(startScoreSliderData);
         }
     }
 }

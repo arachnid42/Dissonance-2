@@ -39,7 +39,7 @@ namespace Assets.Scripts.Game
                 public float rating = 0;
                 public long timesPlayed = 0;
             }
-
+            public string colorPresetName = null;
             public int lastLevelIndex = 0;
             public int levelsUnlocked = 1;
 
@@ -77,12 +77,10 @@ namespace Assets.Scripts.Game
 
 
         public Data data = new Data();
+        public Config config = new Config();
+        public Temp temp = new Temp();
         [SerializeField]
         private Refs refs = new Refs();
-        [SerializeField]
-        private Temp temp = new Temp();
-        [SerializeField]
-        private Config config = new Config();
 
         private bool isReady = false;
 
@@ -128,7 +126,6 @@ namespace Assets.Scripts.Game
         {
             refs.configurableMode.UpdateData(data.configurableModeData);
             data.configurableModeData = refs.configurableMode.GetData();
-
         }
 
         public void ResetConfigurableModeData()
@@ -140,15 +137,57 @@ namespace Assets.Scripts.Game
 
         private IEnumerator FixDataCoroutine()
         {
-            while (DifficultyLevels.Instance == null)
-                yield return null;
+            yield return WaitForDifficultyLevelsInitialization();
+
             temp.configurableModeOriginalData = refs.configurableMode.GetData();
             data.levelsUnlocked = config.devMode ? DifficultyLevels.Instance.LevelCount : Mathf.Clamp(data.levelsUnlocked, 1, DifficultyLevels.Instance.LevelCount);
             if (data.configurableModeData != null)
                 refs.configurableMode.UpdateData(data.configurableModeData);
             else
                 data.configurableModeData = refs.configurableMode.GetData();
+
+            yield return WaitForColorsPresetsAndManagerInitialization();
+
+            if(data.colorPresetName == null)
+            {
+                data.colorPresetName = ColorsPresets.Instance.PresetName;
+            }
+
+            if(ColorsPresets.Instance.CurrentPreset.name != data.colorPresetName)
+            {
+                ColorsPresets.Instance.PresetName = data.colorPresetName;
+            }
+            ColorsPresetsManager.Instance.ApplyCurrentColorPreset();
+
             isReady = true;
+        }
+
+        private IEnumerator WaitForDifficultyLevelsInitialization()
+        {
+            while (DifficultyLevels.Instance == null)
+                yield return null;
+        }
+
+        private IEnumerator WaitForColorsPresetsAndManagerInitialization()
+        {
+            while (!ColorsPresets.Ready || !ColorsPresetsManager.Ready)
+                yield return null;
+        }
+
+        private IEnumerator SetColorsPresetsCoroutine(string name)
+        {
+            yield return WaitForColorsPresetsAndManagerInitialization();
+            if (ColorsPresets.Instance.PresetName != name)
+            {
+                data.colorPresetName = name;
+                ColorsPresets.Instance.PresetName = name;
+                ColorsPresetsManager.Instance.ApplyCurrentColorPreset();
+            }
+        }
+
+        public void SetColorsPreset(string name)
+        {
+            StartCoroutine(SetColorsPresetsCoroutine(name));
         }
 
         private void FixData()
@@ -187,7 +226,7 @@ namespace Assets.Scripts.Game
             values["rating"] = rating;
             values["comment"] = comment;
 
-            string name = rating < 4 ? "BAD_RATING" : "GOOD_RATING";
+            string name = rating < config.goodRatingMin ? "BAD_RATING" : "GOOD_RATING";
             Mixpanel.Track(name, values);
             data.rating = new Data.Rating()
             {

@@ -14,7 +14,8 @@ namespace Assets.Scripts.UI.Mapping
         private Slider scoreTargetSlider, timeTargetSlider;
         [SerializeField]
         private ToggleGroup toggleGroup;
-
+        [SerializeField]
+        private Slider.Data scoreTargetSliderData = new Slider.Data(), timeTargetSliderData = new Slider.Data();
         private bool isScoreBased, isEndless;
 
         public Difficulty.Target GetData()
@@ -32,15 +33,11 @@ namespace Assets.Scripts.UI.Mapping
         {
             SetToggleGroupValues(data);
 
-            scoreTargetSlider.Min = 0;
-            scoreTargetSlider.Max = 9999;
-            scoreTargetSlider.Step = 10;
-            scoreTargetSlider.Value = data.score;
+            scoreTargetSliderData.value = data.score;
+            scoreTargetSlider.SetData(scoreTargetSliderData);
 
-            timeTargetSlider.Min = 0;
-            timeTargetSlider.Max = 9999;
-            timeTargetSlider.Step = 10;
-            timeTargetSlider.Value = data.time;
+            timeTargetSliderData.value = data.time;
+            timeTargetSlider.SetData(timeTargetSliderData);
             HandleToggle();
             toggleGroup.Toggle = HandleToggle;
         }
