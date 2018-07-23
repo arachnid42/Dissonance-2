@@ -20,7 +20,7 @@ namespace Assets.Scripts.Shape
             if (stage < 1)
             {
                 stage += (Time.deltaTime / pulseInterval)*2;
-                float scale = transform.parent.localScale.x;
+                float scale = transform.parent.lossyScale.x;
                 float start = increase?minIntensity:maxIntensity;
                 float end = increase?maxIntensity:minIntensity;
                 GetComponentInChildren<Light>().range = Mathf.Lerp(start*scale, end*scale, stage);
