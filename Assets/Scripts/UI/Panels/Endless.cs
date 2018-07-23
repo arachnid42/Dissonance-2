@@ -29,7 +29,7 @@ namespace Assets.Scripts.UI.Panels
             bestTime.text = Text("bestTime");
             back.text = Text("back");
             scoreCount.text = PersistentState.Instance.data.endlessScoreRecord.ToString();
-            timeCount.text = PersistentState.Instance.data.endlessTimeRecord.ToString();
+            timeCount.text = FormatTimeScore(PersistentState.Instance.data.endlessTimeRecord);
         }
 
         public void OnScoreButtonClick()
@@ -44,6 +44,27 @@ namespace Assets.Scripts.UI.Panels
             DifficultyLevels.Instance.LevelName = "Endless";
             DifficultyLevels.Instance.CurrentDifficulty.target.scoreBased = false;
             StartGame();
+        }
+
+        public string FormatTimeScore(int scoreSeconds)
+        {
+            int hours = Mathf.FloorToInt(scoreSeconds / 3600.0f);
+            int minutes = Mathf.FloorToInt((scoreSeconds % 3600) / 60);
+            int seconds = Mathf.FloorToInt((scoreSeconds % 3600) % 60);
+            string sseconds = (seconds < 10 ? "0" : "") + seconds.ToString();
+            string sminutes = (minutes < 10 ? "0" : "") + minutes.ToString();
+
+            if (hours > 0)
+            {
+                string shours = (hours < 10 ? "0" : "") + hours.ToString();
+                return string.Format("{0}:{1}:{2}", shours, sminutes, sseconds);
+            }
+            if (minutes > 0)
+            {
+                return string.Format("{0}:{1}", sminutes, sseconds);
+            }
+            
+            return string.Format("{0}", seconds.ToString());
         }
 
         private void StartGame()

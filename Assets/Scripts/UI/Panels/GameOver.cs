@@ -17,20 +17,16 @@ namespace Assets.Scripts.UI.Panels
         [SerializeField]
         private GameObject skipButton, messangeText, newRecordText;
         
-        private bool isEndless;
+        private bool isEndless, isConfigurable;
 
         private void OnEnable()
         {
             UIController.Instance.data.activePanel = this;
             isEndless = DifficultyLevels.Instance.CurrentDifficulty.target.endless;
+            isConfigurable = DifficultyLevels.Instance.CurrentDifficulty.name == "Configurable";
             SetLabels(UpdateLabels);
             UpdateDynamicObjects();
             UpdateRecordScores();
-        }
-
-        private void OnDisable()
-        {
-            
         }
 
         public void OnSkipButtonClick()
@@ -70,7 +66,15 @@ namespace Assets.Scripts.UI.Panels
 
             oops.text = Text("oops");
             messange.text = gameOver.mode == GameMode.Color ? Text("wrongColor") : Text("wrongShape");
-            score.text = isEndless?haveScore.ToString():string.Format("{0}/{1}",haveScore,shouldScore);
+            scoreType.gameObject.SetActive(true);
+            if (isEndless && !gameOver.target.scoreBased)
+            {
+                score.text = UIController.Instance.PanelController.endlessPanel.GetComponent<Endless>().FormatTimeScore(haveScore);
+                if(haveScore>60)
+                    scoreType.gameObject.SetActive(false);
+            }
+            else
+                score.text = isEndless ? haveScore.ToString() : string.Format("{0}/{1}", haveScore, shouldScore);
             skip.text = Text("skip");
             replay.text = Text("replay");
             mainMenu.text = Text("mainMenu");
@@ -100,10 +104,13 @@ namespace Assets.Scripts.UI.Panels
             }
             else
             {
+                if (isConfigurable)
+                    skipButton.SetActive(false);
+                else
+                    skipButton.SetActive(true);
                 oops.text = Text("oops");
                 messangeText.SetActive(true);
                 newRecordText.SetActive(false);
-                skipButton.SetActive(true);
             }
         }
 

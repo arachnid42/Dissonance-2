@@ -44,6 +44,7 @@ namespace Assets.Scripts.UI.Panels
         {
             configurableMapper.MapToConfigurableData();
             PersistentState.Instance.ApplyConfigurableModeData();
+            OnBackMenuButtonClick();
         }
 
         public void OnRevertButtonClick()

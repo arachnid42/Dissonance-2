@@ -28,6 +28,8 @@ namespace Assets.Scripts.UI.Mapping
                     return GameMode.Shape;
                 else if (toggle.gameObject.name == "ColorToggle")
                     return GameMode.Color;
+                else
+                    return GameMode.None;
             }
 
             return GameMode.None;
@@ -44,7 +46,7 @@ namespace Assets.Scripts.UI.Mapping
                     toggleGroup.OnToggleGroup("ColorToggle");
                     break;
                 default:
-                    toggleGroup.ResetValues();
+                    toggleGroup.OnToggleGroup("RandomToggle");
                     break;
             }
         }
