@@ -11,13 +11,11 @@ namespace Assets.Scripts.UI.Mapping
         private Slider numberSlider, startScoreSlider, 
             scoreIntervalSlider, probabilitySlider;
         [SerializeField]
-        private int max;
-        [SerializeField]
         private Slider.Data numberSliderData = new Slider.Data(), startScoreSliderData = new Slider.Data(),
             scoreIntervalSliderData = new Slider.Data(), probabilitySliderData = new Slider.Data();
         public override Difficulty.Bonus GetData()
         {
-            Difficulty.Bonus data = new Difficulty.Bonus(max);
+            Difficulty.Bonus data = new Difficulty.Bonus();
             data.number = Mathf.FloorToInt(numberSlider.Value);
             data.startScore = Mathf.FloorToInt(startScoreSlider.Value);
             data.scoreInterval = Mathf.FloorToInt(scoreIntervalSlider.Value);

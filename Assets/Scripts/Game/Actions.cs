@@ -376,7 +376,7 @@ namespace Assets.Scripts.Game
 
         public void BonusSlowdownShapesOnScreen(Difficulty.Bonus bonus)
         {
-            if(bonus.useSlowdown)
+            if(bonus.slowdown!=null)
                 SlowDownShapesOnScreen(bonus.slowdown);
         }
 
