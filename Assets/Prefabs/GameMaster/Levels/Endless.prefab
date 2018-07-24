@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target:
-    endless: 0
+    endless: 1
     scoreBased: 1
     score: 10
     time: 70
@@ -76,7 +76,7 @@ MonoBehaviour:
   rotation:
     min: 45
     max: 90
-  initialGameMode: 0
+  initialGameMode: 2
   modeChange:
     maxAtOnce: 1
     reactionTime: 0.75
@@ -100,43 +100,40 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    number: 0
-    scoreInterval: 10
-    probability: 1
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 10
     probability: 1
     startScore: 0
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
-    scoreInterval: 1
+    scoreInterval: 10
     probability: 1
     startScore: 0
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 1
+    startScore: 0
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 1
@@ -146,4 +143,4 @@ MonoBehaviour:
     min: 2
     max: 5
     changePerScore: -0.5
-  additionalShapes: 
+  additionalShapes: 010000000400000008000000090000000a0000000b0000000c0000000d000000

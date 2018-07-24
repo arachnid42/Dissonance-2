@@ -760,43 +760,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 3
-    scoreInterval: 10
-    probability: 0.65
-    startScore: 10
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 3
+    scoreInterval: 10
+    probability: 0.65
+    startScore: 10
   freeze:
     max: 99
-    number: 2
-    scoreInterval: 10
-    probability: 0.55
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 2
+    scoreInterval: 10
+    probability: 0.55
+    startScore: 5
   explosion:
     max: 99
-    number: 2
-    scoreInterval: 15
-    probability: 0.35
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 2
+    scoreInterval: 15
+    probability: 0.35
+    startScore: 5
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 3
@@ -2600,43 +2597,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 2
-    scoreInterval: 15
-    probability: 0.7
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 2
+    scoreInterval: 15
+    probability: 0.7
+    startScore: 0
   freeze:
     max: 99
-    number: 4
-    scoreInterval: 15
-    probability: 0.6
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 4
-    scoreInterval: 20
+    scoreInterval: 15
     probability: 0.6
     startScore: 5
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 4
+    scoreInterval: 20
+    probability: 0.6
+    startScore: 5
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 3
@@ -3647,43 +3641,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 1
-    scoreInterval: 10
-    probability: 0.5
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 1
+    scoreInterval: 10
+    probability: 0.5
+    startScore: 0
   freeze:
     max: 99
-    number: 0
-    scoreInterval: 10
-    probability: 0.4
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 0
+    scoreInterval: 10
+    probability: 0.4
+    startScore: 1
   explosion:
     max: 99
-    number: 0
-    scoreInterval: 25
-    probability: 0.4
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 25
+    probability: 0.4
+    startScore: 0
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 3
@@ -4863,43 +4854,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 0
-    scoreInterval: 10
-    probability: 0.5
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 10
-    probability: 0.35
-    startScore: 1
+    probability: 0.5
+    startScore: 0
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 0
+    scoreInterval: 10
+    probability: 0.35
+    startScore: 1
   explosion:
     max: 99
-    number: 0
-    scoreInterval: 25
-    probability: 0.35
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 25
+    probability: 0.35
+    startScore: 0
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 3
@@ -8618,43 +8606,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 1
-    scoreInterval: 10
-    probability: 0.5
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 1
     scoreInterval: 10
-    probability: 0.45
-    startScore: 1
+    probability: 0.5
+    startScore: 0
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 1
+    scoreInterval: 10
+    probability: 0.45
+    startScore: 1
   explosion:
     max: 99
-    number: 1
-    scoreInterval: 25
-    probability: 0.45
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 1
+    scoreInterval: 25
+    probability: 0.45
+    startScore: 0
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 4
@@ -9503,43 +9488,40 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 3
@@ -10190,43 +10172,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 1
-    scoreInterval: 5
-    probability: 0.75
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 1
+    scoreInterval: 5
+    probability: 0.75
+    startScore: 1
   freeze:
     max: 99
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 2
@@ -11693,43 +11672,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 1
-    scoreInterval: 5
-    probability: 0.75
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 1
+    scoreInterval: 5
+    probability: 0.75
+    startScore: 1
   freeze:
     max: 99
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 2
@@ -13209,43 +13185,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 1
-    scoreInterval: 10
-    probability: 0.6
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 1
     scoreInterval: 10
-    probability: 0.35
+    probability: 0.6
     startScore: 0
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 1
-    scoreInterval: 15
+    scoreInterval: 10
     probability: 0.35
     startScore: 0
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 1
+    scoreInterval: 15
+    probability: 0.35
+    startScore: 0
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 4
@@ -13715,43 +13688,40 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 1
@@ -15941,43 +15911,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 2
@@ -19350,43 +19317,40 @@ MonoBehaviour:
         scoreInterval: 10
       heart:
         max: 0
-        number: 0
-        scoreInterval: 0
-        probability: 0
-        startScore: 0
         slowdown:
           inTime: 0
           stayTime: 0
           outTime: 0
           speedScale: 0
           type: 0
-        useSlowdown: 0
+        number: 0
+        scoreInterval: 0
+        probability: 0
+        startScore: 0
       freeze:
         max: 0
-        number: 0
-        scoreInterval: 0
-        probability: 0
-        startScore: 0
         slowdown:
           inTime: 0
           stayTime: 0
           outTime: 0
           speedScale: 0
           type: 0
-        useSlowdown: 0
+        number: 0
+        scoreInterval: 0
+        probability: 0
+        startScore: 0
       explosion:
         max: 0
-        number: 0
-        scoreInterval: 0
-        probability: 0
-        startScore: 0
         slowdown:
           inTime: 0
           stayTime: 0
           outTime: 0
           speedScale: 0
           type: 0
-        useSlowdown: 0
+        number: 0
+        scoreInterval: 0
+        probability: 0
+        startScore: 0
       shapesOnScreen:
         upToMinScoreInterval: 1
         min: 1
@@ -19452,43 +19416,40 @@ MonoBehaviour:
         scoreInterval: 10
       heart:
         max: 0
-        number: 0
-        scoreInterval: 0
-        probability: 0
-        startScore: 0
         slowdown:
           inTime: 0
           stayTime: 0
           outTime: 0
           speedScale: 0
           type: 0
-        useSlowdown: 0
+        number: 0
+        scoreInterval: 0
+        probability: 0
+        startScore: 0
       freeze:
         max: 0
-        number: 0
-        scoreInterval: 0
-        probability: 0
-        startScore: 0
         slowdown:
           inTime: 0
           stayTime: 0
           outTime: 0
           speedScale: 0
           type: 0
-        useSlowdown: 0
+        number: 0
+        scoreInterval: 0
+        probability: 0
+        startScore: 0
       explosion:
         max: 0
-        number: 0
-        scoreInterval: 0
-        probability: 0
-        startScore: 0
         slowdown:
           inTime: 0
           stayTime: 0
           outTime: 0
           speedScale: 0
           type: 0
-        useSlowdown: 0
+        number: 0
+        scoreInterval: 0
+        probability: 0
+        startScore: 0
       shapesOnScreen:
         upToMinScoreInterval: 1
         min: 1
@@ -21013,43 +20974,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 1
-    scoreInterval: 10
-    probability: 0.55
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 1
     scoreInterval: 10
-    probability: 0.3
+    probability: 0.55
     startScore: 0
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 1
-    scoreInterval: 15
+    scoreInterval: 10
     probability: 0.3
     startScore: 0
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 1
+    scoreInterval: 15
+    probability: 0.3
+    startScore: 0
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 3
@@ -22274,43 +22232,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 1
-    scoreInterval: 10
-    probability: 0.55
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 1
+    scoreInterval: 10
+    probability: 0.55
+    startScore: 5
   freeze:
     max: 99
-    number: 2
-    scoreInterval: 10
-    probability: 0.35000002
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 2
+    scoreInterval: 10
+    probability: 0.35000002
+    startScore: 5
   explosion:
     max: 99
-    number: 1
-    scoreInterval: 15
-    probability: 0.3
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 1
+    scoreInterval: 15
+    probability: 0.3
+    startScore: 5
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 4
@@ -22916,43 +22871,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 2
-    scoreInterval: 5
-    probability: 0.75
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 2
+    scoreInterval: 5
+    probability: 0.75
+    startScore: 1
   freeze:
     max: 99
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 4
@@ -30410,7 +30362,6 @@ MonoBehaviour:
   startScoreSlider: {fileID: 1528972749}
   scoreIntervalSlider: {fileID: 997842609}
   probabilitySlider: {fileID: 1770673838}
-  max: 99
   numberSliderData:
     min: 0
     max: 100
@@ -30849,11 +30800,6 @@ Prefab:
     - target: {fileID: 4881324083747744, guid: 7b9ebebd7d4719d4cb83541be96de058, type: 2}
       propertyPath: m_RootOrder
       value: 46
-      objectReference: {fileID: 0}
-    - target: {fileID: 114111279544529516, guid: 7b9ebebd7d4719d4cb83541be96de058,
-        type: 2}
-      propertyPath: target.endless
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b9ebebd7d4719d4cb83541be96de058, type: 2}
@@ -32050,7 +31996,6 @@ MonoBehaviour:
   startScoreSlider: {fileID: 843517061}
   scoreIntervalSlider: {fileID: 1430940310}
   probabilitySlider: {fileID: 1966379158}
-  max: 99
   numberSliderData:
     min: 0
     max: 100
@@ -33558,43 +33503,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 2
-    scoreInterval: 10
-    probability: 0.65
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 2
+    scoreInterval: 10
+    probability: 0.65
+    startScore: 0
   freeze:
     max: 99
-    number: 1
-    scoreInterval: 10
-    probability: 0.4
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 1
-    scoreInterval: 15
+    scoreInterval: 10
     probability: 0.4
     startScore: 0
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 1
+    scoreInterval: 15
+    probability: 0.4
+    startScore: 0
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 4
@@ -33859,43 +33801,40 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 3
@@ -33995,43 +33934,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 3
@@ -34131,43 +34067,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 3
-    scoreInterval: 10
-    probability: 0.6
-    startScore: 10
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 3
+    scoreInterval: 10
+    probability: 0.6
+    startScore: 10
   freeze:
     max: 99
-    number: 2
-    scoreInterval: 10
-    probability: 0.5
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 2
+    scoreInterval: 10
+    probability: 0.5
+    startScore: 5
   explosion:
     max: 99
-    number: 2
-    scoreInterval: 15
-    probability: 0.35
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 2
+    scoreInterval: 15
+    probability: 0.35
+    startScore: 5
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 3
@@ -34721,43 +34654,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 1
-    scoreInterval: 5
-    probability: 0.75
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 1
+    scoreInterval: 5
+    probability: 0.75
+    startScore: 1
   freeze:
     max: 99
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 3
@@ -37468,43 +37398,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 0
-    scoreInterval: 10
-    probability: 0.5
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 10
-    probability: 0.25
-    startScore: 1
+    probability: 0.5
+    startScore: 0
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 0
+    scoreInterval: 10
+    probability: 0.25
+    startScore: 1
   explosion:
     max: 99
-    number: 0
-    scoreInterval: 25
-    probability: 0.25
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 25
+    probability: 0.25
+    startScore: 0
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 2
@@ -38478,43 +38405,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 1
-    scoreInterval: 15
-    probability: 0.55
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 1
+    scoreInterval: 15
+    probability: 0.55
+    startScore: 0
   freeze:
     max: 99
-    number: 3
-    scoreInterval: 15
-    probability: 0.45000002
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 3
-    scoreInterval: 20
+    scoreInterval: 15
     probability: 0.45000002
     startScore: 5
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 3
+    scoreInterval: 20
+    probability: 0.45000002
+    startScore: 5
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 1
@@ -39370,43 +39294,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 1
-    scoreInterval: 5
-    probability: 0.75
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 1
+    scoreInterval: 5
+    probability: 0.75
+    startScore: 1
   freeze:
     max: 99
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 3
@@ -40027,43 +39948,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 0
-    scoreInterval: 10
-    probability: 0.5
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 10
-    probability: 0.3
-    startScore: 1
+    probability: 0.5
+    startScore: 0
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 0
+    scoreInterval: 10
+    probability: 0.3
+    startScore: 1
   explosion:
     max: 99
-    number: 0
-    scoreInterval: 25
-    probability: 0.3
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 25
+    probability: 0.3
+    startScore: 0
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 2
@@ -40386,43 +40304,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 2
@@ -43129,43 +43044,40 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 2
@@ -45881,43 +45793,40 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 1
@@ -47802,43 +47711,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 1
-    scoreInterval: 15
-    probability: 0.5
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 1
+    scoreInterval: 15
+    probability: 0.5
+    startScore: 0
   freeze:
     max: 99
-    number: 3
-    scoreInterval: 15
-    probability: 0.4
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 3
-    scoreInterval: 20
+    scoreInterval: 15
     probability: 0.4
     startScore: 5
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 3
+    scoreInterval: 20
+    probability: 0.4
+    startScore: 5
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 1
@@ -47985,43 +47891,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 1
-    scoreInterval: 10
-    probability: 0.5
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 1
+    scoreInterval: 10
+    probability: 0.5
+    startScore: 5
   freeze:
     max: 99
-    number: 2
-    scoreInterval: 10
-    probability: 0.3
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
-    number: 1
-    scoreInterval: 15
+    number: 2
+    scoreInterval: 10
     probability: 0.3
     startScore: 5
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 1
+    scoreInterval: 15
+    probability: 0.3
+    startScore: 5
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 4
@@ -54960,43 +54863,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 1
-    scoreInterval: 15
-    probability: 0.6
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 1
+    scoreInterval: 15
+    probability: 0.6
+    startScore: 0
   freeze:
     max: 99
-    number: 3
-    scoreInterval: 15
-    probability: 0.5
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 3
-    scoreInterval: 20
+    scoreInterval: 15
     probability: 0.5
     startScore: 5
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 3
+    scoreInterval: 20
+    probability: 0.5
+    startScore: 5
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 2
@@ -57693,43 +57593,40 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 1
@@ -58811,43 +58708,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 1
-    scoreInterval: 15
-    probability: 0.65
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 1
+    scoreInterval: 15
+    probability: 0.65
+    startScore: 0
   freeze:
     max: 99
-    number: 3
-    scoreInterval: 15
-    probability: 0.55
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 3
-    scoreInterval: 20
+    scoreInterval: 15
     probability: 0.55
     startScore: 5
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 3
+    scoreInterval: 20
+    probability: 0.55
+    startScore: 5
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 2
@@ -60633,43 +60527,40 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 2
@@ -63549,43 +63440,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 3
-    scoreInterval: 10
-    probability: 0.7
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 3
     scoreInterval: 10
-    probability: 0.5
+    probability: 0.7
     startScore: 5
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 3
+    scoreInterval: 10
+    probability: 0.5
+    startScore: 5
   explosion:
     max: 99
-    number: 1
-    scoreInterval: 15
-    probability: 0.3
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 1
+    scoreInterval: 15
+    probability: 0.3
+    startScore: 5
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 6
@@ -64858,43 +64746,40 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 1
@@ -65236,43 +65121,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 2
-    scoreInterval: 10
-    probability: 0.7
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 2
     scoreInterval: 10
-    probability: 0.45
+    probability: 0.7
     startScore: 0
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 2
-    scoreInterval: 15
+    scoreInterval: 10
     probability: 0.45
     startScore: 0
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 2
+    scoreInterval: 15
+    probability: 0.45
+    startScore: 0
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 5
@@ -65907,43 +65789,40 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 2
@@ -66294,43 +66173,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 1
-    scoreInterval: 10
-    probability: 0.5
-    startScore: 0
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 1
     scoreInterval: 10
-    probability: 0.25
+    probability: 0.5
     startScore: 0
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 1
-    scoreInterval: 15
+    scoreInterval: 10
     probability: 0.25
     startScore: 0
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 1
+    scoreInterval: 15
+    probability: 0.25
+    startScore: 0
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 3
@@ -67157,43 +67033,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 2
-    scoreInterval: 10
-    probability: 0.55
-    startScore: 10
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 2
     scoreInterval: 10
-    probability: 0.45000002
-    startScore: 5
+    probability: 0.55
+    startScore: 10
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 2
+    scoreInterval: 10
+    probability: 0.45000002
+    startScore: 5
   explosion:
     max: 99
-    number: 2
-    scoreInterval: 15
-    probability: 0.35
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 2
+    scoreInterval: 15
+    probability: 0.35
+    startScore: 5
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 2
@@ -67436,43 +67309,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 4
-    scoreInterval: 10
-    probability: 0.7
-    startScore: 10
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 4
+    scoreInterval: 10
+    probability: 0.7
+    startScore: 10
   freeze:
     max: 99
-    number: 3
-    scoreInterval: 10
-    probability: 0.6
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 3
+    scoreInterval: 10
+    probability: 0.6
+    startScore: 5
   explosion:
     max: 99
-    number: 2
-    scoreInterval: 15
-    probability: 0.35
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 2
+    scoreInterval: 15
+    probability: 0.35
+    startScore: 5
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 4
@@ -69536,43 +69406,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 2
-    scoreInterval: 10
-    probability: 0.5
-    startScore: 10
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 2
     scoreInterval: 10
-    probability: 0.4
-    startScore: 5
+    probability: 0.5
+    startScore: 10
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 2
+    scoreInterval: 10
+    probability: 0.4
+    startScore: 5
   explosion:
     max: 99
-    number: 2
-    scoreInterval: 15
-    probability: 0.35
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 2
+    scoreInterval: 15
+    probability: 0.35
+    startScore: 5
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 2
@@ -70392,43 +70259,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 2
-    scoreInterval: 10
-    probability: 0.65
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 2
     scoreInterval: 10
-    probability: 0.45000002
+    probability: 0.65
     startScore: 5
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 2
+    scoreInterval: 10
+    probability: 0.45000002
+    startScore: 5
   explosion:
     max: 99
-    number: 1
-    scoreInterval: 15
-    probability: 0.3
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 1
+    scoreInterval: 15
+    probability: 0.3
+    startScore: 5
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 5
@@ -70839,43 +70703,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 1
@@ -71721,43 +71582,40 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 2
@@ -71989,43 +71847,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 2
-    scoreInterval: 10
-    probability: 0.6
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 2
     scoreInterval: 10
-    probability: 0.4
+    probability: 0.6
     startScore: 5
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
+    number: 2
+    scoreInterval: 10
+    probability: 0.4
+    startScore: 5
   explosion:
     max: 99
-    number: 1
-    scoreInterval: 15
-    probability: 0.3
-    startScore: 5
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 1
+    scoreInterval: 15
+    probability: 0.3
+    startScore: 5
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 5
@@ -72997,7 +72852,6 @@ MonoBehaviour:
   startScoreSlider: {fileID: 596781248}
   scoreIntervalSlider: {fileID: 1624074835}
   probabilitySlider: {fileID: 653994758}
-  max: 9
   numberSliderData:
     min: 0
     max: 100
@@ -73991,43 +73845,40 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    number: 0
-    scoreInterval: 1
-    probability: 0
-    startScore: 1
     slowdown:
       inTime: 0.1
       stayTime: 2
       outTime: 5
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  freeze:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  freeze:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 5
       outTime: 15
       speedScale: 0.1
       type: 1
-    useSlowdown: 1
-  explosion:
-    max: 99
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
+  explosion:
+    max: 99
     slowdown:
       inTime: 0.1
       stayTime: 0.5
       outTime: 20
       speedScale: 0.1
       type: 1
-    useSlowdown: 0
+    number: 0
+    scoreInterval: 1
+    probability: 0
+    startScore: 1
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 1
