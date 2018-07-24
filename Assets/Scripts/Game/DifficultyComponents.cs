@@ -5,7 +5,7 @@ using Assets.Scripts.Shape;
 
 namespace Assets.Scripts.Game
 {
-    public partial class Difficulty : MonoBehaviour
+    public partial class Difficulty
     {
 
         [System.Serializable]
@@ -14,7 +14,7 @@ namespace Assets.Scripts.Game
             [HideInInspector]
             public int max = 4;
             [HideInInspector]
-            public Slowdown slowdown = new Slowdown(Slowdown.Type.Bonus);
+            public Slowdown slowdown = null;
 
             [Range(0, 100)]
             public int number = 1;
