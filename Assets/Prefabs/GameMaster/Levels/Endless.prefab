@@ -69,35 +69,35 @@ MonoBehaviour:
     speedScale: 0.5
     type: 2
   randomRotation:
-    rotationReactionTime: 0.5
-    reactionTime: 1.1
+    rotationReactionTime: 0.25
+    reactionTime: 1
     probability: 0
-    timeInterval: 10
+    timeInterval: 1
   rotation:
-    min: 45
+    min: 30
     max: 90
   initialGameMode: 2
   modeChange:
-    maxAtOnce: 1
+    maxAtOnce: 3
     reactionTime: 0.75
     scoreCooldown: 5
-    startScore: 1
+    startScore: 5
     timeCooldown: 10
   basketMode:
     scoreBased: 1
-    probability: 0
+    probability: 0.5
     timeInterval: 10
     scoreInterval: 10
   basketShapes:
     scoreBased: 1
-    probability: 0
-    timeInterval: 10
-    scoreInterval: 10
+    probability: 0.5
+    timeInterval: 15
+    scoreInterval: 15
   basketColors:
     scoreBased: 1
-    probability: 0
-    timeInterval: 10
-    scoreInterval: 10
+    probability: 0.5
+    timeInterval: 20
+    scoreInterval: 20
   heart:
     max: 9
     slowdown:
@@ -106,9 +106,9 @@ MonoBehaviour:
       outTime: 5
       speedScale: 0.1
       type: 1
-    number: 0
-    scoreInterval: 10
-    probability: 1
+    number: 100
+    scoreInterval: 25
+    probability: 0.75
     startScore: 0
   freeze:
     max: 99
@@ -118,10 +118,10 @@ MonoBehaviour:
       outTime: 15
       speedScale: 0.1
       type: 1
-    number: 0
+    number: 100
     scoreInterval: 10
-    probability: 1
-    startScore: 0
+    probability: 0.5
+    startScore: 10
   explosion:
     max: 99
     slowdown:
@@ -130,17 +130,17 @@ MonoBehaviour:
       outTime: 20
       speedScale: 0.1
       type: 1
-    number: 0
-    scoreInterval: 1
-    probability: 1
-    startScore: 0
+    number: 100
+    scoreInterval: 15
+    probability: 0.5
+    startScore: 15
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 1
-    max: 1
-    increaseScoreInterval: 1
+    max: 9
+    increaseScoreInterval: 10
   playerReactionTime:
-    min: 2
-    max: 5
-    changePerScore: -0.5
+    min: 1
+    max: 4
+    changePerScore: -0.1
   additionalShapes: 010000000400000008000000090000000a0000000b0000000c0000000d000000
