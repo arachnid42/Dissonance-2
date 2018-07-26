@@ -81,13 +81,6 @@
 		{"key":"save", "value":"Save"},
 		{"key":"revert", "value":"Revert"},
 
-
-
-
-
-
-
-
 		{"key":"free", "value":"Free"},
 		{"key":"buy", "value":"Buy"},
 
@@ -96,6 +89,10 @@
 		{"key":"time", "value":"Time"},
 		{"key":"bestScore", "value":"Best Score"},
 		{"key":"bestTime", "value":"Best Time"},
+
+		{"key":"rateTittle", "value":"Do you enjoy this game?"},
+		{"key":"ratePlaceholder", "value":"Help us improve. Enter your feadback here..."},
+
 
 		{"key":"pauseTutorial", "value":"To pause the game you need to swipe up or down"},
 		{"key":"bonusTutorial", "value":"Tap on bonus to catch it."},

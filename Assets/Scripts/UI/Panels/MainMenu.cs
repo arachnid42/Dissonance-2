@@ -121,6 +121,18 @@ namespace Assets.Scripts.UI.Panels
 
         public void OnRateButtonClick()
         {
+            if (PersistentState.Instance.data.rating.rating <= PersistentState.Instance.config.goodRatingMin)
+            {
+                UIController.Instance.PanelController.RatePanel.SetHidddenAnimation(false).Start();
+            }
+            else
+            {
+                OpenAppUrlInMarket();
+            }
+        }
+
+        public void OpenAppUrlInMarket()
+        {
 #if UNITY_ANDROID
             Application.OpenURL(string.Format("market://details?id={0}", appID));
 #endif

@@ -83,14 +83,22 @@ namespace Assets.Scripts.UI
             {
                 var gameOverAnim = new BasePanel.Animation(Delay(delay));
                 gameOverAnim.After(PanelController.GameOverWinPanel.SetHiddenEnumerator(false, background: PanelController.backgroundPanel));
+                SetShowRatePanel(gameOverAnim);
                 gameOverAnim.Start();
             }
             else
             {
                 var gameOverAnim = new BasePanel.Animation(Delay(delay));
                 gameOverAnim.After(PanelController.GameOverPanel.SetHiddenEnumerator(false, background: PanelController.backgroundPanel));
+                SetShowRatePanel(gameOverAnim);
                 gameOverAnim.Start();
             }
+        }
+
+        private void SetShowRatePanel(BasePanel.Animation animation)
+        {
+            if(PersistentState.Instance.ShouldAskRating())
+                animation.After(PanelController.RatePanel.SetHiddenEnumerator(false));
         }
 
         private IEnumerator Delay(float seconds)
