@@ -3,7 +3,6 @@ using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System.Collections;
-using mixpanel;
 
 namespace Assets.Scripts.Game
 {
@@ -231,13 +230,6 @@ namespace Assets.Scripts.Game
 
         public void SendRating(float rating, string comment)
         {
-            var values = new Value();
-
-            values["rating"] = rating;
-            values["comment"] = comment;
-
-            string name = rating < config.goodRatingMin ? "BAD_RATING" : "GOOD_RATING";
-            Mixpanel.Track(name, values);
             data.rating = new Data.Rating()
             {
                 rating = rating,
