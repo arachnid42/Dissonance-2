@@ -10,8 +10,16 @@ namespace Assets.Scripts.UI.Panels
     {
 
         [SerializeField]
-        private Text donate = null, 
-            back = null;
+        private Text donate, back = null;
+
+        [SerializeField]
+        private Button disableAdsButton;
+
+        private IEnumerator Start()
+        {
+            yield return WaitForStore();
+            Purchases.Instance.OnSuccess += OnPurchaseSuccess;
+        }
 
         private void OnEnable()
         {
@@ -23,6 +31,19 @@ namespace Assets.Scripts.UI.Panels
         {
             donate.text = Text("donate");
             back.text = Text("back");
+        }
+
+        private void OnPurchaseSuccess(string id)
+        {
+            if (id == Purchases.DISABLE_ADS)
+            {
+                disableAdsButton.gameObject.SetActive(false);
+            }
+        }
+
+        private void OnPurchaseFail(string id)
+        {
+
         }
 
         public void OnDisableAdsClick()
