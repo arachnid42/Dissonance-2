@@ -64,11 +64,16 @@ namespace Assets.Scripts.Monetization
             if (Initialized)
                 return;
             var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
-            foreach(var product in products)
+            builder.Configure<IGooglePlayConfiguration>().SetPublicKey("MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhxGYOhvutcdFyxDzlxk2HrZ/5Rvh/Geg5LWImhI6fgF0nuarTMjZiMNeqRsSVLMna3jOJy8lNxo/T/okpKBUQ4vTS5xJkEbMRIm8ozGa3dd6jQgJWrWFiZ8dT8n1pgmnLRJmUiHOCuDwQoH6+RaIi8DKYmrL3Jh/6iCXPDt7od7QMhlE/umMM3c3crRzHahx2eDicaVJSNTdSQoGnkUFFOncQGmVV3tF4PUwLGV1rToq6VKhabH0HFJxUzl+Bh9QQCa3ysbIMakQp+QsAbgNENemHidFoUslV60yj83SY3kLwNSr5PfFKlfI07yd5HSUwvC0wjLB+gAbcNEF0WcdBQIDAQAB");
+            foreach (var product in products)
             {
                 if (product.type != ProductType.Subscription)
                 {
-                    builder.AddProduct(product.id, product.type);
+                    var ids = new IDs
+                    {
+                        { product.id, GooglePlay.Name }
+                    };
+                    builder.AddProduct(product.id, product.type, ids);
                 }
                 else
                 {
@@ -84,6 +89,22 @@ namespace Assets.Scripts.Monetization
             Debug.Log("Purchases are initialized!");
             storeController = controller;
             storeExtensionProvider = extensions;
+
+            foreach (var item in controller.products.all)
+            {
+                if (item.availableToPurchase)
+                {
+                    Debug.Log(string.Join(" - ",
+                        new[]
+                        {
+                         item.metadata.localizedTitle,
+                         item.metadata.localizedDescription,
+                         item.metadata.isoCurrencyCode,
+                         item.metadata.localizedPrice.ToString(),
+                         item.metadata.localizedPriceString
+                        }));
+                }
+            }
         }
 
         public void Buy(string id)
