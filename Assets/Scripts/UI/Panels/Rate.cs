@@ -10,38 +10,31 @@ namespace Assets.Scripts.UI.Panels
     public class Rate : BasePanel
     {
         [SerializeField]
-        private Text tittle = null, placeholder = null, rate = null;
+        private Text tittle = null, feadback = null, rate = null;
         [SerializeField]
-        private GameObject feadbackPanel;
+        private GameObject buttonsPanel;
         [SerializeField]
-        private InputField inputField;
-        [SerializeField]
-        private Button submitButton;
+        private Button submitButton, feadbackButton;
         [SerializeField]
         private Animator submitTextAnimator;
-        [SerializeField]
-        private Color activeButtonColor, inactiveButtonColor;
         [SerializeField]
         private RateStars rateStars;
 
         private int rateVal;
-        private string feadback;
-        private bool isReadyToSubmit;
+        private string EMAIL = "drotherok@gmail.com";
+        private string EMAIL_SUBJECT = "Dissonance 2 Feadback";
 
         private void Start()
         {
             rateStars.OnRateChanges = HandleRateChanges;
-            IsReadyToSubmit = false;
-            rateVal = 0;
         }
 
         private void OnEnable()
         {
-            //rateVal = Mathf.FloorToInt(PersistentState.Instance.data.rating.rating);
+            rateVal = 0;
             SetLabels(UpdateLabels);
             rateStars.Rating = rateVal;
             HandleRateChanges(rateVal);
-            inputField.text = "";
         }
 
         private void OnDisable()
@@ -52,7 +45,7 @@ namespace Assets.Scripts.UI.Panels
         private void UpdateLabels()
         {
             tittle.text = Text("rateTittle");
-            placeholder.text = Text("ratePlaceholder");
+            feadback.text = Text("feadbackButton");
             rate.text = Text("rate");
 
         }
@@ -61,42 +54,23 @@ namespace Assets.Scripts.UI.Panels
         {
             if(rate == 0)
             {
-                feadbackPanel.SetActive(false);
-                IsReadyToSubmit = false;
-                return;
-            }else if (rate < 5)
-                feadbackPanel.SetActive(true);
-            else
-                feadbackPanel.SetActive(false);
-            IsReadyToSubmit = true;
-
-        }
-
-        private bool IsReadyToSubmit
-        {
-            get { return isReadyToSubmit; }
-            set { isReadyToSubmit = value; UpdateSubmitButton(); }
-        }
-
-        private void UpdateSubmitButton()
-        {
-            if (isReadyToSubmit)
-            {
-                submitButton.interactable = true;
-                submitTextAnimator.enabled = true;
-                submitButton.GetComponent<Image>().color = activeButtonColor;
+                buttonsPanel.SetActive(false);
             }
             else
             {
-                submitButton.interactable = false;
-                submitTextAnimator.enabled = false;
-                submitButton.GetComponent<Image>().color = inactiveButtonColor;
+                buttonsPanel.SetActive(true);
+                if (rate < PersistentState.Instance.config.goodRatingMin)
+                {
+                    feadbackButton.gameObject.SetActive(true);
+                    submitButton.gameObject.SetActive(false);
+                }
+                else
+                {
+                    feadbackButton.gameObject.SetActive(false);
+                    submitButton.gameObject.SetActive(true);
+                }
             }
-        }
 
-        public void OnTextChange(string text)
-        {
-            feadback = inputField.text;
         }
 
         public void OnCloseButton()
@@ -104,17 +78,29 @@ namespace Assets.Scripts.UI.Panels
             SetHidddenAnimation(true).Start();
         }
 
-        public void OnSubmitRateClick()
+        public void OnRateButtonClick()
         {
             PersistentState persistentState = PersistentState.Instance;
             persistentState.data.rating.rating = rateStars.Rating;
-            persistentState.SendRating(rateStars.Rating, feadback);
+            persistentState.SendRating(rateStars.Rating, "Good rating");
             OnCloseButton();
             MainMenu mainMenu = UIController.Instance.PanelController.mainMenuPanel.GetComponent<MainMenu>();
             mainMenu.OpenAppUrlInMarket();
         }
 
+        public void OnFeadbackButtonClick()
+        {
+            PersistentState persistentState = PersistentState.Instance;
+            persistentState.data.rating.rating = rateStars.Rating;
+            persistentState.SendRating(rateStars.Rating, "Bad rating");
+            OnCloseButton();
+            SendFeadbackMail();
+        }
 
+        private void SendFeadbackMail()
+        {
+            Application.OpenURL(string.Format("mailto:{0}?subject={1}",EMAIL,EMAIL_SUBJECT));
+        }
     }
 }
 
