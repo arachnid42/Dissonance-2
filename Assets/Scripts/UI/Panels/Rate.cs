@@ -10,18 +10,18 @@ namespace Assets.Scripts.UI.Panels
     public class Rate : BasePanel
     {
         [SerializeField]
-        private Text tittle = null, feadback = null, rate = null;
+        private Text tittle = null, feedback = null, rate = null;
         [SerializeField]
         private GameObject buttonsPanel;
         [SerializeField]
-        private Button submitButton, feadbackButton;
+        private Button submitButton, feedbackButton;
         [SerializeField]
         private Animator submitTextAnimator;
         [SerializeField]
         private RateStars rateStars;
 
         private int rateVal;
-        private string EMAIL = "drotherok@gmail.com";
+        private string EMAIL = "arachnid42.games.feedback@gmail.com";
         private string EMAIL_SUBJECT = "Dissonance 2 Feadback";
 
         private void Start()
@@ -45,7 +45,7 @@ namespace Assets.Scripts.UI.Panels
         private void UpdateLabels()
         {
             tittle.text = Text("rateTittle");
-            feadback.text = Text("feadbackButton");
+            feedback.text = Text("feedbackButton");
             rate.text = Text("rate");
 
         }
@@ -61,12 +61,12 @@ namespace Assets.Scripts.UI.Panels
                 buttonsPanel.SetActive(true);
                 if (rate < PersistentState.Instance.config.goodRatingMin)
                 {
-                    feadbackButton.gameObject.SetActive(true);
+                    feedbackButton.gameObject.SetActive(true);
                     submitButton.gameObject.SetActive(false);
                 }
                 else
                 {
-                    feadbackButton.gameObject.SetActive(false);
+                    feedbackButton.gameObject.SetActive(false);
                     submitButton.gameObject.SetActive(true);
                 }
             }
@@ -88,18 +88,18 @@ namespace Assets.Scripts.UI.Panels
             mainMenu.OpenAppUrlInMarket();
         }
 
-        public void OnFeadbackButtonClick()
+        public void OnFeedbackButtonClick()
         {
             PersistentState persistentState = PersistentState.Instance;
             persistentState.data.rating.rating = rateStars.Rating;
             persistentState.SendRating(rateStars.Rating, "Bad rating");
             OnCloseButton();
-            SendFeadbackMail();
+            SendFeedbackMail();
         }
 
-        private void SendFeadbackMail()
+        private void SendFeedbackMail()
         {
-            Application.OpenURL(string.Format("mailto:{0}?subject={1}",EMAIL,EMAIL_SUBJECT));
+            Application.OpenURL(string.Format("mailto:{0}?subject={1}[{2}]",EMAIL,EMAIL_SUBJECT,rateStars.Rating.ToString()));
         }
     }
 }

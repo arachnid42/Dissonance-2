@@ -42,11 +42,13 @@ namespace Assets.Scripts.UI.Elements
         {
             if (free)
             {
-                badgeImage.GetComponent<Image>().color = freeColor;
-                badgeText.text = LocalizationManager.Instance["free"];
+                badgeImage.gameObject.SetActive(false);
+                //badgeImage.GetComponent<Image>().color = freeColor;
+                //badgeText.text = LocalizationManager.Instance["free"];
             }
             else
             {
+                badgeImage.gameObject.SetActive(true);
                 badgeImage.GetComponent<Image>().color = buyColor;
                 badgeText.text = LocalizationManager.Instance["buy"];
             }

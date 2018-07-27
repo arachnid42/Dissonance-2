@@ -29,11 +29,6 @@ namespace Assets.Scripts.UI.Panels
             UpdateRecordScores();
         }
 
-        public void OnSkipButtonClick()
-        {
-            Debug.Log("OnSkipButtonClick");
-        }
-
         public void OnReplayButtonClick()
         {
             BasePanel fade = UIController.Instance.PanelController.FadePanel;

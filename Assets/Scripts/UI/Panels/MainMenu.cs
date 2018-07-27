@@ -78,7 +78,7 @@ namespace Assets.Scripts.UI.Panels
 
         public void OnDonateButtonClick()
         {
-            SwitchToAnimation(UIController.Instance.PanelController.DonatePanel).Start();
+            UIController.Instance.data.activePanel.SwitchToAnimation(UIController.Instance.PanelController.DonatePanel).Start();
         }
 
         public void OnThemesButtonClick()

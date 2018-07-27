@@ -91,7 +91,7 @@
 		{"key":"bestTime", "value":"Best Time"},
 
 		{"key":"rateTittle", "value":"Do you enjoy this game?"},
-		{"key":"feadbackButton", "value":"Send Feadback"},
+		{"key":"feedbackButton", "value":"Send Feedback"},
 
 
 		{"key":"pauseTutorial", "value":"To pause the game you need to swipe up or down"},
