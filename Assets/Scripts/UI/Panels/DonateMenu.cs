@@ -29,7 +29,7 @@ namespace Assets.Scripts.UI.Panels
 
         private void UpdateLabels()
         {
-            donate.text = Text("donate");
+            donate.text = Text("donate")+" Test";
             back.text = Text("back");
         }
 
