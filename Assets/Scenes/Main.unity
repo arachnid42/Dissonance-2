@@ -19877,7 +19877,7 @@ MonoBehaviour:
       initialGameMode: 2
       additionalShapes: 
   config:
-    devMode: 1
+    devMode: 0
     askRatingTimesPlayedInterval: 15
     goodRatingMin: 4
   temp:
