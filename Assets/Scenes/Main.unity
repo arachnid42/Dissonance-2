@@ -60602,6 +60602,7 @@ MonoBehaviour:
   fadeDuration: 0.2
   donate: {fileID: 629012725}
   back: {fileID: 632809471}
+  disableAdsButton: {fileID: 1634895353}
 --- !u!225 &1665233448
 CanvasGroup:
   m_ObjectHideFlags: 0
