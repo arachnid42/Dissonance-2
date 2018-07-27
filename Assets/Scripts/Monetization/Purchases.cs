@@ -90,21 +90,21 @@ namespace Assets.Scripts.Monetization
             storeController = controller;
             storeExtensionProvider = extensions;
 
-            foreach (var item in controller.products.all)
-            {
-                if (item.availableToPurchase)
-                {
-                    Debug.Log(string.Join(" - ",
-                        new[]
-                        {
-                         item.metadata.localizedTitle,
-                         item.metadata.localizedDescription,
-                         item.metadata.isoCurrencyCode,
-                         item.metadata.localizedPrice.ToString(),
-                         item.metadata.localizedPriceString
-                        }));
-                }
-            }
+            //foreach (var item in controller.products.all)
+            //{
+            //    if (item.availableToPurchase)
+            //    {
+            //        Debug.Log(string.Join(" - ",
+            //            new[]
+            //            {
+            //             item.metadata.localizedTitle,
+            //             item.metadata.localizedDescription,
+            //             item.metadata.isoCurrencyCode,
+            //             item.metadata.localizedPrice.ToString(),
+            //             item.metadata.localizedPriceString
+            //            }));
+            //    }
+            //}
         }
 
         public void Buy(string id)
