@@ -8,7 +8,7 @@ namespace Assets.Scripts.Monetization
     class Purchases : MonoBehaviour, IStoreListener
     {
 
-        public const string DISABLE_ADS = "disable_ads ", DONATE = "donate", SKIP = "unlock_skip_3_levels", UNLOCK_ENDLESS = "unlock_endless_mode", UNLOCK_CONFIGURABLE = "unlock_configurable_mode";
+        public const string DISABLE_ADS = "disable_ads", DONATE = "donate", SKIP = "unlock_skip_3_levels", UNLOCK_ENDLESS = "unlock_endless_mode", UNLOCK_CONFIGURABLE = "unlock_configurable_mode";
 
         private static IStoreController storeController = null;
         private static IExtensionProvider storeExtensionProvider = null;
@@ -64,7 +64,7 @@ namespace Assets.Scripts.Monetization
             if (Initialized)
                 return;
             var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
-            builder.Configure<IGooglePlayConfiguration>().SetPublicKey("MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhxGYOhvutcdFyxDzlxk2HrZ/5Rvh/Geg5LWImhI6fgF0nuarTMjZiMNeqRsSVLMna3jOJy8lNxo/T/okpKBUQ4vTS5xJkEbMRIm8ozGa3dd6jQgJWrWFiZ8dT8n1pgmnLRJmUiHOCuDwQoH6+RaIi8DKYmrL3Jh/6iCXPDt7od7QMhlE/umMM3c3crRzHahx2eDicaVJSNTdSQoGnkUFFOncQGmVV3tF4PUwLGV1rToq6VKhabH0HFJxUzl+Bh9QQCa3ysbIMakQp+QsAbgNENemHidFoUslV60yj83SY3kLwNSr5PfFKlfI07yd5HSUwvC0wjLB+gAbcNEF0WcdBQIDAQAB");
+            //builder.Configure<IGooglePlayConfiguration>().SetPublicKey("MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhxGYOhvutcdFyxDzlxk2HrZ/5Rvh/Geg5LWImhI6fgF0nuarTMjZiMNeqRsSVLMna3jOJy8lNxo/T/okpKBUQ4vTS5xJkEbMRIm8ozGa3dd6jQgJWrWFiZ8dT8n1pgmnLRJmUiHOCuDwQoH6+RaIi8DKYmrL3Jh/6iCXPDt7od7QMhlE/umMM3c3crRzHahx2eDicaVJSNTdSQoGnkUFFOncQGmVV3tF4PUwLGV1rToq6VKhabH0HFJxUzl+Bh9QQCa3ysbIMakQp+QsAbgNENemHidFoUslV60yj83SY3kLwNSr5PfFKlfI07yd5HSUwvC0wjLB+gAbcNEF0WcdBQIDAQAB");
             foreach (var product in products)
             {
                 if (product.type != ProductType.Subscription)
