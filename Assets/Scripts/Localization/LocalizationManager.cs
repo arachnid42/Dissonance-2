@@ -9,8 +9,9 @@ namespace Assets.Scripts.Localization
     public class LocalizationManager : MonoBehaviour
     {
 
-        [Serializable]
+        public const string NOT_FOUND_TEXT = "UNKNOWN LABEL";
 
+        [Serializable]
         public class Listener
         {
             public TextMesh textMesh;
@@ -126,7 +127,18 @@ namespace Assets.Scripts.Localization
 
         public String this[string key]
         {
-            get { return items[key]; }
+            get
+            {
+                string value = null;
+                if(items.TryGetValue(key, out value))
+                {
+                    return value;
+                }
+                else
+                {
+                    return NOT_FOUND_TEXT;
+                }
+            }
         }
     }
 }
