@@ -64802,8 +64802,8 @@ MonoBehaviour:
   goalText: {fileID: 2078787014}
   score: {fileID: 852855580}
   scoreType: {fileID: 345203679}
-  skip: {fileID: 0}
-  replay: {fileID: 0}
+  skip: {fileID: 1989460845}
+  replay: {fileID: 508884456}
   mainMenu: {fileID: 3703695}
   newRecord: {fileID: 738873917}
   skipButton: {fileID: 149061780}
