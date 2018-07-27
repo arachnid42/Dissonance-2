@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Assets.Scripts.Monetization;
 
 namespace Assets.Scripts.UI.Panels
 {
@@ -22,6 +23,25 @@ namespace Assets.Scripts.UI.Panels
         {
             donate.text = Text("donate");
             back.text = Text("back");
+        }
+
+        public void OnDisableAdsClick()
+        {
+            StartCoroutine(DisableAds());
+        }
+
+        private IEnumerator WaitForStore()
+        {
+            while (!Purchases.Ready)
+                yield return null;
+        }
+
+        private IEnumerator DisableAds()
+        {
+            Debug.Log("Waiting for Purchases instance");
+            yield return WaitForStore();
+            Debug.Log("Call BuyDisableAds");
+            Purchases.Instance.BuyDisableAds();
         }
 
 

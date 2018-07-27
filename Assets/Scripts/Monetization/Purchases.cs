@@ -18,7 +18,7 @@ namespace Assets.Scripts.Monetization
         }
         public static bool Ready
         {
-            get; private set;
+            get { return Instance != null && Instance.Initialized; }
         }
         public class ProductDescriptor
         {
