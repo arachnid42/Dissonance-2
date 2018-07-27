@@ -76,6 +76,10 @@ namespace Assets.Scripts.UI.Panels
         public void OnCloseButton()
         {
             SetHidddenAnimation(true).Start();
+            if (PersistentState.Instance.ShouldAskRating())
+            {
+                PersistentState.Instance.DeclineRating();
+            }
         }
 
         public void OnRateButtonClick()
