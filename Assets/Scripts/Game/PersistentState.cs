@@ -238,6 +238,12 @@ namespace Assets.Scripts.Game
             Save();
         }
 
+        public void DeclineRating()
+        {
+            data.rating.timesPlayed = data.timesPlayed;
+            Save();
+        }
+
         public bool ShouldAskRating()
         {
             return data.rating.version != Application.version && data.timesPlayed - data.rating.timesPlayed >= config.askRatingTimesPlayedInterval && data.rating.rating < config.goodRatingMin;
