@@ -13,6 +13,7 @@ namespace Assets.Scripts.Game
     public partial class Difficulty : MonoBehaviour
     {
 
+
         public Target target = new Target();
 
         [HideInInspector]
@@ -92,6 +93,26 @@ namespace Assets.Scripts.Game
 
                 additionalShapes = new List<ShapeType>(additionalShapes)
             };
+        }
+
+        private bool ShouldShowBonusTutorial(Bonus bonus)
+        {
+            return bonus.max > 0 && bonus.number > 0 && bonus.probability > 0;
+        }
+
+        public bool ShouldShowExplosionBonusTutorial()
+        {
+            return ShouldShowBonusTutorial(explosion);
+        }
+
+        public bool ShouldShowFreezeBonusTutorial()
+        {
+            return ShouldShowBonusTutorial(freeze);
+        }
+
+        public bool ShouldShowLifeBonusTutorial()
+        {
+            return ShouldShowBonusTutorial(heart);
         }
 
     }

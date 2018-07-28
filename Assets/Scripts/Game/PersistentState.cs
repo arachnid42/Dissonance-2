@@ -38,6 +38,14 @@ namespace Assets.Scripts.Game
                 public float rating = 0;
                 public long timesPlayed = 0;
             }
+            [Serializable]
+            public class Tutorial
+            {
+                public bool basic = false;
+                public bool lifeBonus = false;
+                public bool freezeBonus = false;
+                public bool explosionBonus = false;
+            }
 
             public string colorPresetName = null;
             public int lastLevelIndex = 0;
@@ -57,8 +65,9 @@ namespace Assets.Scripts.Game
             public int endlessTimeRecord = 0;
 
             public Rating rating = new Rating();
-
+            public Tutorial turotiral = new Tutorial();
             public Difficulty.Data configurableModeData = null;
+
         }
 
         public static bool Ready
