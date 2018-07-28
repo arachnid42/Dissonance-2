@@ -292,9 +292,11 @@ namespace Assets.Scripts.Game
             if (Time.time - state.randomRotation.lastTime >= difficulty.timeInterval)
             {
                 List<RandomRotation> randomRotationCandidates = new List<RandomRotation>(state.shapesOnScreen.Count);
-
+               
                 foreach (GameObject shape in state.shapesOnScreen)
                 {
+                    if (shape.GetComponent<Destruction>().Started)
+                        continue;
                     if (GetCollisionTimeWithBasket(shape) >= state.PlayerReactionTime * difficulty.reactionTime)
                     {
                         var randomRotation = shape.GetComponent<Shape.Controller>().RandomRotation;
@@ -302,11 +304,12 @@ namespace Assets.Scripts.Game
                             randomRotationCandidates.Add(randomRotation);
                     }
                 }
+
                 if (randomRotationCandidates.Count > 0)
                 {
                     RandomRotation rotation = randomRotationCandidates[Random.Range(0, randomRotationCandidates.Count)];
                     if(Random.value <= difficulty.probability)
-                        rotation.StartRandomRotation(state.PlayerReactionTime*difficulty.rotationReactionTime);
+                        rotation.StartRandomRotation(GetCollisionTimeWithBasket(rotation.gameObject)/4);
                 }
                 state.randomRotation.lastTime = Time.time;
             }

@@ -77,7 +77,6 @@ namespace Assets.Scripts.Game
 
                 if (Actions.CheckDifficultyTarget())
                 {
-                    Actions.ExplodeShapesOnScreen();
                     state.SetGameOverData(true);
                     Listeners.OnGameOver(true);
                     state.Started = false;
