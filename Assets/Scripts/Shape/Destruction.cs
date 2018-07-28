@@ -51,11 +51,11 @@ namespace Assets.Scripts.Shape
             get { return partiallyDestroyed; }
         }
 
-        public void DestroyCompletely()
+        public void DestroyCompletely(bool particles = false, float delay = 0)
         {
             if (!Started)
             {
-                StartDestruction(completely:true);
+                StartDestruction(completely: true, particles: particles, delay: delay);
             }
             else
             {

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-
+using System.Linq;
 
 namespace Assets.Scripts.Game
 {
@@ -47,23 +47,13 @@ namespace Assets.Scripts.Game
             State.Reset();
         }
 
-        private System.Action RemoveShapeFromScreen(GameObject shape)
-        {
-            return () =>
-            {
-                shape.GetComponent<Shape.Controller>().Destruction.DestroyCompletely();
-            };
-        }
-
         private void ClearScreenShapesOnScreen()
         {
-            System.Action clearScreenAction = null;
-            foreach(var shape in State.shapesOnScreen)
+            List<GameObject> shapes = new List<GameObject>(State.shapesOnScreen);
+            foreach(var shape in shapes)
             {
-                clearScreenAction += RemoveShapeFromScreen(shape);
+                shape.GetComponent<Shape.Destruction>().DestroyCompletely(particles: true, delay: State.Difficulty.slowdown.inTime);
             }
-            if(clearScreenAction!=null)
-                clearScreenAction();
         }
 
 
@@ -111,6 +101,7 @@ namespace Assets.Scripts.Game
 
             }
             Time.timeScale = 1;
+            Actions.StandardSlowDownShapesOnScreen();
             ClearScreenShapesOnScreen();
         }
 

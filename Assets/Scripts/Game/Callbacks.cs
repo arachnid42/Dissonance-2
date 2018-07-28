@@ -28,8 +28,6 @@ namespace Assets.Scripts.Game
             {
                 master.State.SetGameOverData(false);
                 master.Listeners.OnGameOver(false);
-                master.Actions.StandardSlowDownShapesOnScreen();
-                master.Actions.ExplodeShapesOnScreenDelayed(master.State.Difficulty.slowdown.inTime);
                 master.Stop();
             }
         }
