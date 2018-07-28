@@ -38,10 +38,12 @@ namespace Assets.Scripts.Game
                 public float rating = 0;
                 public long timesPlayed = 0;
             }
+
             public string colorPresetName = null;
             public int lastLevelIndex = 0;
             public int levelsUnlocked = 1;
 
+            public bool themesUnlocked = false;
             public bool customModeUnlocked = false;
             public bool endlessModeUnlocked = false;
             public bool adsDisabled = false;
