@@ -61,7 +61,6 @@ namespace Assets.Scripts.UI.Mapping
 
             data.randomRotation = randomRotationSpoiler.GetData();
             data.randomRotation.reactionTime = odata.randomRotation.reactionTime;
-            data.randomRotation.rotationReactionTime = odata.randomRotation.rotationReactionTime;
 
             data.playerReactionTime = reactionTimeSpoiler.GetData();
             data.basketMode = gameModeChangeSpoiler.GetData();

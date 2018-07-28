@@ -226,7 +226,6 @@ namespace Assets.Scripts.Game
                     randomRotation.probability = Mathf.Clamp(probability + i * probabilityChangePerLevel, 0, 1);
                     randomRotation.timeInterval = Mathf.Max(0, timeInterval + timeIntervalChangePerLevel * i);
                     randomRotation.reactionTime = Mathf.Clamp(reactionTime + i * reactionTimeChangePerLevel, Difficulty.MIN_RANDOM_ROTATION_REACTION_TIME, Difficulty.MAX_RANDOM_ROTATION_REACTION_TIME);
-                    randomRotation.rotationReactionTime = Mathf.Clamp(rotationReactionTime + i * rotationReactionTimeChangePerLevel, randomRotation.reactionTime * Difficulty.MIN_RANDOM_ROTATION_TIME_MUL, randomRotation.reactionTime * Difficulty.MAX_RANDOM_ROTATION_TIME_MUL);
                 }
                 
             }

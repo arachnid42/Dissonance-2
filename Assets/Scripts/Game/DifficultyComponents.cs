@@ -174,8 +174,6 @@ namespace Assets.Scripts.Game
         [System.Serializable]
         public class RandomRotation
         {
-            [Range(0, 0.5f)]
-            public float rotationReactionTime = 0.5f;
             [Range(0, 2f)]
             public float reactionTime = 1.1f;
             [Range(0f, 1f)]
@@ -187,7 +185,6 @@ namespace Assets.Scripts.Game
             {
                 return new RandomRotation()
                 {
-                    rotationReactionTime = rotationReactionTime,
                     reactionTime = reactionTime,
                     probability = probability,
                     timeInterval = timeInterval
