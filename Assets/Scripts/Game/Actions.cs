@@ -363,7 +363,6 @@ namespace Assets.Scripts.Game
 
         public void SlowDownShapesOnScreen(Difficulty.Slowdown slowdown, System.Action After = null)
         {
-
             float start = master.State.slowdown.speedScale;
             float end = slowdown.speedScale;
             float stayTime = slowdown.stayTime;
@@ -557,7 +556,15 @@ namespace Assets.Scripts.Game
 
         public void ExplodeShapesOnScreen()
         {
-            SlowDownShapesOnScreen(master.State.Difficulty.explosion.slowdown, ExplodeShapesOnScreenImmidiately);
+            Debug.Log("Slowdown:" + master.State.Difficulty.explosion.slowdown);
+            if (master.State.Difficulty.explosion.slowdown != null)
+            {
+                SlowDownShapesOnScreen(master.State.Difficulty.explosion.slowdown, ExplodeShapesOnScreenImmidiately);
+            }
+            else
+            {
+                ExplodeShapesOnScreenImmidiately();
+            }
         }
 
         public void UseExplosionBonus(bool immediately = false)

@@ -9,17 +9,17 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1366469046573380}
+  m_RootGameObject: {fileID: 1056549830973132}
   m_IsPrefabParent: 1
---- !u!1 &1366469046573380
+--- !u!1 &1056549830973132
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4881324083747744}
-  - component: {fileID: 114111279544529516}
+  - component: {fileID: 4981060535771086}
+  - component: {fileID: 114298714431334764}
   m_Layer: 0
   m_Name: Endless
   m_TagString: Untagged
@@ -27,39 +27,39 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4881324083747744
+--- !u!4 &4981060535771086
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1366469046573380}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 1056549830973132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114111279544529516
+--- !u!114 &114298714431334764
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1366469046573380}
+  m_GameObject: {fileID: 1056549830973132}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b7799b702b025ca4a954732d4ce6ed5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target:
-    endless: 1
+    endless: 0
     scoreBased: 1
-    score: 10
-    time: 70
+    score: 100
+    time: 100
   slowdown:
-    inTime: 0.25
-    stayTime: 1
-    outTime: 3
+    inTime: 0.1
+    stayTime: 2
+    outTime: 1
     speedScale: 0.1
     type: 3
   bonusCatchSlowdown:
@@ -71,17 +71,17 @@ MonoBehaviour:
   randomRotation:
     rotationReactionTime: 0.25
     reactionTime: 1
-    probability: 0
+    probability: 0.5
     timeInterval: 1
   rotation:
     min: 30
-    max: 90
+    max: 120
   initialGameMode: 2
   modeChange:
-    maxAtOnce: 3
+    maxAtOnce: 1
     reactionTime: 0.75
-    scoreCooldown: 5
-    startScore: 5
+    scoreCooldown: 10
+    startScore: 10
     timeCooldown: 10
   basketMode:
     scoreBased: 1
@@ -91,25 +91,25 @@ MonoBehaviour:
   basketShapes:
     scoreBased: 1
     probability: 0.5
-    timeInterval: 15
-    scoreInterval: 15
+    timeInterval: 10
+    scoreInterval: 10
   basketColors:
     scoreBased: 1
     probability: 0.5
-    timeInterval: 20
-    scoreInterval: 20
+    timeInterval: 10
+    scoreInterval: 10
   heart:
     max: 9
     slowdown:
-      inTime: 0.1
-      stayTime: 2
-      outTime: 5
-      speedScale: 0.1
+      inTime: 0.05
+      stayTime: 0.01
+      outTime: 2
+      speedScale: 0.5
       type: 1
-    number: 100
-    scoreInterval: 25
-    probability: 0.75
-    startScore: 0
+    number: 1
+    scoreInterval: 10
+    probability: 0.5
+    startScore: 10
   freeze:
     max: 99
     slowdown:
@@ -118,29 +118,29 @@ MonoBehaviour:
       outTime: 15
       speedScale: 0.1
       type: 1
-    number: 100
+    number: 1
     scoreInterval: 10
     probability: 0.5
     startScore: 10
   explosion:
     max: 99
     slowdown:
-      inTime: 0.1
-      stayTime: 0.5
-      outTime: 20
-      speedScale: 0.1
-      type: 1
-    number: 100
-    scoreInterval: 15
+      inTime: 0
+      stayTime: 0
+      outTime: 0
+      speedScale: 0
+      type: 0
+    number: 1
+    scoreInterval: 10
     probability: 0.5
-    startScore: 15
+    startScore: 10
   shapesOnScreen:
     upToMinScoreInterval: 1
     min: 1
     max: 9
-    increaseScoreInterval: 10
+    increaseScoreInterval: 5
   playerReactionTime:
     min: 1
-    max: 4
-    changePerScore: -0.1
-  additionalShapes: 010000000400000008000000090000000a0000000b0000000c0000000d000000
+    max: 5
+    changePerScore: -0.2
+  additionalShapes: 
