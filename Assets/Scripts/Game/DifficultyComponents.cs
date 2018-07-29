@@ -56,9 +56,9 @@ namespace Assets.Scripts.Game
                 slowdown = new Slowdown(Slowdown.Type.Bonus)
                 {
                     inTime = 0.05f,
-                    stayTime = 0.01f,
-                    outTime = 2f,
-                    speedScale = 0.5f
+                    stayTime = 1f,
+                    outTime = 3f,
+                    speedScale = 0.1f
                 };
             }
         }
