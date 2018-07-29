@@ -98,6 +98,7 @@ namespace Assets.Scripts.Monetization
             Debug.Log("Purchases are initialized!");
             storeController = controller;
             storeExtensionProvider = extensions;
+            ProcessPurchasesStateChanges(storeController.products.all);
         }
 
         public void Buy(string id)
@@ -138,10 +139,24 @@ namespace Assets.Scripts.Monetization
             OnFail(product.definition.storeSpecificId);
         }
 
-        public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
+
+        private void ProcessPurchasesStateChanges(Product[] products)
         {
+            foreach(var product in products)
+            {
+                if(product.receipt != null)
+                {
+                    Debug.LogFormat("Owned id:{1} Transaction:{0}", product.transactionID, product.definition.id);
+                    ProcessPurchaseStateChanges(product.definition.id);
+                }
+            }
+        }
+
+        private void ProcessPurchaseStateChanges(string id)
+        {
+
             var data = PersistentState.Instance.data;
-            switch (args.purchasedProduct.definition.id)
+            switch (id)
             {
                 case UNLOCK_ALL:
                     data.adsDisabled = true;
@@ -162,11 +177,16 @@ namespace Assets.Scripts.Monetization
                     data.customModeUnlocked = true;
                     break;
                 case SKIP:
-                    data.levelsUnlocked = Mathf.Clamp(data.levelsUnlocked+3,1, DifficultyLevels.Instance.LevelCount);
+                    data.levelsUnlocked = Mathf.Clamp(data.levelsUnlocked + 3, 1, DifficultyLevels.Instance.LevelCount);
                     break;
                 case DONATE:
                     break;
             }
+        }
+
+        public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
+        {            
+            ProcessPurchaseStateChanges(args.purchasedProduct.definition.id);
             OnSuccess(args.purchasedProduct.definition.id);
             return PurchaseProcessingResult.Complete;
         }

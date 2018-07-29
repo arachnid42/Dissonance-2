@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.Purchasing;
 
 namespace Assets.Scripts.UI.Logger
 {
@@ -27,6 +28,11 @@ namespace Assets.Scripts.UI.Logger
         public void OnClearButtonClick()
         {
             text.text = "";
+        }
+
+        public void ClearTransactionLog()
+        {
+            UnityPurchasing.ClearTransactionLog();
         }
     }
 }
