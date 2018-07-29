@@ -66,6 +66,12 @@ namespace Assets.Scripts.UI
             //Field.Instance.gameObject.SetActive(false);
         }
 
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+                Application.Quit();
+        }
+
         public void OnMainMenuButtonClick()
         {
             data.activePanel.SwitchToAnimation(PanelController.MainMenuPanel).Start();

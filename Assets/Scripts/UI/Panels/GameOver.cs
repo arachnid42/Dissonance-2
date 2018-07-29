@@ -78,11 +78,11 @@ namespace Assets.Scripts.UI.Panels
 
         private void UpdateDynamicObjects()
         {
+            var data = PersistentState.Instance.data;
             if (isEndless)
             {
                 skipButton.SetActive(false);
                 var gameOver = Field.Instance.Master.State.gameOver;
-                var data = PersistentState.Instance.data;
                 if (gameOver.score > data.endlessScoreRecord && gameOver.target.scoreBased || 
                     gameOver.time > data.endlessTimeRecord && !gameOver.target.scoreBased)
                 {
@@ -99,7 +99,7 @@ namespace Assets.Scripts.UI.Panels
             }
             else
             {
-                if (isConfigurable)
+                if (isConfigurable || data.levelsUnlocked == DifficultyLevels.Instance.LevelCount)
                     skipButton.SetActive(false);
                 else
                     skipButton.SetActive(true);

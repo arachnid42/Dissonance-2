@@ -39,6 +39,27 @@
 		{"key":"donate", "value":"Donate"},
 		{"key":"donateMessange", "value":"By bying anything in the game you are supporting dev team and informing us that you want us to continue development of the games like this."},
 		{"key":"continueButton", "value":"Tap to continue"},
+		{"key":"unlockAll", "value":"Unlock All"},
+		{"key":"skipLevels", "value":"Unlock/Skip Next 3 Levels"},
+		{"key":"unlockEndless", "value":"Unlock Endless Mode"},
+		{"key":"unlockConfigurable", "value":"Unlock Configurable Mode"},
+		{"key":"unlockThemes", "value":"Unlock All Themes"},
+		{"key":"removeAds", "value":"Remove Ads"},
+		{"key":"supportDevs", "value":"Support Devs"},
+
+		{"key":"purchaseTitle", "value":"Thank you for purchasing!"},
+		{"key":"unlockAllPurchase", "value":"You successfully unlocked all game modes and removed Ads"},
+		{"key":"skipLevelsPurchase", "value":"You successfully unlocked next 3 levels"},
+		{"key":"unlockEndlessPurchase", "value":"You successfully unlocked Endless Mode"},
+		{"key":"unlockConfigurablePurchase", "value":"You successfully unlocked Configurable Mode"},
+		{"key":"unlockThemesPurchase", "value":"You successfully unlocked all themes"},
+		{"key":"removeAdsPurchase", "value":"You successfully removed Ads"},
+		{"key":"supportDevsPurchase", "value":"We are grateful for supporting developers. And we are glad that you like our game."},
+		{"key":"newLevels", "value":"Check new levels"},
+		{"key":"newThemes", "value":"Check new themes"},
+		{"key":"close", "value":"Close"},
+
+		
 
 		{"key":"pause", "value":"Pause"},
 		{"key":"resume", "value":"Resume"},
