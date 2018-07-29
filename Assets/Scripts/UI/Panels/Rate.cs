@@ -22,7 +22,7 @@ namespace Assets.Scripts.UI.Panels
 
         private int rateVal;
         private string EMAIL = "arachnid42.games.feedback@gmail.com";
-        private string EMAIL_SUBJECT = "Dissonance 2 Feadback";
+        private string EMAIL_SUBJECT = "Dissonance 2 Feedback";
 
         private void Start()
         {

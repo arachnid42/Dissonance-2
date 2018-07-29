@@ -22,16 +22,13 @@ namespace Assets.Scripts.UI.Panels
         private void OnEnable()
         {
             StartCoroutine(AlterUI(InitPanel));
-            //string url = "https://play.google.com/apps/internaltest/4700577543580517822";
             appID = string.Format("com.{0}.{1}", Application.companyName, Application.productName);
             Debug.LogFormat("App ID: {0}", appID);
         }
         private void InitPanel()
         {
             Debug.LogFormat("{0} : {1}", PersistentState.Instance, UIController.Instance);
-            //StartCoroutine(AlterField(() => Field.Instance.gameObject.SetActive(false)));
             SetLabels(UpdateLabels);
-            //AlterUI(()=>UIController.Instance.data.activePanel = this);
             UIController.Instance.data.activePanel = this;
         }
 
@@ -40,7 +37,7 @@ namespace Assets.Scripts.UI.Panels
             levels.text = Text("levels");
             endless.text = Text("endless");
             configurable.text = Text("configurableMode");
-            donate.text = Text("donateRemoveAds");
+            donate.text = PersistentState.Instance.data.adsDisabled ? Text("donate") : Text("donateRemoveAds");
             themes.text = Text("themes");
         }
 
@@ -62,18 +59,32 @@ namespace Assets.Scripts.UI.Panels
 
         public void OnLevelsButtonClick()
         {
-            //PersistentState.Instance.data.levelsUnlocked = DifficultyLevels.Instance.LevelCount;
-            SwitchToAnimation(UIController.Instance.PanelController.LevelsMenuPanel).Start();
+            PersistentState.Instance.data.levelsUnlocked = DifficultyLevels.Instance.LevelCount;
+            UIController.Instance.data.activePanel.SwitchToAnimation(UIController.Instance.PanelController.LevelsMenuPanel).Start();
         }
 
         public void OnEndlessButtonClick()
         {
-            UIController.Instance.data.activePanel.SwitchToAnimation(UIController.Instance.PanelController.EndlessPanel).Start();
+            if (PersistentState.Instance.data.endlessModeUnlocked)
+            {
+                UIController.Instance.data.activePanel.SwitchToAnimation(UIController.Instance.PanelController.EndlessPanel).Start();
+            }
+            else
+            {
+                OnDonateButtonClick();
+            }
         }
 
         public void OnConfigurableButtonClick()
         {
-            SwitchToAnimation(UIController.Instance.PanelController.ConfigurablePanel).Start();
+            if (PersistentState.Instance.data.customModeUnlocked)
+            {
+                UIController.Instance.data.activePanel.SwitchToAnimation(UIController.Instance.PanelController.ConfigurablePanel).Start();
+            }
+            else
+            {
+                OnDonateButtonClick();
+            }
         }
 
         public void OnDonateButtonClick()
@@ -83,7 +94,7 @@ namespace Assets.Scripts.UI.Panels
 
         public void OnThemesButtonClick()
         {
-            SwitchToAnimation(UIController.Instance.PanelController.ThemesPanel).Start();
+            UIController.Instance.data.activePanel.SwitchToAnimation(UIController.Instance.PanelController.ThemesPanel).Start();
         }
 
         public void OnSoundButtonClick()
@@ -129,6 +140,11 @@ namespace Assets.Scripts.UI.Panels
             {
                 OpenAppUrlInMarket();
             }
+        }
+
+        public void OnExitButtonClick()
+        {
+            Application.Quit();
         }
 
         public void OpenAppUrlInMarket()

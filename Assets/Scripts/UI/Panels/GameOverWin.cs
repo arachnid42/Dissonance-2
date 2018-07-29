@@ -74,7 +74,7 @@ namespace Assets.Scripts.UI.Panels
             
             rate.text = Text("rate");
             share.text = Text("share");
-            donate.text = Text("donateRemoveAds");
+            donate.text = PersistentState.Instance.data.adsDisabled ? Text("donate") : Text("donateRemoveAds");
             mainMenu.text = Text("mainMenu");
             
         }

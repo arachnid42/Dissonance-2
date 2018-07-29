@@ -18,6 +18,7 @@ namespace Assets.Scripts.Game
         public class Temp
         {
             public Difficulty.Data configurableModeOriginalData = null;
+            public string recentPurchase = null;
         }
 
         [Serializable]
