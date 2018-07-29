@@ -283,25 +283,36 @@ namespace Assets.Scripts.Game
             return shape;
         }
 
+
+        public bool CanRotateShape(GameObject shape)
+        {
+            if (shape.GetComponent<Destruction>().Started)
+            {
+                return false;
+            }
+            float reactionTimeAfterRotation = GetCollisionTimeWithBasket(shape) * (1 - Difficulty.RANDOM_ROTATION_REACTION_TIME_MUL);
+            return reactionTimeAfterRotation >= master.State.Difficulty.playerReactionTime.min * master.State.Difficulty.randomRotation.reactionTime;
+        }
+
+        public float GetRotationTime(GameObject shape)
+        {
+            return GetCollisionTimeWithBasket(shape.gameObject) * Difficulty.RANDOM_ROTATION_REACTION_TIME_MUL;
+        }
+
         public void TryToStartRandomRotation()
         {
             var state = master.State;
             var difficulty = state.Difficulty.randomRotation;
 
             // if reaction time is not minimal target reaction time multiplyer shoul be tweaked accordingly
-            float currentReactionTime = master.State.PlayerReactionTime;
-            float minReactionTime = master.State.Difficulty.playerReactionTime.min;
-            float reactionTimeMultiplyer = minReactionTime / currentReactionTime;
 
             if (Time.time - state.randomRotation.lastTime >= difficulty.timeInterval)
             {
+
                 List<RandomRotation> randomRotationCandidates = new List<RandomRotation>(state.shapesOnScreen.Count);
-               
                 foreach (GameObject shape in state.shapesOnScreen)
                 {
-                    if (shape.GetComponent<Destruction>().Started)
-                        continue;
-                    if (GetCollisionTimeWithBasket(shape) >= state.PlayerReactionTime * reactionTimeMultiplyer)
+                    if (CanRotateShape(shape))
                     {
                         var randomRotation = shape.GetComponent<Shape.Controller>().RandomRotation;
                         if(!randomRotation.Started)
@@ -312,9 +323,10 @@ namespace Assets.Scripts.Game
                 if (randomRotationCandidates.Count > 0)
                 {
                     RandomRotation rotation = randomRotationCandidates[Random.Range(0, randomRotationCandidates.Count)];
-                    if(Random.value <= difficulty.probability)
-                        rotation.StartRandomRotation(GetCollisionTimeWithBasket(rotation.gameObject)/4);
+                    if (Random.value <= difficulty.probability)
+                        rotation.StartRandomRotation(GetRotationTime(rotation.gameObject));
                 }
+
                 state.randomRotation.lastTime = Time.time;
             }
         }

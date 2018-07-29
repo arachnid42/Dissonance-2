@@ -10,7 +10,7 @@ namespace Assets.Scripts.Game
         public const float
 
             BONUS_AUTO_USE_REACTION_TIME = 1.3f,
-
+            RANDOM_ROTATION_REACTION_TIME_MUL = 0.25f,
             MIN_REACTION_TIME = 0.75f,
             MAX_REACTION_TIME = 5,
 

@@ -55,9 +55,9 @@ namespace Assets.Scripts.Game
                 max = HEART_BONUS_MAX;
                 slowdown = new Slowdown(Slowdown.Type.Bonus)
                 {
-                    inTime = 0.05f,
-                    stayTime = 1f,
-                    outTime = 3f,
+                    inTime = 0.1f,
+                    stayTime = 2f,
+                    outTime = 2f,
                     speedScale = 0.1f
                 };
             }
