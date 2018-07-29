@@ -540,12 +540,12 @@ namespace Assets.Scripts.Game
                 master.State.shapesToSpawns = master.State.ActiveSpawnPreset.CreateShapesToSpawnsMapping();
                 foreach (var shape in master.State.shapesOnScreen)
                 {
-                    var conroller = shape.GetComponent<Shape.Controller>();
-                    conroller.Scale.SetSmoothScale(master.State.ActiveSpawnPreset.scale, 1f);
+                    var controller = shape.GetComponent<Shape.Controller>();
+                    controller.Scale.SetSmoothScale(master.State.ActiveSpawnPreset.scale, 1f);
                     if (align)
                     {
                         var closestSpawn = FindShapeClosestSpawn(shape);
-                        conroller.Falling.AlignToSpawn(closestSpawn);
+                        controller.Falling.AlignToSpawn(closestSpawn);
                         master.State.shapesToSpawns[closestSpawn].Add(shape);
                     }
                 }

@@ -7,8 +7,9 @@ namespace Assets.Scripts.Shape
     public class Falling : MonoBehaviour
     {
         public float speed = 10f;
-        private float spawnSwitchTime = 2f;
         public State.Slowdown slowdown;
+        private float spawnSwitchTime = 2f;
+        private Destruction destruction = null;
 
         private Coroutine spawnSwitchCoroutine; 
 
@@ -24,7 +25,7 @@ namespace Assets.Scripts.Shape
         {
             var end = spawn.transform.position;
             float stage = 0;
-            while (stage < 1)
+            while (stage < 1 && !destruction.Started)
             {
                 var start = transform.position;
                 stage += Time.deltaTime / spawnSwitchTime;
@@ -38,6 +39,11 @@ namespace Assets.Scripts.Shape
         public void Update()
         {
             transform.Translate(Vector3.down * speed * slowdown.speedScale * Time.deltaTime, Space.World);
+        }
+
+        private void Awake()
+        {
+            destruction = GetComponent<Destruction>();
         }
 
     }

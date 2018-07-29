@@ -3873,7 +3873,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 317.8192, y: -84.657166}
+  m_AnchoredPosition: {x: 317.81934, y: -84.65625}
   m_SizeDelta: {x: 485, y: 170}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &152449198
@@ -10990,7 +10990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 833.45764, y: -84.657166}
+  m_AnchoredPosition: {x: 833.458, y: -84.65625}
   m_SizeDelta: {x: 485, y: 170}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &407075757
@@ -18147,8 +18147,8 @@ MonoBehaviour:
     indicatorOffset: {x: 0, y: 0, z: 0.1}
     shapeOffset: {x: 0, y: 0, z: -0.1}
   boxCollider: {fileID: 1750291897}
-  oneRowColliderCenter: {x: 0, y: 7.91, z: 30.5}
-  twoRowsColliderCenter: {x: 0, y: 25, z: 30.5}
+  oneRowColliderCenter: {x: 0, y: 10, z: 30.5}
+  twoRowsColliderCenter: {x: 0, y: 26.1, z: 30.5}
 --- !u!114 &673207690
 MonoBehaviour:
   m_ObjectHideFlags: 0
