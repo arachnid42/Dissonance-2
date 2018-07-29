@@ -283,11 +283,15 @@ namespace Assets.Scripts.Game
             return shape;
         }
 
-
         public void TryToStartRandomRotation()
         {
             var state = master.State;
             var difficulty = state.Difficulty.randomRotation;
+
+            // if reaction time is not minimal target reaction time multiplyer shoul be tweaked accordingly
+            float currentReactionTime = master.State.PlayerReactionTime;
+            float minReactionTime = master.State.Difficulty.playerReactionTime.min;
+            float reactionTimeMultiplyer = minReactionTime / currentReactionTime;
 
             if (Time.time - state.randomRotation.lastTime >= difficulty.timeInterval)
             {
@@ -297,7 +301,7 @@ namespace Assets.Scripts.Game
                 {
                     if (shape.GetComponent<Destruction>().Started)
                         continue;
-                    if (GetCollisionTimeWithBasket(shape) >= state.PlayerReactionTime * difficulty.reactionTime)
+                    if (GetCollisionTimeWithBasket(shape) >= state.PlayerReactionTime * reactionTimeMultiplyer)
                     {
                         var randomRotation = shape.GetComponent<Shape.Controller>().RandomRotation;
                         if(!randomRotation.Started)

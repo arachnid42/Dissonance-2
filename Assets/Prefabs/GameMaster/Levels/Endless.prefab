@@ -69,7 +69,6 @@ MonoBehaviour:
     speedScale: 0.5
     type: 2
   randomRotation:
-    rotationReactionTime: 0.25
     reactionTime: 1
     probability: 0.5
     timeInterval: 1.5
