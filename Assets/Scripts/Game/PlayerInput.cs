@@ -130,12 +130,12 @@ namespace Assets.Scripts.Game
             {
                 //Debug.Log("SWIPE BEGAN DETECTED");
                 touchStartPosition = touch.position;
-                touchStartedTime = Time.time;
+                touchStartedTime = Time.unscaledTime;
                 return false;
             }
             else if(touch.phase == TouchPhase.Ended)
             {
-                if (Time.time - touchStartedTime > swipeTime)
+                if (Time.unscaledTime - touchStartedTime > swipeTime)
                     return false;
                 Vector3 delta = Camera.main.ScreenToViewportPoint(touch.position) - Camera.main.ScreenToViewportPoint(touchStartPosition);
                 Vector2 absDelta = new Vector2(Mathf.Abs(delta.x), Mathf.Abs(delta.y));

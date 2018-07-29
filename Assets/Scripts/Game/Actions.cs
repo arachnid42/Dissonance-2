@@ -396,7 +396,7 @@ namespace Assets.Scripts.Game
 
         public IEnumerator UnpauseCoroutine(float time)
         {
-            while(Time.timeScale < 1)
+            while(Time.timeScale < 1 && !master.State.paused)
             {
                 Time.timeScale = Mathf.Min(1, Time.timeScale + Time.unscaledDeltaTime / time);
                 yield return null;
