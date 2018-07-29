@@ -21,7 +21,7 @@ namespace Assets.Scripts.UI.Panels
 
         private void UpdatePurchaseInformation()
         {
-            tittle.text = Text("rateTittle");
+            tittle.text = Text("purchaseTitle");
             switch (PersistentState.Instance.temp.recentPurchase)
             {
                 case Purchases.UNLOCK_ALL:
