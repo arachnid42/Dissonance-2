@@ -21,7 +21,7 @@ namespace Assets.Scripts.Monetization
         private int adsTimesPlayedInterval = 2;
         [SerializeField]
         private float adsInitTimeLimit = 10.0f;
-
+        private float coroutineStepTimeInterval = 0.1f;
         private Coroutine showAdsCoroutine = null;
 
         private void Start()
@@ -62,15 +62,23 @@ namespace Assets.Scripts.Monetization
 
             Debug.Log("Waiting for ads initialization");
             float initTime = 0;
+            Debug.Log("Adsvertisment.IsInitialized:" + Advertisement.isInitialized);
+            Debug.LogFormat("Placement state:{0}", Advertisement.GetPlacementState());
             while (!Advertisement.IsReady())
             {
-                yield return null;
-                initTime += Time.unscaledDeltaTime;
+                
+                yield return new WaitForSecondsRealtime(coroutineStepTimeInterval); ;
                 if (initTime >= adsInitTimeLimit)
                 {
                     Debug.Log("Ads disabled because init time reached limit");
                     yield break;
                 }
+                if(Advertisement.GetPlacementState() == PlacementState.NoFill)
+                {
+                    Debug.Log("Placement has no more ads to show");
+                    yield break;
+                }
+                initTime += coroutineStepTimeInterval;
             }
                
             Advertisement.Show();
