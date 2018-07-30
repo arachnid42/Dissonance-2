@@ -35,13 +35,16 @@ namespace Assets.Scripts.UI.Panels
 
         }
 
-        private UnityAction ThemeButtonCallback(int index)
+        private UnityAction ThemeButtonCallback(int index, bool free)
         {
-            return () =>
-            {
-                PersistentState.Instance.SetColorsPreset(ColorsPresets.Instance[index].name);
-                UpdateThemesSelected(index);
-            };
+            if (free)
+                return () =>
+                {
+                    PersistentState.Instance.SetColorsPreset(ColorsPresets.Instance[index].name);
+                    UpdateThemesSelected(index);
+                };
+            else
+                return UIController.Instance.PanelController.mainMenuPanel.GetComponent<MainMenu>().OnDonateButtonClick;
         }
 
         private IEnumerator UpdateThemes()
@@ -58,7 +61,8 @@ namespace Assets.Scripts.UI.Panels
                 newButton.transform.SetParent(ThemesContent, false);
                 ThemeButton levelButton = newButton.GetComponent<ThemeButton>();
                 int themeIndex = i;
-                levelButton.Setup(ColorsPresets.Instance[i].free, ColorsPresets.Instance.CurrentPreset.name== ColorsPresets.Instance[i].name, ColorsPresets.Instance[i].screenshot, ThemeButtonCallback(i));
+                bool free = ColorsPresets.Instance[i].free || !ColorsPresets.Instance[i].free  && PersistentState.Instance.data.themesUnlocked;
+                levelButton.Setup(free, ColorsPresets.Instance.CurrentPreset.name== ColorsPresets.Instance[i].name, ColorsPresets.Instance[i].screenshot, ThemeButtonCallback(i, free));
                 themesButtons.Add(newButton);
             }
         }

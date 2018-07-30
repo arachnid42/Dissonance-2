@@ -18006,7 +18006,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1274239148}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &646175637
 MonoBehaviour:
@@ -18098,7 +18098,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   screenshot: {fileID: 21300000, guid: a43d33b89003058488274995dcb8015b, type: 3}
-  free: 1
+  free: 0
 --- !u!1001 &652082700
 Prefab:
   m_ObjectHideFlags: 0
@@ -46254,9 +46254,9 @@ Transform:
   m_Children:
   - {fileID: 2042599604}
   - {fileID: 729532889}
-  - {fileID: 646175636}
-  - {fileID: 2011491278}
   - {fileID: 1367368407}
+  - {fileID: 2011491278}
+  - {fileID: 646175636}
   - {fileID: 1483383801}
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -49532,7 +49532,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1274239148}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1367368408
 MonoBehaviour:
@@ -49624,7 +49624,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   screenshot: {fileID: 21300000, guid: c1cda0f00c88a2042a652e7f0f34e48c, type: 3}
-  free: 1
+  free: 0
 --- !u!1 &1367613946
 GameObject:
   m_ObjectHideFlags: 0
@@ -57588,7 +57588,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   screenshot: {fileID: 21300000, guid: c9344146ef5ab8c4caec9bc8d8aacaf4, type: 3}
-  free: 1
+  free: 0
 --- !u!1 &1486211135
 GameObject:
   m_ObjectHideFlags: 0
@@ -61844,7 +61844,7 @@ Prefab:
     - target: {fileID: 114975130665290060, guid: 2050bc28cf9686d41877c03c18a2332b,
         type: 2}
       propertyPath: m_FontData.m_MaxSize
-      value: 70
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 114975130665290060, guid: 2050bc28cf9686d41877c03c18a2332b,
         type: 2}
@@ -75864,7 +75864,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   screenshot: {fileID: 21300000, guid: f6db6899118f2a0409ab01bf6c438103, type: 3}
-  free: 1
+  free: 0
 --- !u!1 &2023926791
 GameObject:
   m_ObjectHideFlags: 0
