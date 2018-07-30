@@ -23921,7 +23921,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 895d126853fccb44f82d19efddb4f770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  androidGameId: 2655137
+  ignoreAdsDisabled: 0
+  gameId: 2655137
   adsTimesPlayedInterval: 4
   adsInitTimeLimit: 20
 --- !u!4 &756232013

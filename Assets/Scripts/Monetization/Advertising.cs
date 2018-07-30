@@ -13,9 +13,10 @@ namespace Assets.Scripts.Monetization
         {
             get; private set;
         }
-
         [SerializeField]
-        private string androidGameId = "2655137";
+        private bool ignoreAdsDisabled = false;
+        [SerializeField]
+        private string gameId = "2655137";
         [SerializeField]
         private int adsTimesPlayedInterval = 2;
         [SerializeField]
@@ -25,7 +26,7 @@ namespace Assets.Scripts.Monetization
 
         private void Start()
         {
-            Advertisement.Initialize(androidGameId);
+            Advertisement.Initialize(gameId);
             if(Instance == null)
             {
                 Instance = this;
@@ -52,8 +53,12 @@ namespace Assets.Scripts.Monetization
 
             var data = PersistentState.Instance.data;
 
-            if (data.adsDisabled || data.timesPlayed - data.adsDisplayed < adsTimesPlayedInterval)
+            if ((data.adsDisabled && !ignoreAdsDisabled) || data.timesPlayed - data.adsDisplayed < adsTimesPlayedInterval)
+            {
+                Debug.Log("Ads disabled. Ignoring request");
                 yield break;
+            }
+                
 
             Debug.Log("Waiting for ads initialization");
             float initTime = 0;
