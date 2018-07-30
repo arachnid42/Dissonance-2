@@ -30,7 +30,7 @@ namespace Assets.Scripts.UI
         {
             get; private set;
         }
-
+        [System.Serializable]
         public class Data
         {
             public bool isAnimationPlays = false;
@@ -38,7 +38,7 @@ namespace Assets.Scripts.UI
             public bool isPlaySound = true;
             public BasePanel activePanel;
         }
-
+        
         public Data data = new Data();
 
         private void Awake()

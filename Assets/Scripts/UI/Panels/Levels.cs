@@ -56,7 +56,7 @@ namespace Assets.Scripts.UI.Panels
                 Destroy(button);
             levelsButtons.Clear();
             Color color = passedColor;
-            for (int i = 0; i < PersistentState.Instance.data.levelsUnlocked; i++)
+            for (int i = PersistentState.Instance.data.levelsUnlocked-1; i >= 0 ; i--)
             {
                 color = PersistentState.Instance.data.lastLevelIndex == i ? currentColor : passedColor;
                 GameObject newButton = GameObject.Instantiate(LevelButtonPrefab);

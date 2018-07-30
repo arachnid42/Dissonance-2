@@ -60,33 +60,6 @@ namespace Assets.Scripts.UI.Panels
         {
             UpdateButtons();
             UIController.Instance.PanelController.PurchasePanel.SetHidddenAnimation(false).Start();
-            //switch (id)
-            //{
-            //    case Purchases.UNLOCK_ALL:
-            //        UpdateButtons();
-            //        break;
-            //    case Purchases.SKIP:
-            //        ToggleSkipLevelsButton();
-            //        break;
-            //    case Purchases.UNLOCK_ENDLESS:
-            //        ToggleUnlockEndlessButton();
-            //        break;
-            //    case Purchases.UNLOCK_CONFIGURABLE:
-            //        ToggleUnlockConfigurableButton();
-            //        break;
-            //    case Purchases.UNLOCK_ALL_THEMES:
-            //        ToggleUnlockThemesButton();
-            //        break;
-            //    case Purchases.DISABLE_ADS:
-            //        ToggleDisableAdsButton();
-            //        break;
-            //    case Purchases.DONATE:
-            //        //ToggleDisableAdsButton();
-            //        break;
-            //    default:
-            //        UpdateButtons();
-            //        break;
-            //}
         }
 
         private void OnPurchaseFail(string id)
@@ -167,7 +140,7 @@ namespace Assets.Scripts.UI.Panels
 
         private void ToggleUnlockAllButton()
         {
-            if (data.themesUnlocked && data.customModeUnlocked && data.endlessModeUnlocked && data.adsDisabled && data.levelsUnlocked == DifficultyLevels.Instance.LevelCount)
+            if (data.themesUnlocked && data.customModeUnlocked && data.endlessModeUnlocked && data.adsDisabled)
                 unlockAllButton.gameObject.SetActive(false);
             else
                 unlockAllButton.gameObject.SetActive(true);
