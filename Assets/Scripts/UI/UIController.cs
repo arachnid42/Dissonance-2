@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Assets.Scripts.Game;
 using Assets.Scripts.UI.Panels;
+using Assets.Scripts.Monetization;
 
 namespace Assets.Scripts.UI
 {
@@ -63,7 +64,6 @@ namespace Assets.Scripts.UI
             }
             Field.Instance.Master.Listeners.OnPause += ShowPausePanels;
             Field.Instance.Master.Listeners.OnGameOver += ShowGameOverPanels;
-            //Field.Instance.gameObject.SetActive(false);
         }
 
         private void Update()
@@ -85,26 +85,34 @@ namespace Assets.Scripts.UI
         private void ShowGameOverPanels(bool win)
         {
             float delay = 2f;
+            var gameOverAnim = new BasePanel.Animation(Delay(delay));
+
             if (win)
             {
-                var gameOverAnim = new BasePanel.Animation(Delay(delay));
                 gameOverAnim.After(PanelController.GameOverWinPanel.SetHiddenEnumerator(false, background: PanelController.backgroundPanel));
-                SetShowRatePanel(gameOverAnim);
-                gameOverAnim.Start();
             }
             else
             {
-                var gameOverAnim = new BasePanel.Animation(Delay(delay));
                 gameOverAnim.After(PanelController.GameOverPanel.SetHiddenEnumerator(false, background: PanelController.backgroundPanel));
-                SetShowRatePanel(gameOverAnim);
-                gameOverAnim.Start();
             }
+
+            if (PersistentState.Instance.ShouldAskRating())
+            {
+                gameOverAnim.After(PanelController.RatePanel.SetHiddenEnumerator(false));
+            }
+            else
+            {
+                gameOverAnim.After(TryToShowAds());
+            }
+
+            gameOverAnim.Start();
         }
 
-        private void SetShowRatePanel(BasePanel.Animation animation)
+        private IEnumerator TryToShowAds()
         {
-            if(PersistentState.Instance.ShouldAskRating())
-                animation.After(PanelController.RatePanel.SetHiddenEnumerator(false));
+            while (Advertising.Instance == null)
+                yield return null;
+            Advertising.Instance.TryToShowAds();
         }
 
         private IEnumerator Delay(float seconds)

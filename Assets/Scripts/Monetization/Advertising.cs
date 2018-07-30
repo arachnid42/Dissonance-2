@@ -9,49 +9,48 @@ namespace Assets.Scripts.Monetization
 {
     public class Advertising : MonoBehaviour
     {
+        public static Advertising Instance
+        {
+            get; private set;
+        }
+
         [SerializeField]
         private string androidGameId = "2655137";
         [SerializeField]
         private int adsTimesPlayedInterval = 2;
 
-        private IEnumerator Start()
+        private void Start()
         {
-            while (Field.Instance == null || Field.Instance.Master == null || Field.Instance.Master.Listeners == null)
-            {
-                yield return null;
-            }
-            Field.Instance.Master.Listeners.OnGameOver += TryToShowAds;
             Advertisement.Initialize(androidGameId);
-        }
-
-
-        private void TryToShowAds(bool win)
-        {
-            if (ShouldShowAds())
+            if(Instance == null)
             {
-                ShowAds();
+                Instance = this;
+                DontDestroyOnLoad(gameObject);
+            }else if (Instance != this)
+            {
+                Destroy(gameObject);
             }
         }
 
-        private void ShowAds()
+        public void TryToShowAds()
         {
-            var data = PersistentState.Instance.data;
-            data.adsDisplayed = data.timesPlayed;
-            StartCoroutine(ShowAdsEnumerator());
+            StartCoroutine(ShowAdsCoroutine());
         }
 
-
-        private bool ShouldShowAds()
+        private IEnumerator ShowAdsCoroutine()
         {
+            while (!PersistentState.Ready)
+                yield return null;
+
             var data = PersistentState.Instance.data;
-            return !data.adsDisabled && data.timesPlayed - data.adsDisplayed >= adsTimesPlayedInterval;
-        }
 
-        private IEnumerator ShowAdsEnumerator()
-        {
+            if (data.adsDisabled || data.timesPlayed - data.adsDisplayed < adsTimesPlayedInterval)
+                yield break;
+
             while (!Advertisement.IsReady())
                 yield return null;
             Advertisement.Show();
+            data.adsDisplayed = data.timesPlayed;
         }
 
     }
