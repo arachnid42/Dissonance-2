@@ -18,6 +18,10 @@ namespace Assets.Scripts.Monetization
         private string androidGameId = "2655137";
         [SerializeField]
         private int adsTimesPlayedInterval = 2;
+        [SerializeField]
+        private float adsInitTimeLimit = 10.0f;
+
+        private Coroutine showAdsCoroutine = null;
 
         private void Start()
         {
@@ -34,6 +38,10 @@ namespace Assets.Scripts.Monetization
 
         public void TryToShowAds()
         {
+            if (showAdsCoroutine != null)
+            {
+                StopCoroutine(showAdsCoroutine);
+            }
             StartCoroutine(ShowAdsCoroutine());
         }
 
@@ -47,10 +55,23 @@ namespace Assets.Scripts.Monetization
             if (data.adsDisabled || data.timesPlayed - data.adsDisplayed < adsTimesPlayedInterval)
                 yield break;
 
+            Debug.Log("Waiting for ads initialization");
+            float initTime = 0;
             while (!Advertisement.IsReady())
+            {
                 yield return null;
+                initTime += Time.unscaledDeltaTime;
+                if (initTime >= adsInitTimeLimit)
+                {
+                    Debug.Log("Ads disabled because init time reached limit");
+                    yield break;
+                }
+            }
+               
             Advertisement.Show();
+            Debug.Log("Waiting for ads displayed");
             data.adsDisplayed = data.timesPlayed;
+            showAdsCoroutine = null;
         }
 
     }

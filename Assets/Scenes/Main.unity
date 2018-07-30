@@ -23923,6 +23923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   androidGameId: 2655137
   adsTimesPlayedInterval: 4
+  adsInitTimeLimit: 20
 --- !u!4 &756232013
 Transform:
   m_ObjectHideFlags: 0
