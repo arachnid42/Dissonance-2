@@ -259,7 +259,12 @@ namespace Assets.Scripts.Game
 
         public bool ShouldAskRating()
         {
-            return data.rating.version != Application.version && data.timesPlayed - data.rating.timesPlayed >= config.askRatingTimesPlayedInterval && data.rating.rating < config.goodRatingMin;
+            return ShouldShowRatingButton() && data.timesPlayed - data.rating.timesPlayed >= config.askRatingTimesPlayedInterval;
+        }
+
+        public bool ShouldShowRatingButton()
+        {
+            return data.rating.version != Application.version && data.rating.rating < config.goodRatingMin;
         }
 
     }
