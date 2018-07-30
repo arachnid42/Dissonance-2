@@ -23922,7 +23922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   androidGameId: 2655137
-  adsTimesPlayedInterval: 5
+  adsTimesPlayedInterval: 4
 --- !u!4 &756232013
 Transform:
   m_ObjectHideFlags: 0
@@ -24230,7 +24230,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.8145, y: -111.3}
+  m_AnchoredPosition: {x: 475.8145, y: -111.29999}
   m_SizeDelta: {x: 951, y: 222.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &766032833
@@ -43567,7 +43567,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.8145, y: -921.2499}
+  m_AnchoredPosition: {x: 475.8145, y: -921.24994}
   m_SizeDelta: {x: 951, y: 362.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1163085941
