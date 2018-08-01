@@ -48,6 +48,11 @@ namespace Assets.Scripts.UI.Panels
             }
         }
 
+        private void OnDisable()
+        {
+            UIController.Instance.data.activePanel = null;
+        }
+
         public IEnumerator AlterField(System.Action action)
         {
             while (Field.Instance == null || Field.Instance.Master.Callbacks == null || Field.Instance.Master.Listeners == null)
@@ -84,7 +89,6 @@ namespace Assets.Scripts.UI.Panels
 
         public Animation SetHidddenAnimation(bool hidden, float duration = -1, System.Action after = null, GameObject background = null)
         {
-            Debug.LogFormat("SetHidddenAnimation Hidden: {0}", hidden);
             return new Animation(SetHiddenEnumerator(hidden, duration, after, background));
         }
 

@@ -114,6 +114,10 @@
 		{"key":"rateTittle", "value":"Do you enjoy this game?"},
 		{"key":"feedbackButton", "value":"Send Feedback"},
 
+		{"key":"unlock", "value":"Unlock"},
+		{"key":"exitText", "value":"Do you want exit the game?"},
+		{"key":"no", "value":"No"},
+		{"key":"yes", "value":"Yes"},
 
 		{"key":"pauseTutorial", "value":"To pause the game you need to swipe up or down"},
 		{"key":"bonusTutorial", "value":"Tap on bonus to catch it."},
