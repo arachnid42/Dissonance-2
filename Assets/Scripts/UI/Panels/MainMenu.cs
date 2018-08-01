@@ -71,7 +71,8 @@ namespace Assets.Scripts.UI.Panels
             }
             else
             {
-                OnDonateButtonClick();
+                UIController.Instance.data.activePanel.SwitchToAnimation(UIController.Instance.PanelController.EndlessPanel).
+                    After(UIController.Instance.PanelController.OverlayPanel.SetHiddenEnumerator(false)).Start();
             }
         }
 
@@ -83,7 +84,8 @@ namespace Assets.Scripts.UI.Panels
             }
             else
             {
-                OnDonateButtonClick();
+                UIController.Instance.data.activePanel.SwitchToAnimation(UIController.Instance.PanelController.ConfigurablePanel).
+                    After(UIController.Instance.PanelController.OverlayPanel.SetHiddenEnumerator(false)).Start();
             }
         }
 
@@ -144,7 +146,7 @@ namespace Assets.Scripts.UI.Panels
 
         public void OnExitButtonClick()
         {
-            Application.Quit();
+            UIController.Instance.PanelController.CloseOverlayPanel.SetHidddenAnimation(false).Start();
         }
 
         public void OpenAppUrlInMarket()

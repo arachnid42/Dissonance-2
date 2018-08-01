@@ -10,7 +10,7 @@ namespace Assets.Scripts.UI
         
         public GameObject mainMenuCanvas, backgroundPanel, mainMenuPanel, endlessPanel,
             levelsMenuPanel, configurablePanel, configurableMenuPanel, donatePanel, donateMenuPanel, themesPanel,
-            levelStartUpPanel, gameOverWinPanel, gameOverPanel, pausePanel, fadePanel, ratePanel, purchasePanel;
+            levelStartUpPanel, gameOverWinPanel, gameOverPanel, pausePanel, fadePanel, ratePanel, purchasePanel, overlayPanel, closeOverlayPanel;
 
         public BasePanel BackgroundPanel
         {
@@ -90,6 +90,16 @@ namespace Assets.Scripts.UI
         public BasePanel PurchasePanel
         {
             get { return purchasePanel.GetComponent<BasePanel>(); }
+        }
+
+        public BasePanel OverlayPanel
+        {
+            get { return overlayPanel.GetComponent<BasePanel>(); }
+        }
+
+        public BasePanel CloseOverlayPanel
+        {
+            get { return closeOverlayPanel.GetComponent<BasePanel>(); }
         }
 
     }

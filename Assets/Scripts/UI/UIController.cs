@@ -69,7 +69,11 @@ namespace Assets.Scripts.UI
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Escape))
-                Application.Quit();
+                if(Field.Instance.Master.State.started)
+                    PanelController.CloseOverlayPanel.SetHidddenAnimation(false, after: () => Field.Instance.Master.Actions.Pause()).Start();
+                else
+                    PanelController.CloseOverlayPanel.SetHidddenAnimation(false).Start();
+
         }
 
         public void OnMainMenuButtonClick()

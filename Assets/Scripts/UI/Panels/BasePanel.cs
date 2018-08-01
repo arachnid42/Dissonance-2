@@ -84,7 +84,6 @@ namespace Assets.Scripts.UI.Panels
 
         public Animation SetHidddenAnimation(bool hidden, float duration = -1, System.Action after = null, GameObject background = null)
         {
-            Debug.LogFormat("SetHidddenAnimation Hidden: {0}", hidden);
             return new Animation(SetHiddenEnumerator(hidden, duration, after, background));
         }
 
