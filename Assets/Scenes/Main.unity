@@ -37821,7 +37821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be4ffa5f5ccbc2e4482ca42cd41b5486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDuration: 0.1
+  fadeDuration: 0.2
   image: {fileID: 528268355}
   text: {fileID: 202933565}
   cancel: {fileID: 1293202022}
