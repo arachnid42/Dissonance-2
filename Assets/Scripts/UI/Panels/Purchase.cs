@@ -19,6 +19,11 @@ namespace Assets.Scripts.UI.Panels
             SetLabels(UpdatePurchaseInformation);
         }
 
+        private void OnDisable()
+        {
+
+        }
+
         private void UpdatePurchaseInformation()
         {
             tittle.text = Text("purchaseTitle");

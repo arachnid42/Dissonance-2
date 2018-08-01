@@ -33,6 +33,11 @@ namespace Assets.Scripts.UI.Panels
             fromConfigurableToDonateAnimation = SetHidddenAnimation(true).After(panelController.ConfigurablePanel.SetHiddenEnumerator(true)).After(panelController.DonatePanel.SetHiddenEnumerator(false));
         }
 
+        private void OnDisable()
+        {
+
+        }
+
         private void UpdateOverlayInformation()
         {
             cancel.text = Text("no");

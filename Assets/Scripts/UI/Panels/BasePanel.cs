@@ -48,6 +48,11 @@ namespace Assets.Scripts.UI.Panels
             }
         }
 
+        private void OnDisable()
+        {
+            UIController.Instance.data.activePanel = null;
+        }
+
         public IEnumerator AlterField(System.Action action)
         {
             while (Field.Instance == null || Field.Instance.Master.Callbacks == null || Field.Instance.Master.Listeners == null)

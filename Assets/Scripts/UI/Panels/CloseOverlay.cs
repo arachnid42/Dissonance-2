@@ -18,7 +18,12 @@ namespace Assets.Scripts.UI.Panels
         private void OnEnable()
         {
             SetLabels(UpdateOverlayInformation);
-            closeAnimation = Field.Instance.Master.State.started?SetHidddenAnimation(true, after: () => Field.Instance.Master.Actions.Pause()): SetHidddenAnimation(true);
+            closeAnimation = Field.Instance.Master.State.started && (!UIController.Instance.data.activePanel || UIController.Instance.data.activePanel && UIController.Instance.data.activePanel.name!="PausePanel")? SetHidddenAnimation(true, after: () => Field.Instance.Master.Actions.Pause()) : SetHidddenAnimation(true);
+        }
+
+        private void OnDisable()
+        {
+            
         }
 
         private void UpdateOverlayInformation()
