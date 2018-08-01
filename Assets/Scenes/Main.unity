@@ -1137,18 +1137,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 50
     time: 75
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -1180,36 +1168,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 1
     scoreInterval: 10
     probability: 0.55
     startScore: 5
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 2
     scoreInterval: 10
     probability: 0.35000002
     startScore: 5
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 1
     scoreInterval: 15
     probability: 0.3
@@ -2448,18 +2418,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 55
     time: 80
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -2491,36 +2449,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 1
     scoreInterval: 5
     probability: 0.75
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -3833,18 +3773,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 30
     time: 45
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -3876,36 +3804,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -5154,18 +5064,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 55
     time: 80
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -5197,36 +5095,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 1
     scoreInterval: 10
     probability: 0.6
     startScore: 0
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 1
     scoreInterval: 10
     probability: 0.35
     startScore: 0
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 1
     scoreInterval: 15
     probability: 0.35
@@ -6258,18 +6138,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 65
     time: 95
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -6301,36 +6169,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 2
     scoreInterval: 10
     probability: 0.65
     startScore: 0
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 1
     scoreInterval: 10
     probability: 0.4
     startScore: 0
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 1
     scoreInterval: 15
     probability: 0.4
@@ -6797,18 +6647,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 15
     time: 25
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -6840,36 +6678,18 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -7557,18 +7377,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 10
     time: 20
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.8
     probability: 0.75
@@ -7600,36 +7408,18 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -8142,18 +7932,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 25
     time: 35
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -8185,36 +7963,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 1
     scoreInterval: 5
     probability: 0.75
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -9602,18 +9362,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 45
     time: 70
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -9645,36 +9393,18 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -9827,7 +9557,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.8145, y: -363.74997}
+  m_AnchoredPosition: {x: 475.8145, y: -363.75}
   m_SizeDelta: {x: 951, y: 293.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &326512641
@@ -12393,18 +12123,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 70
     time: 105
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -12436,36 +12154,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 2
     scoreInterval: 10
     probability: 0.65
     startScore: 5
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 2
     scoreInterval: 10
     probability: 0.45000002
     startScore: 5
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 1
     scoreInterval: 15
     probability: 0.3
@@ -15548,7 +15248,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 122.5, y: -45.99994}
+  m_AnchoredPosition: {x: 122.5, y: -46}
   m_SizeDelta: {x: 123.4, y: -1084.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &528268355
@@ -17643,18 +17343,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 80
     time: 120
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -17686,36 +17374,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 3
     scoreInterval: 10
     probability: 0.7
     startScore: 5
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 3
     scoreInterval: 10
     probability: 0.5
     startScore: 5
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 1
     scoreInterval: 15
     probability: 0.3
@@ -18331,18 +18001,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 65
     time: 95
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -18374,36 +18032,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 2
     scoreInterval: 5
     probability: 0.75
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -18539,18 +18179,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 20
     time: 30
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -18582,36 +18210,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -20807,18 +20417,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 75
     time: 110
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -20850,36 +20448,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 3
     scoreInterval: 10
     probability: 0.65
     startScore: 10
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 2
     scoreInterval: 10
     probability: 0.55
     startScore: 5
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 2
     scoreInterval: 15
     probability: 0.35
@@ -22965,18 +22545,6 @@ MonoBehaviour:
         scoreBased: 1
         score: 100
         time: 100
-      slowdown:
-        inTime: 0
-        stayTime: 0
-        outTime: 0
-        speedScale: 0
-        type: 0
-      bonusCatchSlowdown:
-        inTime: 0
-        stayTime: 0
-        outTime: 0
-        speedScale: 0
-        type: 0
       modeChange:
         maxAtOnce: 1
         reactionTime: 0.75
@@ -23004,36 +22572,18 @@ MonoBehaviour:
         scoreInterval: 10
       heart:
         max: 0
-        slowdown:
-          inTime: 0
-          stayTime: 0
-          outTime: 0
-          speedScale: 0
-          type: 0
         number: 0
         scoreInterval: 0
         probability: 0
         startScore: 0
       freeze:
         max: 0
-        slowdown:
-          inTime: 0
-          stayTime: 0
-          outTime: 0
-          speedScale: 0
-          type: 0
         number: 0
         scoreInterval: 0
         probability: 0
         startScore: 0
       explosion:
         max: 0
-        slowdown:
-          inTime: 0
-          stayTime: 0
-          outTime: 0
-          speedScale: 0
-          type: 0
         number: 0
         scoreInterval: 0
         probability: 0
@@ -23063,18 +22613,6 @@ MonoBehaviour:
         scoreBased: 1
         score: 100
         time: 100
-      slowdown:
-        inTime: 0
-        stayTime: 0
-        outTime: 0
-        speedScale: 0
-        type: 0
-      bonusCatchSlowdown:
-        inTime: 0
-        stayTime: 0
-        outTime: 0
-        speedScale: 0
-        type: 0
       modeChange:
         maxAtOnce: 1
         reactionTime: 0.75
@@ -23102,36 +22640,18 @@ MonoBehaviour:
         scoreInterval: 10
       heart:
         max: 0
-        slowdown:
-          inTime: 0
-          stayTime: 0
-          outTime: 0
-          speedScale: 0
-          type: 0
         number: 0
         scoreInterval: 0
         probability: 0
         startScore: 0
       freeze:
         max: 0
-        slowdown:
-          inTime: 0
-          stayTime: 0
-          outTime: 0
-          speedScale: 0
-          type: 0
         number: 0
         scoreInterval: 0
         probability: 0
         startScore: 0
       explosion:
         max: 0
-        slowdown:
-          inTime: 0
-          stayTime: 0
-          outTime: 0
-          speedScale: 0
-          type: 0
         number: 0
         scoreInterval: 0
         probability: 0
@@ -27197,18 +26717,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 40
     time: 60
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -27240,36 +26748,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 1
     scoreInterval: 10
     probability: 0.5
     startScore: 5
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 2
     scoreInterval: 10
     probability: 0.3
     startScore: 5
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 1
     scoreInterval: 15
     probability: 0.3
@@ -27858,18 +27348,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 55
     time: 80
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -27901,36 +27379,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 2
     scoreInterval: 10
     probability: 0.55
     startScore: 10
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 2
     scoreInterval: 10
     probability: 0.45000002
     startScore: 5
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 2
     scoreInterval: 15
     probability: 0.35
@@ -34852,18 +34312,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 35
     time: 50
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -34895,36 +34343,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 1
     scoreInterval: 5
     probability: 0.75
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -35494,18 +34924,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 70
     time: 100
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -35537,36 +34955,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 1
     scoreInterval: 10
     probability: 0.5
     startScore: 0
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 1
     scoreInterval: 10
     probability: 0.45
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 1
     scoreInterval: 25
     probability: 0.45
@@ -36472,7 +35872,7 @@ MonoBehaviour:
     min: 0
     max: 100
     value: 0
-    step: 0
+    step: 1
   scoreIntervalSliderData:
     min: 1
     max: 100
@@ -37560,18 +36960,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 40
     time: 55
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -37603,36 +36991,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 10
     probability: 0.5
     startScore: 0
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 10
     probability: 0.3
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 25
     probability: 0.3
@@ -40532,18 +39902,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 25
     time: 40
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -40575,36 +39933,18 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -41100,18 +40440,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 30
     time: 40
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -41143,36 +40471,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 10
     probability: 0.5
     startScore: 0
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 10
     probability: 0.25
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 25
     probability: 0.25
@@ -43960,18 +43270,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 35
     time: 50
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -44003,36 +43301,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 1
     scoreInterval: 10
     probability: 0.5
     startScore: 0
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 1
     scoreInterval: 10
     probability: 0.25
     startScore: 0
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 1
     scoreInterval: 15
     probability: 0.25
@@ -44587,18 +43867,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 40
     time: 65
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.8
     probability: 0.75
@@ -44630,36 +43898,18 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -44719,18 +43969,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 85
     time: 125
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -44762,36 +44000,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 4
     scoreInterval: 10
     probability: 0.7
     startScore: 10
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 3
     scoreInterval: 10
     probability: 0.6
     startScore: 5
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 2
     scoreInterval: 15
     probability: 0.35
@@ -45329,7 +44549,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.8145, y: -921.2499}
+  m_AnchoredPosition: {x: 475.8145, y: -921.24994}
   m_SizeDelta: {x: 951, y: 362.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1163085941
@@ -46500,18 +45720,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 90
     time: 130
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -46543,36 +45751,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 2
     scoreInterval: 15
     probability: 0.7
     startScore: 0
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 4
     scoreInterval: 15
     probability: 0.6
     startScore: 5
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 4
     scoreInterval: 20
     probability: 0.6
@@ -46973,18 +46163,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 65
     time: 95
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -47016,36 +46194,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 3
     scoreInterval: 10
     probability: 0.6
     startScore: 10
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 2
     scoreInterval: 10
     probability: 0.5
     startScore: 5
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 2
     scoreInterval: 15
     probability: 0.35
@@ -50782,18 +49942,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 50
     time: 80
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.8
     probability: 0.75
@@ -50825,36 +49973,18 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -53239,7 +52369,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.8145, y: -226.19998}
+  m_AnchoredPosition: {x: 475.81445, y: -226.19922}
   m_SizeDelta: {x: 951, y: 452.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1430549418
@@ -59063,18 +58193,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 45
     time: 65
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -59106,36 +58224,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 1
     scoreInterval: 5
     probability: 0.75
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -59732,18 +58832,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 30
     time: 50
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.8
     probability: 0.75
@@ -59775,36 +58863,18 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -60124,18 +59194,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 60
     time: 85
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -60167,36 +59225,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 1
     scoreInterval: 15
     probability: 0.55
     startScore: 0
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 3
     scoreInterval: 15
     probability: 0.45000002
     startScore: 5
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 3
     scoreInterval: 20
     probability: 0.45000002
@@ -60888,18 +59928,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 60
     time: 90
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -60931,36 +59959,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -61697,18 +60707,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 45
     time: 65
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -61740,36 +60738,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 1
     scoreInterval: 10
     probability: 0.55
     startScore: 0
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 1
     scoreInterval: 10
     probability: 0.3
     startScore: 0
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 1
     scoreInterval: 15
     probability: 0.3
@@ -63161,18 +62141,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 45
     time: 65
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -63204,36 +62172,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 2
     scoreInterval: 10
     probability: 0.5
     startScore: 10
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 2
     scoreInterval: 10
     probability: 0.4
     startScore: 5
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 2
     scoreInterval: 15
     probability: 0.35
@@ -63947,7 +62897,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 122.5, y: -45.99994}
+  m_AnchoredPosition: {x: 122.5, y: -46}
   m_SizeDelta: {x: 123.4, y: -1084.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1607577133
@@ -64245,18 +63195,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 60
     time: 85
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -64288,36 +63226,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 1
     scoreInterval: 10
     probability: 0.5
     startScore: 0
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 10
     probability: 0.4
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 25
     probability: 0.4
@@ -69320,18 +68240,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 70
     time: 100
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -69363,36 +68271,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 1
     scoreInterval: 15
     probability: 0.6
     startScore: 0
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 3
     scoreInterval: 15
     probability: 0.5
     startScore: 5
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 3
     scoreInterval: 20
     probability: 0.5
@@ -69832,18 +68722,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 80
     time: 115
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -69875,36 +68753,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 1
     scoreInterval: 15
     probability: 0.65
     startScore: 0
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 3
     scoreInterval: 15
     probability: 0.55
     startScore: 5
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 3
     scoreInterval: 20
     probability: 0.55
@@ -72179,18 +71039,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 75
     time: 110
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -72222,36 +71070,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 2
     scoreInterval: 10
     probability: 0.7
     startScore: 0
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 2
     scoreInterval: 10
     probability: 0.45
     startScore: 0
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 2
     scoreInterval: 15
     probability: 0.45
@@ -72674,18 +71504,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 35
     time: 55
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -72717,36 +71535,18 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -74820,18 +73620,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 40
     time: 60
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -74863,36 +73651,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -75640,18 +74410,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 55
     time: 85
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -75683,36 +74441,18 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -75772,18 +74512,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 20
     time: 35
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.8
     probability: 0.75
@@ -75815,36 +74543,18 @@ MonoBehaviour:
     scoreInterval: 10
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -77138,18 +75848,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 50
     time: 70
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -77181,36 +75879,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 1
     scoreInterval: 15
     probability: 0.5
     startScore: 0
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 3
     scoreInterval: 15
     probability: 0.4
     startScore: 5
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 3
     scoreInterval: 20
     probability: 0.4
@@ -79535,18 +78215,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 60
     time: 90
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -79578,36 +78246,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 2
     scoreInterval: 10
     probability: 0.6
     startScore: 5
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 2
     scoreInterval: 10
     probability: 0.4
     startScore: 5
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 1
     scoreInterval: 15
     probability: 0.3
@@ -81326,18 +79976,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 50
     time: 75
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -81369,36 +80007,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 1
     probability: 0
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 1
     probability: 0
@@ -81865,18 +80485,6 @@ MonoBehaviour:
     scoreBased: 1
     score: 50
     time: 70
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 0.9
     probability: 0.5
@@ -81908,36 +80516,18 @@ MonoBehaviour:
     scoreInterval: 5
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 0
     scoreInterval: 10
     probability: 0.5
     startScore: 0
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 0
     scoreInterval: 10
     probability: 0.35
     startScore: 1
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 0
     scoreInterval: 25
     probability: 0.35
