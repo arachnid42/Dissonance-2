@@ -13,7 +13,7 @@ namespace Assets.Scripts.Game
         {
             [HideInInspector]
             public int max = 4;
-            [HideInInspector]
+            [System.NonSerialized]
             public Slowdown slowdown = null;
 
             [Range(0, 100)]
@@ -88,7 +88,7 @@ namespace Assets.Scripts.Game
             }
         }
 
-        [System.Serializable]
+        //[System.Serializable]
         public class Slowdown
         {
             public enum Type
@@ -314,8 +314,8 @@ namespace Assets.Scripts.Game
 
             public Target target = null;
 
-            public Slowdown slowdown = null;
-            public Slowdown bonusCatchSlowdown = null;
+            //public Slowdown slowdown = null;
+            //public Slowdown bonusCatchSlowdown = null;
 
             public ModeChange modeChange = null;
 

@@ -176,7 +176,7 @@ namespace Assets.Scripts.Game
             set
             {
                 started = value;
-                paused = false;
+                //paused = false;
                 mapping.ShapeBasketHidden = !value;
                 mapping.IndicatorHidden = !value;
             }

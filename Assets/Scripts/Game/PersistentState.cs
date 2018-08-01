@@ -155,8 +155,8 @@ namespace Assets.Scripts.Game
             data.levelsUnlocked = config.devMode ? DifficultyLevels.Instance.LevelCount : Mathf.Clamp(data.levelsUnlocked, 1, DifficultyLevels.Instance.LevelCount);
             if (data.configurableModeData != null)
             {
-                data.configurableModeData.bonusCatchSlowdown = new Difficulty.BonusCatchSlowdown();
-                data.configurableModeData.slowdown = new Difficulty.DefaultSlowdown();
+                //data.configurableModeData.bonusCatchSlowdown = new Difficulty.BonusCatchSlowdown();
+                //data.configurableModeData.slowdown = new Difficulty.DefaultSlowdown();
                 data.configurableModeData.freeze = new Difficulty.FreezeBonus().Update(data.configurableModeData.freeze);
                 data.configurableModeData.explosion = new Difficulty.ExplosionBonus().Update(data.configurableModeData.explosion);
                 data.configurableModeData.heart = new Difficulty.HeartBonus().Update(data.configurableModeData.heart);
@@ -170,7 +170,7 @@ namespace Assets.Scripts.Game
 
             yield return WaitForColorsPresetsAndManagerInitialization();
 
-            if(data.colorPresetName == null)
+            if(string.IsNullOrEmpty(data.colorPresetName))
             {
                 data.colorPresetName = ColorsPresets.Instance.PresetName;
             }

@@ -44,8 +44,8 @@ namespace Assets.Scripts.Game
         {
             target = data.target.Copy();
 
-            slowdown = data.slowdown.Copy();
-            bonusCatchSlowdown = data.bonusCatchSlowdown.Copy();
+            //slowdown = data.slowdown.Copy();
+            //bonusCatchSlowdown = data.bonusCatchSlowdown.Copy();
 
             randomRotation = data.randomRotation.Copy();
             rotation = data.rotation.Copy();
@@ -72,8 +72,8 @@ namespace Assets.Scripts.Game
             {
                 target = target.Copy(),
 
-                slowdown = slowdown.Copy(),
-                bonusCatchSlowdown = bonusCatchSlowdown.Copy(),
+                //slowdown = slowdown.Copy(),
+                //bonusCatchSlowdown = bonusCatchSlowdown.Copy(),
 
                 randomRotation = randomRotation.Copy(),
                 rotation = rotation.Copy(),

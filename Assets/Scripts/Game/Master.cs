@@ -52,7 +52,7 @@ namespace Assets.Scripts.Game
             List<GameObject> shapes = new List<GameObject>(State.shapesOnScreen);
             foreach(var shape in shapes)
             {
-                shape.GetComponent<Shape.Destruction>().DestroyCompletely(particles: true, delay: State.Difficulty.slowdown.inTime);
+                shape.GetComponent<Shape.Destruction>().DestroyCompletely(particles: !State.paused, delay: State.Difficulty.slowdown.inTime);
             }
         }
 
