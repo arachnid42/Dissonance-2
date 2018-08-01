@@ -1810,13 +1810,19 @@ MonoBehaviour:
   name: reactionTime
   isExpanded: 0
   headerText: {fileID: 1367613949}
-  toggleButton: {fileID: 940662552}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 171819572}
   buttonImage: {fileID: 940662553}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   minSlider: {fileID: 1857422562}
   maxSlider: {fileID: 59479231}
   changeSlider: {fileID: 1214995706}
@@ -9557,7 +9563,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.8145, y: -363.75}
+  m_AnchoredPosition: {x: 475.8145, y: -363.74997}
   m_SizeDelta: {x: 951, y: 293.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &326512641
@@ -15248,7 +15254,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 122.5, y: -46}
+  m_AnchoredPosition: {x: 122.5, y: -45.99994}
   m_SizeDelta: {x: 123.4, y: -1084.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &528268355
@@ -25178,13 +25184,19 @@ MonoBehaviour:
   name: gameColorsChange
   isExpanded: 0
   headerText: {fileID: 981901737}
-  toggleButton: {fileID: 1358702980}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 245856512}
   buttonImage: {fileID: 1358702981}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   scoreIntervalSlider: {fileID: 1196866173}
   timeIntervalSlider: {fileID: 2025209896}
   probabilitySlider: {fileID: 554285670}
@@ -33856,13 +33868,19 @@ MonoBehaviour:
   name: freezeBonus
   isExpanded: 0
   headerText: {fileID: 2031441351}
-  toggleButton: {fileID: 2136081877}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 504718572}
   buttonImage: {fileID: 2136081878}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   numberSlider: {fileID: 913704677}
   startScoreSlider: {fileID: 1528972749}
   scoreIntervalSlider: {fileID: 997842609}
@@ -35852,13 +35870,19 @@ MonoBehaviour:
   name: explosionBonus
   isExpanded: 0
   headerText: {fileID: 898840646}
-  toggleButton: {fileID: 1716705395}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 632647698}
   buttonImage: {fileID: 1716705396}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   numberSlider: {fileID: 1105354264}
   startScoreSlider: {fileID: 843517061}
   scoreIntervalSlider: {fileID: 1430940310}
@@ -36878,13 +36902,19 @@ MonoBehaviour:
   name: modesChange
   isExpanded: 0
   headerText: {fileID: 441714664}
-  toggleButton: {fileID: 1418336410}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 1328634956}
   buttonImage: {fileID: 1418336411}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   maxAtOnceSlider: {fileID: 343629179}
   scoreCooldownSlider: {fileID: 1916320093}
   timeCooldownSlider: {fileID: 829709489}
@@ -37257,8 +37287,6 @@ MonoBehaviour:
   fadeDuration: 0.2
   image: {fileID: 528268355}
   text: {fileID: 202933565}
-  cancel: {fileID: 0}
-  confirm: {fileID: 0}
   functional: {fileID: 33441342}
   cancelButton: {fileID: 0}
   confirmbutton: {fileID: 0}
@@ -44549,7 +44577,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.8145, y: -921.24994}
+  m_AnchoredPosition: {x: 475.8145, y: -921.2499}
   m_SizeDelta: {x: 951, y: 362.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1163085941
@@ -48487,13 +48515,19 @@ MonoBehaviour:
   name: rotationSpeed
   isExpanded: 0
   headerText: {fileID: 763848654}
-  toggleButton: {fileID: 348206661}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 1320357620}
   buttonImage: {fileID: 348206662}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   minSlider: {fileID: 1809105098}
   maxSlider: {fileID: 1894568582}
   minSliderData:
@@ -48914,13 +48948,37 @@ MonoBehaviour:
   name: shapesOnScreen
   isExpanded: 0
   headerText: {fileID: 286007118}
-  toggleButton: {fileID: 550107642}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 244056544}
   buttonImage: {fileID: 550107643}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   minSlider: {fileID: 731951337}
   maxSlider: {fileID: 857271610}
   intervalSlider: {fileID: 2041966859}
@@ -52369,7 +52427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.81445, y: -226.19922}
+  m_AnchoredPosition: {x: 475.81445, y: -226.19919}
   m_SizeDelta: {x: 951, y: 452.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1430549418
@@ -61572,13 +61630,19 @@ MonoBehaviour:
   name: basketShapesChange
   isExpanded: 0
   headerText: {fileID: 54668400}
-  toggleButton: {fileID: 715635164}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 625346059}
   buttonImage: {fileID: 715635165}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   scoreIntervalSlider: {fileID: 898335456}
   timeIntervalSlider: {fileID: 1271055131}
   probabilitySlider: {fileID: 506002197}
@@ -62897,7 +62961,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 122.5, y: -46}
+  m_AnchoredPosition: {x: 122.5, y: -45.99994}
   m_SizeDelta: {x: 123.4, y: -1084.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1607577133
@@ -73418,13 +73482,19 @@ MonoBehaviour:
   name: gameModeChange
   isExpanded: 0
   headerText: {fileID: 1268247150}
-  toggleButton: {fileID: 781638021}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 1820517495}
   buttonImage: {fileID: 781638022}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   scoreIntervalSlider: {fileID: 775402551}
   timeIntervalSlider: {fileID: 967542615}
   probabilitySlider: {fileID: 1002705169}
@@ -74791,13 +74861,19 @@ MonoBehaviour:
   name: randomRotation
   isExpanded: 0
   headerText: {fileID: 1654069866}
-  toggleButton: {fileID: 535610510}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 2084954564}
   buttonImage: {fileID: 535610511}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   intervalSlider: {fileID: 1008215007}
   probabilitySlider: {fileID: 2070456236}
   intervalSliderData:
@@ -78901,13 +78977,19 @@ MonoBehaviour:
   name: lifeBonus
   isExpanded: 0
   headerText: {fileID: 1328095963}
-  toggleButton: {fileID: 2054668922}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 1613955555}
   buttonImage: {fileID: 2054668923}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   numberSlider: {fileID: 1405928700}
   startScoreSlider: {fileID: 596781248}
   scoreIntervalSlider: {fileID: 1624074835}

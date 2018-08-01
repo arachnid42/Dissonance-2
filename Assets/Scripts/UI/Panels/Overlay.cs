@@ -12,7 +12,7 @@ namespace Assets.Scripts.UI.Panels
         [SerializeField]
         private Image image;
         [SerializeField]
-        private Text text, cancel, confirm, functional = null;
+        private Text text, functional = null;
         [SerializeField]
         private Button cancelButton, confirmbutton, functionalButton;
 
@@ -40,8 +40,6 @@ namespace Assets.Scripts.UI.Panels
 
         private void UpdateOverlayInformation()
         {
-            cancel.text = Text("no");
-            confirm.text = Text("yes");
             functional.text = Text("unlock");
         }
 
