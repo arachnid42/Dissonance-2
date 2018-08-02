@@ -442,11 +442,11 @@ namespace Assets.Scripts.Game
 
             if (d.scoreBased && IsGameModeScoreCooldownEnded())
             {
-                can = master.State.score - master.State.Difficulty.modeChange.startScore - s.lastChangeScore >= d.scoreInterval;
+                can = master.State.score - master.State.Difficulty.modeChange.startScore - s.lastChangeScore -master.State.Difficulty.modeChange.scoreCooldown >= d.scoreInterval;
             }
             else if(!d.scoreBased && IsGameModeTimeCooldownEnded())
             {
-                can = firstScoreTime > 0 && time - s.lastChangeTime >= d.timeInterval;
+                can = firstScoreTime > 0 && time - s.lastChangeTime - master.State.Difficulty.modeChange.timeCooldown >= d.timeInterval;
             }
 
             if (can)
