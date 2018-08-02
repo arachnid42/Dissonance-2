@@ -423,31 +423,38 @@ namespace Assets.Scripts.Game
 
         public bool IsGameModeScoreCooldownEnded()
         {
-            return (master.State.score) - master.State.modeChange.lastScore >= master.State.Difficulty.modeChange.scoreCooldown;
+            return master.State.score - master.State.modeChange.lastScore >= master.State.Difficulty.modeChange.scoreCooldown;
         }
 
         public bool IsGameModeTimeCooldownEnded()
         {
-            return Time.time - master.State.modeChange.lastTime - master.State.slowdown.timeInterval >= master.State.Difficulty.modeChange.timeCooldown;
+            float firstScoreTime = master.State.firstScoreTime;
+            float time = Time.time - firstScoreTime;
+            return firstScoreTime > 0 && time - master.State.modeChange.lastTime >= master.State.Difficulty.modeChange.timeCooldown;
         }
 
         public bool CanChangeMode(Difficulty.Mode d, State.Mode s)
         {
             bool can = false;
+            float firstScoreTime = master.State.firstScoreTime;
+            float time = Time.time - firstScoreTime;
+
             if (d.scoreBased && IsGameModeScoreCooldownEnded())
             {
                 can = master.State.score - master.State.Difficulty.modeChange.startScore - s.lastChangeScore >= d.scoreInterval;
             }
             else if(!d.scoreBased && IsGameModeTimeCooldownEnded())
             {
-                can = Time.time - s.lastChangeTime >= d.timeInterval;
+                can = firstScoreTime > 0 && time - s.lastChangeTime >= d.timeInterval;
             }
+
             if (can)
             {
-                s.lastChangeTime = Time.time;
+                s.lastChangeTime = time;
                 s.lastChangeScore = master.State.score;
                 return can && Random.value < d.probability;
             }
+
             return false;
         }
 

@@ -19,7 +19,6 @@ namespace Assets.Scripts.Game
             if (match)
             {
                 master.State.Score++;
-                //Debug.Log("SCore:" + master.State.score);
                 master.Actions.IncreaseDifficultyState();
                 if (master.State.score == 1)
                     master.State.firstScoreTime = Time.time;

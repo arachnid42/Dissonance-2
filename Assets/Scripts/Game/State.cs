@@ -45,7 +45,7 @@ namespace Assets.Scripts.Game
             public int lastChangeScore = 0;
             public void Reset()
             {
-                lastChangeTime = Time.time;
+                lastChangeTime = 0;
                 lastChangeScore = 0;
             }
         }
@@ -78,7 +78,7 @@ namespace Assets.Scripts.Game
             public int lastScore = 0;
             public void Reset()
             {
-                lastTime = Time.time;
+                lastTime = 0;
                 lastScore = 0;
             }
         }
