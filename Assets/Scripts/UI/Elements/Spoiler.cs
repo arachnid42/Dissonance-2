@@ -9,14 +9,12 @@ namespace Assets.Scripts.UI.Elements
     public abstract class Spoiler<T> : MonoBehaviour
     {
         [SerializeField]
-        private string name;
+        private string name = null;
         [SerializeField]
         private bool isExpanded;
 
         [SerializeField]
         private Text headerText = null;
-        [SerializeField]
-        private Button toggleButton;
         [SerializeField]
         private Sprite spoilerClosedImage, spoilerOpenedImage;
         [SerializeField]
@@ -25,9 +23,15 @@ namespace Assets.Scripts.UI.Elements
         private Image buttonImage;
         [SerializeField]
         private Color closedColor, openedColor;
+        [SerializeField]
+        private float time = 0.25f;
+        [SerializeField]
+        private AnimationCurve curve;
 
         private RectTransform rt;
         private float bottom;
+        private Coroutine toggleCoroutine;
+        private float stage;
 
         public abstract T GetData();
         public abstract void SetData(T data);
@@ -35,8 +39,10 @@ namespace Assets.Scripts.UI.Elements
 
         private void Start()
         {
-            //rt = GetComponent<RectTransform>();
-            //bottom = rt.sizeDelta.y;
+            float tan45 = Mathf.Tan(Mathf.Deg2Rad * 45);
+            curve = new AnimationCurve();
+            curve.AddKey(new Keyframe(0, 0, tan45, 0));
+            curve.AddKey(new Keyframe(1, 1, 0, tan45));
         }
 
         private void OnEnable()
@@ -61,21 +67,33 @@ namespace Assets.Scripts.UI.Elements
 
         private void ToggleSpoiler()
         {
+            var start = rt.sizeDelta;
+            var end = new Vector2(rt.sizeDelta.x, bottom + content.sizeDelta.y);
             if (isExpanded)
             {
                 buttonImage.sprite = spoilerOpenedImage;
                 buttonImage.color = openedColor;
-                rt.sizeDelta = new Vector2(rt.sizeDelta.x, bottom + content.sizeDelta.y);
             }
             else
             {
                 buttonImage.sprite = spoilerClosedImage;
                 buttonImage.color = closedColor;
-                rt.sizeDelta = new Vector2(rt.sizeDelta.x, bottom);
+                end = new Vector2(rt.sizeDelta.x, bottom);
             }
-            //Debug.LogFormat("offsetMin.x: {0}, offsetMin.y: {1}", rt.offsetMin.x, rt.offsetMin.y);
-            //Debug.LogFormat("offsetMax.x: {0}, offsetMax.y: {1}", rt.offsetMax.x, rt.offsetMax.y);
-            //Debug.LogFormat("sizeDelta.x: {0}, sizeDelta.y: {1}", rt.sizeDelta.x, rt.sizeDelta.y);
+            if (toggleCoroutine != null)
+                StopCoroutine(toggleCoroutine);
+            toggleCoroutine = StartCoroutine(TogleCoroutine(start,end));
+        }
+
+        private IEnumerator TogleCoroutine(Vector2 start, Vector2 end)
+        {
+            while (stage <= 1)
+            {
+                stage += Time.unscaledDeltaTime / time;
+                rt.sizeDelta = Vector2.Lerp(start, end, curve.Evaluate(stage));
+                yield return null;
+            }
+            stage = 0;
         }
 
     }

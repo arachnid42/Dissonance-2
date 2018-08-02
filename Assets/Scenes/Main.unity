@@ -1810,13 +1810,19 @@ MonoBehaviour:
   name: reactionTime
   isExpanded: 0
   headerText: {fileID: 1367613949}
-  toggleButton: {fileID: 940662552}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 171819572}
   buttonImage: {fileID: 940662553}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   minSlider: {fileID: 1857422562}
   maxSlider: {fileID: 59479231}
   changeSlider: {fileID: 1214995706}
@@ -9557,7 +9563,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.8145, y: -363.75}
+  m_AnchoredPosition: {x: 475.8145, y: -363.74997}
   m_SizeDelta: {x: 951, y: 293.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &326512641
@@ -15248,7 +15254,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 122.5, y: -46}
+  m_AnchoredPosition: {x: 122.5, y: -46.00006}
   m_SizeDelta: {x: 123.4, y: -1084.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &528268355
@@ -18595,7 +18601,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1274239148}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &646175637
 MonoBehaviour:
@@ -24789,6 +24795,7 @@ MonoBehaviour:
   LevelsContent: {fileID: 227546805}
   passedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
   currentColor: {r: 0.6392157, g: 0.03529412, b: 0.85882354, a: 1}
+  scrollRect: {fileID: 717806394}
 --- !u!225 &763529547
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -25178,13 +25185,19 @@ MonoBehaviour:
   name: gameColorsChange
   isExpanded: 0
   headerText: {fileID: 981901737}
-  toggleButton: {fileID: 1358702980}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 245856512}
   buttonImage: {fileID: 1358702981}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   scoreIntervalSlider: {fileID: 1196866173}
   timeIntervalSlider: {fileID: 2025209896}
   probabilitySlider: {fileID: 554285670}
@@ -25955,6 +25968,128 @@ RectTransform:
   m_AnchoredPosition: {x: 475.8145, y: -697.1}
   m_SizeDelta: {x: 951, y: 362.4}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &792602956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1812329460182426, guid: 3a5f4f91e8567764f95b27d84da624e5,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 792602957}
+  - component: {fileID: 792602958}
+  m_Layer: 0
+  m_Name: Bubbles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &792602957
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4562561000079604, guid: 3a5f4f91e8567764f95b27d84da624e5,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 792602956}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1274239148}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &792602958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114469151099833160, guid: 3a5f4f91e8567764f95b27d84da624e5,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 792602956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488c6a84b3c62624785bec6749203733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  background: {fileID: 2800000, guid: b444e25fc4a810a46b4ee53a29ca0512, type: 3}
+  bonusCounterBackground: {r: 1, g: 1, b: 1, a: 0.39215687}
+  tileShapes: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
+  font: {r: 0.02745098, g: 0.02745098, b: 0.02745098, a: 0.78431374}
+  main:
+  - {r: 0.06666667, g: 0.6901961, b: 0.5921569, a: 1}
+  - {r: 0.81960785, g: 0.06666667, b: 0.28627452, a: 1}
+  - {r: 0.5882353, g: 0.14509805, b: 0.72156864, a: 1}
+  - {r: 0.94509804, g: 0.44313726, b: 0.019607844, a: 1}
+  - {r: 0.4, g: 0.0627451, b: 0.9490196, a: 1}
+  - {r: 0.76862746, g: 0.16078432, b: 0.7490196, a: 1}
+  - {r: 0.7019608, g: 0.67058825, b: 0.21568628, a: 1}
+  - {r: 0, g: 0.50980395, b: 0.35686275, a: 1}
+  - {r: 0.101960786, g: 0.56078434, b: 0.8901961, a: 1}
+  - {r: 0.9372549, g: 0.4745098, b: 0.5411765, a: 1}
+  freezeBonus: {r: 0.09411765, g: 0.43529412, b: 0.6313726, a: 1}
+  explosionBonus: {r: 1, g: 0.96862745, b: 0.18039216, a: 1}
+  heartBonus: {r: 0.80784315, g: 0.047058824, b: 0.007843138, a: 1}
+  snowflakeParticles: {r: 0, g: 0.87772024, b: 0.9882353, a: 0.50980395}
+  explosionGradientOne:
+    serializedVersion: 2
+    key0: {r: 0.80784315, g: 0.047058824, b: 0.007843138, a: 0.78431374}
+    key1: {r: 1, g: 0.96862745, b: 0.18039216, a: 0.5882353}
+    key2: {r: 1, g: 1, b: 1, a: 0.2901961}
+    key3: {r: 1, g: 1, b: 1, a: 1}
+    key4: {r: 0, g: 0, b: 0, a: 1}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 65535
+    ctime3: 65535
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 29491
+    atime1: 65342
+    atime2: 57632
+    atime3: 65535
+    atime4: 65535
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  explosionGradientTwo:
+    serializedVersion: 2
+    key0: {r: 1, g: 0.96862745, b: 0.18039216, a: 0.5882353}
+    key1: {r: 0.80784315, g: 0.047058824, b: 0.007843138, a: 0.78431374}
+    key2: {r: 0, g: 0, b: 0, a: 0.6117647}
+    key3: {r: 0, g: 0, b: 0, a: 0.6117647}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 31226
+    atime1: 59753
+    atime2: 60716
+    atime3: 52043
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  screenshot: {fileID: 21300000, guid: ad9d258616acc2d4bb4c1e9ddb966a11, type: 3}
+  free: 0
 --- !u!1 &794096586
 GameObject:
   m_ObjectHideFlags: 0
@@ -33484,6 +33619,128 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 860869413}
+--- !u!1 &866415428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1812329460182426, guid: 3a5f4f91e8567764f95b27d84da624e5,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 866415429}
+  - component: {fileID: 866415430}
+  m_Layer: 0
+  m_Name: Waves
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &866415429
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4562561000079604, guid: 3a5f4f91e8567764f95b27d84da624e5,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 866415428}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1274239148}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &866415430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114469151099833160, guid: 3a5f4f91e8567764f95b27d84da624e5,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 866415428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488c6a84b3c62624785bec6749203733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  background: {fileID: 2800000, guid: 41a9ca2c5adbfec46b6618f29b0c1515, type: 3}
+  bonusCounterBackground: {r: 1, g: 1, b: 1, a: 0.38431373}
+  tileShapes: {r: 1, g: 1, b: 1, a: 1}
+  font: {r: 1, g: 1, b: 1, a: 1}
+  main:
+  - {r: 0.32156864, g: 1, b: 0.72156864, a: 1}
+  - {r: 0.5137255, g: 0.039215688, b: 0.28235295, a: 1}
+  - {r: 0.38039216, g: 0.24705882, b: 0.45882353, a: 1}
+  - {r: 0.9882353, g: 0.31764707, b: 0.1882353, a: 1}
+  - {r: 0.69803923, g: 0.69411767, b: 0.8117647, a: 1}
+  - {r: 0.9372549, g: 0.4745098, b: 0.7490196, a: 1}
+  - {r: 0.84313726, g: 0.8117647, b: 0.02745098, a: 1}
+  - {r: 0, g: 0.50980395, b: 0.35686275, a: 1}
+  - {r: 0.1882353, g: 0.7372549, b: 0.92941177, a: 1}
+  - {r: 0.96862745, g: 0.6627451, b: 0.65882355, a: 1}
+  freezeBonus: {r: 1, g: 1, b: 1, a: 1}
+  explosionBonus: {r: 1, g: 0.96862745, b: 0.18039216, a: 1}
+  heartBonus: {r: 0.80784315, g: 0.047058824, b: 0.007843138, a: 1}
+  snowflakeParticles: {r: 0, g: 0.87772024, b: 0.9882353, a: 0.50980395}
+  explosionGradientOne:
+    serializedVersion: 2
+    key0: {r: 0.9882353, g: 0.31764707, b: 0.1882353, a: 0.78431374}
+    key1: {r: 1, g: 0.96862745, b: 0.18039216, a: 0.5882353}
+    key2: {r: 1, g: 1, b: 1, a: 0.2901961}
+    key3: {r: 1, g: 1, b: 1, a: 1}
+    key4: {r: 0, g: 0, b: 0, a: 1}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 65535
+    ctime3: 65535
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 29491
+    atime1: 65342
+    atime2: 57632
+    atime3: 65535
+    atime4: 65535
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  explosionGradientTwo:
+    serializedVersion: 2
+    key0: {r: 1, g: 0.96862745, b: 0.18039216, a: 0.5882353}
+    key1: {r: 0.9882353, g: 0.31764707, b: 0.1882353, a: 0.78431374}
+    key2: {r: 0, g: 0, b: 0, a: 0.6117647}
+    key3: {r: 0, g: 0, b: 0, a: 0.6117647}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 31226
+    atime1: 59753
+    atime2: 60716
+    atime3: 52043
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  screenshot: {fileID: 21300000, guid: 832433871c8d31145a50bc409355c825, type: 3}
+  free: 0
 --- !u!114 &868089716 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114547692049450396, guid: 2050bc28cf9686d41877c03c18a2332b,
@@ -33856,13 +34113,19 @@ MonoBehaviour:
   name: freezeBonus
   isExpanded: 0
   headerText: {fileID: 2031441351}
-  toggleButton: {fileID: 2136081877}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 504718572}
   buttonImage: {fileID: 2136081878}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   numberSlider: {fileID: 913704677}
   startScoreSlider: {fileID: 1528972749}
   scoreIntervalSlider: {fileID: 997842609}
@@ -35852,13 +36115,19 @@ MonoBehaviour:
   name: explosionBonus
   isExpanded: 0
   headerText: {fileID: 898840646}
-  toggleButton: {fileID: 1716705395}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 632647698}
   buttonImage: {fileID: 1716705396}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   numberSlider: {fileID: 1105354264}
   startScoreSlider: {fileID: 843517061}
   scoreIntervalSlider: {fileID: 1430940310}
@@ -36878,13 +37147,19 @@ MonoBehaviour:
   name: modesChange
   isExpanded: 0
   headerText: {fileID: 441714664}
-  toggleButton: {fileID: 1418336410}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 1328634956}
   buttonImage: {fileID: 1418336411}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   maxAtOnceSlider: {fileID: 343629179}
   scoreCooldownSlider: {fileID: 1916320093}
   timeCooldownSlider: {fileID: 829709489}
@@ -37257,8 +37532,6 @@ MonoBehaviour:
   fadeDuration: 0.2
   image: {fileID: 528268355}
   text: {fileID: 202933565}
-  cancel: {fileID: 0}
-  confirm: {fileID: 0}
   functional: {fileID: 33441342}
   cancelButton: {fileID: 0}
   confirmbutton: {fileID: 0}
@@ -44549,7 +44822,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.8145, y: -921.24994}
+  m_AnchoredPosition: {x: 475.8145, y: -921.2499}
   m_SizeDelta: {x: 951, y: 362.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1163085941
@@ -47335,6 +47608,8 @@ Transform:
   m_Children:
   - {fileID: 2042599604}
   - {fileID: 729532889}
+  - {fileID: 792602957}
+  - {fileID: 866415429}
   - {fileID: 1367368407}
   - {fileID: 2011491278}
   - {fileID: 646175636}
@@ -48487,13 +48762,19 @@ MonoBehaviour:
   name: rotationSpeed
   isExpanded: 0
   headerText: {fileID: 763848654}
-  toggleButton: {fileID: 348206661}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 1320357620}
   buttonImage: {fileID: 348206662}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   minSlider: {fileID: 1809105098}
   maxSlider: {fileID: 1894568582}
   minSliderData:
@@ -48914,13 +49195,37 @@ MonoBehaviour:
   name: shapesOnScreen
   isExpanded: 0
   headerText: {fileID: 286007118}
-  toggleButton: {fileID: 550107642}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 244056544}
   buttonImage: {fileID: 550107643}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   minSlider: {fileID: 731951337}
   maxSlider: {fileID: 857271610}
   intervalSlider: {fileID: 2041966859}
@@ -50583,7 +50888,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1274239148}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1367368408
 MonoBehaviour:
@@ -52369,7 +52674,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.81445, y: -226.19922}
+  m_AnchoredPosition: {x: 475.81445, y: -226.19919}
   m_SizeDelta: {x: 951, y: 452.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1430549418
@@ -58616,7 +58921,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1274239148}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1483383802
 MonoBehaviour:
@@ -61572,13 +61877,19 @@ MonoBehaviour:
   name: basketShapesChange
   isExpanded: 0
   headerText: {fileID: 54668400}
-  toggleButton: {fileID: 715635164}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 625346059}
   buttonImage: {fileID: 715635165}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   scoreIntervalSlider: {fileID: 898335456}
   timeIntervalSlider: {fileID: 1271055131}
   probabilitySlider: {fileID: 506002197}
@@ -62897,7 +63208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 122.5, y: -46}
+  m_AnchoredPosition: {x: 122.5, y: -46.00006}
   m_SizeDelta: {x: 123.4, y: -1084.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1607577133
@@ -73418,13 +73729,19 @@ MonoBehaviour:
   name: gameModeChange
   isExpanded: 0
   headerText: {fileID: 1268247150}
-  toggleButton: {fileID: 781638021}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 1820517495}
   buttonImage: {fileID: 781638022}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   scoreIntervalSlider: {fileID: 775402551}
   timeIntervalSlider: {fileID: 967542615}
   probabilitySlider: {fileID: 1002705169}
@@ -74791,13 +75108,19 @@ MonoBehaviour:
   name: randomRotation
   isExpanded: 0
   headerText: {fileID: 1654069866}
-  toggleButton: {fileID: 535610510}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 2084954564}
   buttonImage: {fileID: 535610511}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   intervalSlider: {fileID: 1008215007}
   probabilitySlider: {fileID: 2070456236}
   intervalSliderData:
@@ -77408,7 +77731,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1274239148}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2011491279
 MonoBehaviour:
@@ -78901,13 +79224,19 @@ MonoBehaviour:
   name: lifeBonus
   isExpanded: 0
   headerText: {fileID: 1328095963}
-  toggleButton: {fileID: 2054668922}
   spoilerClosedImage: {fileID: 21300000, guid: 7d987c2ad5e52ac42a5e1cc5240b2bc2, type: 3}
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 1613955555}
   buttonImage: {fileID: 2054668923}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
+  time: 0.25
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   numberSlider: {fileID: 1405928700}
   startScoreSlider: {fileID: 596781248}
   scoreIntervalSlider: {fileID: 1624074835}
