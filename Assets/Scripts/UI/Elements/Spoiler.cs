@@ -55,14 +55,14 @@ namespace Assets.Scripts.UI.Elements
 
         private void OnDisable()
         {
-            isExpanded = false;
-            ToggleSpoiler();
+            ResetSpoiler();
         }
 
         public void OnToggleButtonClik()
         {
             isExpanded = !isExpanded;
             ToggleSpoiler();
+
         }
 
         private void ToggleSpoiler()
@@ -95,7 +95,12 @@ namespace Assets.Scripts.UI.Elements
             }
             stage = 0;
         }
-
+        
+        private void ResetSpoiler()
+        {
+            isExpanded = false;
+            rt.sizeDelta = new Vector2(rt.sizeDelta.x, bottom);
+        }
     }
 }
 
