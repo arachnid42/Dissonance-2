@@ -430,6 +430,7 @@ namespace Assets.Scripts.Game
         {
             float firstScoreTime = master.State.firstScoreTime;
             float time = Time.time - firstScoreTime;
+
             return firstScoreTime > 0 && time - master.State.modeChange.lastTime >= master.State.Difficulty.modeChange.timeCooldown;
         }
 
@@ -495,9 +496,8 @@ namespace Assets.Scripts.Game
             if (modeChanges.Count > 0)
             {
                 StandardSlowDownShapesOnScreen();
-                master.State.slowdown.startedTime = Time.time;
                 master.State.modeChange.lastScore = master.State.score;
-                master.State.modeChange.lastTime = Time.time;
+                master.State.modeChange.lastTime = Time.time - master.State.firstScoreTime;
             }
             else
             {
