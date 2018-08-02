@@ -22,14 +22,30 @@ namespace Assets.Scripts.UI.Panels
 
         [SerializeField]
         private Color passedColor, currentColor;
+        [SerializeField]
+        private ScrollRect scrollRect;
 
+        private const float ROW_LENGTH = 4f;
+        private const float SCROLL_MIDDLE = 0.5f;
+        private float precision;
         private List<GameObject> levelsButtons = new List<GameObject>();
 
         private void OnEnable()
         {
+            UIController.Instance.data.activePanel = this;
             SetLabels(UpdateLabels);
             StartCoroutine(UpdateLevels());
-            UIController.Instance.data.activePanel = this;
+            float scrollPosition = 1 - (float)(PersistentState.Instance.data.lastLevelIndex + 1) / (float)PersistentState.Instance.data.levelsUnlocked;
+            precision = ROW_LENGTH / (float)PersistentState.Instance.data.levelsUnlocked;
+            scrollPosition = scrollPosition < SCROLL_MIDDLE ? scrollPosition - precision : scrollPosition + precision;
+            StartCoroutine(SetScrollRectPosition(scrollPosition));
+        }
+
+        private IEnumerator SetScrollRectPosition(float position)
+        {
+            yield return new WaitForEndOfFrame();
+            scrollRect.verticalNormalizedPosition = Mathf.Clamp(position,0,1);
+
         }
 
         private void UpdateLabels()
@@ -56,8 +72,9 @@ namespace Assets.Scripts.UI.Panels
                 Destroy(button);
             levelsButtons.Clear();
             Color color = passedColor;
-            for (int i = PersistentState.Instance.data.levelsUnlocked-1; i >= 0 ; i--)
-            {
+            //for (int i = PersistentState.Instance.data.levelsUnlocked-1; i >= 0 ; i--)
+            for (int i = 0; i < PersistentState.Instance.data.levelsUnlocked; i++)
+                {
                 color = PersistentState.Instance.data.lastLevelIndex == i ? currentColor : passedColor;
                 GameObject newButton = GameObject.Instantiate(LevelButtonPrefab);
                 newButton.transform.SetParent(LevelsContent, false);
