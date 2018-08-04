@@ -43,17 +43,26 @@ namespace Assets.Scripts.UI.Panels
 
         public void OnPlayButtonClick()
         {
+            var tutorialData = PersistentState.Instance.data.turotiral;
             BasePanel fade = UIController.Instance.PanelController.FadePanel;
             BasePanel startup = UIController.Instance.PanelController.LevelStartUpPanel;
+            BasePanel tutorial = UIController.Instance.PanelController.TutorialPanel;
             GameObject background = UIController.Instance.PanelController.backgroundPanel;
             DifficultyLevels.Instance.LevelIndex = PersistentState.Instance.data.lastLevelIndex;
             var startPlay = UIController.Instance.data.activePanel.SwitchToAnimation(fade);
             startPlay.After(fade.SetHiddenEnumerator(true));
-            startPlay.After(startup.SetHiddenEnumerator(false));
-            startPlay.After(startup.SetHiddenEnumerator(true, after:()=> {
-                Field.Instance.Master.Restart();
-                UIController.Instance.data.isInMainMenu = false;
-            }, background:background));
+            if(tutorialData.basic || tutorialData.lifeBonus || tutorialData.freezeBonus || tutorialData.explosionBonus)
+            {
+                startPlay.After(tutorial.SetHiddenEnumerator(false));
+            }
+            else
+            {
+                startPlay.After(startup.SetHiddenEnumerator(false));
+                startPlay.After(startup.SetHiddenEnumerator(true, after: () => {
+                    Field.Instance.Master.Restart();
+                    UIController.Instance.data.isInMainMenu = false;
+                }, background: background));
+            }
             startPlay.Start();
         }
 
