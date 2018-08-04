@@ -68,6 +68,7 @@
 		{"key":"play", "value":"Играть"},
 		{"key":"configure", "value":"Настроить"},
 		{"key":"startingMode", "value":"Начальный Режим"},
+		{"key":"shapes", "value":"Фигуры"},
 		{"key":"random", "value":"Случайный"},
 		{"key":"shapeToggle", "value":"Форма"},
 		{"key":"colorToggle", "value":"Цвет"},
