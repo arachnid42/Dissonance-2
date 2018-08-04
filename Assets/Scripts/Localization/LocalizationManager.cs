@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 using System;
 using System.Collections.Generic;
 using System.Collections;
@@ -73,7 +74,7 @@ namespace Assets.Scripts.Localization
         {
             foreach (var listener in listeners)
             {
-                string value = items[listener.key];
+                string value = this[listener.key];
                 listener.textMesh.text = value;
             }
         }
@@ -86,10 +87,12 @@ namespace Assets.Scripts.Localization
 
         private IEnumerator LoadLocalizationFileCoroutine(string localizationFilePath)
         {
-            var file = new WWW(localizationFilePath);
-            while (!file.isDone)
-                yield return null;
-            items = JsonUtility.FromJson<Data>(file.text).ToDictionary();
+            var request = UnityWebRequest.Get(localizationFilePath);
+            yield return request.SendWebRequest();
+
+            var text = request.downloadHandler.text.Trim();
+            items = JsonUtility.FromJson<Data>(text).ToDictionary();
+
             UpdateListeners();
             loadLocalizationFileCoroutine = null;
         }
@@ -99,7 +102,6 @@ namespace Assets.Scripts.Localization
             if (Instance == null)
             {
                 yield return StartCoroutine(LoadLocalizationFileCoroutine(GetPath(localization)));
-                //DontDestroyOnLoad(gameObject);
                 Instance = this;
             } else if (Instance != this)
             {
