@@ -120,13 +120,22 @@
 		{"key":"no", "value":"No"},
 		{"key":"yes", "value":"Yes"},
 
-		{"key":"pauseTutorial", "value":"To pause the game you need to swipe up or down"},
-		{"key":"bonusTutorial", "value":"Tap on bonus to catch it."},
-		{"key":"lifeBonusTutorial", "value":"\"Life\" bonus gives you a second chance if you didn't catch figure rightly. It will be used automatically."},
-		{"key":"freezeBonusTutorial", "value":"\"Freeze\" bonus slows down shapes on screen for a limited time. Swipe right to use."},
-		{"key":"explosionBonusTutorial", "value":"\"Explosion\" bonus explodes shapes on screen. Swipe left to use bonus."},
-		{"key":"life", "value":"life"},
-		{"key":"explosion", "value":"explosion"},
-		{"key":"freeze", "value":"freeze"}
+		{"key":"general.tutorial.1", "value":""},
+		{"key":"general.tutorial.2", "value":""},
+		{"key":"general.tutorial.3", "value":""},
+		{"key":"general.tutorial.5", "value":""},
+		{"key":"general.tutorial.6", "value":""},
+		{"key":"general.tutorial.7", "value":""},
+		{"key":"general.tutorial.8", "value":""},
+		{"key":"general.tutorial.9", "value":""},
+
+		{"key":"life.bonus.tutorial.1", "value":""},
+
+		{"key":"freeze.bonus.tutorial.1", "value":""},
+		{"key":"freeze.bonus.tutorial.2", "value":""},
+
+		{"key":"explosion.bonus.tutorial.1", "value":""},
+		{"key":"explosion.bonus.tutorial.2", "value":""}
+
 	]
 }

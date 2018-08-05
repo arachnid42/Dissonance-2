@@ -64,7 +64,7 @@
 		{"key":"pause", "value":"Пауза"},
 		{"key":"resume", "value":"Продовжити"},
 
-		{"key":"configurableMode", "value":"Конфігуруємий Режим"},
+		{"key":"configurableMode", "value":"Конфігуруємий режим"},
 		{"key":"play", "value":"Грати"},
 		{"key":"configure", "value":"Налаштувати"},
 		{"key":"startingMode", "value":"Початковий Режим"},
