@@ -133,9 +133,10 @@
 		{"key":"life.bonus.tutorial.1", "value":"Oh, look, Life bonus! Tap to catch."},
 
 		{"key":"freeze.bonus.tutorial.1", "value":"You see, freeze bonus! Tap to catch."},
-		{"key":"freeze.bonus.tutorial.2", "value":"Swipe right to freeze shapes."},
+		{"key":"freeze.bonus.tutorial.2", "value":"Swipe right to freeze shapes. Bonus will be used automatically if there is too little time to swipe."},
 
 		{"key":"explosion.bonus.tutorial.1", "value":"Look, bonus! Explosion! Tap to catch."},
-		{"key":"explosion.bonus.tutorial.2", "value":"Swipe left to explode shapes."}
+		{"key":"explosion.bonus.tutorial.2", "value":"Swipe left to explode shapes. Bonus will be used automatically if there is too little time to swipe."}
+
 	]
 }
