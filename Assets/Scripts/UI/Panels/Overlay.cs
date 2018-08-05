@@ -10,11 +10,7 @@ namespace Assets.Scripts.UI.Panels
     public class Overlay : BasePanel
     {
         [SerializeField]
-        private Image image;
-        [SerializeField]
         private Text text, functional = null;
-        [SerializeField]
-        private Button cancelButton, confirmbutton, functionalButton;
 
         private Animation closeAnimation, fromEndlessToMainMenuAnimation, fromConfigurableToMeinMenuAnimation, fromEndlessToDonateAnimation, fromConfigurableToDonateAnimation;
 
@@ -40,6 +36,7 @@ namespace Assets.Scripts.UI.Panels
 
         private void UpdateOverlayInformation()
         {
+            text.text = Text("winOrBuyToUnlock");
             functional.text = Text("unlock");
         }
 

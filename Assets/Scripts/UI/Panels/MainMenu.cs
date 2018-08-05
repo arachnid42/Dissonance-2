@@ -18,7 +18,7 @@ namespace Assets.Scripts.UI.Panels
         private Sprite SoundImageOn = null, SoundImageOff = null;
 
         private string appID;
-        
+
         private void OnEnable()
         {
             StartCoroutine(AlterUI(InitPanel));

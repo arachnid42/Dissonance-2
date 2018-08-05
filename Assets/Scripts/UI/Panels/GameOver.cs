@@ -89,6 +89,7 @@ namespace Assets.Scripts.UI.Panels
                     oops.text = Text("congrats");
                     messangeText.SetActive(false);
                     newRecordText.SetActive(true);
+                    newRecord.text = Text("newRecord");
                 }
                 else
                 {
