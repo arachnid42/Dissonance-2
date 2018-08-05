@@ -25,7 +25,6 @@ namespace Assets.Scripts.UI.Elements
         private Color closedColor, openedColor;
         [SerializeField]
         private float time = 0.25f;
-        [SerializeField]
         private AnimationCurve curve;
 
         private RectTransform rt;
