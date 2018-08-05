@@ -11,8 +11,7 @@ namespace Assets.Scripts.UI.Panels
     public class ConfigurableMenu : BasePanel
     {
         [SerializeField]
-        private Text title = null, startingMode = null, target = null, 
-            save = null, revert = null, back = null;
+        private Text title, startingMode, shapes, target, save, revert, back = null;
 
         [SerializeField]
         private ConfigurableMapper configurableMapper;
@@ -32,6 +31,7 @@ namespace Assets.Scripts.UI.Panels
         {
             title.text = Text("configurableMode");
             startingMode.text = Text("startingMode");
+            shapes.text = Text("shapes");
             target.text = Text("target");
             save.text = Text("save");
             revert.text = Text("revert");

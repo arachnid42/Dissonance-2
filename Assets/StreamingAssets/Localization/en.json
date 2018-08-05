@@ -68,6 +68,7 @@
 		{"key":"play", "value":"Play"},
 		{"key":"configure", "value":"Configure"},
 		{"key":"startingMode", "value":"Starting Mode"},
+		{"key":"shapes", "value":"Shapes"},
 		{"key":"random", "value":"Random"},
 		{"key":"shapeToggle", "value":"Shape"},
 		{"key":"colorToggle", "value":"Color"},
