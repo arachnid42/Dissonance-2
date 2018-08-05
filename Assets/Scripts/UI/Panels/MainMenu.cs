@@ -16,6 +16,8 @@ namespace Assets.Scripts.UI.Panels
 
         [SerializeField]
         private Sprite SoundImageOn = null, SoundImageOff = null;
+        [SerializeField]
+        private float startUpDelay = 2f;
 
         private string appID;
 
@@ -24,12 +26,18 @@ namespace Assets.Scripts.UI.Panels
             StartCoroutine(AlterUI(InitPanel));
             appID = string.Format("com.{0}.{1}", Application.companyName, Application.productName);
             Debug.LogFormat("App ID: {0}", appID);
+
+            
         }
         private void InitPanel()
         {
             Debug.LogFormat("{0} : {1}", PersistentState.Instance, UIController.Instance);
             SetLabels(UpdateLabels);
             UIController.Instance.data.activePanel = this;
+            //UIController.Instance.PanelController.StartupPanel.SetHidddenAnimation(true).Start();
+            var showMenuAnim = new Animation(Delay(startUpDelay));
+            showMenuAnim.After(UIController.Instance.PanelController.StartupPanel.SetHiddenEnumerator(true));
+            showMenuAnim.Start();
         }
 
         private void UpdateLabels()
@@ -163,6 +171,11 @@ namespace Assets.Scripts.UI.Panels
 #if UNITY_ANDROID
             Application.OpenURL(string.Format("market://details?id={0}", appID));
 #endif
+        }
+
+        private IEnumerator Delay(float seconds)
+        {
+            yield return new WaitForSeconds(seconds);
         }
 
     }

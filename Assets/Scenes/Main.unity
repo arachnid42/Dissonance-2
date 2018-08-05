@@ -1817,12 +1817,6 @@ MonoBehaviour:
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
   time: 0.25
-  curve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   minSlider: {fileID: 1857422562}
   maxSlider: {fileID: 59479231}
   changeSlider: {fileID: 1214995706}
@@ -4302,7 +4296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 317.86572, y: -84.82263}
+  m_AnchoredPosition: {x: 317.8662, y: -84.822266}
   m_SizeDelta: {x: 485, y: 170}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &152449198
@@ -5181,6 +5175,7 @@ RectTransform:
   - {fileID: 1515322303}
   - {fileID: 963560030}
   - {fileID: 127873741}
+  - {fileID: 406943032}
   - {fileID: 568175378}
   m_Father: {fileID: 564165596}
   m_RootOrder: 1
@@ -5242,6 +5237,7 @@ MonoBehaviour:
   overlayPanel: {fileID: 963560029}
   closeOverlayPanel: {fileID: 127873740}
   tutorialPanel: {fileID: 198674288}
+  startupPanel: {fileID: 406943031}
 --- !u!225 &175000067
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9639,7 +9635,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.73145, y: -363.74997}
+  m_AnchoredPosition: {x: 475.73145, y: -363.75}
   m_SizeDelta: {x: 951, y: 293.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &326512641
@@ -11638,6 +11634,140 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 406707297}
+--- !u!1 &406943031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1212098194313746, guid: 6de892b3b253d2243952e39506c7b768,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 406943032}
+  - component: {fileID: 406943036}
+  - component: {fileID: 406943035}
+  - component: {fileID: 406943034}
+  - component: {fileID: 406943033}
+  m_Layer: 5
+  m_Name: StartupFadePanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &406943032
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224496011043797524, guid: 6de892b3b253d2243952e39506c7b768,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 406943031}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000384, y: 1.0000384, z: 1.0000384}
+  m_Children:
+  - {fileID: 803683287}
+  m_Father: {fileID: 175000064}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &406943033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 406943031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3622ca8ac5e3a8b4ea039a5b58a78ec0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 0.5
+  logoImageCanvas: {fileID: 803683290}
+  time: 5.5
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.7913753
+      value: 0.34054837
+      inSlope: 1.5134852
+      outSlope: 1.5134852
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.7623159
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!225 &406943034
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 225394364667617220, guid: 6de892b3b253d2243952e39506c7b768,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 406943031}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &406943035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000192941432096, guid: 6de892b3b253d2243952e39506c7b768,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 406943031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 6b53bbe3d7ee0da4db49c5c95930ed03, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &406943036
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222149449476758422, guid: 6de892b3b253d2243952e39506c7b768,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 406943031}
 --- !u!1 &407075755
 GameObject:
   m_ObjectHideFlags: 0
@@ -11675,7 +11805,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 833.59717, y: -84.82263}
+  m_AnchoredPosition: {x: 833.5967, y: -84.822266}
   m_SizeDelta: {x: 485, y: 170}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &407075757
@@ -13683,7 +13813,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 145.9}
+  m_AnchoredPosition: {x: 0, y: 145.90039}
   m_SizeDelta: {x: 0, y: 291.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &468500742
@@ -15335,7 +15465,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 122.5, y: -46.00006}
+  m_AnchoredPosition: {x: 122.5, y: -46}
   m_SizeDelta: {x: 123.4, y: -1084.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &528268355
@@ -16910,7 +17040,7 @@ RectTransform:
   - {fileID: 1700563810}
   - {fileID: 307221595}
   m_Father: {fileID: 175000064}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -25230,7 +25360,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.73145, y: -111.29999}
+  m_AnchoredPosition: {x: 475.73145, y: -111.30078}
   m_SizeDelta: {x: 951, y: 222.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &766032833
@@ -25441,12 +25571,6 @@ MonoBehaviour:
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
   time: 0.25
-  curve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   scoreIntervalSlider: {fileID: 1196866173}
   timeIntervalSlider: {fileID: 2025209896}
   probabilitySlider: {fileID: 554285670}
@@ -26260,7 +26384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 488c6a84b3c62624785bec6749203733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  background: {fileID: 2800000, guid: b444e25fc4a810a46b4ee53a29ca0512, type: 3}
+  background: {fileID: 2800000, guid: b32e243c11322484ea260df1980611c2, type: 3}
   bonusCounterBackground: {r: 1, g: 1, b: 1, a: 0.39215687}
   tileShapes: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
   font: {r: 0.02745098, g: 0.02745098, b: 0.02745098, a: 0.78431374}
@@ -26549,6 +26673,90 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 801036798}
+--- !u!1 &803683286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1607108175805552, guid: 6de892b3b253d2243952e39506c7b768,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 803683287}
+  - component: {fileID: 803683289}
+  - component: {fileID: 803683288}
+  - component: {fileID: 803683290}
+  m_Layer: 5
+  m_Name: LogoImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!224 &803683287
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224265114185030468, guid: 6de892b3b253d2243952e39506c7b768,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 803683286}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 406943032}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.14e-13, y: 0}
+  m_SizeDelta: {x: 892, y: 203}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &803683288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114583608150032714, guid: 6de892b3b253d2243952e39506c7b768,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 803683286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 9b7bdbc949040a948b969bde6359cbd7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &803683289
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222663464462471876, guid: 6de892b3b253d2243952e39506c7b768,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 803683286}
+--- !u!225 &803683290
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 803683286}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &805014517
 GameObject:
   m_ObjectHideFlags: 0
@@ -34441,12 +34649,6 @@ MonoBehaviour:
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
   time: 0.25
-  curve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   numberSlider: {fileID: 913704677}
   startScoreSlider: {fileID: 1528972749}
   scoreIntervalSlider: {fileID: 997842609}
@@ -36443,12 +36645,6 @@ MonoBehaviour:
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
   time: 0.25
-  curve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   numberSlider: {fileID: 1105354264}
   startScoreSlider: {fileID: 843517061}
   scoreIntervalSlider: {fileID: 1430940310}
@@ -37475,12 +37671,6 @@ MonoBehaviour:
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
   time: 0.25
-  curve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   maxAtOnceSlider: {fileID: 343629179}
   scoreCooldownSlider: {fileID: 1916320093}
   timeCooldownSlider: {fileID: 829709489}
@@ -45140,7 +45330,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.73145, y: -921.24976}
+  m_AnchoredPosition: {x: 475.73145, y: -921.2498}
   m_SizeDelta: {x: 951, y: 362.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1163085941
@@ -49263,12 +49453,6 @@ MonoBehaviour:
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
   time: 0.25
-  curve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   minSlider: {fileID: 1809105098}
   maxSlider: {fileID: 1894568582}
   minSliderData:
@@ -49696,30 +49880,6 @@ MonoBehaviour:
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
   time: 0.25
-  curve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   minSlider: {fileID: 731951337}
   maxSlider: {fileID: 857271610}
   intervalSlider: {fileID: 2041966859}
@@ -53168,7 +53328,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.73145, y: -226.19992}
+  m_AnchoredPosition: {x: 475.73145, y: -226.19922}
   m_SizeDelta: {x: 951, y: 452.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1430549418
@@ -62378,12 +62538,6 @@ MonoBehaviour:
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
   time: 0.25
-  curve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   scoreIntervalSlider: {fileID: 898335456}
   timeIntervalSlider: {fileID: 1271055131}
   probabilitySlider: {fileID: 506002197}
@@ -63632,8 +63786,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 23, y: -183}
-  m_SizeDelta: {x: 892, y: 190}
+  m_AnchoredPosition: {x: 23, y: -180}
+  m_SizeDelta: {x: 892, y: 203}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1606930917
 MonoBehaviour:
@@ -63702,7 +63856,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 122.5, y: -46.00006}
+  m_AnchoredPosition: {x: 122.5, y: -46}
   m_SizeDelta: {x: 123.4, y: -1084.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1607577133
@@ -74318,12 +74472,6 @@ MonoBehaviour:
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
   time: 0.25
-  curve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   scoreIntervalSlider: {fileID: 775402551}
   timeIntervalSlider: {fileID: 967542615}
   probabilitySlider: {fileID: 1002705169}
@@ -75697,12 +75845,6 @@ MonoBehaviour:
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
   time: 0.25
-  curve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   intervalSlider: {fileID: 1008215007}
   probabilitySlider: {fileID: 2070456236}
   intervalSliderData:
@@ -76149,6 +76291,7 @@ MonoBehaviour:
   SoundButtonImage: {fileID: 2003891132}
   SoundImageOn: {fileID: 21300000, guid: 8f8e9aa07b5a64840b128840fa193c89, type: 3}
   SoundImageOff: {fileID: 21300000, guid: 9869fc00da5fac2459b98adc8752ee30, type: 3}
+  startUpDelay: 2
 --- !u!225 &1952865177
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -79809,12 +79952,6 @@ MonoBehaviour:
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
   time: 0.25
-  curve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   numberSlider: {fileID: 1405928700}
   startScoreSlider: {fileID: 596781248}
   scoreIntervalSlider: {fileID: 1624074835}
