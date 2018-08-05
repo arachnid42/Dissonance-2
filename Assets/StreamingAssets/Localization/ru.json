@@ -120,24 +120,24 @@
 		{"key":"no", "value":"Нет"},
 		{"key":"yes", "value":"Да"},
 
-		{"key":"general.tutorial.1", "value":"In Dissonance you need to catch falling shapes into the basked based on their shape or color. It sounds simple until you try."},
-		{"key":"general.tutorial.2", "value":"This is basket. Tap on it."},
-		{"key":"general.tutorial.3", "value":"This is tiles. Tap on any tile."},
-		{"key":"general.tutorial.4", "value":"Top line color shows which tile is selected. Tap on selected tile."},
-		{"key":"general.tutorial.5", "value":"This is basket mode. Tap on it."},
-		{"key":"general.tutorial.6", "value":"This is shape. Tap on it."},
-		{"key":"general.tutorial.7", "value":"Now the most important part! Tap on correct tile to catch the shape."},
-		{"key":"general.tutorial.8", "value":"Mode changed! Tap on correct tile."},
-		{"key":"general.tutorial.9", "value":"Swipe up or down to pause the game."},
-		{"key":"general.tutorial.10", "value":"Now you are ready! Tap to play."},
+		{"key":"general.tutorial.1", "value":"В Dissonance Вам нужно ловить падающие фигуры в корзину, опираясь на их цвет или форму. Звучит просто, пока не попробуете."},
+		{"key":"general.tutorial.2", "value":"Это корзина. Нажмите на неё."},
+		{"key":"general.tutorial.3", "value":"Это плитки. Нажмите на любую плитку."},
+		{"key":"general.tutorial.4", "value":"Линия сверху корзины, показывает, какая плитка активна. Нажмите на активную плитку."},
+		{"key":"general.tutorial.5", "value":"Это режим корзины. Нажмите на него."},
+		{"key":"general.tutorial.6", "value":"Это фигура. Нажмите на неё."},
+		{"key":"general.tutorial.7", "value":"А сейчас самое важное! Нажмите на правильную плитку, чтобы поймать фигуру."},
+		{"key":"general.tutorial.8", "value":"Режим изменен! Выберите правильную плитку, чтобы поймать фигуру."},
+		{"key":"general.tutorial.9", "value":"Проведите вверх или вниз, чтобы поставить игру на паузу."},
+		{"key":"general.tutorial.10", "value":"Теперь Вы готовы! Нажмите, чтобы играть."},
 
-		{"key":"life.bonus.tutorial.1", "value":"Oh, look, Life bonus! Tap to catch."},
+		{"key":"life.bonus.tutorial.1", "value":"О, смотрите, бонусная Жизнь! Нажмите, чтобы поймать."},
 
-		{"key":"freeze.bonus.tutorial.1", "value":"You see, freeze bonus! Tap to catch."},
-		{"key":"freeze.bonus.tutorial.2", "value":"Swipe right to freeze shapes. Bonus will be used automatically if there is too little time to swipe."},
+		{"key":"freeze.bonus.tutorial.1", "value":"Смотрите, заморозка! Нажмите, чтобы поймать."},
+		{"key":"freeze.bonus.tutorial.2", "value":"Проведите вправо, что бы замедлить фигуры. Бонус используется автоматически, если фигуры летят слишком быстро."},
 
-		{"key":"explosion.bonus.tutorial.1", "value":"Look, bonus! Explosion! Tap to catch."},
-		{"key":"explosion.bonus.tutorial.2", "value":"Swipe left to explode shapes. Bonus will be used automatically if there is too little time to swipe."}
+		{"key":"explosion.bonus.tutorial.1", "value":"Смотрите, бонус! Взрыв! Нажмите, чтобы поймать."},
+		{"key":"explosion.bonus.tutorial.2", "value":"Проведите влево, чтобы взорвать фигуры. Бонус используется автоматически, если фигуры летят слишком быстро."}
 
 	]
 }
