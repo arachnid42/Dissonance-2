@@ -21,7 +21,6 @@
 		{"key":"replay", "value":"Replay"},
 		{"key":"mainMenu", "value":"Main Menu"},
 
-
 		{"key":"oops", "value":"Oops!"},
 		{"key":"wrongShape", "value":"Wrong shape"},
 		{"key":"wrongColor", "value":"Wrong color"},
@@ -60,12 +59,9 @@
 		{"key":"newThemes", "value":"Check new themes"},
 		{"key":"close", "value":"Close"},
 
-		
-
 		{"key":"pause", "value":"Pause"},
 		{"key":"resume", "value":"Resume"},
 
-		{"key":"configurableMode", "value":"Configurable Mode"},
 		{"key":"play", "value":"Play"},
 		{"key":"configure", "value":"Configure"},
 		{"key":"startingMode", "value":"Starting Mode"},
@@ -122,7 +118,7 @@
 		{"key":"no", "value":"No"},
 		{"key":"yes", "value":"Yes"},
 
-		{"key":"general.tutorial.1", "value":"In Dissonance you need to catch falling shapes into the basket based on their shape or color. It sounds simple until you try."},
+		{"key":"general.tutorial.1", "value":"In Dissonance you need to catch falling shapes into basket based on their shape or color. It sounds simple until you try."},
 		{"key":"general.tutorial.2", "value":"This is basket. Tap on it."},
 		{"key":"general.tutorial.3", "value":"This is tiles. Tap on any tile."},
 		{"key":"general.tutorial.4", "value":"Top line color shows which tile is selected. Tap on selected tile."},

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization;
 using System.IO;
 using System.Collections;
 
@@ -68,6 +69,7 @@ namespace Assets.Scripts.Game
 
             public Rating rating = new Rating();
             public Tutorial turotiral = new Tutorial();
+            [OptionalField]
             public Difficulty.Data configurableModeData = null;
 
         }
@@ -152,7 +154,18 @@ namespace Assets.Scripts.Game
             yield return WaitForDifficultyLevelsInitialization();
 
             temp.configurableModeOriginalData = refs.configurableMode.GetData();
-            data.levelsUnlocked = config.devMode ? DifficultyLevels.Instance.LevelCount : Mathf.Clamp(data.levelsUnlocked, 1, DifficultyLevels.Instance.LevelCount);
+            if (config.devMode)
+            {
+                data.customModeUnlocked = true;
+                data.endlessModeUnlocked = true;
+                data.levelsUnlocked = DifficultyLevels.Instance.LevelCount;
+            }
+            else
+            {
+                data.levelsUnlocked = Mathf.Clamp(data.levelsUnlocked, 1, DifficultyLevels.Instance.LevelCount);
+            }
+            
+            
             if (data.configurableModeData != null)
             {
                 //data.configurableModeData.bonusCatchSlowdown = new Difficulty.BonusCatchSlowdown();

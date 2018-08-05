@@ -11,8 +11,8 @@
 		{"key":"points", "value":"Очк."},
 
 		{"key":"levels", "value":"Рівні"},
-		{"key":"endless", "value":"Нескінченний режим"},
-		{"key":"configurableMode", "value":"Конфігуруємий режим"},
+		{"key":"endless", "value":"Нескінченний Режим"},
+		{"key":"configurableMode", "value":"Конфігуруємий Режим"},
 		{"key":"donateRemoveAds", "value":"Підтримка & Вимкнення Реклами"},
 		{"key":"themes", "value":"Tеми"},
 
@@ -67,6 +67,7 @@
 
 		{"key":"configurableMode", "value":"Конфігуруємий режим"},
 		{"key":"play", "value":"Грати"},
+		{"key":"shapes", "value":"Фігури"},
 		{"key":"configure", "value":"Налаштувати"},
 		{"key":"startingMode", "value":"Початковий Режим"},
 		{"key":"random", "value":"Випадковий"},

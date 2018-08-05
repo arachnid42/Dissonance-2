@@ -11,8 +11,8 @@
 		{"key":"points", "value":"Очк."},
 
 		{"key":"levels", "value":"Уровни"},
-		{"key":"endless", "value":"Бесконечный режим"},
-		{"key":"configurableMode", "value":"Настраиваемый режим"},
+		{"key":"endless", "value":"Бесконечный Режим"},
+		{"key":"configurableMode", "value":"Настраиваемый Режим"},
 		{"key":"donateRemoveAds", "value":"Поддержка & Отключение Рекламы"},
 		{"key":"themes", "value":"Tемы"},
 
@@ -65,7 +65,7 @@
 		{"key":"pause", "value":"Пауза"},
 		{"key":"resume", "value":"Продолжить"},
 
-		{"key":"configurableMode", "value":"Настраиваемый Режим"},
+
 		{"key":"play", "value":"Играть"},
 		{"key":"configure", "value":"Настроить"},
 		{"key":"startingMode", "value":"Начальный Режим"},
