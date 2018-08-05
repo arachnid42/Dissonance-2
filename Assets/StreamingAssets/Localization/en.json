@@ -116,7 +116,7 @@
 		{"key":"rateTittle", "value":"Do you enjoy this game?"},
 		{"key":"feedbackButton", "value":"Send Feedback"},
 
-		{"key":"winOrBuyToUnlock", "value":"Buy or win last level to unlock"},
+		{"key":"winOrBuyToUnlock", "value":"Buy or complete last level to unlock"},
 		{"key":"unlock", "value":"Unlock"},
 		{"key":"exitText", "value":"Do you want exit the game?"},
 		{"key":"no", "value":"No"},

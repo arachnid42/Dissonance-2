@@ -116,7 +116,7 @@
 		{"key":"rateTittle", "value":"Вам понравилась игра?"},
 		{"key":"feedbackButton", "value":"Отправить отзыв"},
 
-		{"key":"winOrBuyToUnlock", "value":"Купи или выиграй последний уровень, чтобы разблокировать"},
+		{"key":"winOrBuyToUnlock", "value":"Купите разблокировку или пройдите последний уровень."},
 		{"key":"unlock", "value":"Разблокировать"},
 		{"key":"exitText", "value":"Вы точно хотите выйти из игры?"},
 		{"key":"no", "value":"Нет"},

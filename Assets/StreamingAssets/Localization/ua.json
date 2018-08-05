@@ -115,7 +115,7 @@
 		{"key":"rateTittle", "value":"Вам сподобалась гра?"},
 		{"key":"feedbackButton", "value":"Надіслати відгук"},
 
-		{"key":"winOrBuyToUnlock", "value":"Придбай або виграй останній рівень, щоб розблокувати"},
+		{"key":"winOrBuyToUnlock", "value":"Придбайте розблокування або пройдіть останній рівень"},
 		{"key":"unlock", "value":"Розблокувати"},
 		{"key":"exitText", "value":"Ви впевнені, що бажаєте вийти з гри?"},
 		{"key":"no", "value":"Ні"},
