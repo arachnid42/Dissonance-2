@@ -13,7 +13,7 @@
 		{"key":"levels", "value":"Рівні"},
 		{"key":"endless", "value":"Нескінченний режим"},
 		{"key":"configurableMode", "value":"Конфігуруємий режим"},
-		{"key":"donateRemoveAds", "value":"Підтримка & Вимкнення Рекламы"},
+		{"key":"donateRemoveAds", "value":"Підтримка & Вимкнення Реклами"},
 		{"key":"themes", "value":"Tеми"},
 
 		{"key":"back", "value":"Назад"},
@@ -27,6 +27,7 @@
 		{"key":"wrongColor", "value":"Не той колір"},
 		{"key":"goalSurvive", "value":"Ви протримались"},
 		{"key":"goalScore", "value":"Ви набрали"},
+		{"key":"newRecord", "value":"* Новий рекорд *"},
 		
 		{"key":"winText", "value":"У Вас вийшло!"},
 		{"key":"congrats", "value":"Вітаємо!"},
@@ -114,6 +115,7 @@
 		{"key":"rateTittle", "value":"Вам сподобалась гра?"},
 		{"key":"feedbackButton", "value":"Надіслати відгук"},
 
+		{"key":"winOrBuyToUnlock", "value":"Придбай або виграй останній рівень, щоб розблокувати"},
 		{"key":"unlock", "value":"Розблокувати"},
 		{"key":"exitText", "value":"Ви впевнені, що бажаєте вийти з гри?"},
 		{"key":"no", "value":"Ні"},

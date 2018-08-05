@@ -27,6 +27,7 @@
 		{"key":"wrongColor", "value":"Не тот цвет"},
 		{"key":"goalSurvive", "value":"Вы продержались"},
 		{"key":"goalScore", "value":"Вы набрали"},
+		{"key":"newRecord", "value":"* Новый рекорд *"},
 		
 		{"key":"winText", "value":"У Вас получилось!"},
 		{"key":"congrats", "value":"Поздравляем!"},
@@ -115,6 +116,7 @@
 		{"key":"rateTittle", "value":"Вам понравилась игра?"},
 		{"key":"feedbackButton", "value":"Отправить отзыв"},
 
+		{"key":"winOrBuyToUnlock", "value":"Купи или выиграй последний уровень, чтобы разблокировать"},
 		{"key":"unlock", "value":"Разблокировать"},
 		{"key":"exitText", "value":"Вы точно хотите выйти из игры?"},
 		{"key":"no", "value":"Нет"},
