@@ -116,13 +116,13 @@
 		{"key":"rateTittle", "value":"Do you enjoy this game?"},
 		{"key":"feedbackButton", "value":"Send Feedback"},
 
-		{"key":"winOrBuyToUnlock", "value":"Buy or complete last level to unlock"},
+		{"key":"winOrBuyToUnlock", "value":"Buy or complete the last level to unlock"},
 		{"key":"unlock", "value":"Unlock"},
 		{"key":"exitText", "value":"Do you want exit the game?"},
 		{"key":"no", "value":"No"},
 		{"key":"yes", "value":"Yes"},
 
-		{"key":"general.tutorial.1", "value":"In Dissonance you need to catch falling shapes into the basked based on their shape or color. It sounds simple until you try."},
+		{"key":"general.tutorial.1", "value":"In Dissonance you need to catch falling shapes into the basket based on their shape or color. It sounds simple until you try."},
 		{"key":"general.tutorial.2", "value":"This is basket. Tap on it."},
 		{"key":"general.tutorial.3", "value":"This is tiles. Tap on any tile."},
 		{"key":"general.tutorial.4", "value":"Top line color shows which tile is selected. Tap on selected tile."},
@@ -135,7 +135,7 @@
 
 		{"key":"life.bonus.tutorial.1", "value":"Oh, look, Life bonus! Tap to catch."},
 
-		{"key":"freeze.bonus.tutorial.1", "value":"You see, freeze bonus! Tap to catch."},
+		{"key":"freeze.bonus.tutorial.1", "value":"You see, Freeze bonus! Tap to catch."},
 		{"key":"freeze.bonus.tutorial.2", "value":"Swipe right to freeze shapes. Bonus will be used automatically if there is too little time to swipe."},
 
 		{"key":"explosion.bonus.tutorial.1", "value":"Look, bonus! Explosion! Tap to catch."},
