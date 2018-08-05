@@ -120,23 +120,24 @@
 		{"key":"no", "value":"No"},
 		{"key":"yes", "value":"Yes"},
 
-		{"key":"general.tutorial.1", "value":""},
-		{"key":"general.tutorial.2", "value":""},
-		{"key":"general.tutorial.3", "value":""},
-		{"key":"general.tutorial.5", "value":""},
-		{"key":"general.tutorial.6", "value":""},
-		{"key":"general.tutorial.7", "value":""},
-		{"key":"general.tutorial.8", "value":""},
-		{"key":"general.tutorial.9", "value":""},
-		{"key":"general.tutorial.10", "value":""},
+		{"key":"general.tutorial.1", "value":"In Dissonance you need to catch falling shapes into the basked based on their shape or color. It sounds simple until you try."},
+		{"key":"general.tutorial.2", "value":"This is basket. Tap on it."},
+		{"key":"general.tutorial.3", "value":"This is tiles. Tap on any tile."},
+		{"key":"general.tutorial.4", "value":"Top line color shows which tile is selected. Tap on selected tile."},
+		{"key":"general.tutorial.5", "value":"This is basket mode. Tap on it."},
+		{"key":"general.tutorial.6", "value":"This is shape. Tap on it."},
+		{"key":"general.tutorial.7", "value":"Now the most important part! Tap on correct tile to catch the shape."},
+		{"key":"general.tutorial.8", "value":"Mode changed! Tap on correct tile."},
+		{"key":"general.tutorial.9", "value":"Swipe up or down to pause the game."},
+		{"key":"general.tutorial.10", "value":"Now you are ready! Tap to play."},
 
-		{"key":"life.bonus.tutorial.1", "value":""},
+		{"key":"life.bonus.tutorial.1", "value":"Oh, look, Life bonus! Tap to catch."},
 
-		{"key":"freeze.bonus.tutorial.1", "value":""},
-		{"key":"freeze.bonus.tutorial.2", "value":""},
+		{"key":"freeze.bonus.tutorial.1", "value":"You see, freeze bonus! Tap to catch."},
+		{"key":"freeze.bonus.tutorial.2", "value":"Swipe right to freeze shapes."},
 
-		{"key":"explosion.bonus.tutorial.1", "value":""},
-		{"key":"explosion.bonus.tutorial.2", "value":""}
+		{"key":"explosion.bonus.tutorial.1", "value":"Look, bonus! Explosion! Tap to catch."},
+		{"key":"explosion.bonus.tutorial.2", "value":"Swipe left to explode shapes."}
 
 	]
 }
