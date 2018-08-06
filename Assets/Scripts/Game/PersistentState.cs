@@ -69,10 +69,9 @@ namespace Assets.Scripts.Game
 
             public Rating rating = new Rating();
             public Tutorial turotiral = new Tutorial();
-            [OptionalField]
-            public Difficulty.Data configurableModeData = null;
-
         }
+
+        
 
         public static bool Ready
         {
@@ -89,8 +88,14 @@ namespace Assets.Scripts.Game
             get { return Path.Combine(Application.persistentDataPath, "persistentState.dat"); }
         }
 
+        public string ConfigurableModeDataPath
+        {
+            get { return Path.Combine(Application.persistentDataPath, "configurableMode.dat"); }
+        }
 
+        public Difficulty.Data configurableModeData = null;
         public Data data = new Data();
+
         public Config config = new Config();
         public Temp temp = new Temp();
         [SerializeField]
@@ -130,23 +135,27 @@ namespace Assets.Scripts.Game
         public void Save()
         {
             BinaryFormatter bf = new BinaryFormatter();
-            FileStream file = File.Create(DataPath);
-            data.configurableModeData = refs.configurableMode.GetData();
-            bf.Serialize(file, data);
-            file.Close();
+            FileStream dataFs = File.Create(DataPath);
+            FileStream configModeDataFs = File.Create(ConfigurableModeDataPath);
+
+            configurableModeData = refs.configurableMode.GetData();
+            bf.Serialize(dataFs, data);
+            bf.Serialize(configModeDataFs, configurableModeData);
+
+            dataFs.Close();
+            configModeDataFs.Close();
         }
 
         public void ApplyConfigurableModeData()
         {
-            refs.configurableMode.UpdateData(data.configurableModeData);
-            data.configurableModeData = refs.configurableMode.GetData();
+            refs.configurableMode.UpdateData(configurableModeData);
+            configurableModeData = refs.configurableMode.GetData();
         }
 
         public void ResetConfigurableModeData()
         {
             refs.configurableMode.UpdateData(temp.configurableModeOriginalData);
-            data.configurableModeData = refs.configurableMode.GetData();
-
+            configurableModeData = refs.configurableMode.GetData();
         }
 
         private IEnumerator FixDataCoroutine()
@@ -166,18 +175,16 @@ namespace Assets.Scripts.Game
             }
             
             
-            if (data.configurableModeData != null)
+            if (configurableModeData != null)
             {
-                //data.configurableModeData.bonusCatchSlowdown = new Difficulty.BonusCatchSlowdown();
-                //data.configurableModeData.slowdown = new Difficulty.DefaultSlowdown();
-                data.configurableModeData.freeze = new Difficulty.FreezeBonus().Update(data.configurableModeData.freeze);
-                data.configurableModeData.explosion = new Difficulty.ExplosionBonus().Update(data.configurableModeData.explosion);
-                data.configurableModeData.heart = new Difficulty.HeartBonus().Update(data.configurableModeData.heart);
-                refs.configurableMode.UpdateData(data.configurableModeData);
+                configurableModeData.freeze = new Difficulty.FreezeBonus().Update(configurableModeData.freeze);
+                configurableModeData.explosion = new Difficulty.ExplosionBonus().Update(configurableModeData.explosion);
+                configurableModeData.heart = new Difficulty.HeartBonus().Update(configurableModeData.heart);
+                refs.configurableMode.UpdateData(configurableModeData);
             }
             else
             {
-                data.configurableModeData = refs.configurableMode.GetData();
+                configurableModeData = refs.configurableMode.GetData();
             }
                 
 
@@ -230,28 +237,40 @@ namespace Assets.Scripts.Game
             StartCoroutine(FixDataCoroutine());
         }
 
+
         private void Load()
         {
-            isReady = false;
-            if (File.Exists(DataPath))
+
+            BinaryFormatter bf = new BinaryFormatter();
+            try
             {
-                BinaryFormatter bf = new BinaryFormatter();
-                FileStream file = File.Open(DataPath, FileMode.Open);
-                try
-                {
-                    data = (Data)bf.Deserialize(file);
-                }
-                catch (System.Runtime.Serialization.SerializationException)
-                {
-                    data = new Data();
-                }
-                FixData();
+                FileStream dataFs = File.Open(DataPath, FileMode.Open);
+                data = (Data)bf.Deserialize(dataFs);
             }
-            else
+            catch (FileNotFoundException)
             {
                 data = new Data();
-                FixData();
             }
+            catch (SerializationException)
+            {
+                data = new Data();
+            }
+
+            try
+            {
+                FileStream configModeDataFs = File.Open(ConfigurableModeDataPath, FileMode.Open);
+                configurableModeData = (Difficulty.Data)bf.Deserialize(configModeDataFs);
+            }
+            catch (FileNotFoundException)
+            {
+                configurableModeData = null;
+            }
+            catch (SerializationException)
+            {
+                configurableModeData = null;
+            }
+
+            FixData();
         }
 
         public void SendRating(float rating, string comment)

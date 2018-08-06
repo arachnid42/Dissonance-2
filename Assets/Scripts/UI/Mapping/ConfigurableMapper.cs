@@ -30,7 +30,7 @@ namespace Assets.Scripts.UI.Mapping
 
         public void MapFromConfigurableData()
         {
-            Difficulty.Data data = PersistentState.Instance.data.configurableModeData;
+            Difficulty.Data data = PersistentState.Instance.configurableModeData;
 
             startingModeMapper.SetData(data.initialGameMode);
             shapesMapper.SetData(data.additionalShapes);
@@ -51,7 +51,7 @@ namespace Assets.Scripts.UI.Mapping
         public void MapToConfigurableData()
         {
 
-            Difficulty.Data data = PersistentState.Instance.data.configurableModeData;
+            Difficulty.Data data = PersistentState.Instance.configurableModeData;
             Difficulty.Data odata = PersistentState.Instance.temp.configurableModeOriginalData;
 
             data.initialGameMode = startingModeMapper.GetData();
@@ -76,7 +76,7 @@ namespace Assets.Scripts.UI.Mapping
 
             data.target = targetMapper.GetData();
 
-            PersistentState.Instance.data.configurableModeData = data;
+            PersistentState.Instance.configurableModeData = data;
         }
     }
 }
