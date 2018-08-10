@@ -56,8 +56,7 @@ namespace Assets.Scripts.UI.Panels.Tutorial
         {
             var current = tutorialController.Current;
             var next = tutorialController.Next;
-
-            Debug.LogFormat("Click on {0}, Next: {1}", current, next);
+            
             if (next)
             {
                 if(current.name == "GTPanel7")
@@ -68,8 +67,7 @@ namespace Assets.Scripts.UI.Panels.Tutorial
             }
             else
             {
-                Debug.Log("Finish titorial");
-                PersistentState.Instance.data.turotiral.basic = false;
+                PersistentState.Instance.data.turotiral.basic = true;
                 tutorial.OnFinishTutorial();
             }
         }

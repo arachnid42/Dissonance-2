@@ -57,7 +57,6 @@ namespace Assets.Scripts.UI.Panels
 
         public void OnPlayButtonClick()
         {
-            var tutorialData = PersistentState.Instance.data.turotiral;
             BasePanel fade = UIController.Instance.PanelController.FadePanel;
             BasePanel startup = UIController.Instance.PanelController.LevelStartUpPanel;
             BasePanel tutorial = UIController.Instance.PanelController.TutorialPanel;
@@ -65,7 +64,7 @@ namespace Assets.Scripts.UI.Panels
             DifficultyLevels.Instance.LevelIndex = PersistentState.Instance.data.lastLevelIndex;
             var startPlay = UIController.Instance.data.activePanel.SwitchToAnimation(fade);
             startPlay.After(fade.SetHiddenEnumerator(true));
-            if (tutorialData.basic || tutorialData.lifeBonus || tutorialData.freezeBonus || tutorialData.explosionBonus)
+            if (ShouldShowTutorial())
             {
                 startPlay.After(tutorial.SetHiddenEnumerator(false));
             }
@@ -182,6 +181,18 @@ namespace Assets.Scripts.UI.Panels
         private IEnumerator Delay(float seconds)
         {
             yield return new WaitForSeconds(seconds);
+        }
+
+        private bool ShouldShowTutorial()
+        {
+            var tutorialData = PersistentState.Instance.data.turotiral;
+            Difficulty currentDifficulty = DifficultyLevels.Instance.CurrentDifficulty;
+            return (
+                !tutorialData.basic || 
+                !tutorialData.explosionBonus && currentDifficulty.ShouldShowExplosionBonusTutorial() ||
+                !tutorialData.freezeBonus && currentDifficulty.ShouldShowFreezeBonusTutorial() ||
+                !tutorialData.lifeBonus && currentDifficulty.ShouldShowLifeBonusTutorial()
+                );
         }
 
     }

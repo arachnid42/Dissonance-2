@@ -19,8 +19,9 @@ namespace Assets.Scripts.UI.Panels.Tutorial
 
         private void ManageTutorials()
         {
+            Difficulty currentDifficulty = DifficultyLevels.Instance.CurrentDifficulty;
             var tutorialData = PersistentState.Instance.data.turotiral;
-            if (tutorialData.basic)
+            if (!tutorialData.basic)
             {
                 generalTutorial.SetActive(true);
                 freezeTutorial.SetActive(false);
@@ -28,21 +29,21 @@ namespace Assets.Scripts.UI.Panels.Tutorial
                 explosionTutorial.SetActive(false);
 
             }
-            else if(tutorialData.lifeBonus)
+            else if(!tutorialData.lifeBonus && currentDifficulty.ShouldShowLifeBonusTutorial())
             {
                 generalTutorial.SetActive(false);
                 freezeTutorial.SetActive(false);
                 heartTutorial.SetActive(true);
                 explosionTutorial.SetActive(false);
             }
-            else if (tutorialData.freezeBonus)
+            else if (!tutorialData.freezeBonus && currentDifficulty.ShouldShowFreezeBonusTutorial())
             {
                 generalTutorial.SetActive(false);
                 freezeTutorial.SetActive(true);
                 heartTutorial.SetActive(false);
                 explosionTutorial.SetActive(false);
             }
-            else if (tutorialData.explosionBonus)
+            else if (!tutorialData.explosionBonus && currentDifficulty.ShouldShowExplosionBonusTutorial())
             {
                 generalTutorial.SetActive(false);
                 freezeTutorial.SetActive(false);

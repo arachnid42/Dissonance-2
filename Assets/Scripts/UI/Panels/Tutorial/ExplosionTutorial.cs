@@ -48,8 +48,7 @@ namespace Assets.Scripts.UI.Panels.Tutorial
         {
             var current = tutorialController.Current;
             var next = tutorialController.Next;
-
-            Debug.LogFormat("Click on {0}, Next: {1}", current, next);
+            
             if (next)
             {
                 if(current.name == "EBTPanel1")
@@ -60,8 +59,7 @@ namespace Assets.Scripts.UI.Panels.Tutorial
             }
             else
             {
-                Debug.Log("Finish titorial");
-                PersistentState.Instance.data.turotiral.explosionBonus = false;
+                PersistentState.Instance.data.turotiral.explosionBonus = true;
                 tutorial.OnFinishTutorial();
             }
         }
