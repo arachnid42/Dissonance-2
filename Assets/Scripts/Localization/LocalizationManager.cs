@@ -121,6 +121,9 @@ namespace Assets.Scripts.Localization
                 case SystemLanguage.Ukrainian:
                     localization = "ua";
                     break;
+                case SystemLanguage.Portuguese:
+                    localization = "pt";
+                    break;
                 default:
                     localization = "en";
                     break;
