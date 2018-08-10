@@ -25884,6 +25884,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59fd668debc9e145ba43952ff3e6463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  configurableModeData:
+    target:
+      endless: 0
+      scoreBased: 1
+      score: 100
+      time: 100
+    modeChange:
+      maxAtOnce: 1
+      reactionTime: 0.75
+      scoreCooldown: 10
+      startScore: 10
+      timeCooldown: 10
+    randomRotation:
+      reactionTime: 1.1
+      probability: 0.5
+      timeInterval: 1
+    basketMode:
+      scoreBased: 1
+      probability: 0.5
+      timeInterval: 10
+      scoreInterval: 10
+    basketShapes:
+      scoreBased: 1
+      probability: 0.5
+      timeInterval: 10
+      scoreInterval: 10
+    basketColors:
+      scoreBased: 1
+      probability: 0.5
+      timeInterval: 10
+      scoreInterval: 10
+    heart:
+      max: 4
+      number: 1
+      scoreInterval: 10
+      probability: 0.5
+      startScore: 10
+    freeze:
+      max: 4
+      number: 1
+      scoreInterval: 10
+      probability: 0.5
+      startScore: 10
+    explosion:
+      max: 4
+      number: 1
+      scoreInterval: 10
+      probability: 0.5
+      startScore: 10
+    shapesOnScreen:
+      upToMinScoreInterval: 1
+      min: 1
+      max: 9
+      increaseScoreInterval: 5
+    playerReactionTime:
+      min: 1
+      max: 5
+      changePerScore: -0.2
+    rotation:
+      min: 60
+      max: 180
+    initialGameMode: 2
+    additionalShapes: 
   data:
     sound: 0
     colorPresetName: 
@@ -25906,69 +25969,6 @@ MonoBehaviour:
       lifeBonus: 0
       freezeBonus: 0
       explosionBonus: 0
-    configurableModeData:
-      target:
-        endless: 0
-        scoreBased: 1
-        score: 100
-        time: 100
-      modeChange:
-        maxAtOnce: 1
-        reactionTime: 0.75
-        scoreCooldown: 10
-        startScore: 10
-        timeCooldown: 10
-      randomRotation:
-        reactionTime: 1.1
-        probability: 0.5
-        timeInterval: 1
-      basketMode:
-        scoreBased: 1
-        probability: 0.5
-        timeInterval: 10
-        scoreInterval: 10
-      basketShapes:
-        scoreBased: 1
-        probability: 0.5
-        timeInterval: 10
-        scoreInterval: 10
-      basketColors:
-        scoreBased: 1
-        probability: 0.5
-        timeInterval: 10
-        scoreInterval: 10
-      heart:
-        max: 0
-        number: 0
-        scoreInterval: 0
-        probability: 0
-        startScore: 0
-      freeze:
-        max: 0
-        number: 0
-        scoreInterval: 0
-        probability: 0
-        startScore: 0
-      explosion:
-        max: 0
-        number: 0
-        scoreInterval: 0
-        probability: 0
-        startScore: 0
-      shapesOnScreen:
-        upToMinScoreInterval: 1
-        min: 1
-        max: 9
-        increaseScoreInterval: 5
-      playerReactionTime:
-        min: 1
-        max: 5
-        changePerScore: -0.2
-      rotation:
-        min: 60
-        max: 180
-      initialGameMode: 2
-      additionalShapes: 
   config:
     devMode: 0
     askRatingTimesPlayedInterval: 15
@@ -38143,7 +38143,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 575.75, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 170}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &876162692
@@ -84259,7 +84259,7 @@ MonoBehaviour:
   - textMesh: {fileID: 956657463}
     key: shape
   localization: en
-  autodetection: 0
+  autodetection: 1
 --- !u!4 &1915709852
 Transform:
   m_ObjectHideFlags: 0
