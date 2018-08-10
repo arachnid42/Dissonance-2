@@ -38,15 +38,14 @@ namespace Assets.Scripts.UI.Panels.Tutorial
         {
             var current = tutorialController.Current;
             var next = tutorialController.Next;
-
-            Debug.LogFormat("Click on {0}, Next: {1}", current, next);
+            
             if (next)
             {
                 current.SwitchToAnimation(next).Start();
             }
             else
             {
-                PersistentState.Instance.data.turotiral.lifeBonus = false;
+                PersistentState.Instance.data.turotiral.lifeBonus = true;
                 tutorial.OnFinishTutorial();
             }
         }
