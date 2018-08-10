@@ -95,6 +95,7 @@ namespace Assets.Scripts.UI.Panels
 
         public Animation SwitchToAnimation(BasePanel panel, float fadeOutDuration = -1, float fadeInDuration = -1, System.Action after = null, GameObject background = null)
         {
+            Debug.LogFormat("SwitchToAnimation {0}", panel);
             var animation = new Animation();
             animation.After(SetHiddenEnumerator(true,fadeOutDuration));
             animation.After(panel.SetHiddenEnumerator(false, fadeInDuration, after, background));
