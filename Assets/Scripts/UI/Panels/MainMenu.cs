@@ -38,6 +38,12 @@ namespace Assets.Scripts.UI.Panels
             var showMenuAnim = new Animation(Delay(startUpDelay));
             showMenuAnim.After(UIController.Instance.PanelController.StartupPanel.SetHiddenEnumerator(true));
             showMenuAnim.Start();
+            //var tutorialData = PersistentState.Instance.data.turotiral;
+            //tutorialData.basic = true;
+            //tutorialData.lifeBonus = true;
+            //tutorialData.freezeBonus = true;
+            //tutorialData.explosionBonus = true;
+
         }
 
         private void UpdateLabels()
@@ -59,7 +65,7 @@ namespace Assets.Scripts.UI.Panels
             DifficultyLevels.Instance.LevelIndex = PersistentState.Instance.data.lastLevelIndex;
             var startPlay = UIController.Instance.data.activePanel.SwitchToAnimation(fade);
             startPlay.After(fade.SetHiddenEnumerator(true));
-            if(tutorialData.basic || tutorialData.lifeBonus || tutorialData.freezeBonus || tutorialData.explosionBonus)
+            if (tutorialData.basic || tutorialData.lifeBonus || tutorialData.freezeBonus || tutorialData.explosionBonus)
             {
                 startPlay.After(tutorial.SetHiddenEnumerator(false));
             }
