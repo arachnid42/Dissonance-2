@@ -36,14 +36,14 @@ namespace Assets.Scripts.UI.Panels
         {
             DifficultyLevels.Instance.LevelName = "Endless";
             DifficultyLevels.Instance.CurrentDifficulty.target.scoreBased = true;
-            StartGame();
+            UIController.Instance.PanelController.mainMenuPanel.GetComponent<MainMenu>().StartGame();
         }
 
         public void OnTimeButtonClick()
         {
             DifficultyLevels.Instance.LevelName = "Endless";
             DifficultyLevels.Instance.CurrentDifficulty.target.scoreBased = false;
-            StartGame();
+            UIController.Instance.PanelController.mainMenuPanel.GetComponent<MainMenu>().StartGame();
         }
 
         public string FormatTimeScore(int scoreSeconds)
@@ -65,18 +65,6 @@ namespace Assets.Scripts.UI.Panels
             }
             
             return string.Format("{0}", seconds.ToString());
-        }
-
-        private void StartGame()
-        {
-            BasePanel fade = UIController.Instance.PanelController.FadePanel;
-            GameObject background = UIController.Instance.PanelController.backgroundPanel;
-            var startPlay = UIController.Instance.data.activePanel.SwitchToAnimation(fade);
-            startPlay.After(fade.SetHiddenEnumerator(true, after: () => {
-                Field.Instance.Master.Restart();
-                UIController.Instance.data.isInMainMenu = false;
-            }, background: background));
-            startPlay.Start();
         }
 
     }

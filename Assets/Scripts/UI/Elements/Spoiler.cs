@@ -35,19 +35,12 @@ namespace Assets.Scripts.UI.Elements
         public abstract T GetData();
         public abstract void SetData(T data);
 
-
-        private void Start()
-        {
-            
-        }
-
         private void OnEnable()
         {
             rt = GetComponent<RectTransform>();
             headerText.text = name != ""? LocalizationManager.Instance[name]: "Property";
             bottom = rt.sizeDelta.y;
             InitCurve();
-            //ToggleSpoiler();
         }
 
         private void OnDisable()
