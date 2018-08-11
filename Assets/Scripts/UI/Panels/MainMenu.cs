@@ -81,7 +81,7 @@ namespace Assets.Scripts.UI.Panels
 
         public void OnLevelsButtonClick()
         {
-            //PersistentState.Instance.data.levelsUnlocked = DifficultyLevels.Instance.LevelCount;
+            PersistentState.Instance.data.levelsUnlocked = DifficultyLevels.Instance.LevelCount;
             UIController.Instance.data.activePanel.SwitchToAnimation(UIController.Instance.PanelController.LevelsMenuPanel).Start();
         }
 
