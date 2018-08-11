@@ -6026,7 +6026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a58a0ebf52e576f4a8c0de3bf8af2bca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingDuration: 2
+  loadingDuration: 0
   data:
     isAnimationPlays: 0
     isInMainMenu: 1
@@ -16939,6 +16939,7 @@ GameObject:
   - component: {fileID: 496901240}
   - component: {fileID: 496901242}
   - component: {fileID: 496901241}
+  - component: {fileID: 496901243}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -16960,9 +16961,9 @@ RectTransform:
   m_Father: {fileID: 693173341}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 438, y: -0.0024986}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -62, y: -85.0025}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &496901241
@@ -16998,6 +16999,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 496901239}
+--- !u!95 &496901243
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 496901239}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 85dd3839c9da6054f8cd6d99942bd658, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &500246993
 Prefab:
   m_ObjectHideFlags: 0
@@ -24182,6 +24201,17 @@ MonoBehaviour:
             m_StringArgument: down
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 496901243}
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: down
+            m_BoolArgument: 0
+          m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   - eventID: 3
@@ -24189,6 +24219,17 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1829945468}
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: up
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 496901243}
           m_MethodName: SetTrigger
           m_Mode: 5
           m_Arguments:
@@ -73854,6 +73895,7 @@ MonoBehaviour:
   unlockConfigurableButton: {fileID: 1701003925}
   unlockThemesButton: {fileID: 427536310}
   disableAdsButton: {fileID: 1634895353}
+  hideUnlockAllCount: 2
 --- !u!225 &1665233448
 CanvasGroup:
   m_ObjectHideFlags: 0
