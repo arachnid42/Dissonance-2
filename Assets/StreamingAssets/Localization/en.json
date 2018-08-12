@@ -29,7 +29,7 @@
 		{"key":"newRecord", "value":"* New Record *"},
 		
 		{"key":"winText", "value":"You've made it!"},
-		{"key":"congrats", "value":"Congradulations!"},
+		{"key":"congrats", "value":"Congratulations!"},
 		{"key":"levelsUnlocked", "value":"All levels unlocked"},
 		{"key":"next", "value":"Next level"},
 		{"key":"playEndless", "value":"Play Endless"},

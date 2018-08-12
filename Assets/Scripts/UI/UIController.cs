@@ -9,16 +9,12 @@ namespace Assets.Scripts.UI
 {
     public class UIController : MonoBehaviour
     {
-        public GameObject SoundButtonImage;
-        public Sprite SoundImageOn;
-        public Sprite SoundImageOff;
+
+        [SerializeField]
+        private float loadingDuration = 2f;
 
         private PanelController panelController;
-        private bool sound;
-
-        delegate void SoundButtonClickDelegate();
-        SoundButtonClickDelegate SoundButtonClick;
-
+        private bool IsInitialized = false;
 
         private static UIController instance;
         public static UIController Instance
@@ -64,6 +60,45 @@ namespace Assets.Scripts.UI
             }
             Field.Instance.Master.Listeners.OnPause += ShowPausePanels;
             Field.Instance.Master.Listeners.OnGameOver += ShowGameOverPanels;
+        }
+
+        private void OnEnable()
+        {
+            StartCoroutine(InitComponents());
+            StartCoroutine(InitUI());
+        }
+
+        private IEnumerator InitUI()
+        {
+            float counter = 0f;
+            Debug.Log("Showing Start Up panel");
+            PanelController.StartupPanel.SetHidddenAnimation(false).Start();
+            Debug.Log("Waiting for components loading ");
+            while (!IsInitialized || counter < loadingDuration)
+            {
+                counter += Time.deltaTime;
+                Debug.Log(IsInitialized);
+                yield return null;
+            }
+            Debug.Log("Showing Main Menu");
+            var showMenu = PanelController.MainMenuPanel.SetHidddenAnimation(false);
+            showMenu.After(PanelController.StartupPanel.SetHiddenEnumerator(true));
+            showMenu.Start();
+        }
+
+        private IEnumerator InitComponents()
+        {
+            while (Field.Instance == null || 
+                Field.Instance.Master.Callbacks == null || 
+                Field.Instance.Master.Listeners == null ||
+                !ColorsPresets.Ready ||
+                !ColorsPresetsManager.Ready ||
+                !PersistentState.Ready)
+            {
+                yield return null;
+            }
+            IsInitialized = true;
+            Debug.Log("INITIALIZED!!!");
         }
 
         private void Update()

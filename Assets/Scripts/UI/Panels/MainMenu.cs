@@ -25,7 +25,6 @@ namespace Assets.Scripts.UI.Panels
         {
             StartCoroutine(AlterUI(InitPanel));
             appID = string.Format("com.{0}.{1}", Application.companyName, Application.productName);
-            Debug.LogFormat("App ID: {0}", appID);
 
             
         }
@@ -35,14 +34,9 @@ namespace Assets.Scripts.UI.Panels
             SetLabels(UpdateLabels);
             UIController.Instance.data.activePanel = this;
             //UIController.Instance.PanelController.StartupPanel.SetHidddenAnimation(true).Start();
-            var showMenuAnim = new Animation(Delay(startUpDelay));
-            showMenuAnim.After(UIController.Instance.PanelController.StartupPanel.SetHiddenEnumerator(true));
-            showMenuAnim.Start();
-            //var tutorialData = PersistentState.Instance.data.turotiral;
-            //tutorialData.basic = true;
-            //tutorialData.lifeBonus = true;
-            //tutorialData.freezeBonus = true;
-            //tutorialData.explosionBonus = true;
+            //var showMenuAnim = new Animation(Delay(startUpDelay));
+            //showMenuAnim.After(UIController.Instance.PanelController.StartupPanel.SetHiddenEnumerator(true));
+            //showMenuAnim.Start();
 
         }
 
@@ -57,31 +51,13 @@ namespace Assets.Scripts.UI.Panels
 
         public void OnPlayButtonClick()
         {
-            BasePanel fade = UIController.Instance.PanelController.FadePanel;
-            BasePanel startup = UIController.Instance.PanelController.LevelStartUpPanel;
-            BasePanel tutorial = UIController.Instance.PanelController.TutorialPanel;
-            GameObject background = UIController.Instance.PanelController.backgroundPanel;
             DifficultyLevels.Instance.LevelIndex = PersistentState.Instance.data.lastLevelIndex;
-            var startPlay = UIController.Instance.data.activePanel.SwitchToAnimation(fade);
-            startPlay.After(fade.SetHiddenEnumerator(true));
-            if (ShouldShowTutorial())
-            {
-                startPlay.After(tutorial.SetHiddenEnumerator(false));
-            }
-            else
-            {
-                startPlay.After(startup.SetHiddenEnumerator(false));
-                startPlay.After(startup.SetHiddenEnumerator(true, after: () => {
-                    Field.Instance.Master.Restart();
-                    UIController.Instance.data.isInMainMenu = false;
-                }, background: background));
-            }
-            startPlay.Start();
+            StartGame();
         }
 
         public void OnLevelsButtonClick()
         {
-            //PersistentState.Instance.data.levelsUnlocked = DifficultyLevels.Instance.LevelCount;
+            PersistentState.Instance.data.levelsUnlocked = DifficultyLevels.Instance.LevelCount;
             UIController.Instance.data.activePanel.SwitchToAnimation(UIController.Instance.PanelController.LevelsMenuPanel).Start();
         }
 
@@ -176,6 +152,40 @@ namespace Assets.Scripts.UI.Panels
 #if UNITY_ANDROID
             Application.OpenURL(string.Format("market://details?id={0}", appID));
 #endif
+        }
+
+        public void StartGame()
+        {
+            BasePanel fade = UIController.Instance.PanelController.FadePanel;
+            BasePanel startup = UIController.Instance.PanelController.LevelStartUpPanel;
+            BasePanel tutorial = UIController.Instance.PanelController.TutorialPanel;
+            GameObject background = UIController.Instance.PanelController.backgroundPanel;
+            BasePanel lastPanel;
+
+            var startPlay = UIController.Instance.data.activePanel.SwitchToAnimation(fade);
+            startPlay.After(fade.SetHiddenEnumerator(true));
+            if (ShouldShowTutorial())
+            {
+                startPlay.After(tutorial.SetHiddenEnumerator(false));
+            }
+            else
+            {
+                if (DifficultyLevels.Instance.CurrentDifficulty.target.endless)
+                {
+                    lastPanel = fade;
+                }
+                else
+                {
+                    startPlay.After(fade.SetHiddenEnumerator(true));
+                    startPlay.After(startup.SetHiddenEnumerator(false));
+                    lastPanel = startup;
+                }
+                startPlay.After(lastPanel.SetHiddenEnumerator(true, after: () => {
+                    Field.Instance.Master.Restart();
+                    UIController.Instance.data.isInMainMenu = false;
+                }, background: background));
+            }
+            startPlay.Start();
         }
 
         private IEnumerator Delay(float seconds)

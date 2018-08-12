@@ -35,21 +35,12 @@ namespace Assets.Scripts.UI.Elements
         public abstract T GetData();
         public abstract void SetData(T data);
 
-
-        private void Start()
-        {
-            float tan45 = Mathf.Tan(Mathf.Deg2Rad * 45);
-            curve = new AnimationCurve();
-            curve.AddKey(new Keyframe(0, 0, tan45, 0));
-            curve.AddKey(new Keyframe(1, 1, 0, tan45));
-        }
-
         private void OnEnable()
         {
             rt = GetComponent<RectTransform>();
             headerText.text = name != ""? LocalizationManager.Instance[name]: "Property";
             bottom = rt.sizeDelta.y;
-            ToggleSpoiler();
+            InitCurve();
         }
 
         private void OnDisable()
@@ -98,7 +89,20 @@ namespace Assets.Scripts.UI.Elements
         private void ResetSpoiler()
         {
             isExpanded = false;
+            buttonImage.sprite = spoilerClosedImage;
+            buttonImage.color = closedColor;
             rt.sizeDelta = new Vector2(rt.sizeDelta.x, bottom);
+        }
+
+        private void InitCurve()
+        {
+            if(curve == null)
+            {
+                float tan45 = Mathf.Tan(Mathf.Deg2Rad * 45);
+                curve = new AnimationCurve();
+                curve.AddKey(new Keyframe(0, 0, tan45, 0));
+                curve.AddKey(new Keyframe(1, 1, 0, tan45));
+            }
         }
     }
 }

@@ -15,6 +15,8 @@ namespace Assets.Scripts.UI.Panels
 
         [SerializeField]
         private Button unlockAllButton, skipLevelsButton, unlockEndlessButton, unlockConfigurableButton, unlockThemesButton, disableAdsButton;
+        [SerializeField]
+        private int hideUnlockAllCount;
 
         private PersistentState.Data data;
 
@@ -140,7 +142,7 @@ namespace Assets.Scripts.UI.Panels
 
         private void ToggleUnlockAllButton()
         {
-            if (data.themesUnlocked && data.customModeUnlocked && data.endlessModeUnlocked && data.adsDisabled)
+            if (GetPurchaseCount() >= hideUnlockAllCount)
                 unlockAllButton.gameObject.SetActive(false);
             else
                 unlockAllButton.gameObject.SetActive(true);
@@ -184,6 +186,20 @@ namespace Assets.Scripts.UI.Panels
                 disableAdsButton.gameObject.SetActive(false);
             else
                 disableAdsButton.gameObject.SetActive(true);
+        }
+
+        private int GetPurchaseCount()
+        {
+            int count = 0;
+            if (data.themesUnlocked)
+                count++;
+            if (data.customModeUnlocked)
+                count++;
+            if (data.endlessModeUnlocked)
+                count++;
+            if (data.adsDisabled)
+                count++;
+            return count;
         }
     }
 }
