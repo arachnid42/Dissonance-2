@@ -6026,7 +6026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a58a0ebf52e576f4a8c0de3bf8af2bca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingDuration: 0
+  loadingDuration: 2
   data:
     isAnimationPlays: 0
     isInMainMenu: 1
