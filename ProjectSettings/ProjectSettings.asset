@@ -240,8 +240,8 @@ PlayerSettings:
   AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: C:/dev/Dissonance 2/user.keystore
+  AndroidKeyaliasName: production
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   AndroidEnableTango: 0
