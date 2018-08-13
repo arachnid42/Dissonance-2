@@ -167,6 +167,7 @@ namespace Assets.Scripts.Game
             {
                 data.customModeUnlocked = true;
                 data.endlessModeUnlocked = true;
+                data.turotiral = new Data.Tutorial();
                 data.levelsUnlocked = DifficultyLevels.Instance.LevelCount;
             }
             else
