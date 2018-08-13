@@ -7,7 +7,7 @@ using Assets.Scripts.UI.Elements;
 
 namespace Assets.Scripts.UI.Panels.Tutorial
 {
-    public class GeneralTutorial : BasePanel
+    public class GeneralTutorial : BaseTutorial
     {
         [SerializeField]
         private Tutorial tutorial;
@@ -20,18 +20,13 @@ namespace Assets.Scripts.UI.Panels.Tutorial
         private void Start()
         {
             tutorialController = GetComponent<TutorialController>();
-            swipeable.OnSwipeDown += OnTutorialActionClick;
-            swipeable.OnSwipeUp += OnTutorialActionClick;
+            swipeable.OnSwipeDown += tutorial.OnTutorialActionClick;
+            swipeable.OnSwipeUp += tutorial.OnTutorialActionClick;
         }
 
         private void OnEnable()
         {
             SetLabels(UpdateLabels);
-        }
-
-        private void OnDisable()
-        {
-            // Do not remove
         }
 
         private void UpdateLabels()
@@ -52,23 +47,11 @@ namespace Assets.Scripts.UI.Panels.Tutorial
 
         }
 
-        public void OnTutorialActionClick()
+        public override void Next(BasePanel current, BasePanel next)
         {
-            var current = tutorialController.Current;
-            var next = tutorialController.Next;
-            
-            if (next)
+            if (current.name == "GTPanel7")
             {
-                if(current.name == "GTPanel7")
-                {
-                    gameMode.text = Text("shape");
-                }
-                current.SwitchToAnimation(next).Start();
-            }
-            else
-            {
-                PersistentState.Instance.data.turotiral.basic = true;
-                tutorial.OnFinishTutorial();
+                gameMode.text = Text("shape");
             }
         }
     }

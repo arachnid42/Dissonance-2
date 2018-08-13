@@ -13,12 +13,13 @@ namespace Assets.Scripts.UI.Panels.Tutorial
 
         private int index;
 
-
-        private void OnEnable()
+        public List<GameObject> Screens
         {
-            ResetTutorial();
+            get
+            {
+                return screens;
+            }
         }
-
         public BasePanel Current
         {
             get; private set;
@@ -28,8 +29,6 @@ namespace Assets.Scripts.UI.Panels.Tutorial
         {
             get
             {
-                Debug.LogFormat("index: {0} Count: {1}", index, screens.Count);
-
                 if (index + 1 < screens.Count && !UIController.Instance.data.isAnimationPlays)
                 {
                     Current = screens[++index].GetComponent<BasePanel>();
@@ -43,7 +42,8 @@ namespace Assets.Scripts.UI.Panels.Tutorial
         {
             index = 0;
             Current = screens[index].GetComponent<BasePanel>();
-            for(int i=0; i<screens.Count; i++)
+
+            for (int i=0; i<screens.Count; i++)
             {
                 if (i == 0)
                 {

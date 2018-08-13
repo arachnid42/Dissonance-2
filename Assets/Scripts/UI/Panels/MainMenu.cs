@@ -166,6 +166,7 @@ namespace Assets.Scripts.UI.Panels
             startPlay.After(fade.SetHiddenEnumerator(true));
             if (ShouldShowTutorial())
             {
+                Debug.Log("Show tutorial");
                 startPlay.After(tutorial.SetHiddenEnumerator(false));
             }
             else

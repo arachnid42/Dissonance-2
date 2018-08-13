@@ -31,9 +31,9 @@ namespace Assets.Scripts.UI.Panels
                 UIController.Instance.data.isAnimationPlays = false;
             }
 
-            public Coroutine Start()
+            public Coroutine Start(bool playAnyway = false)
             {
-                if (UIController.Instance.data.isAnimationPlays)
+                if (UIController.Instance.data.isAnimationPlays && !playAnyway)
                 {
                     return null;
                 }

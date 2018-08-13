@@ -6,12 +6,14 @@ using Assets.Scripts.Game;
 
 namespace Assets.Scripts.UI.Panels.Tutorial
 {
-    public class LifeTutorial : BasePanel
+    public class LifeTutorial : BaseTutorial
     {
         [SerializeField]
         private Tutorial tutorial;
         [SerializeField]
         private Text text1 = null;
+        [SerializeField]
+        private Sprite lifeBackground;
         private TutorialController tutorialController;
 
         private void Start()
@@ -24,29 +26,15 @@ namespace Assets.Scripts.UI.Panels.Tutorial
             SetLabels(UpdateLabels);
         }
 
-        private void OnDisable()
-        {
-            // Do not remove
-        }
-
         private void UpdateLabels()
         {
             text1.text = Text("life.bonus.tutorial.1");
         }
-
-        public void OnTutorialActionClick()
+        public override void Next(BasePanel current, BasePanel next)
         {
-            var current = tutorialController.Current;
-            var next = tutorialController.Next;
-            
-            if (next)
+            if (next.name == "LBTPanel1")
             {
-                current.SwitchToAnimation(next).Start();
-            }
-            else
-            {
-                PersistentState.Instance.data.turotiral.lifeBonus = true;
-                tutorial.OnFinishTutorial();
+                tutorial.background.sprite = lifeBackground;
             }
         }
     }
