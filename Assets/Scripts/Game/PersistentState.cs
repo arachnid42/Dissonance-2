@@ -244,12 +244,15 @@ namespace Assets.Scripts.Game
             BinaryFormatter bf = new BinaryFormatter();
             try
             {
-                FileStream dataFs = File.Open(DataPath, FileMode.Open);
-                data = (Data)bf.Deserialize(dataFs);
-            }
-            catch (FileNotFoundException)
-            {
-                data = new Data();
+                if (File.Exists(DataPath))
+                {
+                    FileStream dataFs = File.Open(DataPath, FileMode.Open);
+                    data = (Data)bf.Deserialize(dataFs);
+                }
+                else
+                {
+                    data = new Data();
+                }
             }
             catch (SerializationException)
             {
@@ -258,12 +261,15 @@ namespace Assets.Scripts.Game
 
             try
             {
-                FileStream configModeDataFs = File.Open(ConfigurableModeDataPath, FileMode.Open);
-                configurableModeData = (Difficulty.Data)bf.Deserialize(configModeDataFs);
-            }
-            catch (FileNotFoundException)
-            {
-                configurableModeData = null;
+                if (File.Exists(ConfigurableModeDataPath))
+                {
+                    FileStream configModeDataFs = File.Open(ConfigurableModeDataPath, FileMode.Open);
+                    configurableModeData = (Difficulty.Data)bf.Deserialize(configModeDataFs);
+                }
+                else
+                {
+                    configurableModeData = null;
+                }
             }
             catch (SerializationException)
             {

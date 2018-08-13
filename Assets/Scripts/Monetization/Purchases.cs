@@ -92,6 +92,10 @@ namespace Assets.Scripts.Monetization
             UnityPurchasing.Initialize(this, builder);
         }
 
+        public bool IsInInventory(ProductDescription product)
+        {
+            return false;
+        }
 
         public void OnInitialized(IStoreController controller, IExtensionProvider extensions)
         {
@@ -144,9 +148,10 @@ namespace Assets.Scripts.Monetization
         {
             foreach(var product in products)
             {
-                if(product.receipt != null)
+                if(product.hasReceipt)
                 {
                     Debug.LogFormat("Owned id:{1} Transaction:{0}", product.transactionID, product.definition.id);
+                    Debug.Log("receipt:"+product.receipt);
                     ProcessPurchaseStateChanges(product.definition.id);
                 }
             }
@@ -185,9 +190,12 @@ namespace Assets.Scripts.Monetization
         }
 
         public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
-        {            
-            ProcessPurchaseStateChanges(args.purchasedProduct.definition.id);
-            OnSuccess(args.purchasedProduct.definition.id);
+        {
+            if (args.purchasedProduct.hasReceipt)
+            {
+                ProcessPurchaseStateChanges(args.purchasedProduct.definition.id);
+                OnSuccess(args.purchasedProduct.definition.id);
+            }
             return PurchaseProcessingResult.Complete;
         }
 

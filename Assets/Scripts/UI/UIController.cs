@@ -77,7 +77,7 @@ namespace Assets.Scripts.UI
             while (!IsInitialized || counter < loadingDuration)
             {
                 counter += Time.deltaTime;
-                Debug.Log(IsInitialized);
+                //Debug.Log(IsInitialized);
                 yield return null;
             }
             Debug.Log("Showing Main Menu");
