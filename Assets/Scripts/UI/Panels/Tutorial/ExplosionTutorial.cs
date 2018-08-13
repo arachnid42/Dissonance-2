@@ -7,7 +7,7 @@ using Assets.Scripts.UI.Elements;
 
 namespace Assets.Scripts.UI.Panels.Tutorial
 {
-    public class ExplosionTutorial : BasePanel
+    public class ExplosionTutorial : BaseTutorial
     {
         [SerializeField]
         private Tutorial tutorial;
@@ -16,26 +16,18 @@ namespace Assets.Scripts.UI.Panels.Tutorial
         [SerializeField]
         private Text text1, text2 = null;
         [SerializeField]
-        private Image background;
-        [SerializeField]
         private Sprite background1, background2;
         private TutorialController tutorialController;
 
         private void Start()
         {
             tutorialController = GetComponent<TutorialController>();
-            swipeable.OnSwipeLeft += OnTutorialActionClick;
+            swipeable.OnSwipeLeft += tutorial.OnTutorialActionClick;
         }
 
         private void OnEnable()
         {
             SetLabels(UpdateLabels);
-            background.sprite = background1;
-        }
-
-        private void OnDisable()
-        {
-            // Do not remove
         }
 
         private void UpdateLabels()
@@ -44,23 +36,15 @@ namespace Assets.Scripts.UI.Panels.Tutorial
             text2.text = Text("explosion.bonus.tutorial.2");
         }
 
-        public void OnTutorialActionClick()
+        public override void Next(BasePanel current, BasePanel next)
         {
-            var current = tutorialController.Current;
-            var next = tutorialController.Next;
-            
-            if (next)
+            if (next.name == "EBTPanel1")
             {
-                if(current.name == "EBTPanel1")
-                {
-                    background.sprite = background2;
-                }
-                current.SwitchToAnimation(next).Start();
+                tutorial.background.sprite = background1;
             }
-            else
+            if (current.name == "EBTPanel1")
             {
-                PersistentState.Instance.data.turotiral.explosionBonus = true;
-                tutorial.OnFinishTutorial();
+                tutorial.background.sprite = background2;
             }
         }
     }

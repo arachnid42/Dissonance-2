@@ -18,7 +18,7 @@ namespace Assets.Scripts.UI.Panels
 
         private void OnEnable()
         {
-            StartCoroutine(ShowLogoCoroutine(0,1f));
+            //StartCoroutine(ShowLogoCoroutine(0,1f));
         }
 
         private void OnDisable()

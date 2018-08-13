@@ -12,6 +12,8 @@ namespace Assets.Scripts.UI
 
         [SerializeField]
         private float loadingDuration = 2f;
+        [SerializeField]
+        private BasePanel logoFadePanel;
 
         private PanelController panelController;
         private bool IsInitialized = false;
@@ -72,18 +74,19 @@ namespace Assets.Scripts.UI
         {
             float counter = 0f;
             Debug.Log("Showing Start Up panel");
-            PanelController.StartupPanel.SetHidddenAnimation(false).Start();
+            var showAnimation = new BasePanel.Animation(Delay(1));
+            showAnimation.After(logoFadePanel.SetHiddenEnumerator(false)).Start();
             Debug.Log("Waiting for components loading ");
-            while (!IsInitialized || counter < loadingDuration)
+            while (counter < loadingDuration)
             {
                 counter += Time.deltaTime;
-                //Debug.Log(IsInitialized);
                 yield return null;
             }
             Debug.Log("Showing Main Menu");
             var showMenu = PanelController.MainMenuPanel.SetHidddenAnimation(false);
+            showMenu.After(logoFadePanel.SetHiddenEnumerator(true));
             showMenu.After(PanelController.StartupPanel.SetHiddenEnumerator(true));
-            showMenu.Start();
+            showMenu.Start(true);
         }
 
         private IEnumerator InitComponents()
