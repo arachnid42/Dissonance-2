@@ -16,6 +16,9 @@ namespace Assets.Scripts.UI.Panels
         [SerializeField]
         private ConfigurableMapper configurableMapper;
 
+        [SerializeField]
+        public Color sliderColor;
+
         private void OnEnable()
         {
             UIController.Instance.data.activePanel = this;

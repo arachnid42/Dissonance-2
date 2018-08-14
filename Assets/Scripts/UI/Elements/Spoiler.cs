@@ -35,12 +35,18 @@ namespace Assets.Scripts.UI.Elements
         public abstract T GetData();
         public abstract void SetData(T data);
 
+        private void Start()
+        {
+            InitCurve();
+
+        }
+
         private void OnEnable()
         {
             rt = GetComponent<RectTransform>();
             headerText.text = name != ""? LocalizationManager.Instance[name]: "Property";
             bottom = rt.sizeDelta.y;
-            InitCurve();
+            //InitCurve();
         }
 
         private void OnDisable()

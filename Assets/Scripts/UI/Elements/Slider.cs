@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Assets.Scripts.Localization;
+using Assets.Scripts.UI.Panels;
 using UnityEngine.EventSystems;
 
 namespace Assets.Scripts.UI.Elements
@@ -68,6 +69,7 @@ namespace Assets.Scripts.UI.Elements
                 rtrigger.triggers.Add(pointerExit);
 
             }
+            CustomizeSpoiler();
         }
 
         private void OnEnable()
@@ -78,6 +80,19 @@ namespace Assets.Scripts.UI.Elements
             if (upperBind != null)
                 Max = upperBind.Value;
             UpdateValue();
+        }
+
+        private void CustomizeSpoiler()
+        {
+            var color = UIController.Instance.PanelController.configurableMenuPanel.GetComponent<ConfigurableMenu>().sliderColor;
+            if(color != null)
+            {
+                headerText.color = color;
+                valueText.color = color;
+                leftButton.GetComponent<Image>().color = color;
+                rightButton.GetComponent<Image>().color = color;
+            }
+            headerText.resizeTextMaxSize = 80;
         }
 
         private void OnLeftButtonClik()

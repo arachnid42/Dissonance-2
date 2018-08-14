@@ -1742,7 +1742,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 70
+    m_MaxSize: 62
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -9799,7 +9799,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 70
+    m_MaxSize: 62
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -13614,7 +13614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &406943032
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15162,7 +15162,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 70
+    m_MaxSize: 62
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -26395,7 +26395,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 8
-    m_MaxSize: 64
+    m_MaxSize: 56
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -28626,7 +28626,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 70
+    m_MaxSize: 62
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -28675,7 +28675,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 476, y: -111.29999}
+  m_AnchoredPosition: {x: 476, y: -111.299805}
   m_SizeDelta: {x: 951, y: 222.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &766032833
@@ -39475,7 +39475,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 70
+    m_MaxSize: 62
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -42983,7 +42983,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 70
+    m_MaxSize: 62
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -43295,7 +43295,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 82
+    m_MaxSize: 72
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -44883,6 +44883,7 @@ MonoBehaviour:
   revert: {fileID: 1503135950}
   back: {fileID: 1347876881}
   configurableMapper: {fileID: 1581502692}
+  sliderColor: {r: 0.3019608, g: 0.3019608, b: 0.3019608, a: 1}
 --- !u!225 &1020521710
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -47862,7 +47863,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 82
+    m_MaxSize: 72
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -54401,7 +54402,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 70
+    m_MaxSize: 62
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -56338,7 +56339,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 70
+    m_MaxSize: 62
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -58401,7 +58402,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 70
+    m_MaxSize: 62
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -73078,7 +73079,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 70
+    m_MaxSize: 62
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -76548,7 +76549,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 4
-    m_MaxSize: 64
+    m_MaxSize: 56
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -77890,7 +77891,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 3
-    m_MaxSize: 64
+    m_MaxSize: 56
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -80353,7 +80354,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 3
-    m_MaxSize: 82
+    m_MaxSize: 72
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -83968,8 +83969,8 @@ MonoBehaviour:
     key: color
   - textMesh: {fileID: 956657463}
     key: shape
-  localization: en
-  autodetection: 1
+  localization: ru
+  autodetection: 0
 --- !u!4 &1915709852
 Transform:
   m_ObjectHideFlags: 0
@@ -87087,7 +87088,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 3
-    m_MaxSize: 64
+    m_MaxSize: 56
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -88288,7 +88289,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 70
+    m_MaxSize: 62
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
