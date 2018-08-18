@@ -68,7 +68,9 @@ namespace Assets.Scripts.UI.Panels
                     levelsUnlocked.text = Text("levelsUnlocked");
                     next.text = Text("playEndless");
                     PersistentState.Instance.data.endlessModeUnlocked = true;
+                    PersistentState.Instance.data.customModeUnlocked = true;
                     PersistentState.Instance.data.lastLevelIndex--;
+                    PersistentState.Instance.Save();
                 }
             }
             
