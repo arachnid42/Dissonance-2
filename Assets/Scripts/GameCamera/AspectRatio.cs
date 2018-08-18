@@ -22,10 +22,12 @@ namespace Assets.Scripts.GameCamera
             var rect = Camera.main.rect;
             if (widthScale < 1)
                 rect.x = (1 - widthScale) / 2;
+            rect.width = widthScale;
+
             if (heightScale < 1)
                 rect.y = (1 - heightScale) / 2;
-            rect.width = widthScale;
             rect.height = heightScale;
+
             Camera.main.rect = rect;
         }
     }
