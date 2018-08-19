@@ -8,6 +8,11 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private GameObject field916, field918;
 
+        public static bool Ready
+        {
+            get;set;
+        }
+
         public bool Is918
         {
             get;private set;
@@ -67,6 +72,7 @@ namespace Assets.Scripts.Game
             Master = selected.GetComponentInChildren<Master>();
             ColorsRecipients = selected.GetComponentInChildren<FieldColorsRecipients>().colorsRecipients;
             LocalizationListeners = selected.GetComponentInChildren<FieldLocalization>().listeners;
+            Ready = true;
         }
     }
 

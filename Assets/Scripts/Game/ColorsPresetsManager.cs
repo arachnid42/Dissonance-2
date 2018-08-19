@@ -118,7 +118,7 @@ namespace Assets.Scripts.Game
         {
             while (ColorsPresets.Instance == null || !ColorsPresets.Instance.IsReady)
                 yield return null;
-            while (Field.Instance == null || Field.Instance.ColorsRecipients == null)
+            while (!Field.Ready)
                 yield return null;
             var colorsRecipients = Field.Instance.ColorsRecipients;
             for (int i = 0; i < CurrentPreset.main.Length; i++)
