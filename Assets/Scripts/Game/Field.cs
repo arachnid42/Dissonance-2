@@ -7,6 +7,12 @@ namespace Assets.Scripts.Game
     {
         [SerializeField]
         private GameObject field916, field918;
+
+        public bool Is918
+        {
+            get;private set;
+        }
+
         public Master Master
         {
             get; private set;
@@ -45,6 +51,7 @@ namespace Assets.Scripts.Game
         public void Set918Active(bool active)
         {            
             GameObject selected = null;
+            Is918 = active;
             if (active)
             {
                 selected = field918;
