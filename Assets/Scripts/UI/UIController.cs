@@ -92,7 +92,8 @@ namespace Assets.Scripts.UI
         private IEnumerator InitComponents()
         {
             while (Field.Instance == null || 
-                Field.Instance.Master.Callbacks == null || 
+                Field.Instance.Master == null || 
+                Field.Instance.Master.Callbacks == null ||
                 Field.Instance.Master.Listeners == null ||
                 !ColorsPresets.Ready ||
                 !ColorsPresetsManager.Ready ||

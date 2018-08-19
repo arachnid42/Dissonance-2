@@ -82,8 +82,6 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private MaterialOriginals originals;
         private MaterialsInstances materials = new MaterialsInstances();
-        [SerializeField]
-        private ColorsRecipients colorsRecipients;
         private bool isReady = false;
         private Coroutine applyCurrentColorPresetCoroutine;
 
@@ -120,6 +118,9 @@ namespace Assets.Scripts.Game
         {
             while (ColorsPresets.Instance == null || !ColorsPresets.Instance.IsReady)
                 yield return null;
+            while (Field.Instance == null || Field.Instance.ColorsRecipients == null)
+                yield return null;
+            var colorsRecipients = Field.Instance.ColorsRecipients;
             for (int i = 0; i < CurrentPreset.main.Length; i++)
             {
                 if (i < materials.main.Count)

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections;
 using System.IO;
+using Assets.Scripts.Game;
 
 namespace Assets.Scripts.Localization
 {
@@ -28,9 +29,7 @@ namespace Assets.Scripts.Localization
         private Coroutine loadLocalizationFileCoroutine = null;
 
         private Dictionary<string, string> items;
-        [SerializeField]
-        private Listener[] listeners = null;
-
+       
         [SerializeField]
         private string localization = "en";
         [SerializeField]
@@ -70,8 +69,11 @@ namespace Assets.Scripts.Localization
         }
 
 
-        private void UpdateListeners()
+        private IEnumerator UpdateListeners()
         {
+            while (Field.Instance == null || Field.Instance.LocalizationListeners == null)
+                yield return null;
+            var listeners = Field.Instance.LocalizationListeners;
             foreach (var listener in listeners)
             {
                 string value = this[listener.key];
@@ -93,7 +95,7 @@ namespace Assets.Scripts.Localization
             var text = request.downloadHandler.text.Trim();
             items = JsonUtility.FromJson<Data>(text).ToDictionary();
 
-            UpdateListeners();
+            yield return UpdateListeners();
             loadLocalizationFileCoroutine = null;
         }
 

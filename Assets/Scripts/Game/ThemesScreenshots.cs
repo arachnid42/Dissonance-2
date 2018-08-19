@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -169,12 +170,22 @@ namespace Assets.Scripts.Game
         {
             public string screenshotNameFormat = "{0}//screenshot.png";
             public string path = "Assets//Textures/UI//Themes";
+            [HideInInspector]
             public Master master;
             public GameObject shapesOnScreen;
             public GameObject UI;
         }
 
         public Config config = new Config();
+
+        private IEnumerator Start()
+        {
+            while(Field.Instance == null || Field.Instance.Master == null)
+            {
+                yield return null;
+            }
+            config.master = Field.Instance.Master;
+        }
 
         public void PrepareFieldForScreenshot()
         {

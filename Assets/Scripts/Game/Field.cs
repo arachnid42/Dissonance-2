@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Assets.Scripts.Localization;
 using UnityEngine;
 
 namespace Assets.Scripts.Game
@@ -8,11 +6,19 @@ namespace Assets.Scripts.Game
     public class Field : MonoBehaviour
     {
         [SerializeField]
-        private Master master;
-
+        private GameObject field916, field918;
         public Master Master
         {
-            get { return master; }
+            get; private set;
+        }
+        public ColorsPresetsManager.ColorsRecipients ColorsRecipients
+        {
+            get; private set;
+        }
+
+        public LocalizationManager.Listener[] LocalizationListeners
+        {
+            get; private set;
         }
 
         public static Field Instance
@@ -20,16 +26,40 @@ namespace Assets.Scripts.Game
             get;private set;
         }
 
+        private void SelectFieldByAspect()
+        {
+            float currentAspect = Camera.main.aspect;
+        }
+
         private void Awake()
         {
             if (Instance == null)
             {
-                //DontDestroyOnLoad(gameObject);
                 Instance = this;
             }else if(Instance != this)
             {
                 Destroy(gameObject);
             }
+        }
+
+        public void Set918Active(bool active)
+        {            
+            GameObject selected = null;
+            if (active)
+            {
+                selected = field918;
+                field918.SetActive(active);
+                Destroy(field916);
+            }
+            else
+            {
+                selected = field916;
+                field916.SetActive(!active);
+                Destroy(field918);
+            }
+            Master = selected.GetComponentInChildren<Master>();
+            ColorsRecipients = selected.GetComponentInChildren<FieldColorsRecipients>().colorsRecipients;
+            LocalizationListeners = selected.GetComponentInChildren<FieldLocalization>().listeners;
         }
     }
 
