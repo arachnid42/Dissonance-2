@@ -11,7 +11,7 @@ namespace Assets.Scripts.UI.Panels.Tutorial
         [SerializeField]
         private GameObject generalTutorial, freezeTutorial, heartTutorial, explosionTutorial = null;
         [SerializeField]
-        private Text gameMode = null;
+        private Text header, gameMode = null;
         [SerializeField]
         public Image background;
         [SerializeField]
@@ -27,6 +27,7 @@ namespace Assets.Scripts.UI.Panels.Tutorial
         {
             UIController.Instance.data.activePanel = this;
             controller = GetComponent<TutorialController>();
+            header.text = Text("tutorial");
             gameMode.text = Text("color");
             ManageTutorials();
         }
