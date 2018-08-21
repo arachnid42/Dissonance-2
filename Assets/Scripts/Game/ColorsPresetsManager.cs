@@ -137,7 +137,7 @@ namespace Assets.Scripts.Game
                 }
             }
 
-            materials.background = UpdateMaterial(originals.texture, materials.background, Color.white, CurrentPreset.background, TEXTURE_RENDER_QUEUE);
+            materials.background = UpdateMaterial(originals.texture, materials.background, Color.white, Field.Instance.Is918?CurrentPreset.background918:CurrentPreset.background916, TEXTURE_RENDER_QUEUE);
             materials.bonusesBackground = UpdateMaterial(originals.texture, materials.bonusesBackground, CurrentPreset.bonusCounterBackground, null ,TRANSPARENT_RENDER_QUEUE);
 
             materials.tileShapes = UpdateMaterial(originals.solid, materials.tileShapes, CurrentPreset.tileShapes, null, GEOMETRY_RENDER_QUEUE);

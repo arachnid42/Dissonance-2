@@ -5,7 +5,7 @@ namespace Assets.Scripts.Game
 {
     public class ColorsPreset : MonoBehaviour
     {
-        public Texture2D background;
+        public Texture2D background916, background918;
         public Color bonusCounterBackground;
         public Color tileShapes;
         public Color font;
