@@ -107,6 +107,7 @@ namespace Assets.Scripts.Game
         public bool started = false;
         public bool paused = false;
         public GameMode mode = GameMode.Color;
+        public GameObject lastSpawnedShapePrototype = null;
 
         public long coroutinesStarted = 0;
         public Difficulty.Slowdown.Type slowdownType = Difficulty.Slowdown.Type.None;
@@ -280,7 +281,7 @@ namespace Assets.Scripts.Game
 
             coroutinesStarted = 0;
             slowdownType = Difficulty.Slowdown.Type.None;
-
+            lastSpawnedShapePrototype = null;
             paused = false;
             Started = false;
             Score = 0;

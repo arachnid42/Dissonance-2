@@ -245,7 +245,20 @@ namespace Assets.Scripts.Game
 
         public GameObject GetNextRandomShape()
         {
-            return master.State.Mapping.shapes[Random.Range(0, master.State.Mapping.shapes.Length)];
+            GameObject nextShapePrototype = null;
+            while (true)
+            {
+                nextShapePrototype = master.State.Mapping.shapes[Random.Range(0, master.State.Mapping.shapes.Length)];
+                if(nextShapePrototype != master.State.lastSpawnedShapePrototype)
+                {
+                    break;
+                }else if(Random.value < 0.1f)
+                {
+                    break;
+                }
+            }
+            master.State.lastSpawnedShapePrototype = nextShapePrototype;
+            return nextShapePrototype;
         }
 
         public GameObject CreateRandomShape(float collisionTime)
