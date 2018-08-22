@@ -3,6 +3,7 @@ using Assets.Scripts.ShapeBasket;
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using System.Linq;
 
 namespace Assets.Scripts.Game
 {
@@ -243,21 +244,46 @@ namespace Assets.Scripts.Game
             return null;
         }
 
+        public List<GameObject> GetShapesOnScreenPrototypes()
+        {
+            List<GameObject> shapesOnScreensPrototypes = new List<GameObject>();
+            GameObject[] shapesOnScreen = master.State.shapesOnScreen.ToArray();
+            foreach (var shape in shapesOnScreen)
+            {
+                var prototype = shape.GetComponent<Shape.Controller>().prototype;
+                if (!shapesOnScreensPrototypes.Contains(prototype))
+                {
+                    shapesOnScreensPrototypes.Add(prototype);
+                }
+            }
+            return shapesOnScreensPrototypes;
+        }
+
         public GameObject GetNextRandomShape()
         {
+            List<GameObject> shapesOnScreensPrototypes = GetShapesOnScreenPrototypes();
+            //Debug.Log("Last shape prototype:" + master.State.lastSpawnedShapePrototype);
+            //Debug.Log("Shape prototypes-------------------------------");
+            //foreach(var shape in shapesOnScreensPrototypes)
+            //{
+            //    Debug.Log(shape);
+            //}
+            //Debug.Log("---------------------------------------------------");
             GameObject nextShapePrototype = null;
-            while (true)
+            while(true)
             {
                 nextShapePrototype = master.State.Mapping.shapes[Random.Range(0, master.State.Mapping.shapes.Length)];
-                if(nextShapePrototype != master.State.lastSpawnedShapePrototype)
+                if(master.State.Mapping.shapes.Length == shapesOnScreensPrototypes.Count)
                 {
-                    break;
-                }else if(Random.value < 0.1f)
+                    if(master.State.lastSpawnedShapePrototype != nextShapePrototype || Random.value < 0.1f)
+                    {
+                        break;
+                    }
+                }else if (!shapesOnScreensPrototypes.Contains(nextShapePrototype))
                 {
                     break;
                 }
             }
-            master.State.lastSpawnedShapePrototype = nextShapePrototype;
             return nextShapePrototype;
         }
 
@@ -268,10 +294,14 @@ namespace Assets.Scripts.Game
                 return null;
             GameObject selectedShape = GetNextBonus();
             if(selectedShape == null)
+            {
                 selectedShape = GetNextRandomShape();
-
+                master.State.lastSpawnedShapePrototype = selectedShape;
+            }
+                
             GameObject shape = Object.Instantiate(selectedShape, suitableSpawn.transform.position, suitableSpawn.transform.rotation);
             Shape.Controller shapeController = shape.GetComponent<Shape.Controller>();
+            shapeController.prototype = selectedShape;
             master.Callbacks.SetShapeCallbacks(shape);
             shapeController.Scale.SetScale(master.State.ActiveSpawnPreset.scale);
             shapeController.Falling.speed = GetSpeedForCollisionTime(shape, collisionTime);

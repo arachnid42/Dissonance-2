@@ -6,6 +6,7 @@ namespace Assets.Scripts.Shape
 {
     public class Controller : MonoBehaviour
     {
+        public GameObject prototype = null;
         public Rotation Rotation
         {
             get { return GetComponent<Rotation>(); }
