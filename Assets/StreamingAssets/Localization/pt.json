@@ -71,7 +71,7 @@
 		{"key":"colorToggle", "value":"Cor"},
 		{"key":"shapesOnScreen", "value":"Formas na tela"},
 		{"key":"min", "value":"Mínimo"},
-		{"key":"max", "value":"máximo"},
+		{"key":"max", "value":"Máximo"},
 		{"key":"sec", "value":"seg"},
 		{"key":"%", "value":"%"},
 		{"key":"interval", "value":"Intervalo"},
