@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Assets.Scripts.Game;
 using Assets.Scripts.Indicator;
-
+using Assets.Scripts.PlayServices;
 
 namespace Assets.Scripts.UI.Panels
 {
@@ -119,9 +119,21 @@ namespace Assets.Scripts.UI.Panels
                 Debug.LogFormat("Score/EndlessRecord: {0}/{1}", gameOver.score, data.endlessScoreRecord);
                 Debug.LogFormat("Time/EndlessRecord: {0}/{1}", gameOver.time, data.endlessTimeRecord);
                 if (gameOver.score > data.endlessScoreRecord && gameOver.target.scoreBased)
+                {
                     data.endlessScoreRecord = gameOver.score;
+                    if (GPServices.Ready)
+                    {
+                        GPServices.Instance.UpdateEndlessScoreLeaderBoard(gameOver.score);
+                    }
+                }
                 if (gameOver.time > data.endlessTimeRecord && !gameOver.target.scoreBased)
+                {
                     data.endlessTimeRecord = gameOver.time;
+                    if (GPServices.Ready)
+                    {
+                        GPServices.Instance.UpdateEndlessTimeLeaderBoard(gameOver.time);
+                    }
+                }
             }
         }
 

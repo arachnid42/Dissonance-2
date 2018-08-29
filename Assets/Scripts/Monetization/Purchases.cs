@@ -150,7 +150,7 @@ namespace Assets.Scripts.Monetization
             {
                 if(product.hasReceipt)
                 {
-                    Debug.LogFormat("Owned id:{1} Transaction:{0}", product.transactionID, product.definition.id);
+                    //Debug.LogFormat("Owned id:{1} Transaction:{0}", product.transactionID, product.definition.id);
                     //Debug.Log("receipt:"+product.receipt);
                     ProcessPurchaseStateChanges(product.definition.id);
                 }
