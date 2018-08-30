@@ -24,8 +24,27 @@
 
 public static class GPGSIds
 {
-        public const string leaderboard_endless_time = "CgkIy8mxyLMaEAIQAA"; // <GPGSID>
+        public const string achievement_reaction_veteran = "CgkIy8mxyLMaEAIQDA"; // <GPGSID>
+        public const string achievement_reaction_hero = "CgkIy8mxyLMaEAIQDg"; // <GPGSID>
+        public const string achievement_oh_these_shapes = "CgkIy8mxyLMaEAIQBQ"; // <GPGSID>
+        public const string achievement_cupid = "CgkIy8mxyLMaEAIQFg"; // <GPGSID>
+        public const string achievement_what_about_other_theme = "CgkIy8mxyLMaEAIQCw"; // <GPGSID>
+        public const string achievement_demolition_man = "CgkIy8mxyLMaEAIQFA"; // <GPGSID>
+        public const string achievement_unstoppable = "CgkIy8mxyLMaEAIQFw"; // <GPGSID>
+        public const string achievement_mr_freese = "CgkIy8mxyLMaEAIQEg"; // <GPGSID>
+        public const string achievement_configuration_master = "CgkIy8mxyLMaEAIQCQ"; // <GPGSID>
+        public const string achievement_shape_of_my_heart = "CgkIy8mxyLMaEAIQFQ"; // <GPGSID>
+        public const string achievement_never_give_up = "CgkIy8mxyLMaEAIQEA"; // <GPGSID>
+        public const string achievement_neverending_story = "CgkIy8mxyLMaEAIQCg"; // <GPGSID>
+        public const string achievement_reaction_legend = "CgkIy8mxyLMaEAIQDw"; // <GPGSID>
+        public const string achievement_oh_these_colors = "CgkIy8mxyLMaEAIQBg"; // <GPGSID>
+        public const string achievement_blow_them_all_up = "CgkIy8mxyLMaEAIQEw"; // <GPGSID>
+        public const string achievement_reaction_master = "CgkIy8mxyLMaEAIQBw"; // <GPGSID>
+        public const string achievement_this_only_makes_you_stronger = "CgkIy8mxyLMaEAIQDQ"; // <GPGSID>
         public const string leaderboard_endless_score = "CgkIy8mxyLMaEAIQAQ"; // <GPGSID>
+        public const string leaderboard_endless_time = "CgkIy8mxyLMaEAIQAA"; // <GPGSID>
+        public const string achievement_on_the_way_to_perfection = "CgkIy8mxyLMaEAIQCA"; // <GPGSID>
+        public const string achievement_its_too_cold_here = "CgkIy8mxyLMaEAIQEQ"; // <GPGSID>
 
 }
 
