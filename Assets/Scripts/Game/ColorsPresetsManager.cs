@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections;
 using System;
+using Assets.Scripts.UI.Theme;
 
 namespace Assets.Scripts.Game
 {
@@ -83,7 +84,7 @@ namespace Assets.Scripts.Game
         private MaterialOriginals originals;
         private MaterialsInstances materials = new MaterialsInstances();
         private bool isReady = false;
-        private Coroutine applyCurrentColorPresetCoroutine;
+        private Coroutine applyCurrentColorPresetCoroutine, applyUIColorPresetCourotine;
 
         public bool IsReady
         {
@@ -112,6 +113,16 @@ namespace Assets.Scripts.Game
         {
             if(applyCurrentColorPresetCoroutine == null)
                 applyCurrentColorPresetCoroutine = StartCoroutine(ApplyCurrentColorPresetCoroutine());
+            if (applyUIColorPresetCourotine == null)
+                applyUIColorPresetCourotine = StartCoroutine(ApplyUIColorPresetCourotine());
+        }
+
+        private IEnumerator ApplyUIColorPresetCourotine()
+        {
+            while (ColorsPresets.Instance == null || !ColorsPresets.Instance.IsReady || UIColorsPresets.Instance == null || !UIColorsPresets.Instance.IsReady)
+                yield return null;
+            UIColorsPresets.Instance.ApplyUIColorPreset();
+            applyUIColorPresetCourotine = null;
         }
 
         private IEnumerator ApplyCurrentColorPresetCoroutine()
