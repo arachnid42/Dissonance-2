@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Assets.Scripts.UI.Theme;
 using Assets.Scripts.Game;
 
 namespace Assets.Scripts.UI.Panels
@@ -13,12 +14,19 @@ namespace Assets.Scripts.UI.Panels
         [SerializeField]
         private Sprite background916, background918;
 
-        private void OnEnable()
+        private void Start()
         {
-            StartCoroutine(SetupBackground());
+            UIColorsPresets.Instance.OnUIColorPresetApply += SetupBackground;
+        }
+        
+        private void SetupBackground(UIColorsPreset preset)
+        {
+            background916 = preset.background916;
+            background918 = preset.background918;
+            StartCoroutine(SetupBackgroundCourotine());
         }
 
-        private IEnumerator SetupBackground()
+        private IEnumerator SetupBackgroundCourotine()
         {
             while (Field.Instance == null)
                 yield return null;

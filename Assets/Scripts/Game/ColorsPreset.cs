@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using Assets.Scripts.UI.Theme;
 
 namespace Assets.Scripts.Game
 {
@@ -19,5 +20,6 @@ namespace Assets.Scripts.Game
         public Gradient explosionGradientTwo;
         public Sprite screenshot;
         public bool free;
+        public UIColorsPreset uiColorPreset;
     }
 }
