@@ -31,7 +31,6 @@ namespace Assets.Scripts.UI.Theme
         public void ApplyUIColorPreset()
         {
             ColorsPreset preset = ColorsPresets.Instance.CurrentPreset;
-            Debug.LogFormat("APPLYING UI COLOR PRESET {0}", preset.name);
             OnUIColorPresetApply(preset);
         }
 

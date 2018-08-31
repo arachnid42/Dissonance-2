@@ -30,8 +30,6 @@ namespace Assets.Scripts.UI.Elements
 
         private const float BADGE_UNSELECTED_X = 73;
         private const float BADGE_UNSELECTED_Y = 216.8f;
-        private const float BADGE_SELECTED_X = 68;
-        private const float BADGE_SELECTED_Y = 211.8f;
 
         public void Setup(bool isFree, bool isSelected, ColorsPreset preset, UnityAction action)
         {
@@ -40,7 +38,6 @@ namespace Assets.Scripts.UI.Elements
             button.onClick.AddListener(action);
             backgroundImage.GetComponent<Image>().sprite = preset.screenshot;
             StartCoroutine(InitialUIThemeApplyCourotine());
-            //UIColorsPresets.Instance.OnUIColorPresetApply += OnApplyColorTheme;
         }
         private void OnApplyColorTheme(ColorsPreset preset)
         {
@@ -50,13 +47,11 @@ namespace Assets.Scripts.UI.Elements
             colors.pressedColor = preset.uiColorPreset.buttonsColor.color2;
             colors.disabledColor = preset.uiColorPreset.buttonsColor.color5;
             button.colors = colors;
-            Debug.Log(preset.name);
 
         }
 
         private IEnumerator InitialUIThemeApplyCourotine()
         {
-            Debug.Log("InitialUIThemeApplyCourotine");
             while (ColorsPresets.Instance == null || !ColorsPresets.Instance.IsReady)
                 yield return null;
             OnApplyColorTheme(ColorsPresets.Instance.CurrentPreset);
@@ -67,8 +62,6 @@ namespace Assets.Scripts.UI.Elements
             if (free)
             {
                 badgeImage.gameObject.SetActive(false);
-                //badgeImage.GetComponent<Image>().color = freeColor;
-                //badgeText.text = LocalizationManager.Instance["free"];
             }
             else
             {
@@ -82,21 +75,15 @@ namespace Assets.Scripts.UI.Elements
         {
             button.interactable = !isSelected;
             OnApplyColorTheme(preset);
-
-            //RectTransform badge = badgeImage.GetComponent<RectTransform>();
-            //Debug.LogFormat("offsetMin: {0} offsetMax: {1}",badge.offsetMin,badge.offsetMax);
-            //Debug.LogFormat("rect: {0} position: {1}", badge.rect,badge.position);
             if (isSelected)
             {
                 backgroundImage.GetComponent<RectTransform>().offsetMin = new Vector2(OFFSET_SELECTED, OFFSET_SELECTED);
                 backgroundImage.GetComponent<RectTransform>().offsetMax = new Vector2(-OFFSET_SELECTED, -OFFSET_SELECTED);
-                //badgeImage.GetComponent<RectTransform>().offsetMin = new Vector2(BADGE_SELECTED_X, BADGE_SELECTED_Y);
             }
             else
             {
                 backgroundImage.GetComponent<RectTransform>().offsetMin = new Vector2(OFFSET_UNSELECTED, OFFSET_UNSELECTED);
                 backgroundImage.GetComponent<RectTransform>().offsetMax = new Vector2(-OFFSET_UNSELECTED, -OFFSET_UNSELECTED);
-                //badgeImage.GetComponent<RectTransform>().offsetMin = new Vector2(BADGE_UNSELECTED_X, BADGE_UNSELECTED_Y);
             }
         }
     }

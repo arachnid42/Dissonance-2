@@ -42,7 +42,6 @@ namespace Assets.Scripts.UI.Panels
                 {
                     PersistentState.Instance.SetColorsPreset(ColorsPresets.Instance[index].name);
                     UpdateThemesSelected(index);
-                    Debug.LogFormat("ColorPreset: {0}, color1: {1}", ColorsPresets.Instance.CurrentPreset.name, ColorsPresets.Instance.CurrentPreset.uiColorPreset.buttonsColor.color1);
                 };
             else
                 return UIController.Instance.PanelController.mainMenuPanel.GetComponent<MainMenu>().OnDonateButtonClick;

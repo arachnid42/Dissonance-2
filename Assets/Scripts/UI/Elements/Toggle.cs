@@ -121,7 +121,7 @@ namespace Assets.Scripts.UI.Elements
             {
                 contentImage.sprite = image;
                 int index = (int)toggleForegroundColor;
-                if(index > 0 && index < preset.main.Length)
+                if(index < preset.main.Length)
                 {
                     foregroundImage.color = preset.main[(int)toggleForegroundColor];
                 }
