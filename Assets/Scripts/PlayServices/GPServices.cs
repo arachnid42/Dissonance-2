@@ -3,6 +3,7 @@ using GooglePlayGames.BasicApi;
 using UnityEngine;
 using System;
 using Assets.Scripts.Game;
+using System.Collections;
 
 namespace Assets.Scripts.PlayServices
 {
@@ -25,34 +26,87 @@ namespace Assets.Scripts.PlayServices
         public bool debug = true;
         private void Awake()
         {
+            Instance = this;
             var config = new PlayGamesClientConfiguration.Builder()
                 .RequestEmail()
                 .Build();
             PlayGamesPlatform.InitializeInstance(config);
             PlayGamesPlatform.DebugLogEnabled = debug;
             PlayGamesPlatform.Activate();
-            if (!Social.localUser.authenticated)
+            Social.localUser.Authenticate(SignIn);
+        }
+
+        private IEnumerator Start()
+        {
+            while (!Field.Ready)
+                yield return null;
+            Field.Instance.Master.Listeners.OnGameOver += OnGameOver;
+        }
+
+        private void OnGameOver(bool win)
+        {
+            IncrementGameOverAchievements(DifficultyLevels.Instance.CurrentDifficulty, Field.Instance.Master.State.gameOver);
+        }
+
+
+        private void GetLeaderBoardScore(string id, Action<LeaderboardScoreData> callback)
+        {
+            PlayGamesPlatform.Instance.LoadScores(
+                GPGSIds.leaderboard_endless_score,
+                LeaderboardStart.PlayerCentered,
+                1,
+                LeaderboardCollection.Social,
+                LeaderboardTimeSpan.AllTime,
+                callback);
+        }
+
+        private IEnumerator RestoreEndlessRecors()
+        {
+            while (!PersistentState.Ready)
+                yield return null;
+            GetLeaderBoardScore(GPGSIds.leaderboard_endless_score, data=> {
+                if (data.Valid)
+                {
+                    int newValue = (int)data.PlayerScore.value;
+                    if (PersistentState.Instance.data.endlessScoreRecord <= newValue)
+                    {
+                        PersistentState.Instance.data.endlessScoreRecord = newValue;
+                    }
+                    else
+                    {
+                        UpdateEndlessScoreLeaderBoard(PersistentState.Instance.data.endlessScoreRecord);
+                    }
+                    
+                }
+            });
+            GetLeaderBoardScore(GPGSIds.leaderboard_endless_time, data =>
             {
-                Social.localUser.Authenticate(SignIn);
-            }
-            else
-            {
-                SignIn(true);
-            }
-            Instance = this;
+                if (data.Valid)
+                {
+                    int newValue = Mathf.CeilToInt((float)data.PlayerScore.value / 1000);
+                    if(PersistentState.Instance.data.endlessTimeRecord <= newValue)
+                    {
+                        PersistentState.Instance.data.endlessTimeRecord = newValue;
+                    }
+                    else
+                    {
+                        UpdateEndlessTimeLeaderBoard(PersistentState.Instance.data.endlessTimeRecord);
+                    }
+                    
+                }
+            });
         }
 
         private void SignIn(bool success)
         {
             if (success)
             {
-                Debug.Log("Successfuly signed in");
                 Ready = true;
                 DontDestroyOnLoad(gameObject);
+                StartCoroutine(RestoreEndlessRecors());
             }
             else
             {
-                Debug.Log("Sign in failed");
                 Ready = false;
             }
         }

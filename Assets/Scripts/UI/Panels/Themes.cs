@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using Assets.Scripts.Game;
 using Assets.Scripts.UI.Elements;
+using Assets.Scripts.PlayServices;
 
 namespace Assets.Scripts.UI.Panels
 {
@@ -42,6 +43,7 @@ namespace Assets.Scripts.UI.Panels
                 {
                     PersistentState.Instance.SetColorsPreset(ColorsPresets.Instance[index].name);
                     UpdateThemesSelected(index);
+                    GPServices.Instance.IncrementThemeSwitchAchievements();
                     Debug.LogFormat("ColorPreset: {0}, color1: {1}", ColorsPresets.Instance.CurrentPreset.name, ColorsPresets.Instance.CurrentPreset.uiColorPreset.buttonsColor.color1);
                 };
             else

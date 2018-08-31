@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 using System.Linq;
+using Assets.Scripts.PlayServices;
 
 namespace Assets.Scripts.Game
 {
@@ -646,6 +647,7 @@ namespace Assets.Scripts.Game
                 ExplodeShapesOnScreen();
                 if (!immediately)
                     master.State.ExplosionBonuses--;
+                GPServices.Instance.IncrementExplosionBonusAchievements();
             }
 
         }
@@ -658,6 +660,7 @@ namespace Assets.Scripts.Game
                 BonusSlowdownShapesOnScreen(master.State.Difficulty.freeze);
                 if(!immediately)
                     master.State.FreezeBonuses--;
+                GPServices.Instance.IncrementFreezeBonusAchievements();
             }
         }
 

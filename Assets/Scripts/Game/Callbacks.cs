@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Assets.Scripts.Shape;
 using Assets.Scripts.ShapeBasket;
+using Assets.Scripts.PlayServices;
 
 namespace Assets.Scripts.Game
 {
@@ -65,6 +66,7 @@ namespace Assets.Scripts.Game
                     break;
                 case ShapeType.Heart:
                     master.State.HeartBonuses++;
+                    GPServices.Instance.IncrementHeartBonusAchievements();
                     break;
                 case ShapeType.Snowflake:
                     if (master.State.ScaledPlayerReactionTime <= Difficulty.BONUS_AUTO_USE_REACTION_TIME)
