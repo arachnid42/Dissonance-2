@@ -63,7 +63,7 @@ namespace Assets.Scripts.UI.Panels
                 ThemeButton levelButton = newButton.GetComponent<ThemeButton>();
                 int themeIndex = i;
                 bool free = ColorsPresets.Instance[i].free || !ColorsPresets.Instance[i].free  && PersistentState.Instance.data.themesUnlocked;
-                levelButton.Setup(free, ColorsPresets.Instance.CurrentPreset.name== ColorsPresets.Instance[i].name, ColorsPresets.Instance[i].screenshot, ThemeButtonCallback(i, free));
+                levelButton.Setup(free, ColorsPresets.Instance.CurrentPreset.name== ColorsPresets.Instance[i].name, ColorsPresets.Instance[i], ThemeButtonCallback(i, free));
                 themesButtons.Add(newButton);
             }
         }
@@ -71,7 +71,7 @@ namespace Assets.Scripts.UI.Panels
         private void UpdateThemesSelected(int index)
         {
             for(int i=0; i<themesButtons.Count; i++)
-                themesButtons[i].GetComponent<ThemeButton>().SetSelected(i==index);
+                themesButtons[i].GetComponent<ThemeButton>().SetSelected(i==index, ColorsPresets.Instance[index]);
         }
 
 

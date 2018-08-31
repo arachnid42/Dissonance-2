@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using Assets.Scripts.Localization;
 using Assets.Scripts.UI.Panels;
+using Assets.Scripts.UI.Theme;
 using UnityEngine.EventSystems;
+using Assets.Scripts.Game;
 
 namespace Assets.Scripts.UI.Elements
 {
-    public class Slider : MonoBehaviour
+    public class Slider : BaseThemeListener
     {
         private const float ROUND_TO_INT_DELTA = 0.001f;
 
@@ -35,10 +37,11 @@ namespace Assets.Scripts.UI.Elements
         private const float VALUE_CHANGE_DELAY = 0.4f;
         private const float VALUE_CHANGE_DURATION = 1f;
 
-        private void Start()
+        private new void Start()
         {
             leftButton = transform.Find("LeftButton").gameObject;
             rightButton = transform.Find("RightButton").gameObject;
+            base.Start();
             if (leftButton != null && rightButton != null)
             {
                 EventTrigger ltrigger = leftButton.AddComponent<EventTrigger>();
@@ -69,7 +72,6 @@ namespace Assets.Scripts.UI.Elements
                 rtrigger.triggers.Add(pointerExit);
 
             }
-            CustomizeSpoiler();
         }
 
         private void OnEnable()
@@ -80,19 +82,6 @@ namespace Assets.Scripts.UI.Elements
             if (upperBind != null)
                 Max = upperBind.Value;
             UpdateValue();
-        }
-
-        private void CustomizeSpoiler()
-        {
-            var color = UIController.Instance.PanelController.configurableMenuPanel.GetComponent<ConfigurableMenu>().sliderColor;
-            if(color != null)
-            {
-                headerText.color = color;
-                valueText.color = color;
-                leftButton.GetComponent<Image>().color = color;
-                rightButton.GetComponent<Image>().color = color;
-            }
-            headerText.resizeTextMaxSize = 80;
         }
 
         private void OnLeftButtonClik()
@@ -227,6 +216,15 @@ namespace Assets.Scripts.UI.Elements
             float delay = VALUE_CHANGE_DURATION / ((max - min) / step);
             Debug.LogFormat("Delay: {0}", delay);
             return delay;
+        }
+
+        public override void OnApplyColorTheme(ColorsPreset preset)
+        {
+            headerText.color = preset.uiColorPreset.sliderColor.header;
+            valueText.color = preset.uiColorPreset.sliderColor.value;
+            leftButton.GetComponent<Image>().color = preset.uiColorPreset.sliderColor.buttons;
+            rightButton.GetComponent<Image>().color = preset.uiColorPreset.sliderColor.buttons;
+            headerText.resizeTextMaxSize = 80;
         }
     }
 }

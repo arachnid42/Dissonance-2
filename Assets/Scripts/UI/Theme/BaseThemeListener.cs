@@ -8,19 +8,19 @@ namespace Assets.Scripts.UI.Theme
 {
     public abstract class BaseThemeListener : MonoBehaviour
     {
-        private void Start()
+        protected void Start()
         {
             StartCoroutine(InitialUIThemeApplyCourotine());
             UIColorsPresets.Instance.OnUIColorPresetApply += OnApplyColorTheme;
         }
 
-        public abstract void OnApplyColorTheme(UIColorsPreset preset);
+        public abstract void OnApplyColorTheme(ColorsPreset preset);
 
         private IEnumerator InitialUIThemeApplyCourotine()
         {
             while (ColorsPresets.Instance == null || !ColorsPresets.Instance.IsReady)
                 yield return null;
-            OnApplyColorTheme(ColorsPresets.Instance.CurrentPreset.uiColorPreset);
+            OnApplyColorTheme(ColorsPresets.Instance.CurrentPreset);
         }
     }
 }

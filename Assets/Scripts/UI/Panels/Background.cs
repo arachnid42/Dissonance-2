@@ -19,10 +19,10 @@ namespace Assets.Scripts.UI.Panels
             UIColorsPresets.Instance.OnUIColorPresetApply += SetupBackground;
         }
         
-        private void SetupBackground(UIColorsPreset preset)
+        private void SetupBackground(ColorsPreset preset)
         {
-            background916 = preset.background916;
-            background918 = preset.background918;
+            background916 = preset.uiColorPreset.background916;
+            background918 = preset.uiColorPreset.background918;
             StartCoroutine(SetupBackgroundCourotine());
         }
 

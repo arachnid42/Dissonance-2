@@ -866,6 +866,24 @@ MonoBehaviour:
     primary: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
     secondary1: {r: 0.3019608, g: 0.3019608, b: 0.3019608, a: 1}
     secondary2: {r: 0.36862746, g: 0.36862746, b: 0.36862746, a: 1}
+  toggleColor:
+    background1: {r: 0, g: 0.63529414, b: 0.9882353, a: 1}
+    background2: {r: 0.90588236, g: 0, b: 0.84313726, a: 1}
+    foreground: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
+  sliderColor:
+    header: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    value: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    buttons: {r: 0.03529412, g: 0.09411765, b: 0.2, a: 1}
+  spoilerColor:
+    headerBG: {r: 1, g: 1, b: 1, a: 0.23529412}
+    contentBG: {r: 1, g: 1, b: 1, a: 0.39215687}
+    header: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    closedIcon: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
+    openedIcon: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
+  gradientColor:
+    gradient: {r: 1, g: 1, b: 1, a: 1}
+    modal: {r: 1, g: 1, b: 1, a: 1}
+    modalIconGradient: {r: 0.49019608, g: 0.5058824, b: 0.50980395, a: 1}
 --- !u!1 &21723741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,15 +1327,33 @@ MonoBehaviour:
     normal: {fileID: 21300000, guid: f73c227bf7475dd408244ae36b6a6301, type: 3}
     pressed: {fileID: 21300000, guid: 86b50504ebb60cb4f8e891a6a4021dc0, type: 3}
   buttonsColor:
-    color1: {r: 0.101960786, g: 0.56078434, b: 0.8901961, a: 1}
-    color2: {r: 0.9098039, g: 0.13333334, b: 0.4392157, a: 1}
-    color3: {r: 0.45490196, g: 0.6901961, b: 0.13725491, a: 1}
-    color4: {r: 0.94509804, g: 0.44313726, b: 0.019607844, a: 1}
-    color5: {r: 0.81960785, g: 0.06666667, b: 0.28627452, a: 1}
+    color1: {r: 0.16470589, g: 0.78431374, b: 0.8117647, a: 1}
+    color2: {r: 0.9098039, g: 0.18039216, b: 0.49803922, a: 1}
+    color3: {r: 0.14509805, g: 0.7411765, b: 0.4392157, a: 1}
+    color4: {r: 0.16078432, g: 0.5372549, b: 0.80784315, a: 1}
+    color5: {r: 0.9137255, g: 0.3019608, b: 0.30588236, a: 1}
   textColor:
     primary: {r: 1, g: 1, b: 1, a: 1}
     secondary1: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
     secondary2: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
+  toggleColor:
+    background1: {r: 0.16470589, g: 0.78431374, b: 0.8117647, a: 1}
+    background2: {r: 0.9098039, g: 0.18039216, b: 0.49803922, a: 1}
+    foreground: {r: 0.14509805, g: 0.7411765, b: 0.4392157, a: 1}
+  sliderColor:
+    header: {r: 1, g: 1, b: 1, a: 1}
+    value: {r: 0.14509805, g: 0.7411765, b: 0.4392157, a: 1}
+    buttons: {r: 0.9098039, g: 0.18039216, b: 0.49803922, a: 1}
+  spoilerColor:
+    headerBG: {r: 0, g: 0, b: 0, a: 0.49019608}
+    contentBG: {r: 0, g: 0, b: 0, a: 0.39215687}
+    header: {r: 1, g: 1, b: 1, a: 1}
+    closedIcon: {r: 0.16078432, g: 0.5372549, b: 0.80784315, a: 1}
+    openedIcon: {r: 0.14509805, g: 0.7411765, b: 0.4392157, a: 1}
+  gradientColor:
+    gradient: {r: 0.039215688, g: 0.09411765, b: 0.19607843, a: 1}
+    modal: {r: 0.3019608, g: 0.3019608, b: 0.3019608, a: 1}
+    modalIconGradient: {r: 0.3019608, g: 0.3019608, b: 0.3019608, a: 1}
 --- !u!1 &35346998
 GameObject:
   m_ObjectHideFlags: 0
@@ -2388,6 +2424,8 @@ MonoBehaviour:
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 171819572}
   buttonImage: {fileID: 940662553}
+  headerBG: {fileID: 902585765}
+  contentBG: {fileID: 171819573}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
   time: 0.25
@@ -2441,8 +2479,8 @@ RectTransform:
   m_Father: {fileID: 1816668333}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.63502574}
-  m_AnchorMax: {x: 1, y: 0.97051823}
+  m_AnchorMin: {x: 0, y: 0.6645075}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3415,8 +3453,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -1.5170082, y: -238.49998}
-  m_SizeDelta: {x: 1152.2, y: 1003}
+  m_AnchoredPosition: {x: -0.0050201, y: -240.99998}
+  m_SizeDelta: {x: 481.99, y: 482}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &115595606
 MonoBehaviour:
@@ -3438,7 +3476,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b5fca86d21936eb4a8d545767cd0caa2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 005d987670eef8842984f0bd943bce9d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3465,6 +3503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gradient: {fileID: 115595606}
+  gradientColor: 0
 --- !u!1 &116214493
 GameObject:
   m_ObjectHideFlags: 0
@@ -3475,6 +3514,7 @@ GameObject:
   - component: {fileID: 116214494}
   - component: {fileID: 116214496}
   - component: {fileID: 116214495}
+  - component: {fileID: 116214497}
   m_Layer: 5
   m_Name: LockImage
   m_TagString: Untagged
@@ -3534,6 +3574,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 116214493}
+--- !u!114 &116214497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 116214493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ede9988a49d8e848bbb31db07011d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gradient: {fileID: 116214495}
+  gradientColor: 2
 --- !u!1 &117790238
 GameObject:
   m_ObjectHideFlags: 0
@@ -3924,7 +3977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.15686275}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.3137255}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5498,6 +5551,7 @@ GameObject:
   - component: {fileID: 171396696}
   - component: {fileID: 171396698}
   - component: {fileID: 171396697}
+  - component: {fileID: 171396699}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -5565,6 +5619,19 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 171396695}
+--- !u!114 &171396699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 171396695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abad2422aa4399469a91ee27d0c5613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 171396697}
+  textColor: 1
 --- !u!1 &171819571
 GameObject:
   m_ObjectHideFlags: 0
@@ -6063,6 +6130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gradient: {fileID: 176563799}
+  gradientColor: 0
 --- !u!1 &179626004
 GameObject:
   m_ObjectHideFlags: 0
@@ -6098,7 +6166,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 575.25, y: -641.25}
+  m_AnchoredPosition: {x: 576.25, y: -546.75}
   m_SizeDelta: {x: 482, y: 482}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &179626006
@@ -6988,6 +7056,7 @@ GameObject:
   - component: {fileID: 202933564}
   - component: {fileID: 202933566}
   - component: {fileID: 202933565}
+  - component: {fileID: 202933567}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -7055,6 +7124,19 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 202933563}
+--- !u!114 &202933567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 202933563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abad2422aa4399469a91ee27d0c5613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 202933565}
+  textColor: 1
 --- !u!1001 &212157633
 Prefab:
   m_ObjectHideFlags: 0
@@ -8422,7 +8504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -510.45, y: 842.25}
+  m_AnchoredPosition: {x: -510.45, y: 716.5}
   m_SizeDelta: {x: 1020.5, y: 4270.9}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &249514295
@@ -8870,10 +8952,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 1854659871}
   contentImage: {fileID: 0}
   image: {fileID: 0}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
-  contentColor: {r: 0, g: 0, b: 0, a: 0}
   toggleGroup: {fileID: 768328455}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 10
 --- !u!114 &260616458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9850,6 +9931,7 @@ GameObject:
   - component: {fileID: 306907620}
   - component: {fileID: 306907619}
   - component: {fileID: 306907618}
+  - component: {fileID: 306907622}
   m_Layer: 5
   m_Name: SaveButton
   m_TagString: Untagged
@@ -10013,6 +10095,19 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 306907616}
+--- !u!114 &306907622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 306907616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e143b2214d3f7b4db122c5292a65ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 306907619}
+  buttonColor: 1
 --- !u!1 &307221594
 GameObject:
   m_ObjectHideFlags: 0
@@ -10526,7 +10621,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.25, y: -363.75}
+  m_AnchoredPosition: {x: 476.26862, y: -363.75}
   m_SizeDelta: {x: 951, y: 293.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &326512641
@@ -13045,7 +13140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 406707299}
-  textColor: 2
+  textColor: 1
 --- !u!1 &406943031
 GameObject:
   m_ObjectHideFlags: 0
@@ -13762,6 +13857,7 @@ GameObject:
   - component: {fileID: 436520126}
   - component: {fileID: 436520125}
   - component: {fileID: 436520124}
+  - component: {fileID: 436520128}
   m_Layer: 5
   m_Name: FunctionalButton
   m_TagString: Untagged
@@ -13925,6 +14021,19 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 436520122}
+--- !u!114 &436520128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 436520122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e143b2214d3f7b4db122c5292a65ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 436520125}
+  buttonColor: 2
 --- !u!1 &438465555
 GameObject:
   m_ObjectHideFlags: 0
@@ -15000,7 +15109,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 575.25, y: -2089.5}
+  m_AnchoredPosition: {x: 576.25, y: -1869.25}
   m_SizeDelta: {x: 770, y: 291.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &468500742
@@ -19057,6 +19166,7 @@ GameObject:
   - component: {fileID: 595088217}
   - component: {fileID: 595088219}
   - component: {fileID: 595088218}
+  - component: {fileID: 595088220}
   m_Layer: 5
   m_Name: HeaderText
   m_TagString: Untagged
@@ -19124,6 +19234,19 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 595088216}
+--- !u!114 &595088220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 595088216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abad2422aa4399469a91ee27d0c5613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 595088218}
+  textColor: 0
 --- !u!1001 &596187185
 Prefab:
   m_ObjectHideFlags: 0
@@ -19488,6 +19611,7 @@ GameObject:
   - component: {fileID: 608217156}
   - component: {fileID: 608217157}
   - component: {fileID: 608217158}
+  - component: {fileID: 608217159}
   m_Layer: 5
   m_Name: HeaderText
   m_TagString: Untagged
@@ -19555,6 +19679,19 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 3
   m_Text: Starting Mode
+--- !u!114 &608217159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 608217155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abad2422aa4399469a91ee27d0c5613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 608217158}
+  textColor: 0
 --- !u!1 &610383087
 GameObject:
   m_ObjectHideFlags: 0
@@ -21435,7 +21572,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 73749944}
   m_HandleRect: {fileID: 73749943}
   m_Direction: 2
-  m_Value: 0.9556337
+  m_Value: 1
   m_Size: 0.33549252
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -21491,6 +21628,7 @@ GameObject:
   - component: {fileID: 668787360}
   - component: {fileID: 668787359}
   - component: {fileID: 668787358}
+  - component: {fileID: 668787362}
   m_Layer: 5
   m_Name: RevertButton
   m_TagString: Untagged
@@ -21654,6 +21792,19 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 668787356}
+--- !u!114 &668787362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 668787356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e143b2214d3f7b4db122c5292a65ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 668787359}
+  buttonColor: 4
 --- !u!1 &669278843
 GameObject:
   m_ObjectHideFlags: 0
@@ -24169,10 +24320,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 451517229}
   contentImage: {fileID: 22055204}
   image: {fileID: 21300000, guid: 1de681a384f26754a8c757375d80eeee, type: 3}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.99215686, g: 0.5882353, b: 0.2509804, a: 1}
-  contentColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
   toggleGroup: {fileID: 100167983}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 7
 --- !u!114 &694175168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26543,7 +26693,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 575.25, y: -1413}
+  m_AnchoredPosition: {x: 576.25, y: -1255.75}
   m_SizeDelta: {x: 1151.5, y: 798.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &754520428
@@ -26772,8 +26922,6 @@ MonoBehaviour:
   LevelButtonPrefab: {fileID: 1181685035689780, guid: a8b982a9463947d4d90be7bc16c0744f,
     type: 2}
   LevelsContent: {fileID: 227546805}
-  passedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
-  currentColor: {r: 0.6392157, g: 0.03529412, b: 0.85882354, a: 1}
   scrollRect: {fileID: 717806394}
 --- !u!225 &763529547
 CanvasGroup:
@@ -26960,7 +27108,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.25, y: -111.25}
+  m_AnchoredPosition: {x: 476.26855, y: -111.30078}
   m_SizeDelta: {x: 951, y: 222.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &766032833
@@ -27383,6 +27531,8 @@ MonoBehaviour:
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 245856512}
   buttonImage: {fileID: 1358702981}
+  headerBG: {fileID: 257115787}
+  contentBG: {fileID: 245856513}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
   time: 0.25
@@ -27466,10 +27616,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 1364690705}
   contentImage: {fileID: 542122507}
   image: {fileID: 21300000, guid: a0cd4ac421ee8724aa707bb0c7ec07e1, type: 3}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.3372549, g: 0.32156864, b: 0.6392157, a: 1}
-  contentColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
   toggleGroup: {fileID: 100167983}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 9
 --- !u!114 &771312002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28272,7 +28421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.25, y: -697}
+  m_AnchoredPosition: {x: 476.26862, y: -697.10004}
   m_SizeDelta: {x: 951, y: 362.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &792602956
@@ -29146,10 +29295,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 1719836309}
   contentImage: {fileID: 1662911053}
   image: {fileID: 21300000, guid: a606be685795b434abb3cc20167ebd42, type: 3}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.6392157, g: 0.03529412, b: 0.85882354, a: 1}
-  contentColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
   toggleGroup: {fileID: 100167983}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 6
 --- !u!114 &820273582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29321,6 +29469,7 @@ GameObject:
   - component: {fileID: 821438117}
   - component: {fileID: 821438118}
   - component: {fileID: 821438119}
+  - component: {fileID: 821438120}
   m_Layer: 5
   m_Name: HeaderText
   m_TagString: Untagged
@@ -29388,6 +29537,19 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Target
+--- !u!114 &821438120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 821438116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abad2422aa4399469a91ee27d0c5613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 821438119}
+  textColor: 0
 --- !u!1 &823884692
 GameObject:
   m_ObjectHideFlags: 0
@@ -31846,6 +32008,8 @@ MonoBehaviour:
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 504718572}
   buttonImage: {fileID: 2136081878}
+  headerBG: {fileID: 1284658227}
+  contentBG: {fileID: 504718573}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
   time: 0.25
@@ -33657,10 +33821,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 4101197}
   contentImage: {fileID: 1725133239}
   image: {fileID: 21300000, guid: 1c752922bf98e7f4197ca31695394a9c, type: 3}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.99215686, g: 0.43137255, b: 0.6509804, a: 1}
-  contentColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
   toggleGroup: {fileID: 100167983}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 4
 --- !u!114 &923444402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34108,10 +34271,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 750645122}
   contentImage: {fileID: 0}
   image: {fileID: 0}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
-  contentColor: {r: 0, g: 0, b: 0, a: 0}
   toggleGroup: {fileID: 21723742}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 0
 --- !u!114 &935447112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34296,6 +34458,8 @@ MonoBehaviour:
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 632647698}
   buttonImage: {fileID: 1716705396}
+  headerBG: {fileID: 992539418}
+  contentBG: {fileID: 632647699}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
   time: 0.25
@@ -35237,6 +35401,8 @@ MonoBehaviour:
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 1328634956}
   buttonImage: {fileID: 1418336411}
+  headerBG: {fileID: 1598211042}
+  contentBG: {fileID: 1328634957}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
   time: 0.25
@@ -35305,8 +35471,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0069975625, y: 392.52344}
-  m_SizeDelta: {x: 1152.2, y: 1087}
+  m_AnchoredPosition: {x: -0.75748, y: 385.01}
+  m_SizeDelta: {x: 481.99, y: 482}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &962560122
 MonoBehaviour:
@@ -35328,7 +35494,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b5fca86d21936eb4a8d545767cd0caa2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 005d987670eef8842984f0bd943bce9d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -35355,6 +35521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gradient: {fileID: 962560122}
+  gradientColor: 0
 --- !u!1001 &962889431
 Prefab:
   m_ObjectHideFlags: 0
@@ -35410,7 +35577,7 @@ Prefab:
     - target: {fileID: 224573567241116162, guid: 7e9bc46df3017224293041c132d4d8e1,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 162.8
+      value: 162.76428
       objectReference: {fileID: 0}
     - target: {fileID: 224573567241116162, guid: 7e9bc46df3017224293041c132d4d8e1,
         type: 2}
@@ -35420,7 +35587,7 @@ Prefab:
     - target: {fileID: 224573567241116162, guid: 7e9bc46df3017224293041c132d4d8e1,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 72.59
+      value: 72.66151
       objectReference: {fileID: 0}
     - target: {fileID: 224573567241116162, guid: 7e9bc46df3017224293041c132d4d8e1,
         type: 2}
@@ -35646,7 +35813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.15686275}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.23529412}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -36199,6 +36366,7 @@ GameObject:
   - component: {fileID: 989135370}
   - component: {fileID: 989135369}
   - component: {fileID: 989135368}
+  - component: {fileID: 989135372}
   m_Layer: 5
   m_Name: OverlayPanelContent
   m_TagString: Untagged
@@ -36226,7 +36394,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -200, y: -1549.582}
+  m_SizeDelta: {x: -200, y: -1297.7551}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &989135368
 MonoBehaviour:
@@ -36296,6 +36464,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 989135366}
+--- !u!114 &989135372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 989135366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ede9988a49d8e848bbb31db07011d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gradient: {fileID: 989135370}
+  gradientColor: 1
 --- !u!1 &989711458
 GameObject:
   m_ObjectHideFlags: 0
@@ -36730,10 +36911,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 1083928471}
   contentImage: {fileID: 0}
   image: {fileID: 0}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
-  contentColor: {r: 0, g: 0, b: 0, a: 0}
   toggleGroup: {fileID: 21723742}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 0
 --- !u!114 &997873446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38068,7 +38248,6 @@ MonoBehaviour:
   revert: {fileID: 1503135950}
   back: {fileID: 1347876881}
   configurableMapper: {fileID: 1581502692}
-  sliderColor: {r: 0.3019608, g: 0.3019608, b: 0.3019608, a: 1}
 --- !u!225 &1020521710
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -38619,7 +38798,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.25, y: -1040.25}
+  m_AnchoredPosition: {x: 476.26862, y: -1040.15}
   m_SizeDelta: {x: 950.6, y: 323.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1034891974
@@ -39055,6 +39234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gradient: {fileID: 1047289749}
+  gradientColor: 0
 --- !u!1 &1052586096
 GameObject:
   m_ObjectHideFlags: 0
@@ -41992,10 +42172,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 1681113520}
   contentImage: {fileID: 0}
   image: {fileID: 0}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
-  contentColor: {r: 0, g: 0, b: 0, a: 0}
   toggleGroup: {fileID: 1690421819}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 0
 --- !u!114 &1122811323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42400,6 +42579,7 @@ GameObject:
   - component: {fileID: 1127870280}
   - component: {fileID: 1127870282}
   - component: {fileID: 1127870281}
+  - component: {fileID: 1127870283}
   m_Layer: 5
   m_Name: MessangeText
   m_TagString: Untagged
@@ -42467,6 +42647,19 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1127870279}
+--- !u!114 &1127870283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1127870279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abad2422aa4399469a91ee27d0c5613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1127870281}
+  textColor: 0
 --- !u!1 &1128852553
 GameObject:
   m_ObjectHideFlags: 0
@@ -42626,10 +42819,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 958609069}
   contentImage: {fileID: 0}
   image: {fileID: 0}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
-  contentColor: {r: 0, g: 0, b: 0, a: 0}
   toggleGroup: {fileID: 1690421819}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 0
 --- !u!114 &1130872467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43313,6 +43505,7 @@ Transform:
   m_Children:
   - {fileID: 21549824}
   - {fileID: 33657849}
+  - {fileID: 1360443390}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -43693,10 +43886,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 820415328}
   contentImage: {fileID: 0}
   image: {fileID: 0}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
-  contentColor: {r: 0, g: 0, b: 0, a: 0}
   toggleGroup: {fileID: 1576473194}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 0
 --- !u!114 &1162441612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43817,7 +44009,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.25, y: -921.25}
+  m_AnchoredPosition: {x: 475.25, y: -921.2499}
   m_SizeDelta: {x: 951, y: 362.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1163085941
@@ -44646,6 +44838,30 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1188831206}
+--- !u!1 &1189988067 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1823842228825872, guid: 2050bc28cf9686d41877c03c18a2332b,
+    type: 2}
+  m_PrefabInternal: {fileID: 587650958}
+--- !u!114 &1189988069 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114111667406953512, guid: 2050bc28cf9686d41877c03c18a2332b,
+    type: 2}
+  m_PrefabInternal: {fileID: 587650958}
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!114 &1189988072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1189988067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e143b2214d3f7b4db122c5292a65ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1189988069}
+  buttonColor: 2
 --- !u!1 &1192250729
 GameObject:
   m_ObjectHideFlags: 0
@@ -44685,7 +44901,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -200, y: -1098.782}
+  m_SizeDelta: {x: -200, y: -846.9551}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1192250731
 MonoBehaviour:
@@ -45497,7 +45713,6 @@ GameObject:
   - component: {fileID: 1222866620}
   - component: {fileID: 1222866623}
   - component: {fileID: 1222866622}
-  - component: {fileID: 1222866624}
   m_Layer: 5
   m_Name: RatePanelContent
   m_TagString: Untagged
@@ -45595,18 +45810,6 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
---- !u!114 &1222866624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1222866618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ede9988a49d8e848bbb31db07011d2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gradient: {fileID: 1222866620}
 --- !u!1 &1226975262
 GameObject:
   m_ObjectHideFlags: 0
@@ -47067,10 +47270,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 945610346}
   contentImage: {fileID: 1174360509}
   image: {fileID: 21300000, guid: 3390bb90cb17d8240a6868937f4f3079, type: 3}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  contentColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
   toggleGroup: {fileID: 100167983}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 3
 --- !u!114 &1286904295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48191,6 +48393,8 @@ MonoBehaviour:
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 1320357620}
   buttonImage: {fileID: 348206662}
+  headerBG: {fileID: 2064986144}
+  contentBG: {fileID: 1320357621}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
   time: 0.25
@@ -48618,6 +48822,8 @@ MonoBehaviour:
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 244056544}
   buttonImage: {fileID: 550107643}
+  headerBG: {fileID: 2137028174}
+  contentBG: {fileID: 244056545}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
   time: 0.25
@@ -48865,10 +49071,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 288660974}
   contentImage: {fileID: 788099843}
   image: {fileID: 21300000, guid: f68bb88c54a8dec49876fbf194f5be92, type: 3}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.6, g: 0, b: 0.4, a: 1}
-  contentColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
   toggleGroup: {fileID: 100167983}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 2
 --- !u!114 &1338355263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49420,6 +49625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gradient: {fileID: 1349928858}
+  gradientColor: 0
 --- !u!1 &1355290916
 GameObject:
   m_ObjectHideFlags: 0
@@ -49579,10 +49785,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 17101904}
   contentImage: {fileID: 359313881}
   image: {fileID: 21300000, guid: 1f5e50ec033724442b35d836a8a2d1e1, type: 3}
-  backgroundColor: {r: 0.90588236, g: 0, b: 0.84313726, a: 1}
-  foregroundColor: {r: 0.8117647, g: 0.7647059, b: 0.07058824, a: 1}
-  contentColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
   toggleGroup: {fileID: 0}
+  toggleBackgroundColor: 1
+  toggleForegroundColor: 0
 --- !u!114 &1356811719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49797,6 +50002,105 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1358702978}
+--- !u!1 &1360443389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1360443390}
+  - component: {fileID: 1360443391}
+  m_Layer: 0
+  m_Name: DefaultDark (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1360443390
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1360443389}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1157826137}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1360443391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1360443389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55fbbe5df78c3574d885bb4d9324cea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  background916: {fileID: 21300000, guid: 44475129a323e7f4e9d5b83bcba6bfb7, type: 3}
+  background918: {fileID: 21300000, guid: 3fbfefdf78da03e4e9c8c6efa64370b8, type: 3}
+  logo: {fileID: 21300000, guid: 93068a9e59006b249b3a5f7d1f1aa216, type: 3}
+  gradient: {r: 0.039215688, g: 0.09411765, b: 0.19607843, a: 1}
+  playButton:
+    normal: {fileID: 21300000, guid: f73c227bf7475dd408244ae36b6a6301, type: 3}
+    pressed: {fileID: 21300000, guid: 86b50504ebb60cb4f8e891a6a4021dc0, type: 3}
+  buttonsColor:
+    color1: {r: 0.101960786, g: 0.56078434, b: 0.8901961, a: 1}
+    color2: {r: 0.9098039, g: 0.13333334, b: 0.4392157, a: 1}
+    color3: {r: 0.45490196, g: 0.6901961, b: 0.13725491, a: 1}
+    color4: {r: 0.94509804, g: 0.44313726, b: 0.019607844, a: 1}
+    color5: {r: 0.81960785, g: 0.06666667, b: 0.28627452, a: 1}
+  textColor:
+    primary: {r: 1, g: 1, b: 1, a: 1}
+    secondary1: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
+    secondary2: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
+  toggleColor:
+    background1: {r: 0, g: 0, b: 0, a: 0}
+    background2: {r: 0, g: 0, b: 0, a: 0}
+    foreground: {r: 0, g: 0, b: 0, a: 0}
+  sliderColor:
+    header: {r: 0, g: 0, b: 0, a: 0}
+    value: {r: 0, g: 0, b: 0, a: 0}
+    buttons: {r: 0, g: 0, b: 0, a: 0}
+  spoilerColor:
+    headerBG: {r: 0, g: 0, b: 0, a: 0}
+    contentBG: {r: 0, g: 0, b: 0, a: 0}
+    header: {r: 0, g: 0, b: 0, a: 0}
+    closedIcon: {r: 0, g: 0, b: 0, a: 0}
+    openedIcon: {r: 0, g: 0, b: 0, a: 0}
+  gradientColor:
+    gradient: {r: 0, g: 0, b: 0, a: 0}
+    modal: {r: 0, g: 0, b: 0, a: 0}
+    modalIconGradient: {r: 0, g: 0, b: 0, a: 0}
+--- !u!1 &1362643334 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1823842228825872, guid: 2050bc28cf9686d41877c03c18a2332b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1808213219}
+--- !u!114 &1362643336 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114111667406953512, guid: 2050bc28cf9686d41877c03c18a2332b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1808213219}
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!114 &1362643339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1362643334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e143b2214d3f7b4db122c5292a65ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1362643336}
+  buttonColor: 2
 --- !u!1 &1364690703
 GameObject:
   m_ObjectHideFlags: 0
@@ -50504,6 +50808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gradient: {fileID: 1385455934}
+  gradientColor: 0
 --- !u!1001 &1387108333
 Prefab:
   m_ObjectHideFlags: 0
@@ -51088,10 +51393,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 1460943722}
   contentImage: {fileID: 0}
   image: {fileID: 0}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
-  contentColor: {r: 0, g: 0, b: 0, a: 0}
   toggleGroup: {fileID: 1576473194}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 0
 --- !u!114 &1403844274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51838,7 +52142,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 476.25, y: -226.25}
+  m_AnchoredPosition: {x: 475.25, y: -226.25}
   m_SizeDelta: {x: 951, y: 452.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1430549418
@@ -52451,6 +52755,7 @@ GameObject:
   - component: {fileID: 1437339286}
   - component: {fileID: 1437339285}
   - component: {fileID: 1437339284}
+  - component: {fileID: 1437339287}
   m_Layer: 5
   m_Name: TitleText
   m_TagString: Untagged
@@ -52518,6 +52823,19 @@ RectTransform:
   m_AnchoredPosition: {x: 1.011, y: -82}
   m_SizeDelta: {x: 999.52, y: 164.1}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1437339287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1437339283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abad2422aa4399469a91ee27d0c5613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1437339284}
+  textColor: 0
 --- !u!1 &1437351032
 GameObject:
   m_ObjectHideFlags: 0
@@ -55330,7 +55648,6 @@ GameObject:
   - component: {fileID: 1546847438}
   - component: {fileID: 1546847440}
   - component: {fileID: 1546847439}
-  - component: {fileID: 1546847442}
   - component: {fileID: 1546847441}
   m_Layer: 5
   m_Name: ScoreTypeText
@@ -55412,19 +55729,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 1546847439}
   textColor: 2
---- !u!114 &1546847442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1546847437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2abad2422aa4399469a91ee27d0c5613, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  textColor: 0
 --- !u!1 &1549585756
 GameObject:
   m_ObjectHideFlags: 0
@@ -55687,7 +55991,6 @@ GameObject:
   - component: {fileID: 1562329345}
   - component: {fileID: 1562329347}
   - component: {fileID: 1562329346}
-  - component: {fileID: 1562329348}
   m_Layer: 5
   m_Name: TitleText
   m_TagString: Untagged
@@ -55755,19 +56058,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1562329344}
---- !u!114 &1562329348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1562329344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2abad2422aa4399469a91ee27d0c5613, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 1562329346}
-  textColor: 1
 --- !u!1 &1562549031
 GameObject:
   m_ObjectHideFlags: 0
@@ -56271,6 +56561,8 @@ MonoBehaviour:
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 625346059}
   buttonImage: {fileID: 715635165}
+  headerBG: {fileID: 379657307}
+  contentBG: {fileID: 625346060}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
   time: 0.25
@@ -57800,7 +58092,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 575.25, y: -167.25}
+  m_AnchoredPosition: {x: 576.25, y: -135.75}
   m_SizeDelta: {x: 892, y: 203}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1606930917
@@ -59470,6 +59762,7 @@ GameObject:
   - component: {fileID: 1642893324}
   - component: {fileID: 1642893323}
   - component: {fileID: 1642893322}
+  - component: {fileID: 1642893326}
   m_Layer: 5
   m_Name: OverlayPanelContent
   m_TagString: Untagged
@@ -59495,7 +59788,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -200, y: -1355.8551}
+  m_SizeDelta: {x: -200, y: -1607.682}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1642893322
 MonoBehaviour:
@@ -59565,6 +59858,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1642893320}
+--- !u!114 &1642893326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1642893320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ede9988a49d8e848bbb31db07011d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gradient: {fileID: 1642893324}
+  gradientColor: 1
 --- !u!1 &1643805525
 GameObject:
   m_ObjectHideFlags: 0
@@ -60351,10 +60657,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 537012489}
   contentImage: {fileID: 0}
   image: {fileID: 0}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
-  contentColor: {r: 0, g: 0, b: 0, a: 0}
   toggleGroup: {fileID: 21723742}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 0
 --- !u!114 &1660945259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60682,6 +60987,7 @@ GameObject:
   - component: {fileID: 1675864898}
   - component: {fileID: 1675864897}
   - component: {fileID: 1675864896}
+  - component: {fileID: 1675864900}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -60845,6 +61151,19 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1675864894}
+--- !u!114 &1675864900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1675864894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e143b2214d3f7b4db122c5292a65ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1675864897}
+  buttonColor: 3
 --- !u!1001 &1679258470
 Prefab:
   m_ObjectHideFlags: 0
@@ -62137,10 +62456,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 193398702}
   contentImage: {fileID: 719726741}
   image: {fileID: 21300000, guid: bbc20bea3f495fe449e2999101aed08e, type: 3}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.9098039, g: 0.24705882, b: 0.4, a: 1}
-  contentColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
   toggleGroup: {fileID: 100167983}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 8
 --- !u!114 &1711642159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62341,6 +62659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gradient: {fileID: 1715734111}
+  gradientColor: 0
 --- !u!1 &1716705393
 GameObject:
   m_ObjectHideFlags: 0
@@ -62587,6 +62906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gradient: {fileID: 1716783101}
+  gradientColor: 0
 --- !u!1 &1719836307
 GameObject:
   m_ObjectHideFlags: 0
@@ -63260,7 +63580,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.25, y: -108.5}
+  m_AnchoredPosition: {x: 476.26862, y: -108.5}
   m_SizeDelta: {x: 951, y: 217}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1733238982
@@ -63464,10 +63784,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 1464994491}
   contentImage: {fileID: 0}
   image: {fileID: 0}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
-  contentColor: {r: 0, g: 0, b: 0, a: 0}
   toggleGroup: {fileID: 768328455}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 10
 --- !u!114 &1736525438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63566,6 +63885,7 @@ GameObject:
   - component: {fileID: 1738883522}
   - component: {fileID: 1738883524}
   - component: {fileID: 1738883523}
+  - component: {fileID: 1738883525}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -63624,6 +63944,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1738883521}
+--- !u!114 &1738883525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1738883521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ede9988a49d8e848bbb31db07011d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gradient: {fileID: 1738883523}
+  gradientColor: 0
 --- !u!1 &1739778088
 GameObject:
   m_ObjectHideFlags: 0
@@ -65342,7 +65675,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.25, y: -369.25}
+  m_AnchoredPosition: {x: 476.26862, y: -369.25}
   m_SizeDelta: {x: 951, y: 293.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1798795161 stripped
@@ -65914,10 +66247,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 692372532}
   contentImage: {fileID: 0}
   image: {fileID: 0}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
-  contentColor: {r: 0, g: 0, b: 0, a: 0}
   toggleGroup: {fileID: 1080894529}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 0
 --- !u!114 &1802333410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66452,10 +66784,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 1017106069}
   contentImage: {fileID: 0}
   image: {fileID: 0}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
-  contentColor: {r: 0, g: 0, b: 0, a: 0}
   toggleGroup: {fileID: 1080894529}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 0
 --- !u!114 &1813575270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69832,6 +70163,8 @@ MonoBehaviour:
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 1820517495}
   buttonImage: {fileID: 781638022}
+  headerBG: {fileID: 818746941}
+  contentBG: {fileID: 1820517496}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
   time: 0.25
@@ -70854,8 +71187,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.006997685, y: 343}
-  m_SizeDelta: {x: 1152.2, y: 1087}
+  m_AnchoredPosition: {x: -0.76794, y: 335.51}
+  m_SizeDelta: {x: 481.96, y: 482}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1921037748
 MonoBehaviour:
@@ -70877,7 +71210,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b5fca86d21936eb4a8d545767cd0caa2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 005d987670eef8842984f0bd943bce9d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -70904,6 +71237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gradient: {fileID: 1921037748}
+  gradientColor: 0
 --- !u!95 &1924128215
 Animator:
   serializedVersion: 3
@@ -71069,6 +71403,8 @@ MonoBehaviour:
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 2084954564}
   buttonImage: {fileID: 535610511}
+  headerBG: {fileID: 831501329}
+  contentBG: {fileID: 2084954565}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
   time: 0.25
@@ -73606,10 +73942,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 1121090331}
   contentImage: {fileID: 668362139}
   image: {fileID: 21300000, guid: 275a0e5163a47164fa1f4615596ff218, type: 3}
-  backgroundColor: {r: 0.90588236, g: 0, b: 0.84313726, a: 1}
-  foregroundColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
-  contentColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
   toggleGroup: {fileID: 0}
+  toggleBackgroundColor: 1
+  toggleForegroundColor: 1
 --- !u!114 &2008831317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73759,10 +74094,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 1570154145}
   contentImage: {fileID: 0}
   image: {fileID: 0}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.18431373, g: 0.7490196, b: 0.76862746, a: 1}
-  contentColor: {r: 0, g: 0, b: 0, a: 0}
   toggleGroup: {fileID: 768328455}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 10
 --- !u!114 &2009628735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73885,7 +74219,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 476.25, y: -572.75}
+  m_AnchoredPosition: {x: 475.25, y: -572.7501}
   m_SizeDelta: {x: 820, y: 240.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2010452844
@@ -75395,10 +75729,9 @@ MonoBehaviour:
   foregroundImage: {fileID: 144560840}
   contentImage: {fileID: 461539241}
   image: {fileID: 21300000, guid: 312fc35bb35eab9489f36a2c543cbea1, type: 3}
-  backgroundColor: {r: 0.30980393, g: 0.5372549, b: 0.85882354, a: 1}
-  foregroundColor: {r: 0.45490196, g: 0.6901961, b: 0.13725491, a: 1}
-  contentColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
   toggleGroup: {fileID: 100167983}
+  toggleBackgroundColor: 0
+  toggleForegroundColor: 5
 --- !u!114 &2056889155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75685,6 +76018,8 @@ MonoBehaviour:
   spoilerOpenedImage: {fileID: 21300000, guid: 7d438c5cce4873a4798186c3e451330c, type: 3}
   content: {fileID: 1613955555}
   buttonImage: {fileID: 2054668923}
+  headerBG: {fileID: 929892048}
+  contentBG: {fileID: 1613955556}
   closedColor: {r: 0.30980393, g: 0.5372549, b: 0.8588236, a: 1}
   openedColor: {r: 0.18431373, g: 0.7490196, b: 0.7686275, a: 1}
   time: 0.25
@@ -76622,8 +76957,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 120}
-  m_SizeDelta: {x: 1807.9, y: 1957}
+  m_AnchoredPosition: {x: -0.012726, y: 119.8}
+  m_SizeDelta: {x: 1150.4, y: 775.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2080067901
 MonoBehaviour:
@@ -76638,7 +76973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -76672,6 +77007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gradient: {fileID: 2080067901}
+  gradientColor: 0
 --- !u!1 &2082999040
 GameObject:
   m_ObjectHideFlags: 0
@@ -77470,7 +77806,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475.25, y: -630.75}
+  m_AnchoredPosition: {x: 476.26862, y: -630.85}
   m_SizeDelta: {x: 742.5, y: 240.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2113688463

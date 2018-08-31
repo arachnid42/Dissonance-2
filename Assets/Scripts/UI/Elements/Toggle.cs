@@ -3,10 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Assets.Scripts.Localization;
+using Assets.Scripts.UI.Theme;
+using Assets.Scripts.Game;
+
 
 namespace Assets.Scripts.UI.Elements
 {
-    public class Toggle : MonoBehaviour
+    public enum ToggleBackgroundColors
+    {
+        background1,
+        background2
+    }
+
+    public enum ToggleForegroundColors
+    {
+        tile1,
+        tile2,
+        tile3,
+        tile4,
+        tile5,
+        tile6,
+        tile7,
+        tile8,
+        tile9,
+        tile10,
+        foreground
+    }
+
+    public class Toggle : BaseThemeListener
     {
         [SerializeField]
         private string name = null;
@@ -20,17 +44,17 @@ namespace Assets.Scripts.UI.Elements
         [SerializeField]
         private Sprite image = null;
         [SerializeField]
-        private Color backgroundColor, foregroundColor, contentColor;
-        [SerializeField]
         private ToggleGroup toggleGroup = null;
+        [SerializeField]
+        private ToggleBackgroundColors toggleBackgroundColor;
+        [SerializeField]
+        private ToggleForegroundColors toggleForegroundColor;
 
-        private Color backgroundOffColor;
+        private Color backgroundColor, foregroundColor, backgroundOffColor, contentColor;
 
-        private void Start()
+        private new void Start()
         {
-            backgroundImage.color = backgroundColor;
-            foregroundImage.color = foregroundColor;
-            backgroundOffColor = new Color(backgroundColor.r, backgroundColor.g, backgroundColor.b, 0);
+            base.Start();
             if(toggleGroup != null)
             {
                 toggleGroup.AddToggleToGroup(this);
@@ -42,11 +66,6 @@ namespace Assets.Scripts.UI.Elements
         {
             if(titleText != null)
                 titleText.text = name !=null && name != ""? LocalizationManager.Instance[name]: "Title";
-            if (contentImage != null)
-            {
-                contentImage.sprite = image;
-                contentImage.color = contentColor;
-            }
             Value = isOn;
         }
 
@@ -55,12 +74,6 @@ namespace Assets.Scripts.UI.Elements
             if(toggleGroup != null )
             {
                 toggleGroup.OnToggleGroup(gameObject.name);
-
-                //if (!isOn)
-                //{
-                //    Value = !isOn;
-                //    toggleGroup.OnToggleGroup(gameObject.name);
-                //}
             }
             else
             {
@@ -72,7 +85,6 @@ namespace Assets.Scripts.UI.Elements
         {
             get { return isOn; }
             set {
-                //Debug.LogFormat("Toggle {0}, {1}",gameObject.name,value);
                 if (allowSwitchOff)
                 {
                     isOn = value;
@@ -99,6 +111,31 @@ namespace Assets.Scripts.UI.Elements
             {
                 backgroundImage.color = backgroundOffColor;
             }
+        }
+
+        public override void OnApplyColorTheme(ColorsPreset preset)
+        {
+            backgroundColor = preset.uiColorPreset.toggleColor.GetBackgroundColorByName(toggleBackgroundColor);
+            backgroundImage.color = backgroundColor;
+            if(contentImage != null)
+            {
+                contentImage.sprite = image;
+                int index = (int)toggleForegroundColor;
+                if(index > 0 && index < preset.main.Length)
+                {
+                    foregroundImage.color = preset.main[(int)toggleForegroundColor];
+                }
+                else
+                {
+                    foregroundImage.color = preset.uiColorPreset.toggleColor.GetForegroundColorByName(toggleForegroundColor);
+                }
+                contentImage.color = preset.tileShapes;
+            }
+            else
+            {
+                foregroundImage.color = preset.uiColorPreset.toggleColor.GetForegroundColorByName(toggleForegroundColor);
+            }
+            backgroundOffColor = new Color(backgroundColor.r, backgroundColor.g, backgroundColor.b, 0);
         }
     }
 }
