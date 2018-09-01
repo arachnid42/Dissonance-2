@@ -34,9 +34,7 @@ namespace Assets.Scripts.UI.Panels
         }
 
         public void OnScoreButtonClick()
-        {
-            //GPServices.Instance.OpenEndlessScoreRecord();
-            //return;
+        {            
             DifficultyLevels.Instance.LevelName = "Endless";
             DifficultyLevels.Instance.CurrentDifficulty.target.scoreBased = true;
             UIController.Instance.PanelController.mainMenuPanel.GetComponent<MainMenu>().StartGame();
@@ -44,8 +42,6 @@ namespace Assets.Scripts.UI.Panels
 
         public void OnTimeButtonClick()
         {
-            //GPServices.Instance.OpenEndlessTimeLeaderBoard();
-            //return;
             DifficultyLevels.Instance.LevelName = "Endless";
             DifficultyLevels.Instance.CurrentDifficulty.target.scoreBased = false;
             UIController.Instance.PanelController.mainMenuPanel.GetComponent<MainMenu>().StartGame();
@@ -53,12 +49,12 @@ namespace Assets.Scripts.UI.Panels
 
         public void OnScoreLeaderboard()
         {
-            Debug.Log("OnScoreLeaderboard");
+            GPServices.Instance.OpenEndlessScoreRecord();
         }
 
         public void OnTimeLeaderboard()
         {
-            Debug.Log("OnTimeLeaderboard");
+            GPServices.Instance.OpenEndlessTimeLeaderBoard();
         }
 
         public string FormatTimeScore(int scoreSeconds)

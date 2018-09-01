@@ -113,6 +113,11 @@ namespace Assets.Scripts.PlayServices
             }
         }
 
+        public void OpenAchievements()
+        {
+            PlayGamesPlatform.Instance.ShowAchievementsUI();
+        }
+
         public void OpenEndlessTimeLeaderBoard()
         {
             PlayGamesPlatform.Instance.ShowLeaderboardUI(GPGSIds.leaderboard_endless_time);

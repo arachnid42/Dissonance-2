@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Assets.Scripts.Game;
+using Assets.Scripts.PlayServices;
 
 namespace Assets.Scripts.UI.Panels
 {
@@ -93,7 +94,7 @@ namespace Assets.Scripts.UI.Panels
 
         public void OnAchievementsClick()
         {
-            Debug.Log("OnAchievementsClick");
+            GPServices.Instance.OpenAchievements();
         }
 
         public void OnShareButtonClick()
