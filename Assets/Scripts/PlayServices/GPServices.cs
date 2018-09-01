@@ -52,7 +52,7 @@ namespace Assets.Scripts.PlayServices
         private void GetLeaderBoardScore(string id, Action<LeaderboardScoreData> callback)
         {
             PlayGamesPlatform.Instance.LoadScores(
-                GPGSIds.leaderboard_endless_score,
+                id,
                 LeaderboardStart.PlayerCentered,
                 1,
                 LeaderboardCollection.Social,
@@ -69,6 +69,10 @@ namespace Assets.Scripts.PlayServices
                 if (data.Valid)
                 {
                     int newValue = (int)data.PlayerScore.value;
+                    if (newValue > 0)
+                    {
+                        PersistentState.Instance.data.endlessModeUnlocked = true;
+                    }
                     if (PersistentState.Instance.data.endlessScoreRecord <= newValue)
                     {
                         PersistentState.Instance.data.endlessScoreRecord = newValue;
@@ -77,7 +81,6 @@ namespace Assets.Scripts.PlayServices
                     {
                         UpdateEndlessScoreLeaderBoard(PersistentState.Instance.data.endlessScoreRecord);
                     }
-                    
                 }
             });
             GetLeaderBoardScore(GPGSIds.leaderboard_endless_time, data =>
@@ -85,7 +88,14 @@ namespace Assets.Scripts.PlayServices
                 //Debug.Log("Is authentificated endless time:" + Social.localUser.authenticated);
                 if (data.Valid)
                 {
+                    //Debug.Log("Time score date:" + data.PlayerScore.date);
+                    //Debug.Log("Time leaderboard value:" + data.PlayerScore.value);
+                    //Debug.Log("Time leaderboard fvalue:" + data.PlayerScore.formattedValue);
                     int newValue = Mathf.CeilToInt((float)data.PlayerScore.value / 1000);
+                    if (newValue > 0)
+                    {
+                        PersistentState.Instance.data.endlessModeUnlocked = true;
+                    }
                     if(PersistentState.Instance.data.endlessTimeRecord <= newValue)
                     {
                         PersistentState.Instance.data.endlessTimeRecord = newValue;
@@ -94,9 +104,33 @@ namespace Assets.Scripts.PlayServices
                     {
                         UpdateEndlessTimeLeaderBoard(PersistentState.Instance.data.endlessTimeRecord);
                     }
-                    
                 }
             });
+        }
+
+        private IEnumerator RestoreLockedItemsUsingAchievements()
+        {
+            while (!PersistentState.Ready)
+                yield return null;
+            if (PlayGamesPlatform.Instance.GetAchievement(GPGSIds.achievement_reaction_master).IsUnlocked)
+            {
+                PersistentState.Instance.data.endlessModeUnlocked = true;
+                PersistentState.Instance.data.customModeUnlocked = true;
+                while (DifficultyLevels.Instance == null)
+                    yield return null;
+                PersistentState.Instance.data.levelsUnlocked = DifficultyLevels.Instance.LevelCount;
+            }
+            else
+            {
+                if (PlayGamesPlatform.Instance.GetAchievement(GPGSIds.achievement_configuration_master).IsUnlocked)
+                {
+                    PersistentState.Instance.data.customModeUnlocked = true;
+                }
+                if (PlayGamesPlatform.Instance.GetAchievement(GPGSIds.achievement_neverending_story).IsUnlocked)
+                {
+                    PersistentState.Instance.data.endlessModeUnlocked = true;
+                }
+            }
         }
 
         private void SignIn(bool success)
@@ -106,6 +140,7 @@ namespace Assets.Scripts.PlayServices
                 Ready = true;
                 DontDestroyOnLoad(gameObject);
                 StartCoroutine(RestoreEndlessRecors());
+                StartCoroutine(RestoreLockedItemsUsingAchievements());
             }
             else
             {
