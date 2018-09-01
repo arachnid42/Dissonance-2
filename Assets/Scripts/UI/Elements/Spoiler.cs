@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Assets.Scripts.Localization;
+using Assets.Scripts.Game;
+using Assets.Scripts.UI.Theme;
 
 namespace Assets.Scripts.UI.Elements
 {
-    public abstract class Spoiler<T> : MonoBehaviour
+    public abstract class Spoiler<T> : BaseThemeListener
     {
         [SerializeField]
         private string name = null;
@@ -20,7 +22,7 @@ namespace Assets.Scripts.UI.Elements
         [SerializeField]
         private RectTransform content;
         [SerializeField]
-        private Image buttonImage;
+        private Image buttonImage, headerBG, contentBG;
         [SerializeField]
         private Color closedColor, openedColor;
         [SerializeField]
@@ -35,10 +37,10 @@ namespace Assets.Scripts.UI.Elements
         public abstract T GetData();
         public abstract void SetData(T data);
 
-        private void Start()
+        private new void Start()
         {
+            base.Start();
             InitCurve();
-
         }
 
         private void OnEnable()
@@ -109,6 +111,15 @@ namespace Assets.Scripts.UI.Elements
                 curve.AddKey(new Keyframe(0, 0, tan45, 0));
                 curve.AddKey(new Keyframe(1, 1, 0, tan45));
             }
+        }
+
+        public override void OnApplyColorTheme(ColorsPreset preset)
+        {
+            headerText.color = preset.uiColorPreset.spoilerColor.header;
+            openedColor = preset.uiColorPreset.spoilerColor.openedIcon;
+            closedColor = preset.uiColorPreset.spoilerColor.closedIcon;
+            headerBG.color = preset.uiColorPreset.spoilerColor.headerBG;
+            contentBG.color = preset.uiColorPreset.spoilerColor.contentBG;
         }
     }
 }

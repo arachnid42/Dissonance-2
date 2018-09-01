@@ -11,9 +11,9 @@ namespace Assets.Scripts.UI.Theme
         [SerializeField]
         private Image logo;
 
-        public override void OnApplyColorTheme(UIColorsPreset preset)
+        public override void OnApplyColorTheme(ColorsPreset preset)
         {
-            logo.sprite = preset.logo;
+            logo.sprite = preset.uiColorPreset.logo;
         }
     }
 }

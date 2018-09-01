@@ -22,9 +22,9 @@ namespace Assets.Scripts.UI.Theme
         [SerializeField]
         private ButtonsColors buttonColor;
 
-        public override void OnApplyColorTheme(UIColorsPreset preset)
+        public override void OnApplyColorTheme(ColorsPreset preset)
         {
-            button.GetComponent<Image>().color = preset.buttonsColor[buttonColor];
+            button.GetComponent<Image>().color = preset.uiColorPreset.buttonsColor[buttonColor];
         }
     }
 }

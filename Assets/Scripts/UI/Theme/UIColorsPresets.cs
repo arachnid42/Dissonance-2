@@ -6,7 +6,7 @@ namespace Assets.Scripts.UI.Theme
 {
     public class UIColorsPresets: MonoBehaviour
     {
-        public System.Action<UIColorsPreset> OnUIColorPresetApply = (preset) => { Debug.LogFormat("OnUIColorPresetApply {0}", preset.name); };
+        public System.Action<ColorsPreset> OnUIColorPresetApply = (preset) => { Debug.LogFormat("OnUIColorPresetApply {0}", preset.name); };
         private static UIColorsPresets instance = null;
         public static UIColorsPresets Instance
         {
@@ -30,8 +30,7 @@ namespace Assets.Scripts.UI.Theme
 
         public void ApplyUIColorPreset()
         {
-            UIColorsPreset preset = ColorsPresets.Instance.CurrentPreset.uiColorPreset;
-            Debug.LogFormat("APPLYING UI COLOR PRESET {0}", preset.name);
+            ColorsPreset preset = ColorsPresets.Instance.CurrentPreset;
             OnUIColorPresetApply(preset);
         }
 

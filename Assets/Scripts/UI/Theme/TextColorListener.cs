@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Assets.Scripts.Game;
 
 namespace Assets.Scripts.UI.Theme
 {
@@ -19,9 +20,9 @@ namespace Assets.Scripts.UI.Theme
         [SerializeField]
         private TextColors textColor;
 
-        public override void OnApplyColorTheme(UIColorsPreset preset)
+        public override void OnApplyColorTheme(ColorsPreset preset)
         {
-            text.color = preset.textColor[textColor];
+            text.color = preset.uiColorPreset.textColor[textColor];
         }
     }
 }

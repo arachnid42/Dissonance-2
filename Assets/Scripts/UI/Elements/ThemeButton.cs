@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using Assets.Scripts.Localization;
+using Assets.Scripts.Game;
+using Assets.Scripts.UI.Theme;
+
 
 namespace Assets.Scripts.UI.Elements
 {
@@ -27,15 +30,31 @@ namespace Assets.Scripts.UI.Elements
 
         private const float BADGE_UNSELECTED_X = 73;
         private const float BADGE_UNSELECTED_Y = 216.8f;
-        private const float BADGE_SELECTED_X = 68;
-        private const float BADGE_SELECTED_Y = 211.8f;
 
-        public void Setup(bool isFree, bool isSelected, Sprite background, UnityAction action)
+        public void Setup(bool isFree, bool isSelected, ColorsPreset preset, UnityAction action)
         {
             SetupBadge(isFree);
-            SetSelected(isSelected);
+            SetSelected(isSelected, preset);
             button.onClick.AddListener(action);
-            backgroundImage.GetComponent<Image>().sprite = background;
+            backgroundImage.GetComponent<Image>().sprite = preset.screenshot;
+            StartCoroutine(InitialUIThemeApplyCourotine());
+        }
+        private void OnApplyColorTheme(ColorsPreset preset)
+        {
+            ColorBlock colors = new ColorBlock();
+            colors = button.colors;
+            colors.normalColor = preset.uiColorPreset.buttonsColor.color1;
+            colors.pressedColor = preset.uiColorPreset.buttonsColor.color2;
+            colors.disabledColor = preset.uiColorPreset.buttonsColor.color5;
+            button.colors = colors;
+
+        }
+
+        private IEnumerator InitialUIThemeApplyCourotine()
+        {
+            while (ColorsPresets.Instance == null || !ColorsPresets.Instance.IsReady)
+                yield return null;
+            OnApplyColorTheme(ColorsPresets.Instance.CurrentPreset);
         }
 
         private void SetupBadge(bool free)
@@ -43,8 +62,6 @@ namespace Assets.Scripts.UI.Elements
             if (free)
             {
                 badgeImage.gameObject.SetActive(false);
-                //badgeImage.GetComponent<Image>().color = freeColor;
-                //badgeText.text = LocalizationManager.Instance["free"];
             }
             else
             {
@@ -54,25 +71,19 @@ namespace Assets.Scripts.UI.Elements
             }
         }
 
-        public void SetSelected(bool isSelected)
+        public void SetSelected(bool isSelected, ColorsPreset preset)
         {
             button.interactable = !isSelected;
-            RectTransform badge = badgeImage.GetComponent<RectTransform>();
-            Debug.LogFormat("offsetMin: {0} offsetMax: {1}",badge.offsetMin,badge.offsetMax);
-            //Debug.LogFormat("rect: {0} position: {1}", badge.rect,badge.position);
+            OnApplyColorTheme(preset);
             if (isSelected)
             {
                 backgroundImage.GetComponent<RectTransform>().offsetMin = new Vector2(OFFSET_SELECTED, OFFSET_SELECTED);
                 backgroundImage.GetComponent<RectTransform>().offsetMax = new Vector2(-OFFSET_SELECTED, -OFFSET_SELECTED);
-                badgeImage.GetComponent<RectTransform>().offsetMin = new Vector2(BADGE_SELECTED_X, BADGE_SELECTED_Y);
-
             }
             else
             {
                 backgroundImage.GetComponent<RectTransform>().offsetMin = new Vector2(OFFSET_UNSELECTED, OFFSET_UNSELECTED);
                 backgroundImage.GetComponent<RectTransform>().offsetMax = new Vector2(-OFFSET_UNSELECTED, -OFFSET_UNSELECTED);
-                badgeImage.GetComponent<RectTransform>().offsetMin = new Vector2(BADGE_UNSELECTED_X, BADGE_UNSELECTED_Y);
-
             }
         }
     }

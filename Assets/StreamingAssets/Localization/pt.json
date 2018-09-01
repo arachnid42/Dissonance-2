@@ -11,14 +11,14 @@
 		{"key":"points", "value":"Pontos"},
 
 		{"key":"levels", "value":"Níveis"},
-		{"key":"endless", "value":"Sem fim"},
+		{"key":"endless", "value":"Modo infinito"},
 		{"key":"configurableMode", "value":"Modo configurável"},
-		{"key":"donateRemoveAds", "value":"Doe e remova anúncios"},
+		{"key":"donateRemoveAds", "value":"Doe e remova os anúncios"},
 		{"key":"themes", "value":"Temas"},
 
-		{"key":"back", "value":"Costas"},
+		{"key":"back", "value":"Voltar"},
 		{"key":"skip", "value":"Pular"},
-		{"key":"replay", "value":"Repetição"},
+		{"key":"replay", "value":"Repetir"},
 		{"key":"mainMenu", "value":"Menu principal"},
 
 		{"key":"oops", "value":"Opa!"},
@@ -45,7 +45,7 @@
 		{"key":"unlockConfigurable", "value":"Desbloquear o  modo configurável"},
 		{"key":"unlockThemes", "value":"Desbloquear todos os temas"},
 		{"key":"removeAds", "value":"Remover os anúncios"},
-		{"key":"supportDevs", "value":"Apoie os desenvolvedores"},
+		{"key":"supportDevs", "value":"Apoiar os desenvolvedores"},
 
 		{"key":"purchaseTitle", "value":"Obrigado pela compra!"},
 		{"key":"unlockAllPurchase", "value":"Você desbloqueou com sucesso todos os modos de jogo e removeu Anúncios"},
@@ -66,7 +66,7 @@
 		{"key":"configure", "value":"Configurar"},
 		{"key":"startingMode", "value":"Jogar agora"},
 		{"key":"shapes", "value":"Formas"},
-		{"key":"random", "value":"Aleatóri"},
+		{"key":"random", "value":"Aleatório"},
 		{"key":"shapeToggle", "value":"Forma"},
 		{"key":"colorToggle", "value":"Cor"},
 		{"key":"shapesOnScreen", "value":"Formas na tela"},
@@ -81,13 +81,13 @@
 		{"key":"reactionTime", "value":"Tempo de reação"},
 		{"key":"change", "value":"Mudança"},
 		{"key":"gameModeChange", "value":"Alteração do modo de jogo"},
-		{"key":"scores", "value":"pontuações"},
-		{"key":"gameColorsChange", "value":"Alteração de cores do jogo"},
+		{"key":"scores", "value":"pontos"},
+		{"key":"gameColorsChange", "value":"Alteração dos cores do jogo"},
 		{"key":"basketShapesChange", "value":"Alteração de formas de cesta"},
 		{"key":"modesChange", "value":"Modos de Alteração"},
 		{"key":"maxAtOnce", "value":"Max de uma vez"},
-		{"key":"scoreCooldown", "value":"Pontuação de esfriar"},
-		{"key":"timeCooldown", "value":"Tempo de esfriar"},
+		{"key":"scoreCooldown", "value":"Escore Cooldown"},
+		{"key":"timeCooldown", "value":"Tempo Cooldown"},
 		{"key":"reactionTime", "value":"Tempo de reação"},
 		{"key":"startScore", "value":"Iniciar Pontuação"},
 		{"key":"lifeBonus", "value":"Bônus de Vida"},
@@ -104,8 +104,10 @@
 		{"key":"buy", "value":"Comprar"},
 
 		{"key":"chooseRecord", "value":"Escolhe o recorde"},
-		{"key":"score", "value":"Ponto"},
+		{"key":"score", "value":"Escore"},
 		{"key":"time", "value":"Tempo"},
+		{"key":"scoreLeaderboard", "value":"Líderes: Escore"},
+		{"key":"timeLeaderboard", "value":"Líderes: Tempo"},
 		{"key":"bestScore", "value":"Melhor pontuação"},
 		{"key":"bestTime", "value":"Melhor tempo"},
 
@@ -122,20 +124,20 @@
 		{"key":"general.tutorial.1", "value":"Em Dissonância você precisa pegar formas caindo no cesto baseando-se na sua forma ou no cor. Parece simples até que você tente."},
 		{"key":"general.tutorial.2", "value":"Isso é cesto. Toque nele."},
 		{"key":"general.tutorial.3", "value":"Isso é azulejos. Toque em qualquer azulejo."},
-		{"key":"general.tutorial.4", "value":"A cor da linha superior mostra qual azulejo está selecionado. Toque no bloco azulejo."},
-		{"key":"general.tutorial.5", "value":"Este é o modo de cesto. Toque para continuar."},
+		{"key":"general.tutorial.4", "value":"A cor da linha superior mostra qual azulejo está selecionado. Toque no azulejo selecionado."},
+		{"key":"general.tutorial.5", "value":"Este é o modo do cesto. Toque para continuar."},
 		{"key":"general.tutorial.6", "value":"Isso é forma. Toque para continuar."},
-		{"key":"general.tutorial.7", "value":"Agora a parte mais importante! Toque na telha correta para pegar a forma."},
+		{"key":"general.tutorial.7", "value":"Agora a parte mais importante! Toque no azulejo correto para pegar a forma."},
 		{"key":"general.tutorial.8", "value":"Modo mudou! Toque no azulejo correto."},
 		{"key":"general.tutorial.9", "value":"Deslize para cima ou para baixo para pausar o jogo."},
 		{"key":"general.tutorial.10", "value":"Agora você está pronto! Toque para jogar."},
 
-		{"key":"life.bonus.tutorial.1", "value":"Oh, olha, bônus de vida! Toque para pegar."},
+		{"key":"life.bonus.tutorial.1", "value":"Veja, bônus de vida! Toque para pegar."},
 
 		{"key":"freeze.bonus.tutorial.1", "value":"Veja! Congele o bônus! Toque para pegar."},
 		{"key":"freeze.bonus.tutorial.2", "value":"Deslize para a direita para congelar as formas. O bônus será usado automaticamente se houver muito pouco tempo para rolagem."},
 
-		{"key":"explosion.bonus.tutorial.1", "value":"Look, bonus! Explosion! Tap to catch."},
+		{"key":"explosion.bonus.tutorial.1", "value":"Veja, bônus! Explosão! Toque para pegar."},
 		{"key":"explosion.bonus.tutorial.2", "value":"Deslize para a esquerda para explodir as formas. O bônus será usado automaticamente se houver muito pouco tempo para rolagem."}
 
 	]

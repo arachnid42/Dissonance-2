@@ -21,8 +21,6 @@ namespace Assets.Scripts.UI.Panels
         private Transform LevelsContent;
 
         [SerializeField]
-        private Color passedColor, currentColor;
-        [SerializeField]
         private ScrollRect scrollRect;
 
         private const float ROW_LENGTH = 4f;
@@ -71,16 +69,13 @@ namespace Assets.Scripts.UI.Panels
             foreach (var button in levelsButtons)
                 Destroy(button);
             levelsButtons.Clear();
-            Color color = passedColor;
-            //for (int i = PersistentState.Instance.data.levelsUnlocked-1; i >= 0 ; i--)
             for (int i = 0; i < PersistentState.Instance.data.levelsUnlocked; i++)
                 {
-                color = PersistentState.Instance.data.lastLevelIndex == i ? currentColor : passedColor;
                 GameObject newButton = GameObject.Instantiate(LevelButtonPrefab);
                 newButton.transform.SetParent(LevelsContent, false);
                 LevelButton levelButton = newButton.GetComponent<LevelButton>();
                 int levelIndex = i;
-                levelButton.Setup((i+1).ToString(), color, LevelButtonCallback(i));
+                levelButton.Setup((i+1).ToString(), PersistentState.Instance.data.lastLevelIndex == i, LevelButtonCallback(i));
                 levelsButtons.Add(newButton);
             }
         }

@@ -10,12 +10,6 @@ namespace Assets.Scripts.UI.Panels
     {
         [SerializeField]
         private Text levels = null, endless = null, configurable = null, donate = null, themes = null;
-
-        [SerializeField]
-        private GameObject SoundButtonImage;
-
-        [SerializeField]
-        private Sprite SoundImageOn = null, SoundImageOff = null;
         [SerializeField]
         private float startUpDelay = 2f;
 
@@ -97,17 +91,9 @@ namespace Assets.Scripts.UI.Panels
             UIController.Instance.data.activePanel.SwitchToAnimation(UIController.Instance.PanelController.ThemesPanel).Start();
         }
 
-        public void OnSoundButtonClick()
+        public void OnAchievementsClick()
         {
-            UIController.Instance.data.isPlaySound = !UIController.Instance.data.isPlaySound;
-            if (UIController.Instance.data.isPlaySound)
-            {
-                SoundButtonImage.GetComponent<Image>().sprite = SoundImageOn;
-            }
-            else
-            {
-                SoundButtonImage.GetComponent<Image>().sprite = SoundImageOff;
-            }
+            Debug.Log("OnAchievementsClick");
         }
 
         public void OnShareButtonClick()
