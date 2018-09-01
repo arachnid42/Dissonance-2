@@ -106,6 +106,8 @@
 		{"key":"chooseRecord", "value":"Choose Record"},
 		{"key":"score", "value":"Score"},
 		{"key":"time", "value":"Time"},
+		{"key":"scoreLeaderboard", "value":"Score Leaderboard"},
+		{"key":"timeLeaderboard", "value":"Time Leaderboard"},
 		{"key":"bestScore", "value":"Best Score"},
 		{"key":"bestTime", "value":"Best Time"},
 

@@ -10,8 +10,7 @@ namespace Assets.Scripts.UI.Panels
     public class Endless : BasePanel
     {
         [SerializeField]
-        private Text title = null, title2 = null, score = null, time = null,
-            bestScore = null, scoreCount = null, bestTime = null, timeCount = null, back = null;
+        private Text title, title2, score, time, scoreLeaderboard, timeLeaderboard, bestScore, scoreCount, bestTime, timeCount, back = null;
 
         private void OnEnable()
         {
@@ -25,6 +24,8 @@ namespace Assets.Scripts.UI.Panels
             title2.text = Text("chooseRecord");
             score.text = Text("score");
             time.text = Text("time");
+            scoreLeaderboard.text = Text("scoreLeaderboard");
+            timeLeaderboard.text = Text("timeLeaderboard");
             bestScore.text = Text("bestScore");
             bestTime.text = Text("bestTime");
             back.text = Text("back");
@@ -44,6 +45,16 @@ namespace Assets.Scripts.UI.Panels
             DifficultyLevels.Instance.LevelName = "Endless";
             DifficultyLevels.Instance.CurrentDifficulty.target.scoreBased = false;
             UIController.Instance.PanelController.mainMenuPanel.GetComponent<MainMenu>().StartGame();
+        }
+
+        public void OnScoreLeaderboard()
+        {
+            Debug.Log("OnScoreLeaderboard");
+        }
+
+        public void OnTimeLeaderboard()
+        {
+            Debug.Log("OnTimeLeaderboard");
         }
 
         public string FormatTimeScore(int scoreSeconds)

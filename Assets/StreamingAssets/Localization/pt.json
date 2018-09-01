@@ -106,6 +106,8 @@
 		{"key":"chooseRecord", "value":"Escolhe o recorde"},
 		{"key":"score", "value":"Escore"},
 		{"key":"time", "value":"Tempo"},
+		{"key":"scoreLeaderboard", "value":"Líderes: Escore"},
+		{"key":"timeLeaderboard", "value":"Líderes: Tempo"},
 		{"key":"bestScore", "value":"Melhor pontuação"},
 		{"key":"bestTime", "value":"Melhor tempo"},
 

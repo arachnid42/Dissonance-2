@@ -110,6 +110,8 @@
 		{"key":"chooseRecord", "value":"Виберіть Рекорд"},
 		{"key":"score", "value":"Очки"},
 		{"key":"time", "value":"Час"},
+		{"key":"scoreLeaderboard", "value":"Лідери: Очки"},
+		{"key":"timeLeaderboard", "value":"Лідери: Час"},
 		{"key":"bestScore", "value":"Найкращий рахунок"},
 		{"key":"bestTime", "value":"Найкращий час"},
 

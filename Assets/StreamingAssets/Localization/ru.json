@@ -110,6 +110,8 @@
 		{"key":"chooseRecord", "value":"Выберите Рекорд"},
 		{"key":"score", "value":"Очки"},
 		{"key":"time", "value":"Время"},
+		{"key":"scoreLeaderboard", "value":"Лидеры: Очки"},
+		{"key":"timeLeaderboard", "value":"Лидеры: Время"},
 		{"key":"bestScore", "value":"Лучший счет"},
 		{"key":"bestTime", "value":"Лучшее время"},
 
