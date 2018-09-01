@@ -65,6 +65,7 @@ namespace Assets.Scripts.PlayServices
             while (!PersistentState.Ready)
                 yield return null;
             GetLeaderBoardScore(GPGSIds.leaderboard_endless_score, data=> {
+                //Debug.Log("Is authentificated endless score:" + Social.localUser.authenticated);
                 if (data.Valid)
                 {
                     int newValue = (int)data.PlayerScore.value;
@@ -81,6 +82,7 @@ namespace Assets.Scripts.PlayServices
             });
             GetLeaderBoardScore(GPGSIds.leaderboard_endless_time, data =>
             {
+                //Debug.Log("Is authentificated endless time:" + Social.localUser.authenticated);
                 if (data.Valid)
                 {
                     int newValue = Mathf.CeilToInt((float)data.PlayerScore.value / 1000);
