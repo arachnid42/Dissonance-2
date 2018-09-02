@@ -9,6 +9,10 @@ namespace Assets.Scripts.Game
     public class Listeners
     {
         public Action OnPause = () => { };
-        public Action<bool> OnGameOver = win => { PersistentState.Instance.data.timesPlayed++; };
+        public Action<bool> OnGameOver = win => {
+            PersistentState.Instance.data.timesPlayed++;
+            if(win)
+                PersistentState.Instance.data.gamesWon++;
+        };
     }
 }

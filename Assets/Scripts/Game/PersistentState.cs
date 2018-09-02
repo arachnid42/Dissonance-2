@@ -27,6 +27,8 @@ namespace Assets.Scripts.Game
         {
             public bool devMode = false;
             public int askRatingTimesPlayedInterval = 15;
+            public int askRatingGamesPlayedStart = 20;
+            public int askRatingGamesWonStart = 5;
             public int goodRatingMin = 4;
         }
 
@@ -63,6 +65,8 @@ namespace Assets.Scripts.Game
             public long adsDisplayed = 0;
             //total number of times played
             public long timesPlayed = 0;
+            [OptionalField]
+            public long gamesWon = 0;
 
             public int endlessScoreRecord = 0;
             public int endlessTimeRecord = 0;
@@ -165,6 +169,9 @@ namespace Assets.Scripts.Game
             temp.configurableModeOriginalData = refs.configurableMode.GetData();
             if (config.devMode)
             {
+                data.timesPlayed = 0;
+                data.gamesWon = 0;
+                data.rating = new Data.Rating();
                 data.customModeUnlocked = true;
                 data.endlessModeUnlocked = true;
                 data.turotiral = new Data.Tutorial();
@@ -298,7 +305,12 @@ namespace Assets.Scripts.Game
 
         public bool ShouldAskRating()
         {
-            return ShouldShowRatingButton() && data.timesPlayed - data.rating.timesPlayed >= config.askRatingTimesPlayedInterval;
+            return 
+                ShouldShowRatingButton() 
+                &&
+                (data.gamesWon >= config.askRatingGamesWonStart || data.timesPlayed >= config.askRatingGamesPlayedStart) 
+                &&
+                (data.timesPlayed - data.rating.timesPlayed >= config.askRatingTimesPlayedInterval);
         }
 
         public bool ShouldShowRatingButton()
