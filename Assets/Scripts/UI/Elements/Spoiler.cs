@@ -48,7 +48,6 @@ namespace Assets.Scripts.UI.Elements
             rt = GetComponent<RectTransform>();
             headerText.text = name != ""? LocalizationManager.Instance[name]: "Property";
             bottom = rt.sizeDelta.y;
-            buttonImage.color = closedColor;
         }
 
         private void OnDisable()
@@ -115,12 +114,14 @@ namespace Assets.Scripts.UI.Elements
 
         public override void OnApplyColorTheme(ColorsPreset preset)
         {
+            Debug.Log(preset.name);
             headerText.color = preset.uiColorPreset.spoilerColor.header;
             openedColor = preset.uiColorPreset.spoilerColor.openedIcon;
             closedColor = preset.uiColorPreset.spoilerColor.closedIcon;
             headerBG.color = preset.uiColorPreset.spoilerColor.headerBG;
             contentBG.color = preset.uiColorPreset.spoilerColor.contentBG;
             border.color = preset.uiColorPreset.spoilerColor.border;
+            buttonImage.color = closedColor;
         }
     }
 }
