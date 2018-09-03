@@ -103,13 +103,13 @@ namespace Assets.Scripts.UI.Theme
         [System.Serializable]
         public class SpoilerColor
         {
-            public Color headerBG, contentBG, header, closedIcon, openedIcon;
+            public Color headerBG, contentBG, border, header, closedIcon, openedIcon;
         }
 
         [System.Serializable]
         public class GradientColor
         {
-            public Color gradient, modal, modalIconGradient;
+            public Color gradient, modal, modalIconGradient, modalCloseButton;
             public Color this[GradientColors color]
             {
                 get { return GetColorByname(color); }
@@ -125,13 +125,14 @@ namespace Assets.Scripts.UI.Theme
                         return modal;
                     case GradientColors.modalIconGradient:
                         return modalIconGradient;
+                    case GradientColors.modalCloseButton:
+                        return modalCloseButton;
                 }
                 return gradient;
             }
         }
 
-        public Sprite background916, background918, logo;
-        public Color gradient;
+        public Sprite logo;
         public PlayButtonSprites playButton = new PlayButtonSprites();
         public ButtonsColor buttonsColor = new ButtonsColor();
         public TextColor textColor = new TextColor();

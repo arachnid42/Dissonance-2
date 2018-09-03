@@ -22,7 +22,7 @@ namespace Assets.Scripts.UI.Elements
         [SerializeField]
         private RectTransform content;
         [SerializeField]
-        private Image buttonImage, headerBG, contentBG;
+        private Image buttonImage, headerBG, contentBG, border;
         [SerializeField]
         private Color closedColor, openedColor;
         [SerializeField]
@@ -48,7 +48,7 @@ namespace Assets.Scripts.UI.Elements
             rt = GetComponent<RectTransform>();
             headerText.text = name != ""? LocalizationManager.Instance[name]: "Property";
             bottom = rt.sizeDelta.y;
-            //InitCurve();
+            buttonImage.color = closedColor;
         }
 
         private void OnDisable()
@@ -120,6 +120,7 @@ namespace Assets.Scripts.UI.Elements
             closedColor = preset.uiColorPreset.spoilerColor.closedIcon;
             headerBG.color = preset.uiColorPreset.spoilerColor.headerBG;
             contentBG.color = preset.uiColorPreset.spoilerColor.contentBG;
+            border.color = preset.uiColorPreset.spoilerColor.border;
         }
     }
 }

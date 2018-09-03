@@ -21,8 +21,8 @@ namespace Assets.Scripts.UI.Panels
         
         private void SetupBackground(ColorsPreset preset)
         {
-            background916 = preset.uiColorPreset.background916;
-            background918 = preset.uiColorPreset.background918;
+            background916 = Sprite.Create(preset.background916, new Rect(0.0f, 0.0f, preset.background916.width, preset.background916.height), new Vector2(0.5f, 0.5f), 100.0f);
+            background918 = Sprite.Create(preset.background918, new Rect(0.0f, 0.0f, preset.background918.width, preset.background918.height), new Vector2(0.5f, 0.5f), 100.0f);
             StartCoroutine(SetupBackgroundCourotine());
         }
 

@@ -10,7 +10,8 @@ namespace Assets.Scripts.UI.Theme
     {
         gradient,
         modal,
-        modalIconGradient
+        modalIconGradient,
+        modalCloseButton
     }
 
     public class GradientColorListener : BaseThemeListener
