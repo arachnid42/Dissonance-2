@@ -6428,7 +6428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 576.2686, y: -546.7932}
+  m_AnchoredPosition: {x: 576.25, y: -546.75}
   m_SizeDelta: {x: 482, y: 482}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &179626006
@@ -15445,7 +15445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 576.2686, y: -1869.1409}
+  m_AnchoredPosition: {x: 576.25, y: -1869.25}
   m_SizeDelta: {x: 1005, y: 291.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &468500742
@@ -27106,7 +27106,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 576.2686, y: -1255.692}
+  m_AnchoredPosition: {x: 576.25, y: -1255.75}
   m_SizeDelta: {x: 1151.5, y: 798.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &754520428
@@ -47456,7 +47456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e2a90e9129efa84b833875d5259d7bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  presetName: Default
+  presetName: DefaultDark
 --- !u!4 &1274239148
 Transform:
   m_ObjectHideFlags: 0
@@ -58709,7 +58709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 576.2686, y: -135.76439}
+  m_AnchoredPosition: {x: 576.25, y: -135.75}
   m_SizeDelta: {x: 892, y: 203}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1606930917
