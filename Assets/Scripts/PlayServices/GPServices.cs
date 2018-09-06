@@ -27,9 +27,7 @@ namespace Assets.Scripts.PlayServices
         private void Awake()
         {
             Instance = this;
-            var config = new PlayGamesClientConfiguration.Builder()
-                .RequestEmail()
-                .Build();
+            var config = new PlayGamesClientConfiguration.Builder().Build();
             PlayGamesPlatform.InitializeInstance(config);
             PlayGamesPlatform.DebugLogEnabled = debug;
             PlayGamesPlatform.Activate();
