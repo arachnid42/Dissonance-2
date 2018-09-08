@@ -14,7 +14,9 @@ namespace Assets.Scripts.UI.Panels.Tutorial
         [SerializeField]
         private Swipeable swipeable;
         [SerializeField]
-        private Text gameMode, pause, resume, text1, text2, text3, text4, text5, text6, text7, text8, text9, text10 = null;
+        private Sprite backgroundShape, backgroundColor;
+        [SerializeField]
+        private Text gameMode, pause, resume, tap1, tap2, text1, text2, text3, text4, text5, text6, text7, text8, text9, text10 = null;
         private TutorialController tutorialController;
 
         private void Start()
@@ -31,17 +33,18 @@ namespace Assets.Scripts.UI.Panels.Tutorial
 
         private void UpdateLabels()
         {
-            gameMode.text = Text("color");
+            gameMode.text = Text("shape");
             pause.text = Text("pause");
             resume.text = Text("resume");
-            text1.text = Text("general.tutorial.1");
-            text2.text = Text("general.tutorial.2");
-            text3.text = Text("general.tutorial.3");
-            text4.text = Text("general.tutorial.4");
-            text5.text = Text("general.tutorial.5");
-            text6.text = Text("general.tutorial.6");
-            text7.text = Text("general.tutorial.7");
-            text8.text = Text("general.tutorial.8");
+            tap1.text = tap2.text = Text("tap");
+            //text1.text = Text("general.tutorial.1");
+            //text2.text = Text("general.tutorial.2");
+            //text3.text = Text("general.tutorial.3");
+            //text4.text = Text("general.tutorial.4");
+            //text5.text = Text("general.tutorial.5");
+            //text6.text = Text("general.tutorial.6");
+            //text7.text = Text("general.tutorial.7");
+            //text8.text = Text("general.tutorial.8");
             text9.text = Text("general.tutorial.9");
             text10.text = Text("general.tutorial.10");
 
@@ -49,9 +52,15 @@ namespace Assets.Scripts.UI.Panels.Tutorial
 
         public override void Next(BasePanel current, BasePanel next)
         {
-            if (current.name == "GTPanel7")
+            if (current.name == "GTPanelShape")
             {
+                tutorial.background.sprite = backgroundShape;
                 gameMode.text = Text("shape");
+            }
+            if (next.name == "GTPanelColor")
+            {
+                tutorial.background.sprite = backgroundColor;
+                gameMode.text = Text("color");
             }
         }
     }

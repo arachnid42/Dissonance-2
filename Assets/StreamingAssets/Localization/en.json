@@ -121,6 +121,7 @@
 		{"key":"yes", "value":"Yes"},
 
 		{"key":"tutorial", "value":"Tutorial"},
+		{"key":"tap", "value":"TAP"},
 		{"key":"general.tutorial.1", "value":"In Dissonance you need to catch falling shapes into basket based on their shape or color. It sounds simple until you try."},
 		{"key":"general.tutorial.2", "value":"This is basket. Tap on it."},
 		{"key":"general.tutorial.3", "value":"This is tiles. Tap on any tile."},

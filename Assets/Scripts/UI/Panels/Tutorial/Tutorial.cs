@@ -28,7 +28,7 @@ namespace Assets.Scripts.UI.Panels.Tutorial
             UIController.Instance.data.activePanel = this;
             controller = GetComponent<TutorialController>();
             header.text = Text("tutorial");
-            gameMode.text = Text("color");
+            gameMode.text = Text("shape");
             ManageTutorials();
         }
 

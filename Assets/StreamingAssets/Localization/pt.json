@@ -121,6 +121,7 @@
 		{"key":"yes", "value":"Sim"},
 
 		{"key":"tutorial", "value":"Tutorial"},
+		{"key":"tap", "value":"TOQUE"},
 		{"key":"general.tutorial.1", "value":"Em Dissonância você precisa pegar formas caindo no cesto baseando-se na sua forma ou no cor. Parece simples até que você tente."},
 		{"key":"general.tutorial.2", "value":"Isso é cesto. Toque nele."},
 		{"key":"general.tutorial.3", "value":"Isso é azulejos. Toque em qualquer azulejo."},
