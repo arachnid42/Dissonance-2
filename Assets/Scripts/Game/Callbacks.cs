@@ -4,6 +4,7 @@ using UnityEngine;
 using Assets.Scripts.Shape;
 using Assets.Scripts.ShapeBasket;
 using Assets.Scripts.PlayServices;
+using Assets.Scripts.Sound;
 
 namespace Assets.Scripts.Game
 {
@@ -19,6 +20,7 @@ namespace Assets.Scripts.Game
         {
             if (match)
             {
+                SoundsController.PlaySound(SoundsController.SoundSFX.SHAPE_CATCH);
                 master.State.Score++;
                 master.Actions.IncreaseDifficultyState();
                 if (master.State.score == 1)
@@ -29,6 +31,7 @@ namespace Assets.Scripts.Game
                 master.State.SetGameOverData(false);
                 master.Listeners.OnGameOver(false);
                 master.Stop();
+                SoundsController.PlaySound(SoundsController.SoundSFX.WRONG_SHAPE_CATCH);
             }
         }
 

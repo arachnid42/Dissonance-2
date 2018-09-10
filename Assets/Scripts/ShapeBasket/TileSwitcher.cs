@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Assets.Scripts.Sound;
 
 namespace Assets.Scripts.ShapeBasket
 {
@@ -28,6 +29,7 @@ namespace Assets.Scripts.ShapeBasket
                     bool isEnabled = basket.Tiles[i] == value;
                     basket.TilesIndicators[i].GetComponent<BasketIndicator>().SetEnabled(isEnabled);
                 }
+                SoundsController.PlaySound(SoundsController.SoundSFX.TILE_TAP);
             }
         }
 

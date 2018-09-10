@@ -52,6 +52,8 @@ namespace Assets.Scripts.Game
             }
 
             public bool sound = false;
+            [OptionalField]
+            public bool soundSFX = false;
             public string colorPresetName = null;
             public int lastLevelIndex = 0;
             public int levelsUnlocked = 1;

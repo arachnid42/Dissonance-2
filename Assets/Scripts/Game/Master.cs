@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Assets.Scripts.Sound;
 
 namespace Assets.Scripts.Game
 {
@@ -77,9 +78,11 @@ namespace Assets.Scripts.Game
 
                 if (Actions.CheckDifficultyTarget())
                 {
+                    
                     state.SetGameOverData(true);
                     Listeners.OnGameOver(true);
                     state.Started = false;
+                    SoundsController.PlaySound(SoundsController.SoundSFX.GAME_WON);
                     break;
                 }
 
