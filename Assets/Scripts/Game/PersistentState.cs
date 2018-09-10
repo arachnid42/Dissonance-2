@@ -51,9 +51,9 @@ namespace Assets.Scripts.Game
                 public bool explosionBonus = false;
             }
 
-            public bool sound = false;
+            public bool sound = true;
             [OptionalField]
-            public bool soundSFX = false;
+            public bool soundSFX = true;
             public string colorPresetName = null;
             public int lastLevelIndex = 0;
             public int levelsUnlocked = 1;
