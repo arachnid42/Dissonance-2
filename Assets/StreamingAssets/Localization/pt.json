@@ -120,6 +120,11 @@
 		{"key":"no", "value":"Não"},
 		{"key":"yes", "value":"Sim"},
 
+		{"key":"music", "value":"Música"},
+		{"key":"sounds", "value":"Sons"},
+		{"key":"on", "value":"ON"},
+		{"key":"off", "value":"OFF"},
+
 		{"key":"tutorial", "value":"Tutorial"},
 		{"key":"tap", "value":"TOQUE"},
 		{"key":"general.tutorial.1", "value":"Em Dissonância você precisa pegar formas caindo no cesto baseando-se na sua forma ou no cor. Parece simples até que você tente."},

@@ -120,6 +120,11 @@
 		{"key":"no", "value":"No"},
 		{"key":"yes", "value":"Yes"},
 
+		{"key":"music", "value":"Music"},
+		{"key":"sounds", "value":"Sounds"},
+		{"key":"on", "value":"ON"},
+		{"key":"off", "value":"OFF"},
+
 		{"key":"tutorial", "value":"Tutorial"},
 		{"key":"tap", "value":"TAP"},
 		{"key":"general.tutorial.1", "value":"In Dissonance you need to catch falling shapes into basket based on their shape or color. It sounds simple until you try."},

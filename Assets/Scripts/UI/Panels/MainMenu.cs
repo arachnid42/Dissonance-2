@@ -12,7 +12,9 @@ namespace Assets.Scripts.UI.Panels
         [SerializeField]
         private Text levels = null, endless = null, configurable = null, donate = null, themes = null;
         [SerializeField]
-        private float startUpDelay = 2f;
+        private Image soundImage;
+        [SerializeField]
+        private Sprite soundOnImage, soundOffImage;
 
         private string appID;
 
@@ -27,6 +29,7 @@ namespace Assets.Scripts.UI.Panels
         {
             Debug.LogFormat("{0} : {1}", PersistentState.Instance, UIController.Instance);
             SetLabels(UpdateLabels);
+            UpdateSoundIcon();
             UIController.Instance.data.activePanel = this;
             //UIController.Instance.PanelController.StartupPanel.SetHidddenAnimation(true).Start();
             //var showMenuAnim = new Animation(Delay(startUpDelay));
@@ -44,6 +47,14 @@ namespace Assets.Scripts.UI.Panels
             themes.text = Text("themes");
         }
 
+        public void UpdateSoundIcon()
+        {
+            if (PersistentState.Instance.data.sound || PersistentState.Instance.data.soundSFX)
+                soundImage.sprite = soundOnImage;
+            else
+                soundImage.sprite = soundOffImage;
+        }
+
         public void OnPlayButtonClick()
         {
             DifficultyLevels.Instance.LevelIndex = PersistentState.Instance.data.lastLevelIndex;
@@ -54,6 +65,11 @@ namespace Assets.Scripts.UI.Panels
         {
             //PersistentState.Instance.data.levelsUnlocked = DifficultyLevels.Instance.LevelCount;
             UIController.Instance.data.activePanel.SwitchToAnimation(UIController.Instance.PanelController.LevelsMenuPanel).Start();
+        }
+
+        public void OnSoundSettingsClick()
+        {
+            UIController.Instance.PanelController.SoundOverlayPanel.SetHidddenAnimation(false).Start();
         }
 
         public void OnEndlessButtonClick()
