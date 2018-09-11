@@ -55,10 +55,15 @@ namespace Assets.Scripts.Game
 
         public void OnBonusTouch(ShapeType type)
         {
+            float minCollisionTime = float.PositiveInfinity;
+            if (master.State.slowdown.speedScale != 0)
+            {
+                minCollisionTime = master.Actions.GetMinCollisionTimeWithBasket(master.State.shapesOnScreen, true, true) / master.State.slowdown.speedScale;
+            }
             switch (type)
             {
                 case ShapeType.Explosion:
-                    if (master.State.ScaledPlayerReactionTime <= Difficulty.BONUS_AUTO_USE_REACTION_TIME)
+                    if (minCollisionTime <= Difficulty.BONUS_AUTO_USE_REACTION_TIME)
                     {
                         master.Actions.UseExplosionBonus(immediately:true);
                     }
@@ -72,7 +77,7 @@ namespace Assets.Scripts.Game
                     GPServices.Instance.IncrementHeartBonusAchievements();
                     break;
                 case ShapeType.Snowflake:
-                    if (master.State.ScaledPlayerReactionTime <= Difficulty.BONUS_AUTO_USE_REACTION_TIME)
+                    if (minCollisionTime <= Difficulty.BONUS_AUTO_USE_REACTION_TIME)
                     {
                         master.Actions.UseFreezeBonus(immediately: true);
                     }

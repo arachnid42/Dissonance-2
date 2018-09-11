@@ -91,12 +91,16 @@ namespace Assets.Scripts.Game
             return GetDistanceBetweenBasketAndShape(shape) / time;
         }
 
-        public float GetMaxCollisionTimeWithBasket(List<GameObject> shapes)
+        public float GetMaxCollisionTimeWithBasket(List<GameObject> shapes, bool ignoreDestroyed = false, bool ignoreBonuses = false)
         {
             float max = float.NegativeInfinity;
             float collisionTime;
             foreach (GameObject shape in shapes)
             {
+                if (IsBonusOrPartiallyDestroyedShape(shape, ignoreDestroyed, ignoreBonuses))
+                {
+                    continue;
+                }
                 collisionTime = GetCollisionTimeWithBasket(shape);
                 if (collisionTime > max)
                 {
@@ -106,13 +110,22 @@ namespace Assets.Scripts.Game
             return max;
         }
 
+        public bool IsBonusOrPartiallyDestroyedShape(GameObject shape, bool destroyed, bool bonus)
+        {
+            var controller = shape.GetComponent<Shape.Controller>();
+            return bonus && controller.Bonus != null || destroyed && controller.Destruction.IsPartiallyDestroyed;
+        }
 
-        public float GetMinCollisionTimeWithBasket(List<GameObject> shapes)
+        public float GetMinCollisionTimeWithBasket(List<GameObject> shapes, bool ignoreDestroyed = false, bool ignoreBonuses = false)
         {
             float min = float.PositiveInfinity;
             float collisionTime;
             foreach (GameObject shape in shapes)
             {
+                if (IsBonusOrPartiallyDestroyedShape(shape,ignoreDestroyed, ignoreBonuses))
+                {
+                    continue;
+                }
                 collisionTime = GetCollisionTimeWithBasket(shape);
                 if (collisionTime < min)
                 {
