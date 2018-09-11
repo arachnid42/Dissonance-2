@@ -12,7 +12,7 @@ namespace Assets.Scripts.UI.Panels
     {
 
         [SerializeField]
-        private Text music, sounds, close = null;
+        private Text music, sounds = null;
         [SerializeField]
         private ToggleButton musicToggleButton, soundsToggleButton;
 
@@ -32,7 +32,6 @@ namespace Assets.Scripts.UI.Panels
         {
             music.text = Text("music");
             sounds.text = Text("sounds");
-            close.text = Text("close");
         }
 
         public void OnToggleMusicClick()
@@ -50,7 +49,9 @@ namespace Assets.Scripts.UI.Panels
         public void OnCloseButton()
         {
             SetHidddenAnimation(true).Start();
-            UIController.Instance.PanelController.mainMenuPanel.GetComponent<MainMenu>().UpdateSoundIcon();
+            var soundButton = UIController.Instance.data.activePanel.gameObject.GetComponentInChildren<SoundSettingsButton>();
+            if(soundButton != null)
+                soundButton.UpdateSoundIcon();
         }
     }
 }
