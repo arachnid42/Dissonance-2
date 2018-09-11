@@ -5,6 +5,7 @@ using System.Collections;
 using UnityEngine;
 using System.Linq;
 using Assets.Scripts.PlayServices;
+using Assets.Scripts.Sound;
 
 namespace Assets.Scripts.Game
 {
@@ -539,6 +540,7 @@ namespace Assets.Scripts.Game
 
             if (modeChanges.Count > 0)
             {
+                SoundsController.PlaySound(SoundsController.SoundSFX.MODE_CHANGED);
                 StandardSlowDownShapesOnScreen();
                 master.State.modeChange.lastScore = master.State.score;
                 master.State.modeChange.lastTime = Time.time - master.State.firstScoreTime;
@@ -626,7 +628,7 @@ namespace Assets.Scripts.Game
 
         public void ExplodeShapesOnScreen()
         {
-            Debug.Log("Slowdown:" + master.State.Difficulty.explosion.slowdown);
+            //Debug.Log("Slowdown:" + master.State.Difficulty.explosion.slowdown);
             if (master.State.Difficulty.explosion.slowdown != null)
             {
                 SlowDownShapesOnScreen(master.State.Difficulty.explosion.slowdown, ExplodeShapesOnScreenImmidiately);
@@ -648,6 +650,7 @@ namespace Assets.Scripts.Game
                 if (!immediately)
                     master.State.ExplosionBonuses--;
                 GPServices.Instance.IncrementExplosionBonusAchievements();
+                SoundsController.PlaySound(SoundsController.SoundSFX.EXPLOSION_BONUS_USED);
             }
 
         }
@@ -661,6 +664,7 @@ namespace Assets.Scripts.Game
                 if(!immediately)
                     master.State.FreezeBonuses--;
                 GPServices.Instance.IncrementFreezeBonusAchievements();
+                SoundsController.PlaySound(SoundsController.SoundSFX.FREEZE_BONUS_USED);
             }
         }
 
@@ -670,6 +674,7 @@ namespace Assets.Scripts.Game
             {
                 master.State.HeartBonuses--;
                 BonusSlowdownShapesOnScreen(master.State.Difficulty.heart);
+                SoundsController.PlaySound(SoundsController.SoundSFX.HEART_BONUS_USED);
                 return true;
             }
             return false;

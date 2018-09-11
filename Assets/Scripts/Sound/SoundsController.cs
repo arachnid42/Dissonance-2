@@ -12,7 +12,12 @@ namespace Assets.Scripts.Sound
             SHAPE_CATCH = 1,
             TILE_TAP = 2,
             WRONG_SHAPE_CATCH = 3,
-            GAME_WON = 4
+            GAME_WON = 4,
+            BONUS_PICKED = 5,
+            HEART_BONUS_USED = 6,
+            EXPLOSION_BONUS_USED = 7,
+            FREEZE_BONUS_USED = 8,
+            MODE_CHANGED = 9
         }
 
         public static void PlaySound(SoundSFX id, float delay = 0)
@@ -37,6 +42,12 @@ namespace Assets.Scripts.Sound
         private AudioSource wrongShapeCatch = null;
         [SerializeField]
         private AudioSource gameWon = null;
+        [SerializeField]
+        private AudioSource bonusPicked = null;
+        [SerializeField]
+        private AudioSource heartBonusUsed = null, explosionBonusUsed = null, freezeBonusUsed = null;
+        [SerializeField]
+        private AudioSource modeChanged = null;
 
         private void Awake()
         {
@@ -106,6 +117,21 @@ namespace Assets.Scripts.Sound
                     break;
                 case SoundSFX.GAME_WON:
                     source = gameWon;
+                    break;
+                case SoundSFX.BONUS_PICKED:
+                    source = bonusPicked;
+                    break;
+                case SoundSFX.MODE_CHANGED:
+                    source = modeChanged;
+                    break;
+                case SoundSFX.HEART_BONUS_USED:
+                    source = heartBonusUsed;
+                    break;
+                case SoundSFX.EXPLOSION_BONUS_USED:
+                    source = explosionBonusUsed;
+                    break;
+                case SoundSFX.FREEZE_BONUS_USED:
+                    source = freezeBonusUsed;
                     break;
             }
             if (source != null)

@@ -82,6 +82,7 @@ namespace Assets.Scripts.Game
                     }
                     break;
             }
+            SoundsController.PlaySound(SoundsController.SoundSFX.BONUS_PICKED);
             master.Actions.BonusCatchSlowdown();
         }
 
