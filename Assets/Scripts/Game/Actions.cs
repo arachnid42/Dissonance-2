@@ -254,10 +254,9 @@ namespace Assets.Scripts.Game
             foreach (var shape in shapesOnScreen)
             {
                 var controller = shape.GetComponent<Shape.Controller>();
-                var prototype = controller.prototype;
-                if (controller.Bonus == null && !shapesOnScreensPrototypes.Contains(prototype))
+                if (controller.Bonus == null && !shapesOnScreensPrototypes.Contains(controller.prototype))
                 {
-                    shapesOnScreensPrototypes.Add(prototype);
+                    shapesOnScreensPrototypes.Add(controller.prototype);
                 }
             }
             //Debug.Log("Shapes prototypes gathering is over");
