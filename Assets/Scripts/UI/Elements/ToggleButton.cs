@@ -28,12 +28,6 @@ namespace Assets.Scripts.UI.Elements
         private new void Start()
         {
             base.Start();
-            Value = value;
-        }
-
-        private void OnEnable()
-        {
-            Value = value;
         }
 
         public void OnToggleClick()
@@ -68,6 +62,7 @@ namespace Assets.Scripts.UI.Elements
         {
             activeColor = preset.uiColorPreset.buttonsColor[toggleActiveColor];
             inactiveColor = preset.uiColorPreset.buttonsColor[toggleInactiveColor];
+            UpdateValue();
         }
     }
 }
