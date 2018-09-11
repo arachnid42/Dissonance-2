@@ -248,16 +248,19 @@ namespace Assets.Scripts.Game
 
         public List<GameObject> GetShapesOnScreenPrototypes()
         {
+            //Debug.Log("Starting gathering of the shapes prototypes!");
             List<GameObject> shapesOnScreensPrototypes = new List<GameObject>();
             GameObject[] shapesOnScreen = master.State.shapesOnScreen.ToArray();
             foreach (var shape in shapesOnScreen)
             {
-                var prototype = shape.GetComponent<Shape.Controller>().prototype;
-                if (!shapesOnScreensPrototypes.Contains(prototype))
+                var controller = shape.GetComponent<Shape.Controller>();
+                var prototype = controller.prototype;
+                if (controller.Bonus == null && !shapesOnScreensPrototypes.Contains(prototype))
                 {
                     shapesOnScreensPrototypes.Add(prototype);
                 }
             }
+            //Debug.Log("Shapes prototypes gathering is over");
             return shapesOnScreensPrototypes;
         }
 
@@ -271,19 +274,30 @@ namespace Assets.Scripts.Game
             //    Debug.Log(shape);
             //}
             //Debug.Log("---------------------------------------------------");
+            //Debug.Log("Available shapes-------------------------------");
+            //for(int i = 0; i < master.State.Mapping.shapes.Length; i++)
+            //{
+            //    Debug.Log(master.State.Mapping.shapes[i]);
+            //}
+            //Debug.Log("---------------------------------------------------");
+            //Debug.Log("master.State.Mapping.shapes.Length = " + master.State.Mapping.shapes.Length);
+            //Debug.Log("shapesOnScreensPrototypes.Count =" + shapesOnScreensPrototypes.Count);
             GameObject nextShapePrototype = null;
-            while(true)
+            while (true)
             {
-                nextShapePrototype = master.State.Mapping.shapes[Random.Range(0, master.State.Mapping.shapes.Length)];
-                if(master.State.Mapping.shapes.Length == shapesOnScreensPrototypes.Count)
+                //Debug.Log("Looking for next shape!");
+                int index = Random.Range(0, master.State.Mapping.shapes.Length);
+                //Debug.Log("looking for index:" + index);
+                nextShapePrototype = master.State.Mapping.shapes[index];
+                if (master.State.Mapping.shapes.Length == shapesOnScreensPrototypes.Count)
                 {
-                    if(master.State.lastSpawnedShapePrototype != nextShapePrototype || Random.value < 0.1f)
-                    {
-                        break;
-                    }
+                   if(master.State.lastSpawnedShapePrototype != nextShapePrototype || Random.value < 0.1f)
+                   {
+                       break;
+                   }
                 }else if (!shapesOnScreensPrototypes.Contains(nextShapePrototype))
                 {
-                    break;
+                   break;
                 }
             }
             return nextShapePrototype;

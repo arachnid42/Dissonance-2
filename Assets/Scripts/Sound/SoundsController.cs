@@ -23,7 +23,10 @@ namespace Assets.Scripts.Sound
         public static void PlaySound(SoundSFX id, float delay = 0)
         {
             if (Instance != null)
-                Instance.PlaySoundSFX(id,delay);
+            {
+                Debug.Log("Play sound:" + id);
+                Instance.PlaySoundSFX(id, delay);
+            }
         }
 
         public static SoundsController Instance
@@ -135,7 +138,14 @@ namespace Assets.Scripts.Sound
                     break;
             }
             if (source != null)
-                source.PlayDelayed(delay);
+                if(delay <= 0)
+                {
+                    source.Play();
+                }
+                else
+                {
+                    source.PlayDelayed(delay);
+                }
         }
 
 
