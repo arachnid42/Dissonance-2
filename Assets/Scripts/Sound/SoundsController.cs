@@ -98,7 +98,7 @@ namespace Assets.Scripts.Sound
 
         public void SetSFXActive(bool active)
         {
-            PersistentState.Instance.data.soundSFX = false;
+            PersistentState.Instance.data.soundSFX = active;
         }
 
         public void PlaySoundSFX(SoundSFX id, float delay = 0)

@@ -124,6 +124,11 @@
 		{"key":"no", "value":"Ні"},
 		{"key":"yes", "value":"Так"},
 
+		{"key":"music", "value":"Музика"},
+		{"key":"sounds", "value":"Звуки"},
+		{"key":"on", "value":"ВКЛ."},
+		{"key":"off", "value":"ВИМК."},
+
 		{"key":"tutorial", "value":"Інструкції"},
 		{"key":"tap", "value":"НАТИСНИ"},
 		{"key":"general.tutorial.1", "value":"У Dissonance Вам потрібно ловити падаючі фігури в кошик, спираючись на їх колір або форму. Звучить просто, поки не спробуєте."},
