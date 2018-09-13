@@ -56,18 +56,6 @@ MonoBehaviour:
     scoreBased: 0
     score: 100
     time: 100
-  slowdown:
-    inTime: 0.1
-    stayTime: 2
-    outTime: 1
-    speedScale: 0.1
-    type: 3
-  bonusCatchSlowdown:
-    inTime: 0.1
-    stayTime: 1
-    outTime: 2
-    speedScale: 0.5
-    type: 2
   randomRotation:
     reactionTime: 1
     probability: 0.5
@@ -99,36 +87,18 @@ MonoBehaviour:
     scoreInterval: 15
   heart:
     max: 9
-    slowdown:
-      inTime: 0.05
-      stayTime: 0.01
-      outTime: 2
-      speedScale: 0.5
-      type: 1
     number: 100
     scoreInterval: 10
     probability: 0.5
     startScore: 10
   freeze:
     max: 99
-    slowdown:
-      inTime: 0.1
-      stayTime: 5
-      outTime: 15
-      speedScale: 0.1
-      type: 1
     number: 100
     scoreInterval: 15
     probability: 0.5
     startScore: 15
   explosion:
     max: 99
-    slowdown:
-      inTime: 0
-      stayTime: 0
-      outTime: 0
-      speedScale: 0
-      type: 0
     number: 100
     scoreInterval: 20
     probability: 0.5
@@ -139,7 +109,7 @@ MonoBehaviour:
     max: 9
     increaseScoreInterval: 10
   playerReactionTime:
-    min: 1
+    min: 1.25
     max: 3
     changePerScore: -0.05
   additionalShapes: 0100000004000000080000000a000000090000000b0000000c0000000d000000
