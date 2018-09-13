@@ -16,8 +16,16 @@ namespace Assets.Scripts.UI.Panels.Tutorial
         [SerializeField]
         private Sprite backgroundShape, backgroundColor;
         [SerializeField]
+        private CanvasGroup fadeGroup;
+        [SerializeField]
+        private float sartupFadeDuration=2f;
+        [SerializeField]
+        private AnimationCurve curve;
+        [SerializeField]
         private Text gameMode, pause, resume, tap1, tap2, text1, text2, text3, text4, text5, text6, text7, text8, text9, text10 = null;
         private TutorialController tutorialController;
+        private float stage = 0;
+
 
         private void Start()
         {
@@ -29,6 +37,7 @@ namespace Assets.Scripts.UI.Panels.Tutorial
         private void OnEnable()
         {
             SetLabels(UpdateLabels);
+            StartCoroutine(StartFadeAnimationCoroutine(sartupFadeDuration));
         }
 
         private void UpdateLabels()
@@ -48,6 +57,20 @@ namespace Assets.Scripts.UI.Panels.Tutorial
             text9.text = Text("general.tutorial.9");
             text10.text = Text("general.tutorial.10");
 
+        }
+
+        private IEnumerator StartFadeAnimationCoroutine(float time)
+        {
+            while (stage <= 1)
+            {
+                stage += Time.unscaledDeltaTime / time;
+                fadeGroup.alpha = curve.Evaluate(stage);
+                //Debug.LogFormat("Stage: {0} Alpha: {1}",stage, logoImageCanvas.alpha);
+
+                //rt.sizeDelta = Vector2.Lerp(start, end, curve.Evaluate(stage));
+                yield return null;
+            }
+            stage = 0;
         }
 
         public override void Next(BasePanel current, BasePanel next)
