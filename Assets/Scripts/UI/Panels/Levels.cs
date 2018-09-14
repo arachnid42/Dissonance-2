@@ -33,8 +33,9 @@ namespace Assets.Scripts.UI.Panels
             UIController.Instance.data.activePanel = this;
             SetLabels(UpdateLabels);
             StartCoroutine(UpdateLevels());
-            float scrollPosition = 1 - (float)(PersistentState.Instance.data.lastLevelIndex + 1) / (float)PersistentState.Instance.data.levelsUnlocked;
-            precision = ROW_LENGTH / (float)PersistentState.Instance.data.levelsUnlocked;
+            float totalLevels = (float)DifficultyLevels.Instance.LevelCount;
+            float scrollPosition = 1 - (float)(PersistentState.Instance.data.lastLevelIndex + 1) / totalLevels;
+            precision = ROW_LENGTH / totalLevels;
             scrollPosition = scrollPosition < SCROLL_MIDDLE ? scrollPosition - precision : scrollPosition + precision;
             StartCoroutine(SetScrollRectPosition(scrollPosition));
         }
@@ -69,13 +70,13 @@ namespace Assets.Scripts.UI.Panels
             foreach (var button in levelsButtons)
                 Destroy(button);
             levelsButtons.Clear();
-            for (int i = 0; i < PersistentState.Instance.data.levelsUnlocked; i++)
+            for (int i = 0; i < DifficultyLevels.Instance.LevelCount; i++)
                 {
                 GameObject newButton = GameObject.Instantiate(LevelButtonPrefab);
                 newButton.transform.SetParent(LevelsContent, false);
                 LevelButton levelButton = newButton.GetComponent<LevelButton>();
                 int levelIndex = i;
-                levelButton.Setup((i+1).ToString(), PersistentState.Instance.data.lastLevelIndex == i, LevelButtonCallback(i));
+                levelButton.Setup((i+1).ToString(), PersistentState.Instance.data.lastLevelIndex == i, i>=PersistentState.Instance.data.levelsUnlocked, LevelButtonCallback(i));
                 levelsButtons.Add(newButton);
             }
         }
