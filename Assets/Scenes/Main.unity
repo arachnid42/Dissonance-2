@@ -7972,7 +7972,7 @@ MonoBehaviour:
   header: {fileID: 1953608726}
   gameMode: {fileID: 67094411}
   background: {fileID: 916359668}
-  generalBackground: {fileID: 21300000, guid: dea514c4cbeed8a4dbf8e39351262f35, type: 3}
+  generalBackground: {fileID: 21300000, guid: d25949073ca2e3243b27f3a0e9b8780f, type: 3}
   lifeBackground: {fileID: 21300000, guid: 05e62bb5e5d19dd4cab713d77014d8cc, type: 3}
   freezeBackground: {fileID: 21300000, guid: 7a3f58d634c4bb64d8b0b972b9ce8cbd, type: 3}
   explosionBackground: {fileID: 21300000, guid: 72369db918ba155499b0b920fd85713b,
@@ -32013,7 +32013,7 @@ MonoBehaviour:
   fadeDuration: 0.2
   tutorial: {fileID: 198674290}
   swipeable: {fileID: 1041338445}
-  backgroundShape: {fileID: 21300000, guid: dea514c4cbeed8a4dbf8e39351262f35, type: 3}
+  backgroundShape: {fileID: 21300000, guid: d25949073ca2e3243b27f3a0e9b8780f, type: 3}
   backgroundColor: {fileID: 21300000, guid: 11113da9a1f9bff48bf975cce7324094, type: 3}
   fadeGroup: {fileID: 1604437123}
   sartupFadeDuration: 2

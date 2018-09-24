@@ -24,7 +24,7 @@ namespace Assets.Scripts.Sound
         {
             if (Instance != null)
             {
-                Debug.Log("Play sound:" + id);
+                //Debug.Log("Play sound:" + id);
                 Instance.PlaySoundSFX(id, delay);
             }
         }
