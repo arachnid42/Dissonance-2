@@ -136,6 +136,14 @@ namespace Assets.Scripts.Game
             }
         }
 
+        public ShapeMixer ShapeMixer
+        {
+            get
+            {
+                return shapeBasketController.ShapeMixer;
+            }
+        }
+
         public BasketBody BasketBody
         {
             get { return shapeBasketController.BasketBody; }

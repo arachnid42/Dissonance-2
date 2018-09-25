@@ -14,6 +14,8 @@ namespace Assets.Scripts.ShapeBasket
         private TileSwitcher tileSwitcher = null;
         [SerializeField]
         private BasketBody basketBody = null;
+        [SerializeField]
+        private ShapeMixer shapeMixer = null;
 
         public Hide Hide
         {
@@ -41,6 +43,14 @@ namespace Assets.Scripts.ShapeBasket
             get
             {
                 return tileSwitcher;
+            }
+        }
+
+        public ShapeMixer ShapeMixer
+        {
+            get
+            {
+                return shapeMixer;
             }
         }
     }

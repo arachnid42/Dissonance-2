@@ -67,6 +67,8 @@ namespace Assets.Scripts.Game
             State.Started = true;
             yield return new WaitForSecondsRealtime(1.5f);
 
+            yield return Field.Instance.Tutorial.TryToStart(this);
+
             while (State.started)
             {
                 if (State.paused)

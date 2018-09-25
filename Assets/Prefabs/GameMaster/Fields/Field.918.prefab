@@ -7837,6 +7837,7 @@ MonoBehaviour:
   shapeCatcher: {fileID: 114026735313397598}
   tileSwitcher: {fileID: 114340757762441328}
   basketBody: {fileID: 114248512667455650}
+  shapeMixer: {fileID: 114775094897337876}
 --- !u!114 &114063564116262372
 MonoBehaviour:
   m_ObjectHideFlags: 1

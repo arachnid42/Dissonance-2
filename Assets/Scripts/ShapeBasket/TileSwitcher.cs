@@ -21,16 +21,22 @@ namespace Assets.Scripts.ShapeBasket
             }
             set
             {
-                if (tile == value)
-                    return;
-                tile = value;
-                for(int i = 0; i < basket.Tiles.Length; i++)
-                {
-                    bool isEnabled = basket.Tiles[i] == value;
-                    basket.TilesIndicators[i].GetComponent<BasketIndicator>().SetEnabled(isEnabled);
-                }
-                SoundsController.PlaySound(SoundsController.SoundSFX.TILE_TAP);
+                SetTile(value, true);
             }
+        }
+
+        public void SetTile(GameObject value, bool sound = false)
+        {
+            if (tile == value)
+                return;
+            tile = value;
+            for (int i = 0; i < basket.Tiles.Length; i++)
+            {
+                bool isEnabled = basket.Tiles[i] == value;
+                basket.TilesIndicators[i].GetComponent<BasketIndicator>().SetEnabled(isEnabled);
+            }
+            if(sound)
+                SoundsController.PlaySound(SoundsController.SoundSFX.TILE_TAP);
         }
 
         private IEnumerator ResetCoroutine()

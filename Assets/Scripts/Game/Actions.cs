@@ -315,12 +315,12 @@ namespace Assets.Scripts.Game
             return nextShapePrototype;
         }
 
-        public GameObject CreateRandomShape(float collisionTime)
+        public GameObject CreateRandomShape(float collisionTime, bool bonus = true)
         {
             GameObject suitableSpawn = FindSuitableSpawn(collisionTime);
             if(suitableSpawn == null)
                 return null;
-            GameObject selectedShape = GetNextBonus();
+            GameObject selectedShape = bonus?GetNextBonus():null;
             if(selectedShape == null)
             {
                 selectedShape = GetNextRandomShape();
@@ -342,14 +342,14 @@ namespace Assets.Scripts.Game
         }
 
 
-        public GameObject GetNextShape()
+        public GameObject GetNextShape(bool bonus = true)
         {
             float collisionTime = GetReactionTimeForNextShape();
             if (collisionTime < 0)
             {
                 return null;
             }
-            GameObject shape = CreateRandomShape(collisionTime);
+            GameObject shape = CreateRandomShape(collisionTime, bonus);
             shape.SetActive(true);
             return shape;
         }

@@ -7,6 +7,16 @@ namespace Assets.Scripts.Game
     {
         [SerializeField]
         private GameObject field916, field918;
+        [SerializeField]
+        private Tutorial tutorial;
+
+        public Tutorial Tutorial
+        {
+            get
+            {
+                return tutorial;
+            }
+        }
 
         public static bool Ready
         {
