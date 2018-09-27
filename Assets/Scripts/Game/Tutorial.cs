@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using Assets.Scripts.Sound;
 using UnityEngine;
 using Assets.Scripts.Shape;
@@ -11,7 +12,7 @@ namespace Assets.Scripts.Game
 
     public class Tutorial: MonoBehaviour
     {
-        private const int BASIC_TUTORIAL_REPETITIONS = 2;
+        private const int BASIC_TUTORIAL_REPETITIONS = 3;
         [SerializeField]
         private TutorialGestureAnimation tutorialGestureAnimationPrototype = null;
         private class TileData
@@ -29,17 +30,63 @@ namespace Assets.Scripts.Game
             }
         }
 
+        private bool autoplay = false;
+
         private Master m = null;
 
         public IEnumerator TryToStart(Master master)
         {
             m = master;
-            return BasicTutorial();
+            m.State.tutorial = new State.Tutorial();
+
+            yield return BasicTutorial();
+            //yield return ResetScore();
+
+            yield return BonusCatchTutorial(ShapeType.Heart);
+            yield return HeartBonusUseTutorial();
+
+
+            yield return BonusCatchTutorial(ShapeType.Snowflake);
+            StartCoroutine(AutoPlay(destroyShapes:false));
+            yield return BonusUseTutorial(ShapeType.Snowflake);
+            autoplay = false;
+
+            yield return WaitUntilAllShapesWillBeDestroyed();
+            //yield return ResetScore();
+
+            yield return BonusCatchTutorial(ShapeType.Explosion);
+            StartCoroutine(AutoPlay());
+            yield return BonusUseTutorial(ShapeType.Explosion);
+            
+            yield return PauseTutorial();
+            autoplay = false;
+
+            yield return WaitUntilAllShapesWillBeDestroyed();
+            m.State.SetGameOverData(true);
+            m.Listeners.OnGameOver(true);
+            m.Stop();
+            
         }
         
+        private IEnumerator ResetScore()
+        {
+            while(m.State.Score > 0)
+            {
+                yield return new WaitForSecondsRealtime(0.1f);
+                m.State.Score--;
+            }
+            m.Actions.SwitchSpawnPreset(1);
+        }
+
         private void SetTile(GameObject tile)
         {
             m.State.Mapping.TileSwitcher.SetTile(tile);
+        }
+
+        private IEnumerator WaitUntilAllShapesWillBeDestroyed()
+        {
+            while (m.State.shapesOnScreen.Count > 0)
+                yield return null;
         }
 
         private GameObject SelectOtherTile()
@@ -70,6 +117,75 @@ namespace Assets.Scripts.Game
             m.State.startTime = Time.time;
         }
 
+        private IEnumerator SwipeUpDown(TutorialGestureAnimation tutorialGesture)
+        {
+            while (true)
+            {
+                if (tutorialGesture.isActiveAndEnabled)
+                    yield return tutorialGesture.SwipeAnimation(TutorialGestureAnimation.SwipeAnimationType.TOP, false);
+                else
+                    break;
+                if (tutorialGesture.isActiveAndEnabled)
+                    yield return tutorialGesture.SwipeAnimation(TutorialGestureAnimation.SwipeAnimationType.BOTTOM, false);
+                else
+                    break;
+            }
+            Destroy(tutorialGesture.gameObject);
+        }
+
+        private IEnumerator PauseTutorial()
+        {
+            var tutorialGesture = Instantiate(tutorialGestureAnimationPrototype);
+            tutorialGesture.circle.SetActive(true);
+            m.State.tutorial.controls.pause = true;
+            var swipeUpDwon = StartCoroutine(SwipeUpDown(tutorialGesture));
+            do
+            {
+                yield return null;
+            } while (!m.State.paused);
+            tutorialGesture.gameObject.SetActive(false);
+        }
+
+        private IEnumerator HeartBonusUseTutorial()
+        {
+            m.State.tutorial = new State.Tutorial();
+            SpawnShape();
+            yield return new WaitForSecondsRealtime(0.25f);
+            var shape = GetClosestShape();
+            var tile = GetCurrentTile();
+            if(GetTileData(tile).Matches(m.State.BasketGameMode, GetShapeData(shape)))
+            {
+                SelectOtherTile();
+            }
+            while (m.State.HeartBonuses > 0)
+                yield return null;
+            yield return new WaitForSecondsRealtime(2f);
+        }
+
+        private IEnumerator  BonusUseTutorial(ShapeType type)
+        {
+            m.State.tutorial = new State.Tutorial();
+            m.State.tutorial.controls.bonusUse = true;
+            var tutorialGesture = Instantiate(tutorialGestureAnimationPrototype);
+            switch (type)
+            {
+                case ShapeType.Snowflake:
+                    tutorialGesture.PlaySwipeAnimation(TutorialGestureAnimation.SwipeAnimationType.RIGHT);
+                    break;
+                case ShapeType.Explosion:
+                    tutorialGesture.PlaySwipeAnimation(TutorialGestureAnimation.SwipeAnimationType.LEFT);
+                    break;
+                default:
+                    Destroy(tutorialGesture);
+                    yield break;
+            }
+            while (GetBonusCountByType(type) > 0)
+                yield return null;
+            tutorialGesture.StopAnimation();
+            Destroy(tutorialGesture);
+        }
+
+
 
         private IEnumerator RepeatableBasicTutorial(GameMode mode,int times = 1)
         {
@@ -77,10 +193,69 @@ namespace Assets.Scripts.Game
                 yield return BasicTutorialMode(mode);
         }
 
+        private IEnumerator AutoPlay(Action onComplete = null, bool destroyShapes = false)
+        {
+            autoplay = true;
+            GameObject tile = null;
+            GameObject closestShape = null;
+            do
+            {
+                if (!autoplay && destroyShapes)
+                {
+                    m.Actions.ExplodeShapesOnScreen();
+                }
+                if (autoplay && m.State.shapesOnScreen.Count < m.State.shapesOnScreenLimit)
+                {
+                    SpawnShape();
+                    yield return null;
+                }
+
+                var newClosestShape = GetClosestShape();
+                if (newClosestShape != null && closestShape != newClosestShape)
+                {
+                    tile = GetCorrectTileFor(m.State.BasketGameMode, GetShapeData(newClosestShape));
+                    SetTile(tile);
+                    closestShape = newClosestShape;
+                }
+                yield return null;
+            } while (autoplay || m.State.shapesOnScreen.Count > 0);
+            if (onComplete != null)
+                onComplete();
+        }
+
+
+
+        private IEnumerator BonusCatchTutorial(ShapeType type)
+        {
+            m.State.tutorial = new State.Tutorial();
+            var bonus = SpawnShape(prototype: GetBonusPrototypeByType(type));
+            if (bonus == null)
+                yield break;
+            float initialCollisionTime = m.Actions.GetCollisionTimeWithBasket(bonus);
+            do
+            {
+                yield return null;
+            } while (m.Actions.GetCollisionTimeWithBasket(bonus) > initialCollisionTime * 0.5f);
+            yield return SetTimeScale(0, initialCollisionTime * 0.25f);
+            var tapAnimation = Instantiate(tutorialGestureAnimationPrototype);
+            PlaceTouchAnimationAt(tapAnimation, bonus);
+            tapAnimation.PlayTapAnimation();
+            m.State.tutorial.controls.bonusPick = true;
+            while (GetBonusCountByType(type) == 0)
+                yield return null;
+            tapAnimation.StopAnimation();
+            yield return SetTimeScale(1, initialCollisionTime * 0.25f);
+            Destroy(tapAnimation.gameObject);
+            while (m.State.shapesOnScreen.Count > 0)
+                yield return null;
+
+        }
+
         private IEnumerator BasicTutorialMode(GameMode mode)
         {
-            yield return SpawnShapes(1, 1);
-
+            m.State.tutorial.controls.backet = false;
+            SpawnShape();
+            yield return new WaitForSecondsRealtime(0.25f);
             var shape = GetClosestShape();
             var shapeData = GetShapeData(shape);
             var prevTile = GetCurrentTile();
@@ -101,6 +276,7 @@ namespace Assets.Scripts.Game
             PlaceTouchAnimationAt(touchAnimation, correctTile);
             touchAnimation.PlayTapAnimation();
             yield return SetTimeScale(0, initialCollisionTime * 0.25f);
+            m.State.tutorial.controls.backet = true;
             do
             {
                 var currentTile = GetCurrentTile();
@@ -111,6 +287,7 @@ namespace Assets.Scripts.Game
                 }
                 yield return null;
             } while (!tileData.Matches(mode,shapeData));
+            m.State.tutorial.controls.backet = false;
             Destroy(touchAnimation.gameObject);
             yield return SetTimeScale(1, initialCollisionTime * 0.25f);
             while (m.State.shapesOnScreen.Count > 0)
@@ -196,16 +373,53 @@ namespace Assets.Scripts.Game
             return closest;
         }
 
-        private IEnumerator SpawnShapes(int number, int shapesOnScreen, float time = 0.1f)
+        //private IEnumerator SpawnShapes(int number, int shapesOnScreen, float time = 0.1f)
+        //{
+        //    if(shapesOnScreen>0)
+        //        m.Actions.SwitchSpawnPreset(shapesOnScreen);
+        //    for(int i = 0; i < number; i++)
+        //    {
+        //        var shape = m.Actions.GetNextShape(false);
+        //        if (shape != null)
+        //            m.State.shapesOnScreen.Add(shape);
+        //        yield return new WaitForSecondsRealtime(time);
+        //    }
+        //}
+
+        private GameObject GetBonusPrototypeByType(ShapeType type)
         {
-            m.Actions.SwitchSpawnPreset(shapesOnScreen);
-            for(int i = 0; i < number; i++)
+            switch (type)
             {
-                var shape = m.Actions.GetNextShape(false);
-                if (shape != null)
-                    m.State.shapesOnScreen.Add(shape);
-                yield return new WaitForSecondsRealtime(time);
+                case ShapeType.Snowflake:
+                    return m.State.Mapping.bonus.freeze;
+                case ShapeType.Explosion:
+                    return m.State.Mapping.bonus.explosion;
+                case ShapeType.Heart:
+                    return m.State.Mapping.bonus.heart;
             }
+            return null;
+        }
+
+        private GameObject SpawnShape(bool bonus = false, GameObject prototype = null)
+        {
+            var shape = m.Actions.GetNextShape(prototype: prototype, bonus:bonus);
+            if (shape != null)
+                m.State.shapesOnScreen.Add(shape);
+            return shape;
+        }
+
+        private int GetBonusCountByType(ShapeType type)
+        {
+            switch (type)
+            {
+                case ShapeType.Snowflake:
+                    return m.State.FreezeBonuses;
+                case ShapeType.Explosion:
+                    return m.State.ExplosionBonuses;
+                case ShapeType.Heart:
+                    return m.State.HeartBonuses;
+            }
+            return 0;
         }
     }
 }

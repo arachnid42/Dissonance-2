@@ -12,8 +12,7 @@ namespace Assets.Scripts.Game
             RIGHT = 2,
             BOTTOM = 4
         }
-        [SerializeField]
-        private GameObject circle = null;
+        public GameObject circle = null;
         [SerializeField]
         private float tapAnimationTime = 0.5f, swipeAnimationTime = 0.5f, swipeAnimationScaleTime = 0.5f;
         [SerializeField]
@@ -96,20 +95,20 @@ namespace Assets.Scripts.Game
         }
 
 
-        private IEnumerator SwipeAnimation(Vector3 start, Vector3 end)
+        private IEnumerator SwipeAnimation(Vector3 start, Vector3 end, bool repeatable = true)
         {
-            while (true)
+            do
             {
                 circle.transform.position = start;
                 circle.transform.localScale = Vector3.zero;
                 yield return ScaleAnimation(circle, Vector3.one, swipeAnimationScaleTime / 2, tapAnimationScaleCurve);
                 yield return MoveAnimation(circle, start, end, swipeAnimationTime, swipeAnimationCurve);
                 yield return ScaleAnimation(circle, Vector3.zero, swipeAnimationScaleTime / 2, tapAnimationScaleCurve);
-            }
+            } while (repeatable);
         }
 
 
-        private IEnumerator SwipeAnimation(SwipeAnimationType type)
+        public IEnumerator SwipeAnimation(SwipeAnimationType type, bool repeatable = true)
         {
             Vector3
                 start = Vector3.zero,
@@ -138,7 +137,7 @@ namespace Assets.Scripts.Game
                     end = Vector3.Lerp(left, right, horizontalSwipePOffset);
                     break;
             }
-            yield return SwipeAnimation(start, end);
+            yield return SwipeAnimation(start, end, repeatable);
         }
 
         private IEnumerator TapAnimation()

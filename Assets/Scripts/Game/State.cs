@@ -10,6 +10,18 @@ namespace Assets.Scripts.Game
     [System.Serializable]
     public class State : MonoBehaviour
     {
+        public class Tutorial
+        {
+            public class Controlls
+            {
+                public bool pause = false;
+                public bool backet = false;
+                public bool bonusPick = false;
+                public bool bonusUse = false;
+            }
+            public Controlls controls = new Controlls();
+        }
+
         public class GameOver
         {
             public bool win = false;
@@ -101,6 +113,8 @@ namespace Assets.Scripts.Game
         public Bonus explosion = new Bonus();
 
         public GameOver gameOver = null;
+        public Tutorial tutorial = null;
+
 
         public int shapesOnScreenLimit = 1;
         public int score = 0;
@@ -278,7 +292,7 @@ namespace Assets.Scripts.Game
 
         public void Reset()
         {
-
+            tutorial = null;
             coroutinesStarted = 0;
             slowdownType = Difficulty.Slowdown.Type.None;
             lastSpawnedShapePrototype = null;

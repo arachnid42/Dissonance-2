@@ -315,16 +315,25 @@ namespace Assets.Scripts.Game
             return nextShapePrototype;
         }
 
-        public GameObject CreateRandomShape(float collisionTime, bool bonus = true)
+        public GameObject CreateRandomShape(float collisionTime, bool bonus = true, GameObject prototype = null)
         {
             GameObject suitableSpawn = FindSuitableSpawn(collisionTime);
             if(suitableSpawn == null)
                 return null;
-            GameObject selectedShape = bonus?GetNextBonus():null;
-            if(selectedShape == null)
+            GameObject selectedShape = null;
+
+            if (prototype == null)
             {
-                selectedShape = GetNextRandomShape();
-                master.State.lastSpawnedShapePrototype = selectedShape;
+                selectedShape = bonus? GetNextBonus():null;
+                if (selectedShape == null)
+                {
+                    selectedShape = GetNextRandomShape();
+                    master.State.lastSpawnedShapePrototype = selectedShape;
+                }
+            }
+            else
+            {
+                selectedShape = prototype;
             }
                 
             GameObject shape = Object.Instantiate(selectedShape, suitableSpawn.transform.position, suitableSpawn.transform.rotation);
@@ -342,14 +351,14 @@ namespace Assets.Scripts.Game
         }
 
 
-        public GameObject GetNextShape(bool bonus = true)
+        public GameObject GetNextShape(bool bonus = true, GameObject prototype = null)
         {
             float collisionTime = GetReactionTimeForNextShape();
             if (collisionTime < 0)
             {
                 return null;
             }
-            GameObject shape = CreateRandomShape(collisionTime, bonus);
+            GameObject shape = CreateRandomShape(collisionTime, bonus, prototype);
             shape.SetActive(true);
             return shape;
         }

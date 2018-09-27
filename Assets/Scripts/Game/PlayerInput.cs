@@ -85,12 +85,16 @@ namespace Assets.Scripts.Game
 
                 if (touch.phase == TouchPhase.Began && hit.collider != null && hit.collider.tag == bonusTag)
                 {
+                    if (master.State.tutorial != null && !master.State.tutorial.controls.bonusPick)
+                        return true;
                     var controller = hit.collider.attachedRigidbody.GetComponent<Shape.Controller>();
                     controller.Bonus.DetectTouch();
                     return true;
                 }
                 else if (hit.collider != null && hit.collider.tag == tileTag)
                 {
+                    if (master.State.tutorial !=null && !master.State.tutorial.controls.backet)
+                        return true;
                     master.State.Mapping.TileSwitcher.Tile = hit.collider.gameObject;
                     return true;
                 }
@@ -103,21 +107,29 @@ namespace Assets.Scripts.Game
 
         private void OnSwipeDown()
         {
+            if (master.State.tutorial != null && !master.State.tutorial.controls.pause)
+                return;
             master.Actions.Pause();
         }
 
         private void OnSwipeUp()
         {
+            if (master.State.tutorial != null && !master.State.tutorial.controls.pause)
+                return;
             master.Actions.Pause();
         }
 
         private void OnSwipeLeft()
         {
+            if (master.State.tutorial != null && !master.State.tutorial.controls.bonusUse)
+                return;
             master.Actions.UseExplosionBonus();
         }
 
         private void OnSwipeRight()
         {
+            if (master.State.tutorial != null && !master.State.tutorial.controls.bonusUse)
+                return;
             master.Actions.UseFreezeBonus();
         }
 

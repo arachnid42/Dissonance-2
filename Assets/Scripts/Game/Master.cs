@@ -113,7 +113,8 @@ namespace Assets.Scripts.Game
         {
             if (pause && State.started && !State.paused)
             {
-                Actions.Pause();
+                if(state.tutorial == null)
+                    Actions.Pause();
             }
         }
 
@@ -121,7 +122,6 @@ namespace Assets.Scripts.Game
         {
             if (updateCoroutine != null)
                 StopCoroutine(updateCoroutine);
-            Debug.Log(DifficultyLevels.Instance.CurrentDifficulty.name);
             updateCoroutine = StartCoroutine(UpdateCoroutine());
         }
        
