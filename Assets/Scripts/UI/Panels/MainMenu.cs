@@ -154,28 +154,42 @@ namespace Assets.Scripts.UI.Panels
 
             var startPlay = UIController.Instance.data.activePanel.SwitchToAnimation(fade);
             startPlay.After(fade.SetHiddenEnumerator(true));
-            if (ShouldShowTutorial())
+            //if (ShouldShowTutorial())
+            //{
+            //    Debug.Log("Show tutorial");
+            //    startPlay.After(tutorial.SetHiddenEnumerator(false));
+            //}
+            //else
+            //{
+            //    if (DifficultyLevels.Instance.CurrentDifficulty.target.endless)
+            //    {
+            //        lastPanel = fade;
+            //    }
+            //    else
+            //    {
+            //        startPlay.After(fade.SetHiddenEnumerator(true));
+            //        startPlay.After(startup.SetHiddenEnumerator(false));
+            //        lastPanel = startup;
+            //    }
+            //    startPlay.After(lastPanel.SetHiddenEnumerator(true, after: () => {
+            //        Field.Instance.Master.Restart();
+            //        UIController.Instance.data.isInMainMenu = false;
+            //    }, background: background));
+            //}
+            if (DifficultyLevels.Instance.CurrentDifficulty.target.endless)
             {
-                Debug.Log("Show tutorial");
-                startPlay.After(tutorial.SetHiddenEnumerator(false));
+                lastPanel = fade;
             }
             else
             {
-                if (DifficultyLevels.Instance.CurrentDifficulty.target.endless)
-                {
-                    lastPanel = fade;
-                }
-                else
-                {
-                    startPlay.After(fade.SetHiddenEnumerator(true));
-                    startPlay.After(startup.SetHiddenEnumerator(false));
-                    lastPanel = startup;
-                }
-                startPlay.After(lastPanel.SetHiddenEnumerator(true, after: () => {
-                    Field.Instance.Master.Restart();
-                    UIController.Instance.data.isInMainMenu = false;
-                }, background: background));
+                startPlay.After(fade.SetHiddenEnumerator(true));
+                startPlay.After(startup.SetHiddenEnumerator(false));
+                lastPanel = startup;
             }
+            startPlay.After(lastPanel.SetHiddenEnumerator(true, after: () => {
+                Field.Instance.Master.Restart();
+                UIController.Instance.data.isInMainMenu = false;
+            }, background: background));
             startPlay.Start();
         }
 
