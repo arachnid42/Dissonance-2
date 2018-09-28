@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Assets.Scripts.Game;
+using UnityEngine.Advertisements;
 using Assets.Scripts.Monetization;
 
 namespace Assets.Scripts.UI.Panels
@@ -78,6 +78,42 @@ namespace Assets.Scripts.UI.Panels
                     break;
                 default:
                     closeAnimation.Start();
+                    break;
+            }
+        }
+
+        public void OnTryButtonClick()
+        {
+            switch (UIController.Instance.data.activePanel.name)
+            {
+                case ENDLESS_PANEL:
+                    Advertising.Instance.TryToShowAds(TrialEndlessCallback);
+                    break;
+                case CONFIGURABLE_PANEL:
+                    fromConfigurableToDonateAnimation.Start();
+                    break;
+                default:
+                    closeAnimation.Start();
+                    break;
+            }
+        }
+
+        private void TrialEndlessCallback(ShowResult result)
+        {
+            switch (result)
+            {
+                case ShowResult.Finished:
+                    Debug.Log("The ad was successfully shown.");
+                    //
+                    // YOUR CODE TO REWARD THE GAMER
+                    // Give coins etc.
+                    fromEndlessToDonateAnimation.Start();
+                    break;
+                case ShowResult.Skipped:
+                    Debug.Log("The ad was skipped before reaching the end.");
+                    break;
+                case ShowResult.Failed:
+                    Debug.LogError("The ad failed to be shown.");
                     break;
             }
         }

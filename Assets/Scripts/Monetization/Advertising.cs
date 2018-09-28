@@ -9,6 +9,7 @@ namespace Assets.Scripts.Monetization
 {
     public class Advertising : MonoBehaviour
     {
+        const string RewardedPlacementId = "rewardedVideo";
         public static Advertising Instance
         {
             get; private set;
@@ -37,16 +38,16 @@ namespace Assets.Scripts.Monetization
             }
         }
 
-        public void TryToShowAds()
+        public void TryToShowAds(System.Action<UnityEngine.Advertisements.ShowResult> callback = null)
         {
             if (showAdsCoroutine != null)
             {
                 StopCoroutine(showAdsCoroutine);
             }
-            StartCoroutine(ShowAdsCoroutine());
+            StartCoroutine(ShowAdsCoroutine(callback));
         }
 
-        private IEnumerator ShowAdsCoroutine()
+        private IEnumerator ShowAdsCoroutine(System.Action<UnityEngine.Advertisements.ShowResult> callback = null)
         {
             while (!PersistentState.Ready)
                 yield return null;
@@ -80,10 +81,20 @@ namespace Assets.Scripts.Monetization
                 }
                 initTime += coroutineStepTimeInterval;
             }
-               
-            Advertisement.Show();
-            Debug.Log("Waiting for ads displayed");
-            data.adsDisplayed = data.timesPlayed;
+            if(callback != null)
+            {
+                var options = new ShowOptions { resultCallback = callback };
+                Advertisement.Show(RewardedPlacementId, options);
+                Debug.Log("Waiting for ads displayed in promo");
+                data.adsDisplayed = data.timesPlayed;
+            }
+            else
+            {
+                Advertisement.Show();
+                Debug.Log("Waiting for ads displayed");
+                data.adsDisplayed = data.timesPlayed;
+            }
+            
             showAdsCoroutine = null;
         }
 
