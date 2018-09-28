@@ -48,7 +48,7 @@ namespace Assets.Scripts.Game
             State.Reset();
         }
 
-        private void ClearScreenShapesOnScreen()
+        public void ClearScreenShapesOnScreen()
         {
             List<GameObject> shapes = new List<GameObject>(State.shapesOnScreen);
             foreach(var shape in shapes)

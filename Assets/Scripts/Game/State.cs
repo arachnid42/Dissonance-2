@@ -24,6 +24,7 @@ namespace Assets.Scripts.Game
 
         public class GameOver
         {
+            public bool tutorial = false;
             public bool win = false;
             public Difficulty.Target target;
             public int score = 0;

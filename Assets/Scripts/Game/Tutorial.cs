@@ -13,6 +13,10 @@ namespace Assets.Scripts.Game
     public class Tutorial: MonoBehaviour
     {
         private const int BASIC_TUTORIAL_REPETITIONS = 3;
+
+        private const float SHAPE_STOP_PATH_PERCENT = 0.30f;
+        private const float SHAPE_SLOWDOWN_TIME_PATH_PERCENT = 0.25f;
+
         [SerializeField]
         private TutorialGestureAnimation tutorialGestureAnimationPrototype = null;
         private class TileData
@@ -34,38 +38,105 @@ namespace Assets.Scripts.Game
 
         private Master m = null;
 
+        private bool ShouldStartTutorial(PersistentState.Data.Tutorial tutorial, Difficulty difficulty)
+        {
+            return
+                !(
+                    !tutorial.basic
+                    ||
+                    !tutorial.lifeBonus && difficulty.ShouldShowLifeBonusTutorial()
+                    ||
+                    !tutorial.explosionBonus && difficulty.ShouldShowExplosionBonusTutorial()
+                    ||
+                    !tutorial.freezeBonus && difficulty.ShouldShowFreezeBonusTutorial()
+                );
+        }
+
         public IEnumerator TryToStart(Master master)
         {
+
+            var tutorial = PersistentState.Instance.data.turotiral;
+
             m = master;
+           
+            var difficulty = m.State.Difficulty;
+
+            if(ShouldStartTutorial(tutorial, difficulty))
+            {
+                yield break;
+            }
             m.State.tutorial = new State.Tutorial();
 
-            yield return BasicTutorial();
-            //yield return ResetScore();
+            if (!tutorial.basic)
+            {
+                yield return BasicTutorial();
+            }
 
-            yield return BonusCatchTutorial(ShapeType.Heart);
-            yield return HeartBonusUseTutorial();
+            if (!tutorial.lifeBonus && difficulty.ShouldShowLifeBonusTutorial())
+            {
+                yield return BonusCatchTutorial(ShapeType.Heart);
+                yield return HeartBonusUseTutorial();
+                tutorial.lifeBonus = true;
+            }
 
 
-            yield return BonusCatchTutorial(ShapeType.Snowflake);
-            StartCoroutine(AutoPlay(destroyShapes:false));
-            yield return BonusUseTutorial(ShapeType.Snowflake);
+            if (!tutorial.freezeBonus && difficulty.ShouldShowFreezeBonusTutorial())
+            {
+                yield return BonusCatchTutorial(ShapeType.Snowflake);
+                StartCoroutine(AutoPlay());
+                yield return BonusUseTutorial(ShapeType.Snowflake);
+                StartCoroutine(SetTimeScale(2f, 1f));
+                autoplay = false;
+                yield return WaitUntilAllShapesWillBeDestroyed();
+                Time.timeScale = 1;
+                tutorial.freezeBonus = true;
+            }
+
+            if (!tutorial.explosionBonus && difficulty.ShouldShowExplosionBonusTutorial())
+            {
+                yield return BonusCatchTutorial(ShapeType.Explosion);
+                StartCoroutine(AutoPlay());
+                yield return BonusUseTutorial(ShapeType.Explosion);
+                tutorial.explosionBonus = true;
+            }
+
+            if (!tutorial.basic)
+            {
+                if (!autoplay)
+                    StartCoroutine(AutoPlay());
+                yield return PauseTutorial();
+                tutorial.basic = true;
+            }
+            
+
+            m.State.tutorial = new State.Tutorial();
             autoplay = false;
 
-            yield return WaitUntilAllShapesWillBeDestroyed();
-            //yield return ResetScore();
 
-            yield return BonusCatchTutorial(ShapeType.Explosion);
-            StartCoroutine(AutoPlay());
-            yield return BonusUseTutorial(ShapeType.Explosion);
-            
-            yield return PauseTutorial();
-            autoplay = false;
-
+            StartCoroutine(SetTimeScale(2f, 1f));
             yield return WaitUntilAllShapesWillBeDestroyed();
-            m.State.SetGameOverData(true);
-            m.Listeners.OnGameOver(true);
-            m.Stop();
+
+
+            if (m.State.Difficulty.target.scoreBased)
+                yield return ResetScore();
+            else
+                m.State.Score = 0;
+            m.State.firstScoreTime = -1;
+            m.Actions.SwitchSpawnPreset(1);
+            m.State.tutorial = null;
+
+
+            yield return new WaitForSecondsRealtime(2f);
+
+
+            Time.timeScale = 0;
+            StartCoroutine(SetTimeScale(1, 15f));
             
+            //m.State.SetGameOverData(true);
+            //m.State.gameOver.tutorial = true;
+            //m.Listeners.OnGameOver(true);
+            //m.Stop();
+
         }
         
         private IEnumerator ResetScore()
@@ -75,7 +146,6 @@ namespace Assets.Scripts.Game
                 yield return new WaitForSecondsRealtime(0.1f);
                 m.State.Score--;
             }
-            m.Actions.SwitchSpawnPreset(1);
         }
 
         private void SetTile(GameObject tile)
@@ -119,16 +189,10 @@ namespace Assets.Scripts.Game
 
         private IEnumerator SwipeUpDown(TutorialGestureAnimation tutorialGesture)
         {
-            while (true)
+            while (tutorialGesture.isActiveAndEnabled)
             {
-                if (tutorialGesture.isActiveAndEnabled)
-                    yield return tutorialGesture.SwipeAnimation(TutorialGestureAnimation.SwipeAnimationType.TOP, false);
-                else
-                    break;
-                if (tutorialGesture.isActiveAndEnabled)
-                    yield return tutorialGesture.SwipeAnimation(TutorialGestureAnimation.SwipeAnimationType.BOTTOM, false);
-                else
-                    break;
+                 yield return tutorialGesture.SwipeAnimation(TutorialGestureAnimation.SwipeAnimationType.TOP, false);
+                 yield return tutorialGesture.SwipeAnimation(TutorialGestureAnimation.SwipeAnimationType.BOTTOM, false);
             }
             Destroy(tutorialGesture.gameObject);
         }
@@ -144,6 +208,9 @@ namespace Assets.Scripts.Game
                 yield return null;
             } while (!m.State.paused);
             tutorialGesture.gameObject.SetActive(false);
+            tutorialGesture.StopAnimation();
+            while (m.State.paused)
+                yield return null;
         }
 
         private IEnumerator HeartBonusUseTutorial()
@@ -167,6 +234,7 @@ namespace Assets.Scripts.Game
             m.State.tutorial = new State.Tutorial();
             m.State.tutorial.controls.bonusUse = true;
             var tutorialGesture = Instantiate(tutorialGestureAnimationPrototype);
+            tutorialGesture.name = "Bonus use:" + type;
             switch (type)
             {
                 case ShapeType.Snowflake:
@@ -182,7 +250,7 @@ namespace Assets.Scripts.Game
             while (GetBonusCountByType(type) > 0)
                 yield return null;
             tutorialGesture.StopAnimation();
-            Destroy(tutorialGesture);
+            Destroy(tutorialGesture.gameObject);
         }
 
 
@@ -235,16 +303,17 @@ namespace Assets.Scripts.Game
             do
             {
                 yield return null;
-            } while (m.Actions.GetCollisionTimeWithBasket(bonus) > initialCollisionTime * 0.5f);
-            yield return SetTimeScale(0, initialCollisionTime * 0.25f);
+            } while (m.Actions.GetCollisionTimeWithBasket(bonus) > initialCollisionTime * SHAPE_STOP_PATH_PERCENT);
+            yield return SetTimeScale(0, initialCollisionTime * SHAPE_SLOWDOWN_TIME_PATH_PERCENT);
             var tapAnimation = Instantiate(tutorialGestureAnimationPrototype);
+            tapAnimation.name = "Bonus Catch:" + type;
             PlaceTouchAnimationAt(tapAnimation, bonus);
             tapAnimation.PlayTapAnimation();
             m.State.tutorial.controls.bonusPick = true;
             while (GetBonusCountByType(type) == 0)
                 yield return null;
             tapAnimation.StopAnimation();
-            yield return SetTimeScale(1, initialCollisionTime * 0.25f);
+            yield return SetTimeScale(1, initialCollisionTime * SHAPE_SLOWDOWN_TIME_PATH_PERCENT);
             Destroy(tapAnimation.gameObject);
             while (m.State.shapesOnScreen.Count > 0)
                 yield return null;
@@ -269,13 +338,13 @@ namespace Assets.Scripts.Game
             }
 
             float initialCollisionTime = m.Actions.GetCollisionTimeWithBasket(shape);
-            while (m.Actions.GetCollisionTimeWithBasket(shape) > initialCollisionTime * 0.45f)
+            while (m.Actions.GetCollisionTimeWithBasket(shape) > initialCollisionTime * SHAPE_STOP_PATH_PERCENT)
                 yield return null;
 
             var touchAnimation = Instantiate(tutorialGestureAnimationPrototype);
             PlaceTouchAnimationAt(touchAnimation, correctTile);
             touchAnimation.PlayTapAnimation();
-            yield return SetTimeScale(0, initialCollisionTime * 0.25f);
+            yield return SetTimeScale(0, initialCollisionTime * SHAPE_SLOWDOWN_TIME_PATH_PERCENT);
             m.State.tutorial.controls.backet = true;
             do
             {
