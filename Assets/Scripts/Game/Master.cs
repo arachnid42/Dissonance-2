@@ -64,10 +64,13 @@ namespace Assets.Scripts.Game
 
             Time.timeScale = 1;
             State.Reset();
+            //block pause and other controlls
+            State.tutorial = new State.Tutorial();
             State.Started = true;
-            yield return new WaitForSecondsRealtime(1.5f);
-
             yield return Field.Instance.Tutorial.TryToStart(this);
+            //unblock pause and controls
+            State.tutorial = null;
+            yield return new WaitForSecondsRealtime(1.5f);
 
             while (State.started)
             {
