@@ -55,34 +55,34 @@ namespace Assets.Scripts.Monetization
 
             if ((data.adsDisabled && !ignoreAdsDisabled) || data.timesPlayed - data.adsDisplayed < adsTimesPlayedInterval)
             {
-                Debug.Log("Ads disabled. Ignoring request");
+                //Debug.Log("Ads disabled. Ignoring request");
                 yield break;
             }
                 
 
-            Debug.Log("Waiting for ads initialization");
+            //Debug.Log("Waiting for ads initialization");
             float initTime = 0;
-            Debug.Log("Adsvertisment.IsInitialized:" + Advertisement.isInitialized);
-            Debug.LogFormat("Placement state:{0}", Advertisement.GetPlacementState());
+            //Debug.Log("Adsvertisment.IsInitialized:" + Advertisement.isInitialized);
+            //Debug.LogFormat("Placement state:{0}", Advertisement.GetPlacementState());
             while (!Advertisement.IsReady())
             {
                 
                 yield return new WaitForSecondsRealtime(coroutineStepTimeInterval); ;
                 if (initTime >= adsInitTimeLimit)
                 {
-                    Debug.Log("Ads disabled because init time reached limit");
+                    //Debug.Log("Ads disabled because init time reached limit");
                     yield break;
                 }
                 if(Advertisement.GetPlacementState() == PlacementState.NoFill)
                 {
-                    Debug.Log("Placement has no more ads to show");
+                    //Debug.Log("Placement has no more ads to show");
                     yield break;
                 }
                 initTime += coroutineStepTimeInterval;
             }
                
             Advertisement.Show();
-            Debug.Log("Waiting for ads displayed");
+            //Debug.Log("Waiting for ads displayed");
             data.adsDisplayed = data.timesPlayed;
             showAdsCoroutine = null;
         }
