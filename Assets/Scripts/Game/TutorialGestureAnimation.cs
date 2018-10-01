@@ -150,10 +150,5 @@ namespace Assets.Scripts.Game
             }
         }
 
-        //private void Start()
-        //{
-        //    PlaySwipeAnimation(SwipeAnimationType.BOTTOM);
-        //}
-
     }
 }

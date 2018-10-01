@@ -117,10 +117,11 @@ namespace Assets.Scripts.Game
 
 
             m.Stop();
-            yield return new WaitForSecondsRealtime(2f);
-            m.Restart();
-
-
+            m.State.SetGameOverData(true);
+            m.State.gameOver.tutorial = true;
+            m.Listeners.OnGameOver(true);
+            //yield return new WaitForSecondsRealtime(2f);
+            //m.Restart();
         }
         
         private IEnumerator ResetScore()
