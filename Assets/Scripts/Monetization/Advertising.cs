@@ -54,7 +54,7 @@ namespace Assets.Scripts.Monetization
 
             var data = PersistentState.Instance.data;
 
-            if ((data.adsDisabled && !ignoreAdsDisabled) || data.timesPlayed - data.adsDisplayed < adsTimesPlayedInterval)
+            if (callback == null && ((data.adsDisabled && !ignoreAdsDisabled) || data.timesPlayed - data.adsDisplayed < adsTimesPlayedInterval)) 
             {
                 Debug.Log("Ads disabled. Ignoring request");
                 yield break;
@@ -86,7 +86,6 @@ namespace Assets.Scripts.Monetization
                 var options = new ShowOptions { resultCallback = callback };
                 Advertisement.Show(RewardedPlacementId, options);
                 Debug.Log("Waiting for ads displayed in promo");
-                data.adsDisplayed = data.timesPlayed;
             }
             else
             {

@@ -107,7 +107,7 @@ namespace Assets.Scripts.UI.Panels
                     //
                     // YOUR CODE TO REWARD THE GAMER
                     // Give coins etc.
-                    fromEndlessToDonateAnimation.Start();
+                    closeAnimation.Start();
                     break;
                 case ShowResult.Skipped:
                     Debug.Log("The ad was skipped before reaching the end.");
