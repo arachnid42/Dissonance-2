@@ -9,18 +9,47 @@ namespace Assets.Scripts.UI.Panels
     public class LevelStartUp : BasePanel
     {
         [SerializeField]
-        private Text header = null, footer = null, number = null;
+        private Text header, footer, number, tutorialWelcome, tutorialMessage = null;
+        [SerializeField]
+        private GameObject goalPanel, tutorialPanel;
 
         private void OnEnable()
         {
             StartCoroutine(AlterField(() => Field.Instance.gameObject.SetActive(true)));
+            ReactOnTutorial();
+        }
 
+        private void ReactOnTutorial()
+        {
+            Debug.Log(Field.Instance.Master.State.tutorial);
+            if (ShouldShowTutorial())
+            {
+                tutorialPanel.SetActive(true);
+                goalPanel.SetActive(false);
+                SetupTutorialPanel();
+            }
+            else
+            {
+                tutorialPanel.SetActive(false);
+                goalPanel.SetActive(true);
+                SetupGoalScreen();
+            }
+        }
+
+        private void SetupTutorialPanel()
+        {
+            tutorialWelcome.text = Text("tutorialWelcome");
+            tutorialMessage.text = Text("tutorialMessage");
+        }
+
+        private void SetupGoalScreen()
+        {
             var difficulty = DifficultyLevels.Instance.CurrentDifficulty;
             gameObject.GetComponent<CanvasGroup>().alpha = 1;
             if (difficulty.target.endless)
             {
                 header.text = Text("tryToBeat");
-                footer.text = difficulty.target.scoreBased?Text("points"):Text("seconds");
+                footer.text = difficulty.target.scoreBased ? Text("points") : Text("seconds");
                 number.text = (difficulty.target.scoreBased ? PersistentState.Instance.data.endlessScoreRecord : PersistentState.Instance.data.endlessTimeRecord).ToString();
             }
             else if (difficulty.target.scoreBased)
@@ -35,6 +64,18 @@ namespace Assets.Scripts.UI.Panels
                 footer.text = Text("seconds");
                 number.text = difficulty.target.time.ToString();
             }
+        }
+
+        private bool ShouldShowTutorial()
+        {
+            var tutorialData = PersistentState.Instance.data.turotiral;
+            Difficulty currentDifficulty = DifficultyLevels.Instance.CurrentDifficulty;
+            return (
+                !tutorialData.basic ||
+                !tutorialData.explosionBonus && currentDifficulty.ShouldShowExplosionBonusTutorial() ||
+                !tutorialData.freezeBonus && currentDifficulty.ShouldShowFreezeBonusTutorial() ||
+                !tutorialData.lifeBonus && currentDifficulty.ShouldShowLifeBonusTutorial()
+                );
         }
 
     }

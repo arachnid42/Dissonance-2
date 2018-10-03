@@ -10,10 +10,13 @@ namespace Assets.Scripts.UI.Panels
     {
         [SerializeField]
         private Text pause = null, resume = null, mainMenu = null;
+        [SerializeField]
+        private Button pauseButton;
 
         private void OnEnable()
         {
             SetLabels(UpdateLabels);
+            ReactOnTutorial();
             UIController.Instance.data.activePanel = this;
         }
 
@@ -22,7 +25,18 @@ namespace Assets.Scripts.UI.Panels
             pause.text = Text("pause");
             resume.text = Text("resume");
             mainMenu.text = Text("mainMenu");
+        }
 
+        private void ReactOnTutorial()
+        {
+            if(Field.Instance != null && Field.Instance.Master.State.tutorial != null)
+            {
+                pauseButton.gameObject.SetActive(false);
+            }
+            else
+            {
+                pauseButton.gameObject.SetActive(true);
+            }
         }
 
         public void OnResumeButton()

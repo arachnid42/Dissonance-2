@@ -32,6 +32,8 @@
 		{"key":"congrats", "value":"Parabéns!"},
 		{"key":"levelsUnlocked", "value":"Todos os níveis desbloqueados"},
 		{"key":"next", "value":"Próximo nível"},
+		{"key":"tutorialFinish", "value":"Tutorial concluído!"},
+		{"key":"backToGame", "value":"De volta ao jogo"},
 		{"key":"playEndless", "value":"Jogo infinito"},
 		{"key":"rate", "value":"Taxa"},
 		{"key":"share", "value":"Compartilhar"},
@@ -126,6 +128,8 @@
 		{"key":"off", "value":"OFF"},
 
 		{"key":"tutorial", "value":"Tutorial"},
+		{"key":"tutorialWelcome", "value":"Bem-vindo ao tutorial!"},
+		{"key":"tutorialMessage", "value":"Siga as instruções"},
 		{"key":"tap", "value":"TOQUE"},
 		{"key":"general.tutorial.1", "value":"Em Dissonância você precisa pegar formas caindo no cesto baseando-se na sua forma ou no cor. Parece simples até que você tente."},
 		{"key":"general.tutorial.2", "value":"Isso é cesto. Toque nele."},

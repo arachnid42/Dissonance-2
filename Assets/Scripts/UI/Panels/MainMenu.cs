@@ -176,7 +176,7 @@ namespace Assets.Scripts.UI.Panels
             //        UIController.Instance.data.isInMainMenu = false;
             //    }, background: background));
             //}
-            if (DifficultyLevels.Instance.CurrentDifficulty.target.endless)
+            if (DifficultyLevels.Instance.CurrentDifficulty.target.endless && !ShouldShowTutorial())
             {
                 lastPanel = fade;
             }

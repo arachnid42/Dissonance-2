@@ -32,6 +32,8 @@
 		{"key":"congrats", "value":"Congratulations!"},
 		{"key":"levelsUnlocked", "value":"All levels unlocked"},
 		{"key":"next", "value":"Next level"},
+		{"key":"tutorialFinish", "value":"Tutorial completed!"},
+		{"key":"backToGame", "value":"Back to the game"},
 		{"key":"playEndless", "value":"Play Endless"},
 		{"key":"rate", "value":"Rate"},
 		{"key":"share", "value":"Share"},
@@ -126,6 +128,8 @@
 		{"key":"off", "value":"OFF"},
 
 		{"key":"tutorial", "value":"Tutorial"},
+		{"key":"tutorialWelcome", "value":"Welcome to tutorial!"},
+		{"key":"tutorialMessage", "value":"Follow the instructions"},
 		{"key":"tap", "value":"TAP"},
 		{"key":"general.tutorial.1", "value":"In Dissonance you need to catch falling shapes into basket based on their shape or color. It sounds simple until you try."},
 		{"key":"general.tutorial.2", "value":"This is basket. Tap on it."},

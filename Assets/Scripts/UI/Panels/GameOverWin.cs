@@ -10,20 +10,23 @@ namespace Assets.Scripts.UI.Panels
     public class GameOverWin : BasePanel
     {
         [SerializeField]
-        private Text win = null, congrats = null, levelsUnlocked = null,
-            next = null, rate = null, share = null, donate = null, mainMenu = null;
+        private Text win, congrats, levelsUnlocked, next, rate, share, donate, mainMenu = null;
 
         [SerializeField]
         private GameObject winText, congratsText, levelsUnlockedText;
 
-        private bool hasNextLevel, isConfigurable;
+        private bool hasNextLevel, isConfigurable, isTutorial;
 
         private void OnEnable()
         {
             UIController.Instance.data.activePanel = this;
-            isConfigurable = DifficultyLevels.Instance.CurrentDifficulty.name == "Configurable";
-            hasNextLevel = NextLevel();
-            SetLabels(UpdateLabels);
+            isTutorial = Field.Instance.Master.State.gameOver.tutorial;
+            if (!isTutorial)
+            {
+                isConfigurable = DifficultyLevels.Instance.CurrentDifficulty.name == "Configurable";
+                hasNextLevel = NextLevel();
+            }
+            ReactOnTutorial();
         }
 
         private bool NextLevel()
@@ -42,7 +45,30 @@ namespace Assets.Scripts.UI.Panels
             return PersistentState.Instance.data.lastLevelIndex < levelsCount;
         }
 
-        private void UpdateLabels()
+        private void ReactOnTutorial()
+        {
+            if (isTutorial)
+            {
+                UpdateTutorialLabels();
+            }
+            else
+            {
+                UpdateWinLabels();
+            }
+            UpdateLabels();
+        }
+
+        private void UpdateTutorialLabels()
+        {
+            winText.SetActive(false);
+            congratsText.SetActive(true);
+            levelsUnlockedText.SetActive(true);
+            congrats.text = Text("congrats");
+            levelsUnlocked.text = Text("tutorialFinish");
+            next.text = Text("backToGame");
+        }
+
+        private void UpdateWinLabels()
         {
             winText.SetActive(true);
             congratsText.SetActive(false);
@@ -73,16 +99,24 @@ namespace Assets.Scripts.UI.Panels
                     PersistentState.Instance.Save();
                 }
             }
-            
+        }
+
+        private void UpdateLabels()
+        {
             rate.text = Text("rate");
             share.text = Text("share");
             donate.text = PersistentState.Instance.data.adsDisabled ? Text("donate") : Text("donateRemoveAds");
             mainMenu.text = Text("mainMenu");
-            
         }
 
         public void OnNextPlayButtonClick()
         {
+            if (isTutorial)
+            {
+                //DifficultyLevels.Instance.LevelName = "Configurable";
+                UIController.Instance.PanelController.mainMenuPanel.GetComponent<MainMenu>().StartGame();
+                return;
+            }
             if (isConfigurable)
             {
                 UIController.Instance.PanelController.configurablePanel.GetComponent<Configurable>().OnCofigurablePlayClick();
