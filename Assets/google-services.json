@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "907195213003",
+    "firebase_url": "https://dissonance-2-47590292.firebaseio.com",
+    "project_id": "dissonance-2-47590292",
+    "storage_bucket": "dissonance-2-47590292.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907195213003:android:1530b7a4b7e5c627",
+        "android_client_info": {
+          "package_name": "com.Arachnid42.Dissonance2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907195213003-nbu58tsqr7jvrgmu0pv0t00n9q62aibp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Arachnid42.Dissonance2",
+            "certificate_hash": "3b61ba9da8a80f4a8e5a9ea1d5589ea45c4dab97"
+          }
+        },
+        {
+          "client_id": "907195213003-cmkak18slahn8uod116rd9tlh3js74t8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA43b3ZnrgW_lLpRLwvTvm9Mvn9ChUvQT4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907195213003-cmkak18slahn8uod116rd9tlh3js74t8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

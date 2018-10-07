@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using Assets.Scripts.Analytics;
 
 namespace Assets.Scripts.Game
 {
@@ -13,6 +14,7 @@ namespace Assets.Scripts.Game
             PersistentState.Instance.data.timesPlayed++;
             if(win)
                 PersistentState.Instance.data.gamesWon++;
+            Events.GameOver();
         };
     }
 }

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id" xmlns:tools="http://schemas.android.com/tools">
+  <string name="firebase_database_url" translatable="false">https://dissonance-2-47590292.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">907195213003</string>
+  <string name="google_storage_bucket" translatable="false">dissonance-2-47590292.appspot.com</string>
+  <string name="project_id" translatable="false">dissonance-2-47590292</string>
+  <string name="google_api_key" translatable="false">AIzaSyA43b3ZnrgW_lLpRLwvTvm9Mvn9ChUvQT4</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA43b3ZnrgW_lLpRLwvTvm9Mvn9ChUvQT4</string>
+  <string name="google_app_id" translatable="false">1:907195213003:android:1530b7a4b7e5c627</string>
+  <string name="default_web_client_id" translatable="false">907195213003-cmkak18slahn8uod116rd9tlh3js74t8.apps.googleusercontent.com</string>
+</resources>

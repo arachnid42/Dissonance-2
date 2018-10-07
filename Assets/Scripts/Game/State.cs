@@ -99,6 +99,7 @@ namespace Assets.Scripts.Game
 
         public float startTime = 0f;
         public float firstScoreTime = -1;
+        public float stopTime = -1;
         public Slowdown slowdown = new Slowdown();
 
         public RandomRotation randomRotation = new RandomRotation();
@@ -192,9 +193,10 @@ namespace Assets.Scripts.Game
             set
             {
                 started = value;
-                //paused = false;
                 mapping.ShapeBasketHidden = !value;
                 mapping.IndicatorHidden = !value;
+                if (!started)
+                    stopTime = Time.time;
             }
         }
 
@@ -302,6 +304,7 @@ namespace Assets.Scripts.Game
             Score = 0;
             startTime = Time.time;
             firstScoreTime = -1;
+            stopTime = -1;
             mapping.Timer = Difficulty.target.endless?0:Difficulty.target.time;
             mapping.TimerHidden = Difficulty.target.scoreBased;
             mapping.ScoreHidden = !Difficulty.target.scoreBased;
