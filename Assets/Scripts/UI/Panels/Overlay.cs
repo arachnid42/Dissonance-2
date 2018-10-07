@@ -10,23 +10,23 @@ namespace Assets.Scripts.UI.Panels
     public class Overlay : BasePanel
     {
         [SerializeField]
-        private Text text, functional = null;
+        private Text text, message, watchAds, unlock = null;
+        [SerializeField]
+        private GameObject messagePanel, trialButton;
 
-        private Animation closeAnimation, fromEndlessToMainMenuAnimation, fromConfigurableToMeinMenuAnimation, fromEndlessToDonateAnimation, fromConfigurableToDonateAnimation;
+        private Animation closeAnimation, toMainMenu, toDonateMenu;
 
         private const string ENDLESS_PANEL = "EndlessPanel";
         private const string CONFIGURABLE_PANEL = "ConfigurablePanel";
+        private const string GAMEOVER_PANEL = "GameOverPanel";
+        private const string GAMEOVERWIN_PANEL = "GameOverWinPanel";
+
 
         private void OnEnable()
         {
             SetLabels(UpdateOverlayInformation);
-            var panelController = UIController.Instance.PanelController;
-            Debug.LogFormat("PC {0}", panelController);
-            closeAnimation = SetHidddenAnimation(true);
-            fromEndlessToMainMenuAnimation = SetHidddenAnimation(true).After(panelController.EndlessPanel.SetHiddenEnumerator(true)).After(panelController.MainMenuPanel.SetHiddenEnumerator(false));
-            fromEndlessToDonateAnimation = SetHidddenAnimation(true).After(panelController.EndlessPanel.SetHiddenEnumerator(true)).After(panelController.DonatePanel.SetHiddenEnumerator(false));
-            fromConfigurableToMeinMenuAnimation = SetHidddenAnimation(true).After(panelController.ConfigurablePanel.SetHiddenEnumerator(true)).After(panelController.MainMenuPanel.SetHiddenEnumerator(false));
-            fromConfigurableToDonateAnimation = SetHidddenAnimation(true).After(panelController.ConfigurablePanel.SetHiddenEnumerator(true)).After(panelController.DonatePanel.SetHiddenEnumerator(false));
+            ReactOnTrial();
+            InitAnimations();
         }
 
         private void OnDisable()
@@ -34,86 +34,132 @@ namespace Assets.Scripts.UI.Panels
 
         }
 
+        private void InitAnimations()
+        {
+            var uiController = UIController.Instance;
+            closeAnimation = SetHidddenAnimation(true);
+            toMainMenu = SetHidddenAnimation(true).After(uiController.data.activePanel.SetHiddenEnumerator(true)).After(uiController.PanelController.MainMenuPanel.SetHiddenEnumerator(false));
+            toDonateMenu = SetHidddenAnimation(true).After(uiController.data.activePanel.SetHiddenEnumerator(true)).After(uiController.PanelController.DonatePanel.SetHiddenEnumerator(false));
+        }
+
+        private void ReactOnTrial()
+        {
+            if (!IsNetworkAvailable())
+            {
+                ShowNetworkUnavailable();
+            }else if(IsAdsAvailable()){
+                ShowPromo();
+            }
+            else
+            {
+                ShowAdsUnavailable();
+            }
+        }
+
+        private void ShowNetworkUnavailable()
+        {
+            trialButton.SetActive(false);
+            messagePanel.SetActive(true);
+            message.text = Text("checkNetwork");
+        }
+
+        private void ShowPromo()
+        {
+            trialButton.SetActive(true);
+            messagePanel.SetActive(true);
+            message.text = Text("watchAds");
+        }
+
+        private void ShowAdsUnavailable()
+        {
+            trialButton.SetActive(false);
+            messagePanel.SetActive(true);
+            message.text = Text("adsUnavailable");
+        }
+
+        private void ShowAdsSkipped()
+        {
+            trialButton.SetActive(true);
+            messagePanel.SetActive(true);
+            message.text = Text("adsSkipped");
+        }
+
+        private void ShowAdsFailed()
+        {
+            trialButton.SetActive(true);
+            messagePanel.SetActive(true);
+            message.text = Text("adsFailed");
+        }
+
+        private bool IsNetworkAvailable()
+        {
+            return !(Application.internetReachability == NetworkReachability.NotReachable);
+        }
+
+        private bool IsAdsAvailable()
+        {
+            return !(Advertisement.GetPlacementState() == PlacementState.NoFill);
+        }
+
         private void UpdateOverlayInformation()
         {
             text.text = Text("winOrBuyToUnlock");
-            functional.text = Text("unlock");
+            watchAds.text = Text("watchAdsButton");
+            unlock.text = Text("unlock");
         }
 
         public void OnCloseButton()
         {
-            switch (UIController.Instance.data.activePanel.name)
-            {
-                case ENDLESS_PANEL:
-                    fromEndlessToMainMenuAnimation.Start();
-                    break;
-                case CONFIGURABLE_PANEL:
-                    fromConfigurableToMeinMenuAnimation.Start();
-                    break;
-                default:
-                    closeAnimation.Start();
-                    break;
-            }
-        }
-
-        public void OnCancelButtonClick()
-        {
-
-        }
-
-        public void OnConfirmButtonClick()
-        {
-
+            toMainMenu.Start();
         }
 
         public void OnFunctionalButtonClick()
         {
-            switch (UIController.Instance.data.activePanel.name)
-            {
-                case ENDLESS_PANEL:
-                    fromEndlessToDonateAnimation.Start();
-                    break;
-                case CONFIGURABLE_PANEL:
-                    fromConfigurableToDonateAnimation.Start();
-                    break;
-                default:
-                    closeAnimation.Start();
-                    break;
-            }
+            toDonateMenu.Start();
+            UIController.Instance.data.IsTrial = false;
         }
 
         public void OnTryButtonClick()
         {
-            switch (UIController.Instance.data.activePanel.name)
-            {
-                case ENDLESS_PANEL:
-                    Advertising.Instance.TryToShowAds(TrialEndlessCallback);
-                    break;
-                case CONFIGURABLE_PANEL:
-                    fromConfigurableToDonateAnimation.Start();
-                    break;
-                default:
-                    closeAnimation.Start();
-                    break;
-            }
+            Advertising.Instance.TryToShowAds(TrialAccessCallback);
         }
 
-        private void TrialEndlessCallback(ShowResult result)
+        private void TrialAccessCallback(ShowResult result)
         {
             switch (result)
             {
                 case ShowResult.Finished:
                     Debug.Log("The ad was successfully shown.");
-                    //
-                    // YOUR CODE TO REWARD THE GAMER
-                    // Give coins etc.
+                    switch (UIController.Instance.data.activePanel.name)
+                    {
+                        case ENDLESS_PANEL:
+                        case CONFIGURABLE_PANEL:
+                            closeAnimation.Start();
+                            break;
+                        case GAMEOVER_PANEL:
+                            closeAnimation.Start();
+                            UIController.Instance.data.isAnimationPlays = false;
+                            UIController.Instance.PanelController.gameOverPanel.GetComponent<GameOver>().ReplayAction();
+                            break;
+                        case GAMEOVERWIN_PANEL:
+                            closeAnimation.Start();
+                            UIController.Instance.data.isAnimationPlays = false;
+                            UIController.Instance.PanelController.mainMenuPanel.GetComponent<MainMenu>().StartGame();
+                            break;
+                        default:
+                            closeAnimation.Start();
+                            break;
+                    }
                     closeAnimation.Start();
+                    UIController.Instance.data.IsTrial = true;
                     break;
                 case ShowResult.Skipped:
                     Debug.Log("The ad was skipped before reaching the end.");
+                    ShowAdsSkipped();
                     break;
                 case ShowResult.Failed:
                     Debug.LogError("The ad failed to be shown.");
+                    ShowAdsFailed();
                     break;
             }
         }

@@ -21,9 +21,9 @@ namespace Assets.Scripts.UI.Panels
         {
             UIController.Instance.data.activePanel = this;
             isTutorial = Field.Instance.Master.State.gameOver.tutorial;
-            if (!isTutorial)
+            isConfigurable = DifficultyLevels.Instance.CurrentDifficulty.name == "Configurable";
+            if (!isTutorial && !UIController.Instance.data.IsTrial)
             {
-                isConfigurable = DifficultyLevels.Instance.CurrentDifficulty.name == "Configurable";
                 hasNextLevel = NextLevel();
             }
             ReactOnTutorial();
@@ -111,9 +111,20 @@ namespace Assets.Scripts.UI.Panels
 
         public void OnNextPlayButtonClick()
         {
+            if (UIController.Instance.data.IsTrial)
+            {
+                if (isTutorial)
+                {
+                    UIController.Instance.PanelController.mainMenuPanel.GetComponent<MainMenu>().StartGame();
+                }
+                else
+                {
+                    UIController.Instance.OnTrialPblockAction();
+                }
+                return;
+            }
             if (isTutorial)
             {
-                //DifficultyLevels.Instance.LevelName = "Configurable";
                 UIController.Instance.PanelController.mainMenuPanel.GetComponent<MainMenu>().StartGame();
                 return;
             }

@@ -35,8 +35,26 @@ namespace Assets.Scripts.UI
             public bool isInMainMenu = true;
             public bool isPlaySound = true;
             public BasePanel activePanel;
+            private bool isTrial = false;
+            public bool IsTrial
+            {
+                get { return isTrial; }
+                set {
+                    Instance.PanelController.trialBarPanel.SetActive(value);
+                    isTrial = value;
+                }
+            }
         }
-        
+
+        public bool OnTrialPblockAction()
+        {
+            if (Instance.data.IsTrial)
+            {
+                Instance.PanelController.OverlayPanel.SetHidddenAnimation(false).Start();
+            }
+            return Instance.data.IsTrial;
+        }
+
         public Data data = new Data();
 
         private void Awake()

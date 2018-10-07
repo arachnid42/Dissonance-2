@@ -10,7 +10,7 @@ namespace Assets.Scripts.UI
         
         public GameObject mainMenuCanvas, backgroundPanel, mainMenuPanel, endlessPanel,
             levelsMenuPanel, configurablePanel, configurableMenuPanel, donatePanel, donateMenuPanel, themesPanel,
-            levelStartUpPanel, gameOverWinPanel, gameOverPanel, pausePanel, fadePanel, ratePanel, purchasePanel, overlayPanel, closeOverlayPanel, soundOverlayPanel, tutorialPanel, startupPanel;
+            levelStartUpPanel, gameOverWinPanel, gameOverPanel, pausePanel, fadePanel, ratePanel, purchasePanel, overlayPanel, closeOverlayPanel, soundOverlayPanel, tutorialPanel, startupPanel, trialBarPanel;
 
         public BasePanel BackgroundPanel
         {

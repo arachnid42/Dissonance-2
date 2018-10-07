@@ -13,19 +13,21 @@ namespace Assets.Scripts.UI.Panels
         private Text levels = null, endless = null, configurable = null, donate = null, themes = null;
 
         private string appID;
+        private const float TUTORIAL_FADE_DURATION = 2f;
+        private const float DEFAULT_FADE_DURATION = 1f;
 
         private void OnEnable()
         {
             StartCoroutine(AlterUI(InitPanel));
             appID = string.Format("com.{0}.{1}", Application.companyName, Application.productName);
 
-            
         }
         private void InitPanel()
         {
             Debug.LogFormat("{0} : {1}", PersistentState.Instance, UIController.Instance);
             SetLabels(UpdateLabels);
             UIController.Instance.data.activePanel = this;
+            UIController.Instance.data.IsTrial = false;
             //UIController.Instance.PanelController.StartupPanel.SetHidddenAnimation(true).Start();
             //var showMenuAnim = new Animation(Delay(startUpDelay));
             //showMenuAnim.After(UIController.Instance.PanelController.StartupPanel.SetHiddenEnumerator(true));
@@ -182,6 +184,7 @@ namespace Assets.Scripts.UI.Panels
             }
             else
             {
+                startup.SetFadeDuration(ShouldShowTutorial()?TUTORIAL_FADE_DURATION:DEFAULT_FADE_DURATION);
                 startPlay.After(fade.SetHiddenEnumerator(true));
                 startPlay.After(startup.SetHiddenEnumerator(false));
                 lastPanel = startup;

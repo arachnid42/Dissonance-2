@@ -31,9 +31,17 @@ namespace Assets.Scripts.UI.Panels
 
         public void OnReplayButtonClick()
         {
+            if (!UIController.Instance.OnTrialPblockAction())
+            {
+                ReplayAction();
+            }
+        }
+
+        public void ReplayAction()
+        {
             BasePanel fade = UIController.Instance.PanelController.FadePanel;
             GameObject background = UIController.Instance.PanelController.backgroundPanel;
-            var rePlay = SwitchToAnimation(fade);
+            var rePlay = UIController.Instance.data.activePanel.SwitchToAnimation(fade);
             rePlay.After(fade.SetHiddenEnumerator(true, after: () => Field.Instance.Master.Restart(), background: background));
             rePlay.Start();
         }

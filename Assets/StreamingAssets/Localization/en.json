@@ -121,6 +121,15 @@
 		{"key":"exitText", "value":"Do you want exit the game?"},
 		{"key":"no", "value":"No"},
 		{"key":"yes", "value":"Yes"},
+		{"key":"trialAccess", "value":"Trial access"},
+		{"key":"checkNetwork", "value":"* Check your internet connection, unable to try a trial game ..."},
+		{"key":"watchAds", "value":"Watch ad to play a trial game"},
+		{"key":"watchAdsButton", "value":"Watch ad"},
+		{"key":"adsUnavailable", "value":"* No ad available, unable to try a trial game ..."},
+		{"key":"adsSkipped", "value":"* The ad was skipped before reaching the end, please watch full ad to try a trial game"},
+		{"key":"adsFailed", "value":"* The ad failed to be shown, please try again later ..."},
+
+
 
 		{"key":"music", "value":"Music"},
 		{"key":"sounds", "value":"Sounds"},
