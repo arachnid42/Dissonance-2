@@ -36,14 +36,14 @@ namespace Assets.Scripts.UI.Panels
             save.text = Text("save");
             revert.text = Text("revert");
             back.text = Text("back");
-            if (UIController.Instance.data.IsTrial)
-            {
-                title.alignment = TextAnchor.LowerCenter;
-            }
-            else
-            {
-                title.alignment = TextAnchor.MiddleCenter;
-            }
+            //if (UIController.Instance.data.IsTrial)
+            //{
+            //    title.alignment = TextAnchor.LowerCenter;
+            //}
+            //else
+            //{
+            //    title.alignment = TextAnchor.MiddleCenter;
+            //}
         }
 
         
