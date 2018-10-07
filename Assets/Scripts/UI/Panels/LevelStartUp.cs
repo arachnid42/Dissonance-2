@@ -21,7 +21,6 @@ namespace Assets.Scripts.UI.Panels
 
         private void ReactOnTutorial()
         {
-            Debug.Log(Field.Instance.Master.State.tutorial);
             if (ShouldShowTutorial())
             {
                 tutorialPanel.SetActive(true);

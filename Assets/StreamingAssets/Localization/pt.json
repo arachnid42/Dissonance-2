@@ -121,6 +121,13 @@
 		{"key":"exitText", "value":"Você quer sair do jogo?"},
 		{"key":"no", "value":"Não"},
 		{"key":"yes", "value":"Sim"},
+		{"key":"trialAccess", "value":"Acesso experimental"},
+		{"key":"checkNetwork", "value":"* Verifique sua conexão com a internet, incapaz de experimentar um jogo de teste ..."},
+		{"key":"watchAds", "value":"Visualizar anúncio para jogar um jogo de avaliação"},
+		{"key":"watchAdsButton", "value":"Visualizar anúncio"},
+		{"key":"adsUnavailable", "value":"* Nenhum anúncio disponível, não é possível tentar um jogo de avaliação ..."},
+		{"key":"adsSkipped", "value":"* O anúncio foi ignorado antes de chegar ao fim, por favor, assista o anúncio completo para experimentar um jogo de teste"},
+		{"key":"adsFailed", "value":"* O anúncio não foi exibido. Tente novamente mais tarde ..."},
 
 		{"key":"music", "value":"Música"},
 		{"key":"sounds", "value":"Sons"},

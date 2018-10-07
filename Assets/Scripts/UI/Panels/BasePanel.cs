@@ -149,7 +149,10 @@ namespace Assets.Scripts.UI.Panels
                 after();
         }
 
-
+        public void SetFadeDuration(float duration)
+        {
+            fadeDuration = duration;
+        }
 
         
     }
