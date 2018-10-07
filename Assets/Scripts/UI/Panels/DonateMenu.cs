@@ -70,6 +70,8 @@ namespace Assets.Scripts.UI.Panels
         {
 
         }
+        
+
 
         public void OnUnlockAllClick()
         {
@@ -116,7 +118,7 @@ namespace Assets.Scripts.UI.Panels
         {
             yield return WaitForStore();
             PersistentState.Instance.temp.recentPurchase = id;
-            Events.PurchaseCompleted(id);
+            Events.PurchaseAttempt(id);
             switch (id)
             {
                 case Purchases.UNLOCK_ALL:
