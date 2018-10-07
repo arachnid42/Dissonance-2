@@ -6,6 +6,8 @@ using UnityEngine.Events;
 using Assets.Scripts.Game;
 using Assets.Scripts.UI.Elements;
 using Assets.Scripts.PlayServices;
+using Assets.Scripts.Analytics;
+
 
 namespace Assets.Scripts.UI.Panels
 {
@@ -27,6 +29,7 @@ namespace Assets.Scripts.UI.Panels
             SetLabels(UpdateLabels);
             UIController.Instance.data.activePanel = this;
             StartCoroutine(UpdateThemes());
+            Events.PanelOpened(Events.Panels.THEMES);
         }
 
         private void UpdateLabels()

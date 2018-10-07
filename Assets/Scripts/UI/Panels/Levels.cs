@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using Assets.Scripts.Game;
 using Assets.Scripts.UI.Elements;
-
+using Assets.Scripts.Analytics;
 
 namespace Assets.Scripts.UI.Panels
 {
@@ -30,6 +30,7 @@ namespace Assets.Scripts.UI.Panels
 
         private void OnEnable()
         {
+            Events.PanelOpened(Events.Panels.LEVELS);
             UIController.Instance.data.activePanel = this;
             SetLabels(UpdateLabels);
             StartCoroutine(UpdateLevels());

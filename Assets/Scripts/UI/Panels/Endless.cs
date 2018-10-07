@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using Assets.Scripts.Game;
 using Assets.Scripts.PlayServices;
+using Assets.Scripts.Analytics;
+
 
 namespace Assets.Scripts.UI.Panels
 {
@@ -14,6 +16,7 @@ namespace Assets.Scripts.UI.Panels
 
         private void OnEnable()
         {
+            Events.PanelOpened(Events.Panels.ENDLESS);
             SetLabels(UpdateLabels);
             UIController.Instance.data.activePanel = this;
         }

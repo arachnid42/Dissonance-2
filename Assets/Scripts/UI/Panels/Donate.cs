@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Assets.Scripts.Analytics;
+
 
 namespace Assets.Scripts.UI.Panels
 {
@@ -15,6 +17,7 @@ namespace Assets.Scripts.UI.Panels
 
         private void OnEnable()
         {
+            Events.PanelOpened(Events.Panels.DONATION_MESSAGE);
             SetLabels(UpdateLabels);
             UIController.Instance.data.activePanel = this;
         }

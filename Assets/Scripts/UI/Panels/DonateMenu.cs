@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Assets.Scripts.Game;
 using Assets.Scripts.Monetization;
+using Assets.Scripts.Analytics;
 
 namespace Assets.Scripts.UI.Panels
 {
@@ -28,6 +29,7 @@ namespace Assets.Scripts.UI.Panels
 
         private void OnEnable()
         {
+            Events.PanelOpened(Events.Panels.DONATION);
             UIController.Instance.data.activePanel = this;
             SetLabels(UpdateLabels);
             data = PersistentState.Instance.data;
@@ -114,6 +116,7 @@ namespace Assets.Scripts.UI.Panels
         {
             yield return WaitForStore();
             PersistentState.Instance.temp.recentPurchase = id;
+            Events.PurchaseCompleted(id);
             switch (id)
             {
                 case Purchases.UNLOCK_ALL:

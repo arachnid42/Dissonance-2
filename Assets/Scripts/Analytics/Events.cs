@@ -12,7 +12,9 @@ namespace Assets.Scripts.Analytics
             public const string
                 PANEL_OPENED = "panel_opened",
                 GAME_OVER = "game_over",
-                TUTORIAL_COMPLETED = "tutorial_completed";
+                TUTORIAL_COMPLETED = "tutorial_completed",
+                PURCHASE_ATTEMPT = "purchase_attempt",
+                PURCHASE_COMPLETED = "purchase_completed";
         }
 
         public static class Parameters
@@ -25,7 +27,8 @@ namespace Assets.Scripts.Analytics
                 TARGET_TIME = "target_time",
                 SCORE = "score",
                 TIME = "time",
-                SCORE_BASED = "score_based";
+                SCORE_BASED = "score_based",
+                PRODUCT_ID = "product_id";
 
         }
 
@@ -36,7 +39,10 @@ namespace Assets.Scripts.Analytics
                 DONATION_MESSAGE = "donation_message",
                 THEMES = "themes",
                 CONFIGURABLE = "configurable",
-                ENDLESS = "endless";
+                CONFIGURABLE_MENU = "configurable_menu",
+                ENDLESS = "endless",
+                MAIN_MENU = "main_menu",
+                LEVELS = "levels";
         }
 
         public static void GameOver()
@@ -86,7 +92,14 @@ namespace Assets.Scripts.Analytics
             FirebaseAnalytics.LogEvent(Names.PANEL_OPENED, parameters);
         }
 
+        public static void PurchaseAttempt(string productId)
+        {
+            FirebaseAnalytics.LogEvent(Names.PURCHASE_ATTEMPT, Parameters.PRODUCT_ID, productId);
+        }
 
-
+        public static void PurchaseCompleted(string productId)
+        {
+            FirebaseAnalytics.LogEvent(Names.PURCHASE_COMPLETED, Parameters.PRODUCT_ID, productId);
+        }
     }
 }

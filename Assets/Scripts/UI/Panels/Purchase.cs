@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Assets.Scripts.Game;
 using Assets.Scripts.Monetization;
+using Assets.Scripts.Analytics;
 
 namespace Assets.Scripts.UI.Panels
 {
@@ -29,6 +30,7 @@ namespace Assets.Scripts.UI.Panels
             tittle.text = Text("purchaseTitle");
             button.text = Text("mainMenu");
             target = UIController.Instance.PanelController.MainMenuPanel;
+            Events.PurchaseCompleted(PersistentState.Instance.temp.recentPurchase);
             switch (PersistentState.Instance.temp.recentPurchase)
             {
                 case Purchases.UNLOCK_ALL:

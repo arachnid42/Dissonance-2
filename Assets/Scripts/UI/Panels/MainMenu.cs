@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Assets.Scripts.Game;
 using Assets.Scripts.PlayServices;
+using Assets.Scripts.Analytics;
 
 namespace Assets.Scripts.UI.Panels
 {
@@ -18,6 +19,7 @@ namespace Assets.Scripts.UI.Panels
 
         private void OnEnable()
         {
+            Events.PanelOpened(Events.Panels.MAIN_MENU);
             StartCoroutine(AlterUI(InitPanel));
             appID = string.Format("com.{0}.{1}", Application.companyName, Application.productName);
 
