@@ -40,7 +40,7 @@ namespace Assets.Scripts.UI
             {
                 get { return isTrial; }
                 set {
-                    Instance.PanelController.trialBarPanel.SetActive(value);
+                    //Instance.PanelController.trialBarPanel.SetActive(value);
                     isTrial = value;
                 }
             }
