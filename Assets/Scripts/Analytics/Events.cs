@@ -85,21 +85,23 @@ namespace Assets.Scripts.Analytics
 
         public static void PanelOpened(string name)
         {
-            var parameters = new Parameter[]
-            {
-                new Parameter(Parameters.PANEL_NAME,name)
-            };
-            FirebaseAnalytics.LogEvent(Names.PANEL_OPENED, parameters);
+            FirebaseAnalytics.LogEvent(CombineEventNameWithParameter(Names.PANEL_OPENED, name));
         }
 
         public static void PurchaseAttempt(string productId)
         {
-            FirebaseAnalytics.LogEvent(Names.PURCHASE_ATTEMPT, Parameters.PRODUCT_ID, productId);
+            //Debug.Log("event name:" + CombineEventNameWithParameter(Names.PURCHASE_ATTEMPT, productId));
+            FirebaseAnalytics.LogEvent(CombineEventNameWithParameter(Names.PURCHASE_ATTEMPT, productId));
         }
 
         public static void PurchaseCompleted(string productId)
         {
-            FirebaseAnalytics.LogEvent(Names.PURCHASE_COMPLETED, Parameters.PRODUCT_ID, productId);
+            FirebaseAnalytics.LogEvent(CombineEventNameWithParameter(Names.PURCHASE_COMPLETED, productId));
+        }
+
+        private static string CombineEventNameWithParameter(string eventName,string paramName)
+        {
+            return string.Format("{0}_{1}", eventName, paramName);
         }
     }
 }
